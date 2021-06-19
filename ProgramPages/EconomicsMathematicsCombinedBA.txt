@@ -1,0 +1,964 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head><title>
+	UCSC General Catalog - Economics/Mathematics Combined B.A.
+</title><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-8e849bdf63c6884f6ef","applicationID":"1359705662","transactionName":"Y1NQZhdQC0cHU0ZfCVoZc2E1HglVH19HQhUbWlNLCkQRR0lFXF8QUURBWxFIRVsAEFFXCl1QXUALWAQUFVFcQgcUVUBHHx4WVQhEU1UUQUxBRgRfAVUUVEJXAVEYU0EVSQ==","queueTime":0,"applicationTime":262,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"1359996610",accountID:"3058884",trustKey:"3028485",xpid:"VwYCWV5bDBABV1RbAAECUFID",licenseKey:"NRJS-8e849bdf63c6884f6ef",applicationID:"1359705662"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(29),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{p?p-=1:o(c||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:s.now();i("err",[t,n])}var i=t("handle"),a=t(30),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError";if(!s.disabled){var p=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),s.xhrWrappable&&t(14),d=!0)}c.on("fn-start",function(t,e,n){d&&(p+=1)}),c.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,o(n))}),c.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){L++,T=g.hash,this[u]=y.now()}function o(){L--,g.hash!==T&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var c="-start",s="-end",f="-body",u="fn"+c,d="fn"+s,l="cb"+c,p="cb"+s,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable&&!y.disabled){var x=t(10),b=t(11),E=t(8),R=t(6),O=t(13),N=t(7),M=t(14),P=t(9),C=t("ee"),S=C.get("tracer");t(16),y.features.spa=!0;var T,L=0;C.on(u,r),b.on(l,r),P.on(l,r),C.on(d,o),b.on(p,o),P.on(p,o),C.buffer([u,d,"xhr-done","xhr-resolved"]),R.buffer([u]),O.buffer(["setTimeout"+s,"clearTimeout"+c,u]),M.buffer([u,"new-xhr","send-xhr"+c]),N.buffer([m+c,m+"-done",m+f+c,m+f+s]),E.buffer(["newURL"]),x.buffer([u]),b.buffer(["propagate",l,p,"executor-err","resolve"+c]),S.buffer([u,"no-"+u]),P.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(M,"send-xhr"+c),a(C,"xhr-resolved"),a(C,"xhr-done"),a(N,m+c),a(N,m+"-done"),a(P,"new-jsonp"),a(P,"jsonp-end"),a(P,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,L>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),c=t(12),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,v="fn"+h,w="bstTimer",g="pushState",y=t("loader");if(!y.disabled){y.features.stn=!0,t(8),"addEventListener"in window&&t(6);var x=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),o.on(v,function(t,e){var n=t[0];n instanceof x&&i("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),this.bstType])}),c.on(m,function(){this.bstStart=y.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t("wrap-function")(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var c=r.apply(this,t);return o.emit(n+"start",[t,a],c),c.then(function(t){return o.emit(n+"end",[null,t],c),t},function(t){throw o.emit(n+"end",[t],c),t})})}var o=t("ee").get("fetch"),i=t(30),a=t(29);e.exports=o;var c=window,s="fetch-",f=s+"body-",u=["arrayBuffer","blob","json","text","formData"],d=c.Request,l=c.Response,p=c.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(c,"fetch",s),o.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(s+"done",[null,e],n)}else o.emit(s+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t("wrap-function")(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){s.emit("jsonp-end",[],l),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){s.emit("jsonp-error",[],l),s.emit("jsonp-end",[],l),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=c(a),d="function"==typeof u.parent[u.key];if(d){var l={};f.inPlace(u.parent,[u.key],"cb-",l),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),s.emit("new-jsonp",[t.src],l)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(l),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function c(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var s=t("ee").get("jsonp"),f=t("wrap-function")(s);if(e.exports=s,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,l=/^(\w+)(\.|$)(.*)$/,p=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?f.inPlace(Node.prototype,p,"dom-"):(f.inPlace(HTMLElement.prototype,p,"dom-"),f.inPlace(HTMLHeadElement.prototype,p,"dom-"),f.inPlace(HTMLBodyElement.prototype,p,"dom-")),s.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t("wrap-function")(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=i.context(),n=c(t,"executor-",e,null,!1),r=new f(n);return i.context(r).getCtx=function(){return e},r}var o=t("wrap-function"),i=t("ee").get("promise"),a=t("ee").getOrSetContext,c=o(i),s=t(29),f=NREUM.o.PR;e.exports=i,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){i.emit("propagate",[null,!o],a,!1,!1),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var a=e.apply(f,arguments),c=f.resolve(a);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&i.emit("propagate",[t,!0],n,!1,!1),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),o.wrapInPlace(f.prototype,"then",function(t){return function(){var e=this,n=o.argsToArray.apply(this,arguments),r=a(e);r.promise=e,n[0]=c(n[0],"cb-",r,null,!1),n[1]=c(n[1],"cb-",r,null,!1);var s=t.apply(this,n);return r.nextPromise=s,i.emit("propagate",[e,!0],s,!1,!1),s}}),i.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this,null,!1),t[1]=c(t[1],"resolve-",this,null,!1)}),i.on("executor-err",function(t,e,n){t[1](n)}),i.on("cb-end",function(t,e,n){i.emit("propagate",[n,!0],this.nextPromise,!1,!1)}),i.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=i.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",c)}function i(t){y.push(t),h&&(b?b.then(a):v?v(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,w="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){if(!c(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||s(t)&&l())&&(w.traceContextParentHeader=o(h,m),w.traceContextStateHeader=i(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&s(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function o(t,e){return"00-"+e+"-"+t+"-01"}function i(t,e,n,r,o){var i=0,a="",c=1,s="",f="";return o+"@nr="+i+"-"+c+"-"+n+"-"+r+"-"+t+"-"+a+"-"+s+"-"+f+"-"+e}function a(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var c={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(c.d.tk=i),btoa(JSON.stringify(c))}function c(t){return f()&&s(t)}function s(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var o=h(n.allowed_origins[r]);if(t.hostname===o.hostname&&t.protocol===o.protocol&&t.port===o.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(26),h=t(17);e.exports={generateTracePayload:r,shouldGenerateTrace:c}},{}],16:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function o(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=s(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var c=t("handle"),s=t(17),f=t(15).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(22),m=t(21),v=t(18),w=window.XMLHttpRequest;a.features.xhr=!0,t(14),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){i(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<l;c++)e.addEventListener(d[c],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof w&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=s(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var o=f(this.parsedOrigin);if(o&&(o.newrelicHeader||o.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),e(i.headers,o)&&(this.dt=o),t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&e(t[0].headers,o)&&(this.dt=o)})}},{}],17:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,c=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||c),"/"===o.pathname&&(r[t]=o),o}},{}],18:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(21);e.exports=r},{}],19:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(29),c=t(30),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=o(l+e,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[f.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(p+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],20:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],21:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],22:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],23:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-a}function o(){return i}var i=(new Date).getTime(),a=i,c=t(31);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=o},{}],24:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],25:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function i(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!v){var e=Math.round(t.timeStamp),n={type:t.type};e<=l.now()?n.fid=l.now()-e:e>l.offset&&e<=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),v=!0,d("timing",["fi",e,n])}}function c(t){d("pageHide",[l.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var s,f,u,d=t("handle"),l=t("loader"),p=t(28),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(m){}f=new PerformanceObserver(o);try{f.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}u=new PerformanceObserver(i);try{u.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var v=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(t){document.addEventListener(t,a,!1)})}p(c)}},{}],26:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<i.length;c++)o=i[c],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){return a(16)}function i(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,o=window.crypto||window.msCrypto;o&&o.getRandomValues&&Uint8Array&&(n=o.getRandomValues(new Uint8Array(31)));for(var i=[],a=0;a<t;a++)i.push(e().toString(16));return i.join("")}e.exports={generateUuid:r,generateSpanId:o,generateTraceId:i}},{}],27:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,s=c.match(a);s&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(o="Safari",i=s[1])}e.exports={agent:o,version:i,match:r}},{}],28:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[o]?"hidden":"visible")}"addEventListener"in document&&i&&document.addEventListener(i,e,!1)}e.exports=r;var o,i,a;"undefined"!=typeof document.hidden?(o="hidden",i="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",i="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",i="webkitvisibilitychange",a="webkitVisibilityState")},{}],29:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],30:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],31:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?f(t,s,a):a()}function n(n,r,o,i,a){if(a!==!1&&(a=!0),!p.aborted||i){t&&a&&t(n,r,o);for(var c=e(o),s=m(n),f=s.length,u=0;u<f;u++)s[u].apply(c,r);var l=d[y[n]];return l&&l.push([x,n,r,c]),c}}function i(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return l[t]=l[t]||o(n)}function w(t,e){p.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:i,addEventListener:i,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:c,aborted:!1};return x}function i(t){return f(t,s,a)}function a(){return new r}function c(){(d.api||d.feature)&&(p.aborted=!0,d=p.backlog={})}var s="nr@context",f=t("gos"),u=t(29),d={},l={},p=e.exports=o();e.exports.getOrSetContext=i,p.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!N++){var t=O.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(E,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+O.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=p+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function o(){"complete"===m.readyState&&i()}function i(){c("mark",["domContent",a()+O.offset],null,"api")}var a=t(23),c=t("handle"),s=t(29),f=t("ee"),u=t(27),d=t(24),l=t(20),p=l.getConfiguration("ssl")===!1?"http":"https",h=window,m=h.document,v="addEventListener",w="attachEvent",g=h.XMLHttpRequest,y=g&&g.prototype,x=!d(h.location);NREUM.o={ST:setTimeout,SI:h.setImmediate,CT:clearTimeout,XHR:g,REQ:h.Request,EV:h.Event,PR:h.Promise,MO:h.MutationObserver};var b=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1209.min.js"},R=g&&y&&y[v]&&!/CriOS/.test(navigator.userAgent),O=e.exports={offset:a.getLastTimestamp(),now:a,origin:b,features:{},xhrWrappable:R,userAgent:u,disabled:x};if(!x){t(19),t(25),m[v]?(m[v]("DOMContentLoaded",i,!1),h[v]("load",r,!1)):(m[w]("onreadystatechange",o),h[w]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var N=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,s,f){function nrWrapper(){var i,a,u,l;try{a=this,i=d(arguments),u="function"==typeof r?r(i,a):r||{}}catch(p){o([p,"",[i,a,s],u],t)}c(n+"start",[i,a,s],u,f);try{return l=e.apply(a,i)}catch(h){throw c(n+"err",[i,a,h],u,f),h}finally{c(n+"end",[i,a,l],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[l]=e,i(e,nrWrapper,t),nrWrapper)}function r(t,e,r,o,i){r||(r="");var c,s,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)s=e[f],c=t[s],a(c)||(t[s]=n(c,u?s+r:r,o,s,i))}function c(n,r,i,a){if(!h||e){var c=h;h=!0;try{t.emit(n,r,i,e,a)}catch(s){o([s,n,r,i],t)}h=c}}return t||(t=u),n.inPlace=r,n.flag=l,n}function o(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function i(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(i){o([i],n)}for(var a in t)p.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[l])}function c(t,e){var n=e(t);return n[l]=t,i(t,n,u),n}function s(t,e,n){var r=t[e];t[e]=c(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(30),l="nr@original",p=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=s,e.exports.argsToArray=f},{}]},{},["loader",2,16,5,3,4]);</script><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no" /><meta http-equiv="cleartype" content="on" /><link rel="shortcut icon" href="/Institutions/University-of-California-Santa-Cruz/images/favicon.ico" /><link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /><link href="/Institutions/University-of-California-Santa-Cruz/styles/ucsc.css" rel="stylesheet" type="text/css" /><link href="/Institutions/University-of-California-Santa-Cruz/styles/UCSCCustom.css" rel="stylesheet" type="text/css" /><link href="/Institutions/University-of-California-Santa-Cruz/styles/print.css" rel="stylesheet" type="text/css" media="print" />
+	 
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
+	 
+	 <script type="text/javascript" src="/Institutions/University-of-California-Santa-Cruz/scripts/treeList.js"></script>
+	 <script type="text/javascript" src="/Institutions/University-of-California-Santa-Cruz/scripts/coursepopup.js"></script>
+	 <script type="text/javascript" src="/Institutions/University-of-California-Santa-Cruz/scripts/newscript.js"></script>
+     <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/smoothness/jquery-ui.css" rel="Stylesheet" type="text/css" /><script type='text/javascript'> 
+                                                (function ($) {
+                                                    $(document).ready(
+                                                        function () {
+                                                            var tabList = "<ul><li><a href='#degree-req-1'>Information and Policies</a></li><li><a href='#degree-req-2'>Requirements and Planners</a></li></ul>";
+                                                            $(tabList).insertBefore("#degree-req-1");
+                                                            
+                                                            const queryString = window.location.search;
+                                                            const urlParams = new URLSearchParams(queryString);
+                                                            if (urlParams.has('tab') && !isNaN(urlParams.get('tab')))
+                                                            {
+                                                                $("#degree-req").tabs();
+                                                                var url = '#degree-req-'.concat(urlParams.get('tab'));
+                                                                var element = $('a[href="'+url+'"]')[0];
+                                                                element.click();
+                                                            }
+                                                            else
+                                                            {
+                                                                $("#degree-req").tabs();
+                                                            }
+                                                            
+                                                            function scrollToAnchor(anchorName){
+                                                                var aTag = $("a[name='"+ anchorName +"']");
+                                                                $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+                                                            }
+
+                                                            if(urlParams.has('anchor'))
+                                                            {
+                                                                scrollToAnchor(urlParams.get('anchor'));
+                                                            }
+                                                        });
+                                                    })(jQuery);
+                                                </script>;
+	
+	<!-- Google Tag Manager -->
+
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5RFHNC"
+
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+	<script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+
+        })(window, document, 'script', 'dataLayer', 'GTM-5RFHNC');</script>
+
+	<!-- End Google Tag Manager -->
+	 
+
+</head>
+
+<body class="home www js" >
+	<div id="skiptocontent1"><a id="skip_link" class="skiplink" href="#middle">Skip to main content</a></div>
+		<form method="post" action="/Current/General-Catalog/Academic-Units/Social-Sciences-Division/Economics/EconomicsMathematics-Combined-BA" id="Form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="ZVVFlmMf9HRgcSqdOLBWMcbpGkSkmFrUcwY0hvJglhi6BWoy9Byi3C8uMfBS7Gwk1O1xS2zxU/iAfci0K1F3tD1h5ZlE2+FNj1rdL3raDO6nbJXg9PHdDVkpMPICUZsYBrW4RUwXQ4q/bBq9MHlC9lb1gcKJmclxA7fysZIeRDSTp+R4gWoTfIpvMkOGZoPESWFBqdqecZEBN9DbixUS+nhRo8VkxuZARRPh2TQB7bj99hvHsbvm+EHHjCBNHKGhz7ageuPzcGP/ZFIiBq7IgAJZhWsZT6+OvgfkiU2BnccemlPpWneCBO6dM8zZipUyGN4MLrGx+W7qLv5Adwu8lAmftMFiGRLYc2ziTOrczpCD7/RqFJcrdx3K5dgaVYWMJnnKgQA6KMj+TFt92oAppNvhkVmwYeFVQEKResYaoFxvtF/DEKzh9J0wllqBqWMzefeE8h4/1X9y90adDc9q2tyF1K2Q2AsYrKwpC0v3Es1UqA17xwRd9uu1lhbyUTWIkPo2nHErTh/Vocn5ENRA/bGOSNpkhshHOBmvz+PCQYIupgJPI8HT3x483ZA6bw0o8f6/vDVPJoWYHncgXmBTaCb9eYK67d4G6pH2OiRfdvlWx3lZF74X46lMqq6KwxX+UXSfKDBdNJaqvYgqhBwqpb+541weO0Zb/y09oEEQQP2awD9DAIujLcl0fdUuQXErpIsu6qBUbDfFrUZ+KtrTiBBQNbspuClxouuCm3lefQp8tcx0pFfUok94gbbUiCxw6oF8CrXtJEw0J9n1T/RX7sPV59RLwyt7zyxvw1re4EMO+51jy9iZUq9RtsRSPBbdhpjg/+CQwDiilTkkI6reD5Hj5DSPPWkUJ9EoPTvhN986vqvmCic08Sh9MAOOm63iIh1RrewgUxw9K4BW/y/Az0pwlyACoE2kgdiRXbDkcoH5igHEk0YhxTlhNmPM5PLGGmXu1gdet7q57wVrZgPLmF/SC0bcM4+CsT8ZDk/2Gf5D/K477BrutOo/pHDfAyF0kzSGlPsk07kJU4k+yt9p2u9drtnT9O8WJIGNA6SgrZ+ooA3e1P1vbWbfr+rkl+/KuyNzE8V8EAWQHHcyVJd2ttv4XeGouufp1InFHAbZ0iDAUwLslRiyTH9sqN7ajyDUXrzNyjF5XLhVfAKWt4Im0LwqJbsbITTk/JbfmOdkFOpVhRwbxJLh6Nu5TX9F0FaPhXafry2r7aSsDRum5nOvzFvlhldBF8bnH7u17ft4Qd9hdLUF4GkqU87iE5elPMgwYek+giISE9TN6N4G2nrRcH2AAFpzfhwQfeFqKjoGM361I5Eu9+U/NRK68m6HvizAOPvrIDJBXV0xLr6sGZHWDGdq4gq0j6mULexQhdvxIU/E2Yr/zCfjd7VXQL/YIr2P3AkTviW0JocvVV30YRK/EAyqiOq3RtGbaICG7q0NhKkN7XxLn/yx5/IpqFVLRyzTt2OXIrJ3wjzwUJZXyhpW7iFEwV/ieXlU48nFU9hAFcB/SWEsgTBVObGacXIQGp+wBc4/98qlBJ/egpgKQS0WiEIHDPWEEX+ZD3D1Mc6BnGDofSUXSuBv8rxuT0SV5QbXJgE3ccEmDX98iaqQUuzrYMxR9eoZSSCrGEeGZPiuJ124ONtyIrOXsJRKOyY/9clBud5l/Wrv7RNFx3lYA1atMDwP/a2/s6NkznTvtA2dRLGBy7kpVrAUUPac8kBn3LWApLWgNN4R5+mqT2dmI8XEcEcQ4G21m3ROo/l/JXwaIgPReVnKCr0hP3FrMSX9VX922qTkwcRdyxMK2WPtPA0zs/DB9/RRRHCD7t4whNmvy6+ANeqMkkoGZq+L7MmiQnR3S0MOzgd6GHm1TR5lNgvkAWbxFRboCcXW/i8SeRKtvgK494Zb2stIeAX0HNCh9MqJ3JPFMlzgF6c7cPEq0wDbDNLomq6W84EgiWUMnqeppTblLiwWAUC0RqYbSqmcHvBQb9eC8z3dW0wHr2nkZBuq6mhrFC91kBUtEvsbEF6wSZCjFmO+9dqqfPgBkCbzir0MFiYeXkpueH52NSgoq6F/CWIKAS0u/ERLsWNjxBwfrWZ/QA4euF04ubwQvzke/eABjvNTawA3ETsqUxR7yR1nkT6EtyUMvPBnX0ZpNEPDsNFGzefdIrdhzKMU6lfYu7E1C5QCBdEC55PRB7yx+Vets6Bj0JY7qtDi/TJL1PAqA6HtQgufIhtZPaGNYUGsuQDM0vKr0uFpk1iosL+gVx3YMvT1sW8yCY0uvlc0hb0si3eVfk0z41YpP6e79iNMxUQJjW5SEpSbANE6uY6XWTRlbpKEJPzy4tC1xUMW+X4WM88r7lzFGu3Kbl82TQdz72v/3bor+q9nu+VmTsX1W+u3UI3tw2J07Jer9vI1b3/oz1piggsktfm3mTatPjfamArMpuZtFXj98jNVUaYlyvqgUWwggpiGCtVeQhTOyLAWwKPnQKWZ3u5I3ca0FQKA05OTAvFgW/zKDqpFVXrJddUtgIKtqIncPeBZGe06Z+PF2IoP8eV8QPRFaV3hnP/p/WGrjYLkDyq/dwn00tKeBoacAO0ce3IvgrFnDL0dE5cwC410QuUX4/8Pg21+dGzK3FLVvc7v7+Rs/iHdIju1ZJWggk0F4KJ5tn42Ql/sPe0r//PwCmFEktNPg5gvF5rSM7xG4RGB2GRzFu8KU3kUCnTWhjtX29ArjGDcgulUtKZbG5sXlpk9M8Ua6Bb52mDHzU50rZYprLiGkZefyPK+jyf5tmRK9VF45v/29UQT0OLT6d2A0JhaSSbbR36csEsSqTWJ7MP4wJqWz7tzCus3EmF5a7ToU150lMIHbGdeIQ59UjKZ6i8aa5YaagKSwfJjUbz11HXmdfcmY2rFAgQiU9v6oPGNb7oG1/0xwBvO611UQ1MFLz+i8BsrZLoP+CranEjLBnmlFf90UaNO6RFVwNYJWr+uXKuOxAL9CSCyp+V09VSPfP0RMWPfda4McfaCrAziI6caruwRUhJW31yLncsAZcHa5BK7RN83j/B61SnSxOlhH6gtTqKeANckFTiCAFFE5W2hNoOEWd7OiKMx788LzIaQ95Ex/o6Bpiz96K0EqZaTL3cJSA8v2ik4bnVKL4ke6ZKBz4iwGx8zeoIdrnV/6JdV2GsPWCfKkxNQ+F0Si5LJbgH+sq7UYyGos3qa7SaHQvMketwosPsLUjy8uc3mCSG97vzQxM27wGK4bq9GlNZuUy7gLrsPEw6UI6gG0L+IPXPyIR5LgzHfK5zOiMayf8gw+6IoreOwI9HGOzVFOKcNpU+ZXMwcKnyr9eVJ1GSLzWeluCqYojxmVk9Bu9zqQJA4e60+rGcf4AthyGKjhR0Dtwqkau7u+IM+zcaH4YKDFZv24Kqbh3M4ME/Stwrlck5VXyFNUgjU/62kdXgSt1z3+UnKZ0RzW6772m1rJYIPjzO+O0wBPxbjULE6sCdz+9b1EN006VDaZrymHuKs0/nOs1siV0ePmtzAqy5VzIEYnQxFRYJXupRP1IPRjjoW7M9EDSpUAAYF232sQk6Eb9eWERttKb2d/ATntHIg9LKHI0HioND9nUkSBppzHb8DPO3zBlCRnqTtXE9qgprlD0bPOHKe7loGaK6g2vriJr/i0TkBljdRWMC5PsvaULXc+OhObudnb3TIEVqLbraX78tNp/ku/4p+OCu0WCMASHqwNRjBOCb5+6ozdsvl99F4KZRxnG6KlX8icxMXexHgh5ljE8gWf6nFMHOHfHv7zKzRHZWae/cQFTk/On9tfILKrubhSm6gC3IV3R4dpA82kCMRrYp4Jkq2duCcQbguk1onU53/7Qv/YTW6vPKPlahn4QaNBdvvzti57ui9RceEn5Dj0gN7G+u5fyFL3y17citNlLfGThv4qnAKMfythXW1Toitx9+/sNXqK4+zHqYk1pdkMUqtTTkigEKHnvOr74/uTs9vSEtwjbc2OKHTtVNlkt7O1BxZXxFh1K0X4Hc1c0pbFRAJ6rweyxoBp35XyvNycaKDZrIuLGNrtDW+cT+EbVJ9LugzwJsupCDfBRvUuIAGX6bqSiCoE9SrQcD9IsyjQ4MyGfbyg7MZOVdHuLFpxWpBgjfD+jjlp+lOSn63/cTeHNeUhW4WSPUMLSqa4PxCE2s9Ta5rb8UmSr/JE5V9RA==" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="845114C5" />
+	<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+	<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="VX4dtrbYC354aGpEhgj/yFsLTEq9SNrvfOSpt6AxhOXhZEotUNRaaLPBE4ciIS43iS9lzlZVFqNdUNiGGge1MXlaqa6UzT5tiJ1LVtvrYELOsgvGztR5ok7AAJHu6LzdgP6y+R8Zga6uunGP+uOq/+XKdQR4bJ9hAXV0EWVIVR+s4Y+yftPXyx0d3kjfNj5NrtoX1WeWQ9xzCZKxxiTmugTxt5GK+0pZCXqxt2sNhgR6+xg3qw40ZPLDAOcwQlh705wS2Rv/QhhY/4+7uABfbw==" />
+</div>
+			<div id="wrap">
+			<div id="pagewrapper1">
+				<div id="pagewrapper2">
+					<div id="banner">
+					<!--LOGO AND HEADER LINKS CAN GO HERE-->
+					  <div class="page-top">
+      <div class="row">
+
+        <div class="page-top-left">
+          <a class="campus-secondary" href="https://www.ucsc.edu/index.html" id="logo">UC Santa Cruz</a>
+        </div>
+
+        <div class="page-top-right">
+          <ul id="topNav">
+<li><a href="https://my.ucsc.edu" title="The student portal">MyUCSC</a></li>
+<li><a href="https://www.ucsc.edu/tools/people.html" title="Campus directory">People</a></li>
+<li><a href="https://www.ucsc.edu/tools/calendars.html" title="Upcoming events, academic, and administrative calendars">Calendars</a></li>
+<li><a href="https://www.ucsc.edu/visit/maps-directions.html">Maps</a></li>
+<li><a href="https://www.ucsc.edu/tools/azindex.html" title="A to Z index of UCSC websites">A-Z Index</a></li>
+</ul>
+        </div>
+
+      </div>
+    </div>
+						 
+						    <!-- Begin Page Banner -->
+                          
+					</div><!-- end banner --> 
+					<div id="middle">			
+						<!--LEFT NAV-->
+						<div id="leftpanel">
+
+                      <div id="searchtoggle">	</div>				
+					  <div id="leftcolumn_0_Panel1" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;leftcolumn_0_btnSubmit&#39;)">
+	
+    <div class="sidebox">
+	    <div class="hdr">
+            <label for="leftcolumn_0_txtBxTerm" id="leftcolumn_0_searchTextLabel">Catalog Search</label>
+	    </div>
+
+	    <div class="sideboxbrdr">
+            <input name="leftcolumn_0$txtBxTerm" type="text" id="leftcolumn_0_txtBxTerm" />
+            <div style="text-indent: -999em;">
+            <label for="leftcolumn_0_drpSearchType" id="leftcolumn_0_filterLabel"></label>
+            </div>
+            <select name="leftcolumn_0$drpSearchType" id="leftcolumn_0_drpSearchType">
+		<option selected="selected" value="">Entire Catalog</option>
+		<option value="programs">Programs</option>
+		<option value="courses">Courses</option>
+
+	</select>
+
+            <input type="submit" name="leftcolumn_0$btnSubmit" value="Search" id="leftcolumn_0_btnSubmit" />
+	    </div>
+    </div> 
+
+</div><div class="sidebox">
+	<div class="hdr">
+		Contents
+	</div>
+</div>
+						 <div class="toc">
+							<ul id="navLocal" class="navLocal">
+	<li><a href="/en/Current/General-Catalog/Welcome-to-UC-Santa-Cruz">Welcome to UC Santa Cruz</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Introducing-UC-Santa-Cruz">Introducing UC Santa Cruz</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Programs">Academic Programs</a></li><li class="hasChildren active"><a href="/en/Current/General-Catalog/Academic-Units">Academic Units</a><ul>
+		<li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Arts-Division">Arts Division</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division">Humanities Division</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division">Physical and Biological Sciences Division</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Baskin-School-of-Engineering">Baskin School of Engineering</a></li><li class="hasChildren active"><a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division">Social Sciences Division</a><ul>
+			<li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division/Anthropology">Anthropology</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division/Community-Studies">Community Studies</a></li><li class="hasChildren active"><a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division/Economics">Economics</a><ul>
+				<li><a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division/Economics/Economics-BA">Economics B.A.</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division/Economics/Economics-Minor">Economics Minor</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division/Economics/Business-Management-Economics-BA">Business Management Economics B.A.</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division/Economics/Global-Economics-BA">Global Economics B.A.</a></li><li class=" active"><a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division/Economics/EconomicsMathematics-Combined-BA">Economics/Mathematics Combined B.A.</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division/Economics/Applied-Economics-and-Finance-MS">Applied Economics and Finance M.S.</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division/Economics/Economics-PhD">Economics Ph.D.</a></li>
+			</ul></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division/Education">Education</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division/Environmental-Studies">Environmental Studies</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division/Latin-American-and-Latino-Studies">Latin American and Latino Studies</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division/Politics">Politics</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division/Psychology">Psychology</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division/Sociology">Sociology</a></li>
+		</ul></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/The-Colleges">The Colleges</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Physical-Education">Physical Education</a></li>
+	</ul></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Courses">Courses</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Undergraduate-Information">Undergraduate Information</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Graduate-Information">Graduate Information</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Resources-Residency-and-Policies">Resources, Residency, and Policies</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Teaching-and-Administrative-Staff">Teaching and Administrative Staff</a></li><li><a href="/en/Current/General-Catalog/Academic-Calendar">Academic Calendar</a></li><li><a href="/en/Current/General-Catalog/Catalogs-Prior-to-2019-20">Catalogs Prior to 2019-20</a></li>
+</ul>
+					           <div class="sidebox">
+									<div class="sidebox">
+	<div class="hdr">
+		Catalog Links
+	</div><div class="sideboxbrdr">
+		<ul>
+			<li><a href="/en/Current/General-Catalog">Catalog Home</a></li><li><a href="/en">All Catalogs</a></li>
+		</ul>
+	</div>
+</div>
+								</div><!-- end of sidebox -->
+								<div class="sidebox">
+	<div class="hdr">
+		Share
+	</div><div class="sideboxbrdr">
+		<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_facebook">Share this page on Facebook</a>
+<a class="addthis_button_twitter">Share this page on Twitter</a>
+<a class="addthis_button_email">Email this page</a>
+<a class="addthis_button_print">Print this page</a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+<script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4db17d15194e924f"></script>
+<!-- AddThis Button END -->
+	</div>
+</div>
+							</div><!-- end of TOC -->
+						</div><!--end of leftpanel-->
+						<!-- Main content area -->
+						<div id="rightpanel">
+							<div id="sc-rightpanel-top">
+								<div id="sc-top-links">
+										<span class="print">
+											<a href="javascript:window.print()" title="Print this Page"><span class="printLabel">Print this page</span></a>
+										</span>
+									
+
+<div id="catalog-dropdown">
+    <span id="catalogdropdown_0_Label1"></span>
+
+	<div style="font-size: x-small;">
+		<div style="text-indent: -999em; line-height: 1px; color:#EFEFEF;">
+            <label for="catalogdropdown_0_DropDownList1">Select a Catalog</label>
+		</div>
+		<select name="catalogdropdown_0$DropDownList1" id="catalogdropdown_0_DropDownList1">
+	<option selected="selected" value="{99FCED38-D22F-4053-805D-64F15C2ECDB8}">2020-21 UCSC General Catalog</option>
+	<option value="{1A63CDDE-8554-4CA1-8DAC-3A8014DCE824}">2019-20 UCSC General Catalog</option>
+
+</select>
+		<input type="submit" name="catalogdropdown_0$Button1" value="Select" id="catalogdropdown_0_Button1" style="border-style:Outset;" />
+	</div>
+</div>
+<br />
+
+
+
+
+								</div><!--end of sc-top-links-->
+							</div><!--end sc-rightpanel-top-->
+							<div id="main">
+							<div id="breadcrumb">
+								<p id="breadcrumbs"><a href="/en/Current/General-Catalog">2020-21 UCSC General Catalog</a> &gt; <a href="/en/Current/General-Catalog/Academic-Units">Academic Units</a> &gt; <a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division">Social Sciences Division</a> &gt; <a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division/Economics">Economics</a> &gt; Economics/Mathematics Combined B.A.</p>
+							</div><!-- end of breadcrumb -->
+								<h1>
+	Economics/Mathematics Combined B.A.
+</h1><div id="degree-req">
+	<div id="degree-req-1">
+		<h2>
+			Information and Policies
+		</h2><h3 class="sc-RequiredCoursesHeading1">
+			Introduction
+		</h3><p>The major in economics and mathematics is designed to meet the needs of undergraduate students who plan to pursue doctoral study in economics or business, or who wish to pursue a career as an actuary or other professional requiring a sophisticated understanding of economics and mathematics. The major combines the main undergraduate content of both economics and mathematics within a programmatic structure that joins the two disciplines. It provides a coursework combination required to prepare for an economics doctoral (Ph.D.) program, or for a group of technically demanding professional careers.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Academic Advising for the Program
+		</h3><p>The Economics Department office is located at 401 Engineering 2.&nbsp;There are two staff undergraduate advisers, peer advisers (except summer), a field study coordinator,&nbsp;as well as a faculty director for each of the Economics Department&#39;s undergraduate programs. Our faculty, staff advisers and peer advisers play an important role in advising on all aspects of the major and assisting you to maximize your educational opportunities. Please check the department website for more information about drop-in hours.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Getting Started in the Major
+		</h3><p>The economics curriculum begins at the introductory level: no specific high school preparation is required. All majors study a substantial core of economic theory and statistical methods and they then choose among a wide variety of subfields.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Program Learning Outcomes
+		</h3><p>Program learning outcomes for economics, economics and mathematics, business management economics, and global economics majors:</p>
+
+<p><strong>Critical Thinking Skills:</strong> Students are expected to be able to apply economic analysis to everyday problems in real world situations, to understand current events and evaluate specific policy proposals, and to evaluate the role played by assumptions in arguments that reach different conclusions to a specific economic or policy problem.</p>
+
+<p><strong>Quantitative Reasoning Skills:</strong> Students are expected to understand how to use empirical evidence to evaluate the validity of an economic argument, use statistical methodology, interpret statistical results, and conduct appropriate statistical analysis of data.</p>
+
+<p><strong>Problem-Solving Skills:</strong> Students are expected to be able to solve problems that have clear solutions and to address problems that do not have clear answers and explain conditions under which these solutions may be correct.</p>
+
+<p><strong>Specialized Knowledge and Application of Skills:</strong> Students are expected to develop critical and quantitative thinking skills specific to business and accounting.</p>
+
+<p><strong>Communication Skills:</strong> Students are expected to be able to communicate effectively in written, oral, and graphical form about specific issues, and to formulate well-organized written arguments that state assumptions and hypotheses supported by evidence.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Major Qualification Policy and Declaration Process
+		</h3><a id="mqual"></a><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Major Qualification
+		</h4><p>The Economics Department administers four undergraduate majors: economics, business management economics, global economics, and economics/mathematics. The qualification requirements for major declaration are the same for all four.</p>
+
+<p>Students must complete three courses, with combined GPA of 2.8 or higher, to petition for entry to the economics/mathematics major:</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Lower-Division/ECON-1">ECON 1</a></td><td class="sc-coursetitle">Introductory Microeconomics: Resource Allocation and Market Structure</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Lower-Division/ECON-2">ECON 2</a></td><td class="sc-coursetitle">Introductory Macroeconomics: Aggregate Economic Activity</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			and the following calculus course:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19A">MATH 19A</a></td><td class="sc-coursetitle">Calculus for Science, Engineering, and Mathematics</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p>All classes included for major qualification determination must be taken for a letter grade. If students have not taken a letter grade, they must appeal by submitting a letter to the Economics Department.</p>
+
+<p>Students are encouraged to apply to the major as soon as they have satisfactorily completed these three courses. Students who have a combined grade-point average (GPA) of 2.8 or better in <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Lower-Division/ECON-1'>ECON 1</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Lower-Division/ECON-2'>ECON 2</a>, and the first calculus course will qualify upon applying. Students receiving a grade of NP, C-, D+, D, D-, or F in one of the courses required for qualification to the major may only declare once they have passed the same or equivalent course with a grade of C or better. Students who receive two grades of NP, C-, D+, D, D-, or F in the qualification courses are not eligible to declare the major.</p>
+
+<p>Equivalent courses may be taken at other universities or community colleges. Students should check on <a href="http://www.assist.org/web-assist/welcome.html" target="_blank">assist.org</a> to determine whether a transfer course is designated as equivalent to <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Lower-Division/ECON-1'>ECON 1</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Lower-Division/ECON-2'>ECON 2</a> or the first required calculus course. Transfer students are strongly encouraged to ask the department to review such courses prior to matriculation at UCSC, since an offer of admission to UCSC does not automatically imply admission to the economics major.</p>
+
+<p>Students can receive course credit for Advanced Placement (AP) examinations in Micro (<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Lower-Division/ECON-1'>ECON 1</a>), Macro (<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Lower-Division/ECON-2'>ECON 2</a>), Statistics (<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/STAT-Statistics/Lower-Division/STAT-5'>STAT 5</a>) and the first calculus class toward major qualification criteria according to the <a href="https://admissions.ucsc.edu/publications/ap-ib-chart.pdf" target="_blank">AP chart</a>.</p>
+
+<p>For economics and calculus AB, a&nbsp;score of 5 on the AP exam counts as an &ldquo;A,&rdquo;&nbsp;a score of 4 counts as a &ldquo;B,&rdquo;&nbsp;and a score of 3&nbsp;earns unit credit only but no course credit toward&nbsp;major qualification&nbsp;(i.e. does not count).&nbsp;For calculus BC, a 3&nbsp;counts as a &quot;B&quot; and scores of 4 or 5 count as an &quot;A.&rdquo;&nbsp;</p>
+
+<p>A score of 5&nbsp;on the IBH Mathematics exam counts as a &quot;B&quot; and scores of 6&nbsp;or 7&nbsp;count as an &quot;A.&quot;&nbsp;</p>
+
+<p>ECON&nbsp;11A is also offered as <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/AM-Applied-Mathematics/Lower-Division/AM-11A'>AM 11A</a>.</p>
+
+<p>Please consult with an adviser if you have questions.</p>
+
+		</div><h4 class="sc-RequiredCoursesHeading2">
+			Appeal Process
+		</h4><p>Students who have a GPA lower than 2.8 in <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Lower-Division/ECON-1'>ECON 1</a>,&nbsp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Lower-Division/ECON-2'>ECON 2</a>, and the calculus course are not eligible to declare an economics major. Students who are not eligible to declare the major may appeal this decision by submitting a letter of appeal to the department within 15 days of the denial of the declaration. Within 15 days of the receipt of the appeal, the department will notify the student, college and Office of the Registrar of the decision. Please check the <a rel="noopener noreferrer" href="https://economics.ucsc.edu/academics/undergraduate-program/majors-minor/index.html" target="_blank">"Appeals" area on the department website</a> for further information on declaring a major or appealing ineligibility and deadlines.</p><a id="decproc"></a><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			How to Declare a Major
+		</h4><p>Students may petition for admission to the major by filling&nbsp;out the <a rel="noopener noreferrer" href="https://advising.ucsc.edu/planning/your-major/declaration/docs/major-declaration.pdf" target="_blank">Petition for Major/Minor Declaration</a> and the&nbsp;<a rel="noopener noreferrer" href="https://advising.ucsc.edu/planning/apf.html" target="_blank">Academic Planning forms</a> and by supplying evidence of their grades in the three pre-major courses.&nbsp;Candidates must meet major qualifications listed above prior to declaring the major.</p>
+<p>Declaration sessions are mandatory for those seeking to declare the major or minor. If you cannot attend a workshop, you must meet with an economics peer adviser first before obtaining signatures from a staff&nbsp;adviser. Workshop schedules and drop-in advising hours are <a rel="noopener noreferrer" href="http://economics.ucsc.edu/academics/undergraduate-program/downloads/declaration-sessions.html" target="_blank">available online</a>, on our bulletin board outside the office, and in the department office. All are advised to bring in verification of their grades, which can be printed off the student portal, to the declaration of major advising session. Students who do not bring in verification of their grades could have&nbsp;the approval of their petition for major declaration delayed by up to two working days.</p><table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Transfer Information and Policy
+		</h3><a id="tasp"></a><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Transfer Admission Screening Policy
+		</h4><p class="sc-BodyText">The following courses or their equivalents are required prior to transfer, by the end of the spring term for students planning to enter in the fall: <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Lower-Division/ECON-1'>ECON 1</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Lower-Division/ECON-2'>ECON 2</a> and first quarter of calculus (<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19A'>MATH 19A</a>).</p>
+<p class="sc-BodyText">A minimum GPA of 2.8 must be obtained in the courses listed above.&nbsp;The admissions office screens transfer applicants for meeting major qualification criteria.&nbsp;</p>
+<p class="sc-BodyText">In addition, the following courses are recommended prior to transfer to ensure timely graduation: <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/STAT-Statistics/Lower-Division/STAT-5'>STAT 5</a> equivalent; completion of calculus sequence (<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-22'>MATH 22</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-23A'>MATH 23A</a> and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-23B'>MATH 23B</a>).</p>
+<p class="sc-BodyText">Prospective students are encouraged to prioritize required and recommended&nbsp;major preparation, and may additionally complete courses that articulate to&nbsp;UC Santa Cruz general education requirements as time allows.</p><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Getting Started at UCSC as a Transfer Student
+		</h4><p>All transfer students must complete the three-course senior comprehensive requirement (<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100A'>ECON 100A</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100B'>ECON 100B</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-113'>ECON 113</a>) and the DC requirement&nbsp;at UCSC. Economics/mathematics&nbsp;majors must take at least two of their upper-division economics electives at UCSC. Courses taken for credit elsewhere may not be repeated for credit here.</p>
+
+<p>Students who were admitted under a different proposed major and have advanced standing when they come to UC Santa Cruz require permission from the department to change into the major. Admission to the major is not guaranteed.&nbsp;</p>
+
+<p>Students who have met all lower-division requirements through&nbsp;articulations before transferring will need at least six&nbsp;economics and&nbsp;five mathematics upper-division courses&nbsp;at UCSC to complete the major.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Letter Grade Policy
+		</h3><p>All classes included for major qualification determination must be taken for a letter grade. If students have not taken a letter grade, they must appeal by submitting a letter to the Economics Department.</p>
+
+<p>The Economics Department allows classes toward major requirements taken for the Pass/No Pass (P/NP) grade notification. We recommend no more than two courses in the major be taken P/NP. Overall no more than 25 percent of a student&#39;s UCSC classes can be taken P/NP.&nbsp;</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Course Substitution Policy
+		</h3><p>For courses not already articulated through <a rel="noopener noreferrer" href="http://www.assist.org/web-assist/welcome.html" target="_blank">assist.org</a>,&nbsp;students must present their transfer credit summary (available on the student portal) and course syllabi or descriptions to an Economics Department adviser. The department approves courses applicable for economics prerequisites and major requirements. The course substitution form can be found on the department website under "<a rel="noopener noreferrer" href="https://economics.ucsc.edu/academics/undergraduate-program/forms.html" target="_blank">Forms for students</a>."&nbsp;</p><table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Study Abroad
+		</h3><p><a href="https://studyabroad.ucsc.edu/programs/uceap/index.html" target="_blank">UC Education Abroad Program (UCEAP)</a>&nbsp;is the University of California&#39;s official study abroad program and a global leader in international education for more than 50 years. All the benefits of home&mdash;UC credit, grades, and financial aid&mdash;travel with you. Approximately 600 UC Santa Cruz students study abroad on UCEAP every year.</p>
+
+<p>Students&nbsp;can petition UCEAP courses to count toward their major or minor requirements. In addition, there are scholarships available and financial aid can be applied to UCEAP programs. UCEAP provides opportunities in:</p>
+
+<ul>
+	<li>46 countries around the world</li>
+	<li>420 summer quarter, semester or yearlong programs</li>
+	<li>Internships, volunteer work, and research programs</li>
+</ul>
+
+<p><a href="https://studyabroad.ucsc.edu/programs/ucsc-exchange/europe/uab/index.html" target="_blank">Economics at the Autonomous University of Barcelona--Direct Exchange Program</a><br />
+Located in Spain, the Autonomous University of Barcelona (UAB) is an institution known for its excellent research and teaching. Unlike UCEAP, this direct exchange program through the UC Santa Cruz Economics Department offers the opportunity for students to enroll in three courses that will fulfill economics major requirements and one course outside of economics. Students must take a total of four courses and will receive transfer credit for all courses. Along with enrolling in courses, students may enjoy the renowned architecture, food, and art. This program is open to students who are economics majors in junior or senior class standing and have a 3.0 cumulative GPA or above. Students must also be in good academic standing and 18 years of age or older at the time of departure to Barcelona. Economics courses at UAB may also be taken in Spanish if students have completed two years of university-level Spanish with a minimum GPA of 2.85 in those language courses.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Honors
+		</h3><p>The Economics Department considers for honors and highest honors students who have completed a major program with superior or exceptional work. Honors decisions are made by the department&rsquo;s honors and scholarship committee.</p>
+
+<p>At the end of each quarter, faculty teaching the upper-division core courses submit to the department a list of students in their respective classes whose performance is at the honors level. At the time of graduation, all students who received an honors designation in one or more of these courses are reviewed by the department&rsquo;s honor committee. The faculty committee looks for a record of excellence in courses offered toward the major, with a strong performance in the upper-division core (theory and econometrics&mdash;<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100A'>ECON 100A</a>/<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100M'>ECON 100M</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100B'>ECON 100B</a>/<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100N'>ECON 100N</a>, and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-113'>ECON 113</a>) being a necessary condition for honors. Although a GPA is not computed for the economics courses, in general highest honors are awarded to students who have received a grade of at least an &ldquo;A&rdquo; throughout their economics program. Honors are awarded to students who have no more than two courses with grades of less than an &ldquo;A-.&rdquo; Students who have completed a portion of the major at another institution may be asked to submit a transcript for evaluation.</p>
+
+<p>Students interested in being reviewed for honors may request that the department conduct a review, and such requests are always granted.</p>
+
+<p>In general, honors have been awarded to between 10 and 15 percent of each year&rsquo;s graduating class.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Independent Study
+		</h3><p>Students are encouraged to petition for independent study on topics of special interest to them. <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-199'>ECON 199</a>, Tutorial, may be used as only one of the upper-division courses required for the major or minor.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Field-Study Program
+		</h3><p>The Economics Department offers its majors the opportunity to integrate their academic knowledge with career-related work in areas connected to economics or business.&nbsp;The field-study program places students in internships under the supervision of a faculty sponsor and a professional at the workplace. Students can select from a wide variety of field placements such as accounting firms, community non-profits, government agencies, brokerage firms, marketing agencies, banks, and businesses in Santa Cruz and beyond. Students apply for field-study a quarter in advance. Participation in the field study program requires at least junior standing, completion of courses <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100A'>ECON 100A</a> (or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100M'>ECON 100M</a>), <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100B'>ECON 100B</a> (or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100N'>ECON 100N</a>), and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-113'>ECON 113</a> as well as good academic standing. Students may earn a maximum of 10 academic credits and complete up to two quarters in a field placement. A 5-credit&nbsp;field study requires 12-14&nbsp;hours per week spent working on internship duties (a 2-credit field-study requires 5-6 hours per week spent on internship duties) and completion of an academic project supervised by a faculty sponsor. Time spent toward the academic requirements set by the faculty sponsor is not included in the 12-14 internship hours spent at the field placement.</p>
+
+<p>Along with the training and supervision by a professional at the workplace, students receive guidance from a faculty sponsor who directs their academic project. Students earn credit through the completion of this project and the job supervisor&rsquo;s evaluation of performance. Economics field-study courses do not satisfy any upper-division requirements for the major and are available as Pass/No Pass only.</p>
+
+<p>Interested students should make an appointment or stop by the&nbsp;<a href="https://economics.ucsc.edu/" target="_blank">Economics Department</a> at 403C Engineering 2; or e-mail <a href="mailto:econintern@ucsc.edu">econintern@ucsc.edu</a>.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Combined Majors
+		</h3><p>The Economics Department offers the following combined majors: <a href="/sitecore/service/notfound.aspx?item=web%3a%7b9320D909-1F67-428D-A00E-D84B4AE98B97%7d%40en">economics/mathematics</a>&nbsp;and <a href="/sitecore/service/notfound.aspx?item=web%3a%7bF81D756E-8009-4BC0-809E-4573737BFDBA%7d%40en">environmental studies/economics</a>. Requirements for these majors may be reviewed under their separate entries in this catalog.</p><table>
+
+		</table>
+	</div><div id="degree-req-2">
+		<h2>
+			Requirements and Planners
+		</h2><h3 class="sc-RequiredCoursesHeading1">
+			Course Requirements
+		</h3><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Lower-Division Courses
+		</h4><table>
+
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Economics Required Courses
+		</h5><p>All of the following lower-division courses:</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Lower-Division/ECON-1">ECON 1</a></td><td class="sc-coursetitle">Introductory Microeconomics: Resource Allocation and Market Structure</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Lower-Division/ECON-2">ECON 2</a></td><td class="sc-coursetitle">Introductory Macroeconomics: Aggregate Economic Activity</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Mathematics Required Courses
+		</h5><table>
+
+		</table><h6 class="sc-RequiredCoursesHeading4">
+			All of the following lower division courses:
+		</h6><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19A">MATH 19A</a></td><td class="sc-coursetitle">Calculus for Science, Engineering, and Mathematics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19B">MATH 19B</a></td><td class="sc-coursetitle">Calculus for Science, Engineering, and Mathematics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-21">MATH 21</a></td><td class="sc-coursetitle">Linear Algebra</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h6 class="sc-RequiredCoursesHeading4">
+			Plus one of the following options:
+		</h6><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/Narrative-Courses/Either-this-course"> Either this course</a></td><td class="sc-coursetitle"></td><td><p class="credits"></p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-22">MATH 22</a></td><td class="sc-coursetitle">Introduction to Calculus of Several Variables</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/Narrative-Courses/or-these-courses"> or these courses</a></td><td class="sc-coursetitle"></td><td><p class="credits"></p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-23A">MATH 23A</a></td><td class="sc-coursetitle">Vector Calculus</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-23B">MATH 23B</a></td><td class="sc-coursetitle">Vector Calculus</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Statistics Course Requirement
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/Narrative-Courses/Either-this-course"> Either this course</a></td><td class="sc-coursetitle"></td><td><p class="credits"></p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/STAT-Statistics/Lower-Division/STAT-5">STAT 5</a></td><td class="sc-coursetitle">Statistics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/Narrative-Courses/or-these-courses"> or these courses</a></td><td class="sc-coursetitle"></td><td><p class="credits"></p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/STAT-Statistics/Lower-Division/STAT-7">STAT 7</a></td><td class="sc-coursetitle">Statistical Methods for the Biological, Environmental, and Health Sciences</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/STAT-Statistics/Lower-Division/STAT-7L">STAT 7L</a></td><td class="sc-coursetitle">Statistical Methods for the Biological, Environmental, and Health Sciences Laboratory</td><td><p class="credits">2</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-11A'>MATH 11A</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-11B'>MATH 11B</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-23A'>MATH 23A</a> may be taken to satisfy the mathematics content only&nbsp;by petition via the Mathematics Department.</p>
+
+<p>Successful completion of one of the mathematics calculus sequences from the list above&nbsp;is required for all economics majors, and must be taken before enrollment in <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100A'>ECON 100A</a> (or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100M'>ECON 100M</a>), <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100B'>ECON 100B</a> (or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100N'>ECON 100N</a>), and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-113'>ECON 113</a>. Students are advised to complete the mathematics courses as early as possible in their academic career.</p>
+
+<p>Transfer students interested in the combined economics/mathematics major are encouraged to complete as many lower-division mathematics and statistics courses as they can prior to transferring. The courses need to be equivalent to <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19A'>MATH 19A</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19B'>MATH 19B</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-21'>MATH 21</a> and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-22'>MATH 22</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-23A'>MATH 23A</a>&nbsp;and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-23B'>MATH 23B</a>.</p>
+
+		</div><h4 class="sc-RequiredCoursesHeading2">
+			Upper-Division Courses
+		</h4><table>
+
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Economics Required Courses
+		</h5><table>
+
+		</table><h6 class="sc-RequiredCoursesHeading4">
+			Choose one of the following courses:
+		</h6><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100A">ECON 100A</a></td><td class="sc-coursetitle">Intermediate Microeconomics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100M">ECON 100M</a></td><td class="sc-coursetitle">Intermediate Microeconomics, Math Intensive</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h6 class="sc-RequiredCoursesHeading4">
+			Plus one of the following courses:
+		</h6><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100B">ECON 100B</a></td><td class="sc-coursetitle">Intermediate Macroeconomics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100N">ECON 100N</a></td><td class="sc-coursetitle">Intermediate Macroeconomics, Math Intensive</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h6 class="sc-RequiredCoursesHeading4">
+			Plus the following course:
+		</h6><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-113">ECON 113</a></td><td class="sc-coursetitle">Introduction to Econometrics</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Mathematics Required Courses
+		</h5><table>
+
+		</table><h6 class="sc-RequiredCoursesHeading4">
+			Plus all of the following courses:
+		</h6><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-100">MATH 100</a></td><td class="sc-coursetitle">Introduction to Proof and Problem Solving</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-105A">MATH 105A</a></td><td class="sc-coursetitle">Real Analysis</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Electives
+		</h4><table>
+
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Economics Elective Courses
+		</h5><p>(choose two&nbsp;from the following list)</p>
+<p>NOTE: Lecture/lab combinations (i.e., <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-114'>ECON 114</a> and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-114L'>ECON 114L</a>) count as one course.</p><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-101">ECON 101</a></td><td class="sc-coursetitle">Managerial Economics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-114">ECON 114</a></td><td class="sc-coursetitle">Advanced Quantitative Methods</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-114L">ECON 114L</a></td><td class="sc-coursetitle">Advanced Quantitative Methods Lab</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-115">ECON 115</a></td><td class="sc-coursetitle">Introduction to Management Sciences</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-120">ECON 120</a></td><td class="sc-coursetitle">Development Economics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-121">ECON 121</a></td><td class="sc-coursetitle">Economic Growth</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-125">ECON 125</a></td><td class="sc-coursetitle">Economic History of the U.S</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-126">ECON 126</a></td><td class="sc-coursetitle">Why Economies Succeed or Fail: Lessons from Western and Japanese History</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-128">ECON 128</a><div class="sc-crosslisted">
+					/LGST 128
+				</div></td><td class="sc-coursetitle">Poverty and Public Policy</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-130">ECON 130</a></td><td class="sc-coursetitle">Money and Banking</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-131">ECON 131</a></td><td class="sc-coursetitle">International Financial Markets</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-133">ECON 133</a></td><td class="sc-coursetitle">Security Markets and Financial Institutions</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-135">ECON 135</a></td><td class="sc-coursetitle">Corporate Finance</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-136">ECON 136</a></td><td class="sc-coursetitle">Business Strategy</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-138">ECON 138</a></td><td class="sc-coursetitle">The Economics and Management of Technology and Innovation</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-139A">ECON 139A</a></td><td class="sc-coursetitle">The Economics of Electronic Commerce</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-139B">ECON 139B</a></td><td class="sc-coursetitle">E-Commerce Strategy</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-140">ECON 140</a></td><td class="sc-coursetitle">International Trade</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-141">ECON 141</a></td><td class="sc-coursetitle">International Finance</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-142">ECON 142</a></td><td class="sc-coursetitle">Advanced Topics in International Economics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-148">ECON 148</a></td><td class="sc-coursetitle">Latin American Economies</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-149">ECON 149</a></td><td class="sc-coursetitle">The Economies of East and Southeast Asia</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-150">ECON 150</a></td><td class="sc-coursetitle">Public Finance</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-156">ECON 156</a></td><td class="sc-coursetitle">Health Care and Medical Economics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-159">ECON 159</a></td><td class="sc-coursetitle">The Economics of Organizations</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-160A">ECON 160A</a><div class="sc-crosslisted">
+					/LGST 160A
+				</div></td><td class="sc-coursetitle">Industrial Organization</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-160B">ECON 160B</a></td><td class="sc-coursetitle">Government and Industry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-161A">ECON 161A</a></td><td class="sc-coursetitle">Marketing</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-164">ECON 164</a></td><td class="sc-coursetitle">Economics and the Telecommunications Industry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-165">ECON 165</a></td><td class="sc-coursetitle">Economics as an Experimental Science</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-166A">ECON 166A</a><div class="sc-crosslisted">
+					/CSE 166A
+				</div></td><td class="sc-coursetitle">Game Theory and Applications I</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-166B">ECON 166B</a><div class="sc-crosslisted">
+					/CSE 166B
+				</div></td><td class="sc-coursetitle">Game Theory and Applications II</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-169">ECON 169</a><div class="sc-crosslisted">
+					/LGST 169
+				</div></td><td class="sc-coursetitle">Economic Analysis of the Law</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-170">ECON 170</a></td><td class="sc-coursetitle">Environmental Economics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-171">ECON 171</a></td><td class="sc-coursetitle">Natural Resource Economics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-175">ECON 175</a></td><td class="sc-coursetitle">Energy Economics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-180">ECON 180</a></td><td class="sc-coursetitle">Labor Economics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-183">ECON 183</a><div class="sc-crosslisted">
+					/LGST 183
+				</div></td><td class="sc-coursetitle">Women in the Economy</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-188">ECON 188</a></td><td class="sc-coursetitle">Management in the Global Economy</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Mathematics Electives
+		</h5><p>(choose three&nbsp;from the following list)</p>
+
+<p>NOTE: Lecture/lab combinations (i.e., <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-145'>MATH 145</a> and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-145L'>MATH 145L</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-148'>MATH 148</a> and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-148L'>MATH 148L</a>) count as one course.</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-105B">MATH 105B</a></td><td class="sc-coursetitle">Real Analysis</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-106">MATH 106</a></td><td class="sc-coursetitle">Systems of Ordinary Differential Equations</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-107">MATH 107</a></td><td class="sc-coursetitle">Partial Differential Equations</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-114">MATH 114</a></td><td class="sc-coursetitle">Introduction to Financial Mathematics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-117">MATH 117</a></td><td class="sc-coursetitle">Advanced Linear Algebra</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-124">MATH 124</a></td><td class="sc-coursetitle">Introduction to Topology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-145">MATH 145</a></td><td class="sc-coursetitle">Introductory Chaos Theory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-145L">MATH 145L</a></td><td class="sc-coursetitle">Introductory Chaos Laboratory</td><td><p class="credits">1</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/AM-Applied-Mathematics/Upper-Division/AM-114">AM 114</a></td><td class="sc-coursetitle">Introduction to Dynamical Systems</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/STAT-Statistics/Upper-Division/STAT-131">STAT 131</a></td><td class="sc-coursetitle">Introduction to Probability Theory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/STAT-Statistics/Upper-Division/STAT-132">STAT 132</a></td><td class="sc-coursetitle">Classical and Bayesian Inference</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/AM-Applied-Mathematics/Upper-Division/AM-147">AM 147</a></td><td class="sc-coursetitle">Computational Methods and Applications</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-115">MATH 115</a></td><td class="sc-coursetitle">Graph Theory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-116">MATH 116</a></td><td class="sc-coursetitle">Combinatorics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-134">MATH 134</a></td><td class="sc-coursetitle">Cryptography</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-152">MATH 152</a></td><td class="sc-coursetitle">Programming for Mathematics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-148">MATH 148</a></td><td class="sc-coursetitle">Numerical Analysis</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-148L">MATH 148L</a></td><td class="sc-coursetitle">Numerical Analysis Laboratory</td><td><p class="credits">1</p></td>
+			</tr>
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Disciplinary Communication (DC) Requirement
+		</h4><p>All undergraduate majors must satisfy the campus&rsquo; Disciplinary Communication (DC) requirement. The DC requirement in the economics/mathematics combined major&nbsp;is satisfied by completing either :</p>
+<table>
+
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			One of the following
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-104">ECON 104</a></td><td class="sc-coursetitle">Is There Truth in Numbers: The Role of Statistics in Economics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-197">ECON 197</a></td><td class="sc-coursetitle">Economic Rhetoric: Using Economic Theory and Empirical Evidence in Arguing Policy</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Or
+		</h5><table>
+
+		</table><h6 class="sc-RequiredCoursesHeading4">
+			The following course
+		</h6><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-100">MATH 100</a></td><td class="sc-coursetitle">Introduction to Proof and Problem Solving</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h6 class="sc-RequiredCoursesHeading4">
+			Plus one of the following courses
+		</h6><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-194">MATH 194</a></td><td class="sc-coursetitle">Senior Seminar</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-195">MATH 195</a></td><td class="sc-coursetitle">Senior Thesis</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Comprehensive Requirement
+		</h4><p>The comprehensive requirement&nbsp;is satisfied by passing the following intermediate core courses with grades of C or better here at UCSC:</p>
+<table>
+
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Choose one of the following courses:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100A">ECON 100A</a></td><td class="sc-coursetitle">Intermediate Microeconomics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100M">ECON 100M</a></td><td class="sc-coursetitle">Intermediate Microeconomics, Math Intensive</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Plus one of the following courses:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100B">ECON 100B</a></td><td class="sc-coursetitle">Intermediate Macroeconomics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100N">ECON 100N</a></td><td class="sc-coursetitle">Intermediate Macroeconomics, Math Intensive</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Plus the following course:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-113">ECON 113</a></td><td class="sc-coursetitle">Introduction to Econometrics</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p>Students may elect to complete a senior thesis with consent of an instructor in addition to completing the intermediate core courses.</p>
+
+		</div><h3 class="sc-RequiredCoursesHeading1">
+			Planners
+		</h3><a id="4yrplan"></a><p><strong>Sample Frosh Planner</strong></p>
+<table>
+    <tbody>
+        <tr>
+            <td rowspan="4"><strong>1st (frosh)</strong></td>
+            <td><strong>Fall&nbsp;</strong></td>
+            <td><strong>Winter&nbsp;</strong></td>
+            <td><strong>Spring</strong></td>
+        </tr>
+        <tr>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19A'>MATH 19A</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19B'>MATH 19B</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Lower-Division/ECON-2'>ECON 2</a>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Lower-Division/ECON-1'>ECON 1</a></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td rowspan="3"><strong>2nd (soph)</strong></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-23A'>MATH 23A</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100A'>ECON 100A</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100B'>ECON 100B</a></td>
+        </tr>
+        <tr>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-21'>MATH 21</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-23B'>MATH 23B</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-100'>MATH 100</a></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td rowspan="3"><strong>3rd (junior)</strong></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-105A'>MATH 105A</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-113'>ECON 113</a></td>
+            <td>Econ elective</td>
+        </tr>
+        <tr>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/STAT-Statistics/Lower-Division/STAT-5'>STAT 5</a> or <br />
+            <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/STAT-Statistics/Lower-Division/STAT-7'>STAT 7</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/STAT-Statistics/Lower-Division/STAT-7L'>STAT 7L</a>&nbsp;</td>
+            <td>Math elective&nbsp;</td>
+            <td>Math elective&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td rowspan="3"><strong>4th (senior)</strong></td>
+            <td>Econ elective</td>
+            <td>Math elective&nbsp;</td>
+            <td>Field Study (optional)</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-197'>ECON 197</a> or <br />
+            <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-104'>ECON 104</a></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>Field Study internship (optional)</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p>The courses shown above satisfy the MF, PE, and SR, and (if <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-193'>ECON 193</a> is completed) PR general education requirements. Students must also complete all other GE requirements.</p>
+<a id="2yrplan"></a><p><strong>Sample Transfer Planner One</strong></p>
+<table>
+    <tbody>
+        <tr>
+            <td>&nbsp;</td>
+            <td><strong>Fall</strong></td>
+            <td><strong>Winter</strong></td>
+            <td><strong>Spring</strong></td>
+        </tr>
+        <tr>
+            <td rowspan="3">
+            <p /><strong>3rd (junior)</strong></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19B'>MATH 19B</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-22'>MATH 22</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-23A'>MATH 23A</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-23B'>MATH 23B</a>*</td>
+        </tr>
+        <tr>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-21'>MATH 21</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-100'>MATH 100</a></td>
+            <td>Math elective</td>
+        </tr>
+        <tr>
+            <td>Econ elective</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td rowspan="3">
+            <p /><strong>4th (senior)</strong></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100A'>ECON 100A</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-113'>ECON 113</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100B'>ECON 100B</a></td>
+        </tr>
+        <tr>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-105A'>MATH 105A</a></td>
+            <td>Econ elective</td>
+            <td>Math elective</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>Math elective</td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-197'>ECON 197</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-104'>ECON 104</a></td>
+        </tr>
+    </tbody>
+</table>
+<p>*If <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-23A'>MATH 23A</a> is taken in the winter term, otherwise <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100A'>ECON 100A</a></p>
+<p>This planner assumes that a student has completed all general education requirements in addition to the following major requirements: <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Lower-Division/ECON-1'>ECON 1</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Lower-Division/ECON-2'>ECON 2</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19A'>MATH 19A</a> and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/STAT-Statistics/Lower-Division/STAT-5'>STAT 5</a>.</p>
+<p><strong>Sample Transfer Planner Two</strong></p>
+<table>
+    <tbody>
+        <tr>
+            <td>&nbsp;</td>
+            <td><strong>Fall</strong></td>
+            <td><strong>Winter</strong></td>
+            <td><strong>Spring</strong></td>
+        </tr>
+        <tr>
+            <td rowspan="3"><strong>3rd (junior)</strong></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100A'>ECON 100A</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-100B'>ECON 100B</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-113'>ECON 113</a></td>
+        </tr>
+        <tr>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-23B'>MATH 23B</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-21'>MATH 21</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-100'>MATH 100</a></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td rowspan="3"><strong>4th (senior)</strong></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Upper-Division/MATH-105A'>MATH 105A</a></td>
+            <td>Econ elective&nbsp;</td>
+            <td>Econ elective&nbsp;</td>
+        </tr>
+        <tr>
+            <td>Math elective</td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-197'>ECON 197</a> or <br />
+            <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-104'>ECON 104</a></td>
+            <td>Math elective&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>Math elective &nbsp;</td>
+            <td>Field Study (optional)</td>
+        </tr>
+    </tbody>
+</table>
+<p>This planner assumes that the student has completed most general education requirements in addition to the following major requirements: <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Lower-Division/ECON-1'>ECON 1</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ECON-Economics/Lower-Division/ECON-2'>ECON 2</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19A'>MATH 19A</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19B'>MATH 19B</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-23A'>MATH 23A</a> and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/STAT-Statistics/Lower-Division/STAT-5'>STAT 5</a>.</p><table>
+
+		</table>
+	</div>
+</div>
+							</div><!-- end main -->
+						</div><!--end of rightpanel-->
+						<div style="clear: both;"></div>
+					</div><!--end of middle-->
+					
+					<!-- Footer -->
+					<div id="footer">
+					<!--FOOTER LINKS AND IMAGES CAN GO HERE-->
+						<div class="main-footer">
+<a id="goTop"></a>
+          <div class="row" id="footer">
+              <div class="footer-left">
+                  <img alt="UCSC Seal" class="seal" height="84" src="https://static.ucsc.edu/_responsive/images/logos/uc-seal.svg" width="84">
+<div class="address home">
+<div class="location">UC Santa Cruz, 1156 High Street, Santa Cruz, Ca 95064</div>
+<div class="copyright">&copy;2020 Regents of the University of California. All Rights Reserved.</div>
+</div>
+              </div>
+<div class="footer-right">
+                  
+
+<div class="social-media">
+            
+        
+        <a href="https://www.twitter.com/ucsc"><svg aria-label="Follow us on Twitter" class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg><!-- <i aria-label="Follow us on Twitter" class="fab fa-twitter"></i> --></a>
+            
+        
+        <a href="https://www.instagram.com/ucsc"><svg aria-label="Follow us on Instagram" class="svg-inline--fa fa-instagram fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><!-- <i aria-label="Follow us on Instagram" class="fab fa-instagram"></i> --></a>
+            
+        
+        <a href="https://www.facebook.com/ucsantacruz"><svg aria-label="Follow us on Facebook" class="svg-inline--fa fa-facebook-f fa-w-9" aria-hidden="true" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512" data-fa-i2svg=""><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path></svg><!-- <i aria-label="Follow us on Facebook" class="fab fa-facebook-f"></i> --></a>
+            
+        
+        <a href="http://youtube.com/ucsantacruz"><svg aria-label="Follow us on YouTube" class="svg-inline--fa fa-youtube fa-w-18" aria-hidden="true" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg><!-- <i aria-label="Follow us on YouTube" class="fab fa-youtube"></i> --></a>
+            
+        
+        <a href="http://www.linkedin.com/school/ucsc/"><svg aria-label="Follow us on LinkedIn" class="svg-inline--fa fa-linkedin-in fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z"></path></svg><!-- <i aria-label="Follow us on LinkedIn" class="fab fa-linkedin-in"></i> --></a>
+    </div>
+
+<div class="links">
+            
+                            
+        <a href="https://www.ucsc.edu/feedback/index.html">Feedback</a> 
+    </div>
+
+              </div>
+          </div>
+          <div class="sub-footer row">
+<div class="legal">
+                <ul class="legal">
+<li><a href="https://academicaffairs.ucsc.edu/accreditation/">Accreditation</a></li>
+<li><a href="https://diversity.ucsc.edu/eeo-aa/images/non-discrimination-policy.pdf">Non-Discrimination&nbsp;Policy</a></li>
+<li><a href="land-acknowledgement/index.html">Land Acknowledgement</a></li>
+<li><a href="https://www.ucsc.edu/about/employment.html">Employment</a></li>
+<li><a href="https://its.ucsc.edu/terms/">Privacy&nbsp;Policy&nbsp;&amp;&nbsp;Terms&nbsp;of&nbsp;Use</a></li>
+<li><a href="https://titleix.ucsc.edu/index.html">Sexual Violence Prevention &amp; Response (Title IX)</a></li>
+</ul>
+                
+<p class="page-meta">
+    Last modified: September 22, 2020  <span class="check-ip">128.114.113.74</span>
+</p>
+              </div>
+          </div>   
+        </div>
+					</div><!--end of footer-->
+					
+				</div><!--end of pagwrapper2 -->
+			</div><!--end of pagewrapper1-->
+			</div><!--end of wrap-->
+		
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZF-IhmpGy1TANyacnbq7Lyk973c9ilWmqlgroX0B_F5tMTeNK0D7KOmfpAeG5gd80A2&amp;t=637460801481343508" type="text/javascript"></script>
+</form>
+		<script src="https://static.ucsc.edu/_responsive/lib/modernizr/modernizr.js" type="text/javascript"></script>
+		<script src="https://static.ucsc.edu/_responsive/lib/jquery/dist/jquery.js" type="text/javascript"></script>
+		<script async="async" src="https://static.ucsc.edu/_responsive/js/main.js?t=20180409144600" type="text/javascript"></script>
+		<script type="text/javascript" src="/scripts/firefoxAnchorFix.js"></script>
+	</body>
+</html>

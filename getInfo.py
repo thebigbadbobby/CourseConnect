@@ -1,0 +1,1 @@
+def getClassInfo(string)

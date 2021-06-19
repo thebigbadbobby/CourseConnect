@@ -1,0 +1,942 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head><title>
+	UCSC General Catalog - Chemistry B.A.
+</title><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-8e849bdf63c6884f6ef","applicationID":"1359705662","transactionName":"Y1NQZhdQC0cHU0ZfCVoZc2E1HglVH19HQhUbWlNLCkQRR0lFXF8QUURBWxFIRVsAEFFXCl1QXUALWAQUFVFcQgcUVUBHHx4WVQhEU1UUQUxBRgRfAVUUVEJXAVEYU0EVSQ==","queueTime":0,"applicationTime":258,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"1359996610",accountID:"3058884",trustKey:"3028485",xpid:"VwYCWV5bDBABV1RbAAECUFID",licenseKey:"NRJS-8e849bdf63c6884f6ef",applicationID:"1359705662"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(29),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{p?p-=1:o(c||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:s.now();i("err",[t,n])}var i=t("handle"),a=t(30),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError";if(!s.disabled){var p=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),s.xhrWrappable&&t(14),d=!0)}c.on("fn-start",function(t,e,n){d&&(p+=1)}),c.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,o(n))}),c.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){L++,T=g.hash,this[u]=y.now()}function o(){L--,g.hash!==T&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var c="-start",s="-end",f="-body",u="fn"+c,d="fn"+s,l="cb"+c,p="cb"+s,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable&&!y.disabled){var x=t(10),b=t(11),E=t(8),R=t(6),O=t(13),N=t(7),M=t(14),P=t(9),C=t("ee"),S=C.get("tracer");t(16),y.features.spa=!0;var T,L=0;C.on(u,r),b.on(l,r),P.on(l,r),C.on(d,o),b.on(p,o),P.on(p,o),C.buffer([u,d,"xhr-done","xhr-resolved"]),R.buffer([u]),O.buffer(["setTimeout"+s,"clearTimeout"+c,u]),M.buffer([u,"new-xhr","send-xhr"+c]),N.buffer([m+c,m+"-done",m+f+c,m+f+s]),E.buffer(["newURL"]),x.buffer([u]),b.buffer(["propagate",l,p,"executor-err","resolve"+c]),S.buffer([u,"no-"+u]),P.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(M,"send-xhr"+c),a(C,"xhr-resolved"),a(C,"xhr-done"),a(N,m+c),a(N,m+"-done"),a(P,"new-jsonp"),a(P,"jsonp-end"),a(P,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,L>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),c=t(12),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,v="fn"+h,w="bstTimer",g="pushState",y=t("loader");if(!y.disabled){y.features.stn=!0,t(8),"addEventListener"in window&&t(6);var x=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),o.on(v,function(t,e){var n=t[0];n instanceof x&&i("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),this.bstType])}),c.on(m,function(){this.bstStart=y.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t("wrap-function")(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var c=r.apply(this,t);return o.emit(n+"start",[t,a],c),c.then(function(t){return o.emit(n+"end",[null,t],c),t},function(t){throw o.emit(n+"end",[t],c),t})})}var o=t("ee").get("fetch"),i=t(30),a=t(29);e.exports=o;var c=window,s="fetch-",f=s+"body-",u=["arrayBuffer","blob","json","text","formData"],d=c.Request,l=c.Response,p=c.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(c,"fetch",s),o.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(s+"done",[null,e],n)}else o.emit(s+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t("wrap-function")(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){s.emit("jsonp-end",[],l),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){s.emit("jsonp-error",[],l),s.emit("jsonp-end",[],l),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=c(a),d="function"==typeof u.parent[u.key];if(d){var l={};f.inPlace(u.parent,[u.key],"cb-",l),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),s.emit("new-jsonp",[t.src],l)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(l),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function c(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var s=t("ee").get("jsonp"),f=t("wrap-function")(s);if(e.exports=s,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,l=/^(\w+)(\.|$)(.*)$/,p=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?f.inPlace(Node.prototype,p,"dom-"):(f.inPlace(HTMLElement.prototype,p,"dom-"),f.inPlace(HTMLHeadElement.prototype,p,"dom-"),f.inPlace(HTMLBodyElement.prototype,p,"dom-")),s.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t("wrap-function")(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=i.context(),n=c(t,"executor-",e,null,!1),r=new f(n);return i.context(r).getCtx=function(){return e},r}var o=t("wrap-function"),i=t("ee").get("promise"),a=t("ee").getOrSetContext,c=o(i),s=t(29),f=NREUM.o.PR;e.exports=i,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){i.emit("propagate",[null,!o],a,!1,!1),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var a=e.apply(f,arguments),c=f.resolve(a);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&i.emit("propagate",[t,!0],n,!1,!1),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),o.wrapInPlace(f.prototype,"then",function(t){return function(){var e=this,n=o.argsToArray.apply(this,arguments),r=a(e);r.promise=e,n[0]=c(n[0],"cb-",r,null,!1),n[1]=c(n[1],"cb-",r,null,!1);var s=t.apply(this,n);return r.nextPromise=s,i.emit("propagate",[e,!0],s,!1,!1),s}}),i.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this,null,!1),t[1]=c(t[1],"resolve-",this,null,!1)}),i.on("executor-err",function(t,e,n){t[1](n)}),i.on("cb-end",function(t,e,n){i.emit("propagate",[n,!0],this.nextPromise,!1,!1)}),i.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=i.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",c)}function i(t){y.push(t),h&&(b?b.then(a):v?v(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,w="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){if(!c(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||s(t)&&l())&&(w.traceContextParentHeader=o(h,m),w.traceContextStateHeader=i(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&s(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function o(t,e){return"00-"+e+"-"+t+"-01"}function i(t,e,n,r,o){var i=0,a="",c=1,s="",f="";return o+"@nr="+i+"-"+c+"-"+n+"-"+r+"-"+t+"-"+a+"-"+s+"-"+f+"-"+e}function a(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var c={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(c.d.tk=i),btoa(JSON.stringify(c))}function c(t){return f()&&s(t)}function s(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var o=h(n.allowed_origins[r]);if(t.hostname===o.hostname&&t.protocol===o.protocol&&t.port===o.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(26),h=t(17);e.exports={generateTracePayload:r,shouldGenerateTrace:c}},{}],16:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function o(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=s(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var c=t("handle"),s=t(17),f=t(15).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(22),m=t(21),v=t(18),w=window.XMLHttpRequest;a.features.xhr=!0,t(14),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){i(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<l;c++)e.addEventListener(d[c],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof w&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=s(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var o=f(this.parsedOrigin);if(o&&(o.newrelicHeader||o.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),e(i.headers,o)&&(this.dt=o),t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&e(t[0].headers,o)&&(this.dt=o)})}},{}],17:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,c=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||c),"/"===o.pathname&&(r[t]=o),o}},{}],18:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(21);e.exports=r},{}],19:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(29),c=t(30),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=o(l+e,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[f.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(p+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],20:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],21:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],22:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],23:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-a}function o(){return i}var i=(new Date).getTime(),a=i,c=t(31);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=o},{}],24:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],25:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function i(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!v){var e=Math.round(t.timeStamp),n={type:t.type};e<=l.now()?n.fid=l.now()-e:e>l.offset&&e<=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),v=!0,d("timing",["fi",e,n])}}function c(t){d("pageHide",[l.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var s,f,u,d=t("handle"),l=t("loader"),p=t(28),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(m){}f=new PerformanceObserver(o);try{f.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}u=new PerformanceObserver(i);try{u.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var v=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(t){document.addEventListener(t,a,!1)})}p(c)}},{}],26:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<i.length;c++)o=i[c],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){return a(16)}function i(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,o=window.crypto||window.msCrypto;o&&o.getRandomValues&&Uint8Array&&(n=o.getRandomValues(new Uint8Array(31)));for(var i=[],a=0;a<t;a++)i.push(e().toString(16));return i.join("")}e.exports={generateUuid:r,generateSpanId:o,generateTraceId:i}},{}],27:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,s=c.match(a);s&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(o="Safari",i=s[1])}e.exports={agent:o,version:i,match:r}},{}],28:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[o]?"hidden":"visible")}"addEventListener"in document&&i&&document.addEventListener(i,e,!1)}e.exports=r;var o,i,a;"undefined"!=typeof document.hidden?(o="hidden",i="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",i="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",i="webkitvisibilitychange",a="webkitVisibilityState")},{}],29:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],30:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],31:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?f(t,s,a):a()}function n(n,r,o,i,a){if(a!==!1&&(a=!0),!p.aborted||i){t&&a&&t(n,r,o);for(var c=e(o),s=m(n),f=s.length,u=0;u<f;u++)s[u].apply(c,r);var l=d[y[n]];return l&&l.push([x,n,r,c]),c}}function i(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return l[t]=l[t]||o(n)}function w(t,e){p.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:i,addEventListener:i,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:c,aborted:!1};return x}function i(t){return f(t,s,a)}function a(){return new r}function c(){(d.api||d.feature)&&(p.aborted=!0,d=p.backlog={})}var s="nr@context",f=t("gos"),u=t(29),d={},l={},p=e.exports=o();e.exports.getOrSetContext=i,p.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!N++){var t=O.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(E,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+O.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=p+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function o(){"complete"===m.readyState&&i()}function i(){c("mark",["domContent",a()+O.offset],null,"api")}var a=t(23),c=t("handle"),s=t(29),f=t("ee"),u=t(27),d=t(24),l=t(20),p=l.getConfiguration("ssl")===!1?"http":"https",h=window,m=h.document,v="addEventListener",w="attachEvent",g=h.XMLHttpRequest,y=g&&g.prototype,x=!d(h.location);NREUM.o={ST:setTimeout,SI:h.setImmediate,CT:clearTimeout,XHR:g,REQ:h.Request,EV:h.Event,PR:h.Promise,MO:h.MutationObserver};var b=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1209.min.js"},R=g&&y&&y[v]&&!/CriOS/.test(navigator.userAgent),O=e.exports={offset:a.getLastTimestamp(),now:a,origin:b,features:{},xhrWrappable:R,userAgent:u,disabled:x};if(!x){t(19),t(25),m[v]?(m[v]("DOMContentLoaded",i,!1),h[v]("load",r,!1)):(m[w]("onreadystatechange",o),h[w]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var N=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,s,f){function nrWrapper(){var i,a,u,l;try{a=this,i=d(arguments),u="function"==typeof r?r(i,a):r||{}}catch(p){o([p,"",[i,a,s],u],t)}c(n+"start",[i,a,s],u,f);try{return l=e.apply(a,i)}catch(h){throw c(n+"err",[i,a,h],u,f),h}finally{c(n+"end",[i,a,l],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[l]=e,i(e,nrWrapper,t),nrWrapper)}function r(t,e,r,o,i){r||(r="");var c,s,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)s=e[f],c=t[s],a(c)||(t[s]=n(c,u?s+r:r,o,s,i))}function c(n,r,i,a){if(!h||e){var c=h;h=!0;try{t.emit(n,r,i,e,a)}catch(s){o([s,n,r,i],t)}h=c}}return t||(t=u),n.inPlace=r,n.flag=l,n}function o(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function i(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(i){o([i],n)}for(var a in t)p.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[l])}function c(t,e){var n=e(t);return n[l]=t,i(t,n,u),n}function s(t,e,n){var r=t[e];t[e]=c(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(30),l="nr@original",p=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=s,e.exports.argsToArray=f},{}]},{},["loader",2,16,5,3,4]);</script><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no" /><meta http-equiv="cleartype" content="on" /><link rel="shortcut icon" href="/Institutions/University-of-California-Santa-Cruz/images/favicon.ico" /><link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /><link href="/Institutions/University-of-California-Santa-Cruz/styles/ucsc.css" rel="stylesheet" type="text/css" /><link href="/Institutions/University-of-California-Santa-Cruz/styles/UCSCCustom.css" rel="stylesheet" type="text/css" /><link href="/Institutions/University-of-California-Santa-Cruz/styles/print.css" rel="stylesheet" type="text/css" media="print" />
+	 
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
+	 
+	 <script type="text/javascript" src="/Institutions/University-of-California-Santa-Cruz/scripts/treeList.js"></script>
+	 <script type="text/javascript" src="/Institutions/University-of-California-Santa-Cruz/scripts/coursepopup.js"></script>
+	 <script type="text/javascript" src="/Institutions/University-of-California-Santa-Cruz/scripts/newscript.js"></script>
+     <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/smoothness/jquery-ui.css" rel="Stylesheet" type="text/css" /><script type='text/javascript'> 
+                                                (function ($) {
+                                                    $(document).ready(
+                                                        function () {
+                                                            var tabList = "<ul><li><a href='#degree-req-1'>Information and Policies</a></li><li><a href='#degree-req-2'>Requirements and Planners</a></li></ul>";
+                                                            $(tabList).insertBefore("#degree-req-1");
+                                                            
+                                                            const queryString = window.location.search;
+                                                            const urlParams = new URLSearchParams(queryString);
+                                                            if (urlParams.has('tab') && !isNaN(urlParams.get('tab')))
+                                                            {
+                                                                $("#degree-req").tabs();
+                                                                var url = '#degree-req-'.concat(urlParams.get('tab'));
+                                                                var element = $('a[href="'+url+'"]')[0];
+                                                                element.click();
+                                                            }
+                                                            else
+                                                            {
+                                                                $("#degree-req").tabs();
+                                                            }
+                                                            
+                                                            function scrollToAnchor(anchorName){
+                                                                var aTag = $("a[name='"+ anchorName +"']");
+                                                                $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+                                                            }
+
+                                                            if(urlParams.has('anchor'))
+                                                            {
+                                                                scrollToAnchor(urlParams.get('anchor'));
+                                                            }
+                                                        });
+                                                    })(jQuery);
+                                                </script>;
+	
+	<!-- Google Tag Manager -->
+
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5RFHNC"
+
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+	<script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+
+        })(window, document, 'script', 'dataLayer', 'GTM-5RFHNC');</script>
+
+	<!-- End Google Tag Manager -->
+	 
+
+</head>
+
+<body class="home www js" >
+	<div id="skiptocontent1"><a id="skip_link" class="skiplink" href="#middle">Skip to main content</a></div>
+		<form method="post" action="/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Chemistry-and-Biochemistry/Chemistry-BA" id="Form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="mcxG0DAtTg4G7/Pf+dqRakiKNBHcuihuNYTHTbnYlRYLsqKteM6tECrhOKx9LPxI0DgdU2YI8UPpFJkkm2Zj3YT0T3gEt++upMxFGVS3pAGc9qZrfDl/wT2K8uF7MQ7GU/4i2Z8a3dLSc9CnrK+0+hWMxSgFjkccx7O5vOfhXDnPPv+aqSWJjHQYdLJhW0fliBG7F0MubwGXDw2OOxqJNJDkM5nUuzzg2jY2TtNyhm+Yej/rCeQ5y7hF9Ne4WUjQ4JkLHC3z4n583hlAZ1UN7gbhkbMZ9AiZpyW+P9qgTYcI8LL4nUe2VESxkPIXsCgimWQv8oH4+NZPpXga9vx5btjJq46UYrlG23p9d8k037KPMIbzdHVeE7Nb4ia17xGr2OUzwVh+De0JhYrs/yqTz+4MuvO9zrY/uHH97uYGDIEWwXatY7hjPzDlqgTpC7iTpWV7+CYPqJUx3cZgHIjUZe0FrjKRMI9s91STfjbNp/RGnoZxsXJSMHaeVqJavW273ijW3aVmw3PbvDjG5MTP4MtmONw+p1+bgUPoADt+kEnJUwh03hpTzEv3nOWfzv74bTIceGHEokO/Flg7CnungpORNgZONbg16xqMPxU5snkUtOB3/8PE9oTZQQYAgL/O6Bp4DxlWesnJTU9McbziOKu1ZK3sLArLXCT6iBtCaicry0pqvOApeD2T21JtqTu/xcG6ukHkav+diS4RE3pUH1vR01pXUN15GTLDp52emOhWGVeypQqcQZNKuWEDVB09OFpVCjCYW7//RjepWE0pnCW/WwVvRgfOlBPa3bS2dOsp+bTmrK+lkQEp4Ng7bCRAq9b7A1wrTLqaw468Ar+dCL0rZcBYMKXp59z3IYL5b3ewbjISNHfo3+M0vc5Gol2G+OvOZx9iyfwB6+EbCRssoETekp+U1ttTZBmZm63sjA4cVfe5YunrK5Cv/K1UtGOlj2H/JmYXZsv4jqw076HzgCnb68grKhekBhjf9zELLzaavYEGhVxmzefg3+Xowkh1XI14Ro858owLQBrGXfvZsXL0WPglE5Cxx2vMgi1TP3yP+T5mut29FgCaxosNhLG6EQRMcWO4CpvJl2J4ulP2Vp998gUsO8uhSjQGzWuhQY/ZfvZut7wyh+3skTeY3jH5s2R+f8RM+X4eqyHCxHp83+sC2uMntxMrWWgEpkkjS6N5ndSoRDdMYpjmguDayrnKErdnVNc3W/p3ac61QnBCcBhk59QrDU2DsSmBfBcJLYJdG7dtppkev78CYL9Iy4UJVzVMqoxyzbYIqpKuD6yMPKI9RejD/7/GPmLFc3oquRYM+cWiJKsK2+jEP2LnbjdIV1im2l+LEUr8bl+MvpgI5p8kg3SRyIvpm5Dhldq40Now6tzX1Y+cmdoVOEsJIejFOAezCcwbcFjHjT3wZTtOuf5ZiIVlI1KqT/nNsJuvxm4Tsw8GTEKLQQLHr23J3v0BZvIdhQeXJi7mviDvr0gIQ85883rE5i/M/prR4NlXxhiUZhxSy5zYyUPlv2olqv2fvd8+vNtl/hnpgkIcgRC+GT6ijiJrD0dGh/h1sV1ZyhdpGIH768fjcqpUtliDzKaa3jgT+fEDuvepPDcwyA/2cRdHePeTtHnHxtTfQxHK8EYdnQc1x+O1VxgQnfauVvstCMDVznonmWm4WGDBjxGgED+ITN8wZxoJxNQ5l8fCkDYZr7MF0McfU6sJuNJ70rV/vmv6QXMwiuGoBk/HcNTsFyFxIwoZLu40tymweoi9utzebdTdCpyM8eNtCoT6vkdxnqjywMirdmxLv+Cru/HuyM503hvadTR49ZrpHWHO6/pCqv2rdsehrTaOtYd1fgFeUhgUiAnwoMzxce5Hl6PCL2uQyezciI/GRh5mvmVaqva9O8hqvRzxZsf8rqcTmS4+nDdxSLit8Km/urx7IG34nUi0IO1mYd7VIltmMVXRatj8PhxcBxYFOBpvPgb/vIOtQtLPYcFaheZbiExdD5fYOEGBMreLhRigRrs/3C5C01baq9mLKaTUHG2x2Ld2/6bqpTdSDdrkfeA/j/4aCfxbNtjnEWTuEcvvKI89STLCZEvEb965XnFDwkXQGCAY3In0Xys+mBOBnmJH4UTu3FhVISmG8CNo5YS+jSvKYOZwooSoJKQLxXGtzptfyKgKuNCffd+rHcEZTj/dWennW+DSJP31rtiVO5WWjI35etKSTuVU+q8UZM5elXtzqKSXX+/X+Jr2gJ/+QO/WrkBR9BqD+2jf0eCFMQG47rrIFZ/7MCq9W1NjwZ2ur8pavqWTImPiybuOJtCyjvzEuW6mYwEcJs610Z80qOMsM5Gszd9fT6t8dU68hoB8i7oNkZ3AYLBaOgdEDgXafJcog8q6BkXb6v1jktxBIKXBCCfp3PVDAXKoZNj85bQraTX+Ms6emTzuX0Zq8unPsev2XSpKL0ddXLEGq+hkWZNZXouGGLmWAOYSvbgjpWxXmxRbgGu/hp8wiebJPMNLE7C9yumfZ/ZlgdAzjGdr1WxZco9K5GT4asN52s5WalRruLxoN9oFwf4n5gKjdTVYOSTuxqwrCjT4no0jGMUpYK2ykEK+91ufrHqBLCshrzDOOi6vMiP2y2MNFqXA+q4gAqWPtLRxjoE/JSoyatPUVuofYjpP5aKQZ9xEHlJGnj5Ebo2vkxSKRlzuQWk3S9jJDPHtynef2hlvJSRyeo7vonrWjHzUP3mBO1biFJc1bBxj78NkBp5paJweAICFeeph74pfHbxfhJ5G57YxRUaZtUJCEQXp9S8qSUbCPET/K0YRkVVZp1mHC3QteSxuTVdJB4wKQfIghpMUXmfSmQEWy+8lxYHheYa/j9nCIjk3t/d40Jn9j9u7DYNDEbKPCpKRCCb1skvNkCKCTkusBqb1MdNs5Z82a/3czKfCyx69qQxjY0wU7clSsYEKehhqKeWAUHTl2TP8yfg83m9cuIiJUzlgccHmbE6V6qwKrQUV3mvrjl8xm1YUG+QAlRgwIcD31p8BeOWb1qADMmn6ZDHWVHjMvDFIbvmwM5e1nBrlcAHEHaYgKPGLxXexzF2YE6rFneO6CpP/rAi9N9iq5BkO7FNa2G5yXWyZR8CPjgyKPP1GjfyuHbR2iJkj5wWWznxljVFTav0CClag8Yw58NUzK5tC074AGpHJAI3U3HqnNGQnYH2ZNA98dIBmj5D3Mo0ypS+oBgj1aQZRpez+RzUJzhZ10iCIGI4rNWvdWe0gdxhA9ApTx1Lh7sLRQzk6dROHxzEDIbys6JrDRgG0OZV2uv5Vei8lXBm0sOIzd3QzMIuSGB0o5LXkRojuAnZ04mYsJx0PWRh3mrXi6ODmL+veDN9xgX5+ODNaQttUUPTxk9UyRqhn7DUq7cJbqb000IIHV49yZv4pDKt3PGBd6ETW7aGYYywB3tf79MJMaWmhzpPMvePI2RMRCYg+cJcFmvv2+o7h4aNzIUiR/JZoNOwCC71Wtt9HEZxsi559fw+00FsCkJYDNan4X4KhbFuqWB3yTqz4BdLVU5Gyf3S8722bbSSbD7v8fQ9nL7nG2zUNEd49nKdr7lt7mRM1uOc9U9gqwRQEVgLDM0p7hYYl4ZaUNFwwWd5AR1FwQCXMYTpWvlIIOBLW/6nUdf77Hm75wilxz7hwGM2dSRuXm4llZW5o+wI5qQL2tKAL1sc2eXgpB/rMy9rKvNzOkf/BSxEjk6MtAkGf4Xt3KV74qXeym6b8JSFvwhBFsg803Bh9KioB/GA8sZrgFEDhWlpQYpRiT7HgLhXKcjmMBi1G3xDk14KpnpchSZdzI+4xC7GMdiRcztxiGkQCvPo7sKZbkC44wERhXTCXwkcJRR9/Uk/eUN/vnGyxHy5ZEmlqPiwdwbErCq/ni3C+XJtYE3kATl4cR8a+aBN3nI9n/Cr8xCEJocOqwcKEm7Exsb1w48xPo9XGGWaogI9MBi/TuPM0dvu5vu9UbgBvZ9CyEXhb/rEn/WA/hyJv5lZ60IU3Qjb3pGAJS6fS/mhEvcrTdJNjl+j5POx2LQQ6eyg76QxyXBzqlQShIUrtrdZdZXTkxsLs8lBbbIVW5uU5cQlbNmQB6Z7Gt6PzoG0N+pArA5J+UD59bkCT4QUjTvVeGzeP8zUgqQXJoUZGjroHXA+tcpLjReit9vL0x2eXhvF3RNocvA==" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="845114C5" />
+	<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+	<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="h01ykTSu7hG5UFSf953q4HvKruYPmVvqy/oREGAXg/srWgd4TI/wh8u9CcjMHtmgYWjtxO61pExMD0QADTvfRHCwjcd1mlq0WqVzUdkL+x5smNQZ27eWgHKueM6vi5et7ObRLXkZKa5onnjc8ANdZMXK2vPhyfN+s2ul8VV97MSVQAwP9o/nkm95LqlDCv2+sFl011dgxFEe8x7dExIqbsR0qEuCsC8gKM5gZKP+snkBLAMwUyv5Lod7JyNckiei+UVgS59oba9QLrKfgQyvxQ==" />
+</div>
+			<div id="wrap">
+			<div id="pagewrapper1">
+				<div id="pagewrapper2">
+					<div id="banner">
+					<!--LOGO AND HEADER LINKS CAN GO HERE-->
+					  <div class="page-top">
+      <div class="row">
+
+        <div class="page-top-left">
+          <a class="campus-secondary" href="https://www.ucsc.edu/index.html" id="logo">UC Santa Cruz</a>
+        </div>
+
+        <div class="page-top-right">
+          <ul id="topNav">
+<li><a href="https://my.ucsc.edu" title="The student portal">MyUCSC</a></li>
+<li><a href="https://www.ucsc.edu/tools/people.html" title="Campus directory">People</a></li>
+<li><a href="https://www.ucsc.edu/tools/calendars.html" title="Upcoming events, academic, and administrative calendars">Calendars</a></li>
+<li><a href="https://www.ucsc.edu/visit/maps-directions.html">Maps</a></li>
+<li><a href="https://www.ucsc.edu/tools/azindex.html" title="A to Z index of UCSC websites">A-Z Index</a></li>
+</ul>
+        </div>
+
+      </div>
+    </div>
+						 
+						    <!-- Begin Page Banner -->
+                          
+					</div><!-- end banner --> 
+					<div id="middle">			
+						<!--LEFT NAV-->
+						<div id="leftpanel">
+
+                      <div id="searchtoggle">	</div>				
+					  <div id="leftcolumn_0_Panel1" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;leftcolumn_0_btnSubmit&#39;)">
+	
+    <div class="sidebox">
+	    <div class="hdr">
+            <label for="leftcolumn_0_txtBxTerm" id="leftcolumn_0_searchTextLabel">Catalog Search</label>
+	    </div>
+
+	    <div class="sideboxbrdr">
+            <input name="leftcolumn_0$txtBxTerm" type="text" id="leftcolumn_0_txtBxTerm" />
+            <div style="text-indent: -999em;">
+            <label for="leftcolumn_0_drpSearchType" id="leftcolumn_0_filterLabel"></label>
+            </div>
+            <select name="leftcolumn_0$drpSearchType" id="leftcolumn_0_drpSearchType">
+		<option selected="selected" value="">Entire Catalog</option>
+		<option value="programs">Programs</option>
+		<option value="courses">Courses</option>
+
+	</select>
+
+            <input type="submit" name="leftcolumn_0$btnSubmit" value="Search" id="leftcolumn_0_btnSubmit" />
+	    </div>
+    </div> 
+
+</div><div class="sidebox">
+	<div class="hdr">
+		Contents
+	</div>
+</div>
+						 <div class="toc">
+							<ul id="navLocal" class="navLocal">
+	<li><a href="/en/Current/General-Catalog/Welcome-to-UC-Santa-Cruz">Welcome to UC Santa Cruz</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Introducing-UC-Santa-Cruz">Introducing UC Santa Cruz</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Programs">Academic Programs</a></li><li class="hasChildren active"><a href="/en/Current/General-Catalog/Academic-Units">Academic Units</a><ul>
+		<li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Arts-Division">Arts Division</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division">Humanities Division</a></li><li class="hasChildren active"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division">Physical and Biological Sciences Division</a><ul>
+			<li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Astronomy-and-Astrophysics">Astronomy and Astrophysics</a></li><li class="hasChildren active"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Chemistry-and-Biochemistry">Chemistry and Biochemistry</a><ul>
+				<li class=" active"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Chemistry-and-Biochemistry/Chemistry-BA">Chemistry B.A.</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Chemistry-and-Biochemistry/Chemistry-BS">Chemistry B.S.</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Chemistry-and-Biochemistry/Biochemistry-and-Molecular-Biology-BS">Biochemistry and Molecular Biology B.S.</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Chemistry-and-Biochemistry/Chemistry-Minor">Chemistry Minor</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Chemistry-and-Biochemistry/Chemistry-MS">Chemistry M.S.</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Chemistry-and-Biochemistry/Chemistry-PhD">Chemistry Ph.D.</a></li>
+			</ul></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Coastal-Science-and-Policy">Coastal Science and Policy</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Earth-and-Planetary-Sciences">Earth and Planetary Sciences</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Ecology-and-Evolutionary-Biology">Ecology and Evolutionary Biology</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Mathematics">Mathematics</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Microbiology-and-Environmental-Toxicology">Microbiology and Environmental Toxicology</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Molecular-Cell-and-Developmental-Biology">Molecular, Cell, and Developmental Biology</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Ocean-Sciences">Ocean Sciences</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Physics">Physics</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Science-Communication">Science Communication</a></li>
+		</ul></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Baskin-School-of-Engineering">Baskin School of Engineering</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division">Social Sciences Division</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/The-Colleges">The Colleges</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Physical-Education">Physical Education</a></li>
+	</ul></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Courses">Courses</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Undergraduate-Information">Undergraduate Information</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Graduate-Information">Graduate Information</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Resources-Residency-and-Policies">Resources, Residency, and Policies</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Teaching-and-Administrative-Staff">Teaching and Administrative Staff</a></li><li><a href="/en/Current/General-Catalog/Academic-Calendar">Academic Calendar</a></li><li><a href="/en/Current/General-Catalog/Catalogs-Prior-to-2019-20">Catalogs Prior to 2019-20</a></li>
+</ul>
+					           <div class="sidebox">
+									<div class="sidebox">
+	<div class="hdr">
+		Catalog Links
+	</div><div class="sideboxbrdr">
+		<ul>
+			<li><a href="/en/Current/General-Catalog">Catalog Home</a></li><li><a href="/en">All Catalogs</a></li>
+		</ul>
+	</div>
+</div>
+								</div><!-- end of sidebox -->
+								<div class="sidebox">
+	<div class="hdr">
+		Share
+	</div><div class="sideboxbrdr">
+		<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_facebook">Share this page on Facebook</a>
+<a class="addthis_button_twitter">Share this page on Twitter</a>
+<a class="addthis_button_email">Email this page</a>
+<a class="addthis_button_print">Print this page</a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+<script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4db17d15194e924f"></script>
+<!-- AddThis Button END -->
+	</div>
+</div>
+							</div><!-- end of TOC -->
+						</div><!--end of leftpanel-->
+						<!-- Main content area -->
+						<div id="rightpanel">
+							<div id="sc-rightpanel-top">
+								<div id="sc-top-links">
+										<span class="print">
+											<a href="javascript:window.print()" title="Print this Page"><span class="printLabel">Print this page</span></a>
+										</span>
+									
+
+<div id="catalog-dropdown">
+    <span id="catalogdropdown_0_Label1"></span>
+
+	<div style="font-size: x-small;">
+		<div style="text-indent: -999em; line-height: 1px; color:#EFEFEF;">
+            <label for="catalogdropdown_0_DropDownList1">Select a Catalog</label>
+		</div>
+		<select name="catalogdropdown_0$DropDownList1" id="catalogdropdown_0_DropDownList1">
+	<option selected="selected" value="{99FCED38-D22F-4053-805D-64F15C2ECDB8}">2020-21 UCSC General Catalog</option>
+	<option value="{1A63CDDE-8554-4CA1-8DAC-3A8014DCE824}">2019-20 UCSC General Catalog</option>
+
+</select>
+		<input type="submit" name="catalogdropdown_0$Button1" value="Select" id="catalogdropdown_0_Button1" style="border-style:Outset;" />
+	</div>
+</div>
+<br />
+
+
+
+
+								</div><!--end of sc-top-links-->
+							</div><!--end sc-rightpanel-top-->
+							<div id="main">
+							<div id="breadcrumb">
+								<p id="breadcrumbs"><a href="/en/Current/General-Catalog">2020-21 UCSC General Catalog</a> &gt; <a href="/en/Current/General-Catalog/Academic-Units">Academic Units</a> &gt; <a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division">Physical and Biological Sciences Division</a> &gt; <a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Chemistry-and-Biochemistry">Chemistry and Biochemistry</a> &gt; Chemistry B.A.</p>
+							</div><!-- end of breadcrumb -->
+								<h1>
+	Chemistry B.A.
+</h1><div id="degree-req">
+	<div id="degree-req-1">
+		<h2>
+			Information and Policies
+		</h2><p>The requirements for the bachelor of arts (B.A.) in chemistry have been kept to a minimum so that students may tailor their program to their own purposes, for example, to pursue a double major, to complete major requirements late in their college career, or to concentrate on a specific branch of chemistry. The minimum requirements (including prerequisites) constitute 54 percent of a student&rsquo;s total undergraduate program; consequently, there is ample time to explore and discover other interests within the university. To plan wisely, students are advised to refer to each course description for a detailed listing of prerequisites. Students who decide they want a professional career in chemistry are advised to meet with the chemistry undergraduate faculty adviser.</p>
+<h3 class="sc-RequiredCoursesHeading1">
+			Academic Advising for the Program
+		</h3><p class="sc-BodyText">The chemistry and biochemistry adviser provides counsel to undergraduate majors. Students are encouraged to seek out advising and assistance in planning their academic career to ensure completion of their major in a timely manner. For assistance, please contact Chemistry Advising at&nbsp;<a href="mailto:chemistryadvising@ucsc.edu">chemistryadvising@ucsc.edu</a>&nbsp;or visit our <a rel="noopener noreferrer" href="https://www.chemistry.ucsc.edu/academics/undergraduates/index.html" target="_blank">department website</a>. Transfer students should also consult the Transfer Information and Policy Section below.</p><table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Getting Started in the Major
+		</h3><p><strong>High School Preparation</strong></p>
+
+<p>Prospective chemistry majors should have a solid foundation in high school mathematics; familiarity with algebra, logarithms, trigonometry, and analytic geometry is particularly required. Students taking chemistry at UCSC begin with <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1A'>CHEM 1A</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1B'>CHEM 1B</a>, both of which require a strong background in high school chemistry.</p>
+
+<p><strong>Prerequisites</strong></p>
+
+<p>In order to determine what preparation may be needed to succeed in the general chemistry sequence , <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1A'>CHEM 1A</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1B'>CHEM 1B</a>, and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1C'>CHEM 1C</a>, students are encouraged&nbsp;to take the&nbsp;&nbsp;<a href="https://www.chemistry.ucsc.edu/academics/undergraduates/First%20Year%20Students/chemistry_self_assessment.html" rel="noopener noreferrer" target="_blank">Chemistry Self-Assessment&nbsp;Examination</a>.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Program Learning Outcomes
+		</h3><p>Learning outcomes summarize the most important knowledge, skills, abilities, and attitudes that students are expected to develop over the course of their studies.</p>
+
+<p>The program learning outcomes clearly communicate the faculty&rsquo;s expectations to students, provide a framework for faculty evaluation of the curriculum based on empirical data, and help improve and measure the impact of implemented changes.</p>
+
+<p>Students graduating with a B.S. or B.A. in chemistry or a B.S. in biochemistry and molecular biology should be able to:</p>
+
+<ul>
+	<li>demonstrate mastery of a broad set of chemical knowledge concerning the fundamentals in the basic areas of the discipline (organic, inorganic, analytical, physical, and biochemistry);</li>
+	<li>solve area-specific problems by identifying the essential parts of a problem, formulating a strategy for solving the problem, applying appropriate techniques to arrive at a solution, testing the correctness of the solution, and interpreting their results;</li>
+	<li>use modern library search tools (such as SciFinder, PubMed, or Web of Science) to locate and retrieve scientific information about a topic, chemical, chemical technique, or an issue relating to chemistry;</li>
+	<li>know and follow the proper procedures and regulations for safe handling and use of chemicals;</li>
+	<li>understand the objective of their chemical experiments, properly carry out the experiments, and appropriately record and analyze the results;</li>
+	<li>use computers in data acquisition and processing, and use available software as a tool in data analysis;</li>
+	<li>use standard laboratory equipment, modern instrumentation, and classical techniques to carry out experiments;</li>
+	<li>communicate the concepts and results of their laboratory experiments through effective writing and/or oral communication using the discipline standards for reporting and citation; and</li>
+	<li>collaborate effectively as part of a team to solve problems, debate different points of view, and interact productively with a diverse group of team members.</li>
+</ul>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Major Qualification Policy and Declaration Process
+		</h3><a id="mqual"></a><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Major Qualification
+		</h4><p>Students must complete the following qualification courses, or their equivalents, each with a grade of C (2.0) or better and with a cumulative grade point average (GPA) of 2.50 or greater in these six required courses:</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1A">CHEM 1A</a></td><td class="sc-coursetitle">General Chemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1B">CHEM 1B</a></td><td class="sc-coursetitle">General Chemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1C">CHEM 1C</a></td><td class="sc-coursetitle">General Chemistry</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Plus one of the following options:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/Narrative-Courses/Either-these-courses"> Either these courses</a></td><td class="sc-coursetitle"></td><td><p class="credits"></p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-11A">MATH 11A</a></td><td class="sc-coursetitle">Calculus with Applications</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-11B">MATH 11B</a></td><td class="sc-coursetitle">Calculus with Applications</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/Narrative-Courses/or-these-courses"> or these courses</a></td><td class="sc-coursetitle"></td><td><p class="credits"></p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19A">MATH 19A</a></td><td class="sc-coursetitle">Calculus for Science, Engineering, and Mathematics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19B">MATH 19B</a></td><td class="sc-coursetitle">Calculus for Science, Engineering, and Mathematics</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p>&nbsp;</p>
+
+<ul>
+</ul>
+
+		</div><h5 class="sc-RequiredCoursesHeading3">
+			And one of the following options:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-22">MATH 22</a></td><td class="sc-coursetitle">Introduction to Calculus of Several Variables</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/Narrative-Courses/or-this-course"> or this course</a></td><td class="sc-coursetitle"></td><td><p class="credits"></p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-23A">MATH 23A</a></td><td class="sc-coursetitle">Vector Calculus</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/Narrative-Courses/or-this-course"> or this course</a></td><td class="sc-coursetitle"></td><td><p class="credits"></p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/AM-Applied-Mathematics/Lower-Division/AM-30">AM 30</a></td><td class="sc-coursetitle">Multivariate Calculus for Engineers</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Determining qualification for the major
+		</h5><p>When determining qualification to declare the major:</p>
+<ul>
+    <li>All courses must be taken for a letter grade.</li>
+    <li>For courses required to qualify for the major that have been satisfied with AP credit based on an AP examination score of 5 (for <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1A'>CHEM 1A</a>), and an AP Calculus BC examination score of 4 or 5 (for <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-11A'>MATH 11A</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19A'>MATH 19A</a>), students may substitute a grade of A for each course when calculating their cumulative GPA.</li>
+    <li>Students with two or more grades of NP, C-, D+, D, D-, or F in courses required to qualify for the major are not eligible to declare.</li>
+</ul>
+<p>Transfer students should also consult the Transfer Information and Policy Section<strong> </strong>below.</p><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Appeal Process
+		</h4><p>Students who are informed that they are not eligible to declare the major may appeal by submitting a letter to the chemistry adviser, <a href="mailto:chemistryadvising@ucsc.edu">chemistryadvising@ucsc.edu</a>&nbsp;within 15 days from the date the notification was sent. Within 15 days of receipt of the appeal, the department&nbsp;will notify the student and their affiliated college of the decision. For more information about the appeal process, see the <a rel="noopener noreferrer" href="https://www.chemistry.ucsc.edu/academics/undergraduates/Declare/index.html" rel="noopener noreferrer" target="_blank">Appeal Process on the chemistry website</a>.</p><a id="decproc"></a><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			How to Declare a Major
+		</h4><p>You may declare a major as early as you would like, if you have decided which major to pursue and have satisfied prerequisites or qualification requirements (if any) for the major.</p>
+<p>Students who enter UC Santa Cruz&nbsp;as frosh are required to be formally declared in a major before enrolling in their third year (or equivalent). Upper-division transfer students are required to be declared in a major by the deadline in their second term at UCSC.</p>
+<p>Each major/minor advising office has a process for declaring. To initiate the process to declare, please complete the<a rel="noopener noreferrer" rel="noopener noreferrer" href="https://www.chemistry.ucsc.edu/academics/undergraduates/Declare/online_form.html" target="_blank"> online declaration petition</a>&nbsp;located on the Chemistry and Biochemistry Department website.&nbsp;For assistance, please contact Chemistry Advising at&nbsp;<a href="mailto:chemistryadvising@ucsc.edu">chemistryadvising@ucsc.edu</a>.</p>
+<p>Students enrolled in their final qualification policy course at the major declaration deadline may submit the petition, but will not be declared until satisfactory grades have been posted.</p><table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Transfer Information and Policy
+		</h3><a id="tasp"></a><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Transfer Admission Screening Policy
+		</h4><p>The following courses or their equivalents are required prior to transfer, by the end of the spring term for students planning to enter in the fall.</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1A">CHEM 1A</a></td><td class="sc-coursetitle">General Chemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1B">CHEM 1B</a></td><td class="sc-coursetitle">General Chemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1C">CHEM 1C</a></td><td class="sc-coursetitle">General Chemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-22">MATH 22</a></td><td class="sc-coursetitle">Introduction to Calculus of Several Variables</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Plus one of the following options:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/Narrative-Courses/Either-these-courses"> Either these courses</a></td><td class="sc-coursetitle"></td><td><p class="credits"></p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-11A">MATH 11A</a></td><td class="sc-coursetitle">Calculus with Applications</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-11B">MATH 11B</a></td><td class="sc-coursetitle">Calculus with Applications</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/Narrative-Courses/or-these-courses"> or these courses</a></td><td class="sc-coursetitle"></td><td><p class="credits"></p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19A">MATH 19A</a></td><td class="sc-coursetitle">Calculus for Science, Engineering, and Mathematics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19B">MATH 19B</a></td><td class="sc-coursetitle">Calculus for Science, Engineering, and Mathematics</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p>Students must complete the above&nbsp;courses, or their equivalents, with a grade of C or better <em>and</em> have a cumulative GPA in these courses of 2.5 or greater.</p>
+
+<p>For more information on qualifying for the major as a transfer applicant, see the <a href="https://www.chemistry.ucsc.edu/academics/undergraduates/transfer_students/index.html" target="_blank">Transfer Students webpage</a>.</p>
+
+		</div><h5 class="sc-RequiredCoursesHeading3">
+			In addition, the following courses are recommended prior to transfer to ensure timely graduation:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-8A">CHEM 8A</a></td><td class="sc-coursetitle">Organic Chemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-8L">CHEM 8L</a></td><td class="sc-coursetitle">Organic Chemistry Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-8B">CHEM 8B</a></td><td class="sc-coursetitle">Organic Chemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-8M">CHEM 8M</a></td><td class="sc-coursetitle">Organic Chemistry Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6A">PHYS 6A</a></td><td class="sc-coursetitle">Introductory Physics I</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6L">PHYS 6L</a></td><td class="sc-coursetitle">Introductory Physics I Laboratory</td><td><p class="credits">1</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6B">PHYS 6B</a></td><td class="sc-coursetitle">Introductory Physics II</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6M">PHYS 6M</a></td><td class="sc-coursetitle">Introductory Physics II Laboratory</td><td><p class="credits">1</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p>Prospective students are encouraged to prioritize required and recommended major preparation, and may additionally complete courses that articulate to UC Santa Cruz general education requirements as time allows.</p>
+		</div><h4 class="sc-RequiredCoursesHeading2">
+			Getting Started at UCSC as a Transfer Student
+		</h4><p>Transfer students are highly encouraged to meet with&nbsp;the chemistry academic adviser in their first quarter.&nbsp;For assistance with advising, please contact Chemistry Advising at&nbsp;<span style="text-decoration: underline;"><a href="mailto:chemistryadvising@ucsc.edu">chemistryadvising@ucsc.edu</a></span>.&nbsp;More&nbsp;information specific to transfer students may also be found at our <a rel="noopener noreferrer" href="https://www.chemistry.ucsc.edu/academics/undergraduates/transfer_students/index.html" target="_blank">department website.</a></p>
+<p>Students who have satisfied the screening requirements can declare their major any time after coming to UC Santa Cruz&nbsp;but are required to be declared in a major by the applicable deadline; in their second term at UCSC for students entering at the junior level.&nbsp;</p>
+<p>Transfer students who are proposed in a different major (other than chemistry) and have advanced standing when they come to UC Santa Cruz require permission from the department to change into the major.&nbsp;Admission to the major is not guaranteed.</p><table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Letter Grade Policy
+		</h3><p>For all students entering UCSC in fall 2001&nbsp;and later, all courses used to satisfy degree requirements in any of the chemistry and biochemistry majors&nbsp;must be taken for a letter grade.&nbsp;&nbsp;Additionally, letter grades of C or higher must be attained to meet major and minor requirements for graduation.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Course Substitution Policy
+		</h3><a id="#" subpol""=""></a><p>At least half of the upper-division courses (CHEM 100&ndash; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-199'>CHEM 199</a>) required for any chemistry major must be taken through the chemistry program at UCSC, not as transfer credits from another department or institution. Transfer students are advised to contact the department undergraduate adviser before enrolling in any upper-division courses at other institutions to verify articulation. For more information on transferring courses to UCSC, please consult <a href="https://www.chemistry.ucsc.edu/academics/undergraduates/transfer_students/index.html" target="_blank">the Transfer Preparation website</a>.</p>
+
+<p><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-199'>CHEM 199</a>, Independent Study Course, may not be taken more than once per quarter and may be repeated no more than three times during an undergraduate career.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Honors
+		</h3><p>Honors in the chemistry major requires a 3.5 or higher GPA in all chemistry courses; highest honors requires a 3.8 or higher GPA in all chemistry courses for the major. Students may also receive honors for a senior research thesis.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Materials Fee
+		</h3><p>Chemistry students should be aware of the materials fee required for some courses. The fee is billed to the student&rsquo;s account for specific laboratory materials purchased by the Chemistry and Biochemistry Department through the university. Fees generally range from $18 to $75 per course. Students may incur additional expense for individual supplies.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Program for Students of the Health Sciences
+		</h3><p>Students intending to enter medical, dental, or another health science professional school can satisfy entrance requirements with a major program in chemistry supplemented with further courses, especially in biology, as specified by the admissions requirements of the school where they intend to apply. Students are urged to contact the Career Center for assistance with the application process.</p>
+<table>
+
+		</table>
+	</div><div id="degree-req-2">
+		<h2>
+			Requirements and Planners
+		</h2><h3 class="sc-RequiredCoursesHeading1">
+			Course Requirements
+		</h3><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Lower-Division Courses
+		</h4><table>
+
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			General Chemistry:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1A">CHEM 1A</a></td><td class="sc-coursetitle">General Chemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1B">CHEM 1B</a></td><td class="sc-coursetitle">General Chemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1M">CHEM 1M</a></td><td class="sc-coursetitle">General Chemistry Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1C">CHEM 1C</a></td><td class="sc-coursetitle">General Chemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1N">CHEM 1N</a></td><td class="sc-coursetitle">General Chemistry Laboratory</td><td><p class="credits">2</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Calculus:
+		</h5><p>Choose one of the following options:</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/Narrative-Courses/Either-these-courses"> Either these courses</a></td><td class="sc-coursetitle"></td><td><p class="credits"></p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-11A">MATH 11A</a></td><td class="sc-coursetitle">Calculus with Applications</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-11B">MATH 11B</a></td><td class="sc-coursetitle">Calculus with Applications</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/Narrative-Courses/or-these-courses"> or these courses</a></td><td class="sc-coursetitle"></td><td><p class="credits"></p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19A">MATH 19A</a></td><td class="sc-coursetitle">Calculus for Science, Engineering, and Mathematics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19B">MATH 19B</a></td><td class="sc-coursetitle">Calculus for Science, Engineering, and Mathematics</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p>A student&nbsp;may combine the&nbsp;MATH 11 series with the MATH 19 series to complete this portion of the major requirement(s). For example, a student can take and complete <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19A'>MATH 19A</a> and then take and complete <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-11B'>MATH 11B</a>.&nbsp;</p>
+
+		</div><h5 class="sc-RequiredCoursesHeading3">
+			Multivariable Calculus:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/Narrative-Courses/Either-this-course"> Either this course</a></td><td class="sc-coursetitle"></td><td><p class="credits"></p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-22">MATH 22</a></td><td class="sc-coursetitle">Introduction to Calculus of Several Variables</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/Narrative-Courses/or-these-courses"> or these courses</a></td><td class="sc-coursetitle"></td><td><p class="credits"></p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-23A">MATH 23A</a></td><td class="sc-coursetitle">Vector Calculus</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-23B">MATH 23B</a></td><td class="sc-coursetitle">Vector Calculus</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/Narrative-Courses/or-this-course"> or this course</a></td><td class="sc-coursetitle"></td><td><p class="credits"></p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/AM-Applied-Mathematics/Lower-Division/AM-30">AM 30</a></td><td class="sc-coursetitle">Multivariate Calculus for Engineers</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Physics:
+		</h5><p>Choose one of the following options:</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/Narrative-Courses/Either-these-courses"> Either these courses</a></td><td class="sc-coursetitle"></td><td><p class="credits"></p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-5A">PHYS 5A</a></td><td class="sc-coursetitle">Introduction to Physics I</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-5L">PHYS 5L</a></td><td class="sc-coursetitle">Introduction to Physics I Laboratory</td><td><p class="credits">1</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-5B">PHYS 5B</a></td><td class="sc-coursetitle">Introduction to Physics II</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-5M">PHYS 5M</a></td><td class="sc-coursetitle">Introduction to Physics II Laboratory</td><td><p class="credits">1</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-5C">PHYS 5C</a></td><td class="sc-coursetitle">Introduction to Physics III</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-5N">PHYS 5N</a></td><td class="sc-coursetitle">Introduction to Physics Laboratory III</td><td><p class="credits">1</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/Narrative-Courses/or-these-courses"> or these courses</a></td><td class="sc-coursetitle"></td><td><p class="credits"></p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6A">PHYS 6A</a></td><td class="sc-coursetitle">Introductory Physics I</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6L">PHYS 6L</a></td><td class="sc-coursetitle">Introductory Physics I Laboratory</td><td><p class="credits">1</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6B">PHYS 6B</a></td><td class="sc-coursetitle">Introductory Physics II</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6M">PHYS 6M</a></td><td class="sc-coursetitle">Introductory Physics II Laboratory</td><td><p class="credits">1</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6C">PHYS 6C</a></td><td class="sc-coursetitle">Introductory Physics III</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6N">PHYS 6N</a></td><td class="sc-coursetitle">Introductory Physics III Laboratory</td><td><p class="credits">1</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p>A student&nbsp;may combine the&nbsp;PHYS 5&nbsp;series with the PHYS 6&nbsp;series to complete this portion of the major requirement(s). For example, a student can take and complete <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-5A'>PHYS 5A</a> and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-5L'>PHYS 5L</a> and then take and complete <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6B'>PHYS 6B</a> and 6M and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6C'>PHYS 6C</a> and 6N.&nbsp;</p>
+		</div><h5 class="sc-RequiredCoursesHeading3">
+			Organic Chemistry:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-8A">CHEM 8A</a></td><td class="sc-coursetitle">Organic Chemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-8L">CHEM 8L</a></td><td class="sc-coursetitle">Organic Chemistry Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-8B">CHEM 8B</a></td><td class="sc-coursetitle">Organic Chemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-8M">CHEM 8M</a></td><td class="sc-coursetitle">Organic Chemistry Laboratory</td><td><p class="credits">2</p></td>
+			</tr>
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Upper-Division Courses
+		</h4><table>
+
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Intermediate Organic Chemistry:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-110">CHEM 110</a></td><td class="sc-coursetitle">Intermediate Organic Chemistry with Emphasis on Synthesis and Analytical Methods</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-110L">CHEM 110L</a></td><td class="sc-coursetitle">Intermediate Organic Chemistry Laboratory</td><td><p class="credits">2</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Inorganic Chemistry:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-151A">CHEM 151A</a></td><td class="sc-coursetitle">Chemistry of Metals</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-151L">CHEM 151L</a></td><td class="sc-coursetitle">Inorganic Chemistry Laboratory</td><td><p class="credits">2</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Physical Chemistry:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-163A">CHEM 163A</a></td><td class="sc-coursetitle">Quantum Mechanics and Basic Spectroscopy</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-163B">CHEM 163B</a></td><td class="sc-coursetitle">Chemical Thermodynamics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-164">CHEM 164</a></td><td class="sc-coursetitle">Physical Chemistry Laboratory</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			One of the following laboratory courses:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-146A">CHEM 146A</a></td><td class="sc-coursetitle">Advanced Laboratory in Organic Chemistry</td><td><p class="credits">3</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-146B">CHEM 146B</a></td><td class="sc-coursetitle">Advanced Laboratory in Inorganic Chemistry</td><td><p class="credits">3</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-146C">CHEM 146C</a></td><td class="sc-coursetitle">Advanced Laboratory in Physical Chemistry</td><td><p class="credits">3</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p>Students currently conducting senior thesis research are strongly encouraged to choose an advanced laboratory in the CHEM 146 series that is outside their research area.</p>
+
+		</div><h4 class="sc-RequiredCoursesHeading2">
+			Electives
+		</h4><p>At least two from the following:</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOC-Biochemistry-and-Molecular-Biology/Upper-Division/BIOC-100A">BIOC 100A</a></td><td class="sc-coursetitle">Biochemistry and Molecular Biology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-103">CHEM 103</a></td><td class="sc-coursetitle">Biochemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-143">CHEM 143</a></td><td class="sc-coursetitle">Organic Chemical Structure and Reactions</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-144">CHEM 144</a></td><td class="sc-coursetitle">Catalysis In Organic Synthesis Using Metals and Metalloids Based Reagents</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-151B">CHEM 151B</a></td><td class="sc-coursetitle">Chemistry of the Main Group Elements</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-156C">CHEM 156C</a></td><td class="sc-coursetitle">Materials Chemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-163C">CHEM 163C</a></td><td class="sc-coursetitle">Statistical Thermodynamics and Kinetics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-169">CHEM 169</a></td><td class="sc-coursetitle">Chemistry and Biology of Drug Design and Discovery</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-194">CHEM 194</a></td><td class="sc-coursetitle">Senior Essay</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-195C">CHEM 195C</a></td><td class="sc-coursetitle">Senior Thesis</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/METX-Microbiology-and-Environmental-Toxicology/Upper-Division/METX-101">METX 101</a></td><td class="sc-coursetitle">Sources and Fates of Pollutants</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/METX-Microbiology-and-Environmental-Toxicology/Upper-Division/METX-102">METX 102</a></td><td class="sc-coursetitle">Cell and Molecular Toxicology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/OCEA-Ocean-Sciences/Upper-Division/OCEA-120">OCEA 120</a></td><td class="sc-coursetitle">Aquatic Chemistry: Principles and Applications</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/OCEA-Ocean-Sciences/Upper-Division/OCEA-121">OCEA 121</a></td><td class="sc-coursetitle">Aqueous Geochemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Upper-Division/PHYS-180">PHYS 180</a></td><td class="sc-coursetitle">Biophysics</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p>Students cannot receive elective credit toward the major for both <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOC-Biochemistry-and-Molecular-Biology/Upper-Division/BIOC-100A'>BIOC 100A</a> and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-103'>CHEM 103</a>. Students may also satisfy the elective requirement by completing a chemistry graduate course with permission of the instructor and department.&nbsp;Please consult with the department undergraduate adviser prior to enrolling.</p>
+<p>&nbsp;</p>
+		</div><h4 class="sc-RequiredCoursesHeading2">
+			Disciplinary Communication (DC) Requirement
+		</h4><p>Students of every major must satisfy that major&rsquo;s upper-division Disciplinary Communication (DC) Requirement. The DC Requirement for the bachelor of arts degree in chemistry is satisfied by completing:</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-151L">CHEM 151L</a></td><td class="sc-coursetitle">Inorganic Chemistry Laboratory</td><td><p class="credits">2</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Plus one of the following courses:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-146A">CHEM 146A</a></td><td class="sc-coursetitle">Advanced Laboratory in Organic Chemistry</td><td><p class="credits">3</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-146B">CHEM 146B</a></td><td class="sc-coursetitle">Advanced Laboratory in Inorganic Chemistry</td><td><p class="credits">3</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-146C">CHEM 146C</a></td><td class="sc-coursetitle">Advanced Laboratory in Physical Chemistry</td><td><p class="credits">3</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<a id="compreq"></a>
+		</div><p class="sc-BodyText"><a id="compreq"></a><p /></p><h4 class="sc-RequiredCoursesHeading2">
+			Comprehensive Requirement
+		</h4><p />The comprehensive requirement is a part of all UCSC degrees.&nbsp;For the Chemistry B.S., this requirement can be satisfied by receiving a passing grade in the upper-division labs listed below.&nbsp;These courses provide modern, individualized training in the&nbsp;discipline&nbsp;thus serving as relevant capstone experiences.<p />
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-151L">CHEM 151L</a></td><td class="sc-coursetitle">Inorganic Chemistry Laboratory</td><td><p class="credits">2</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Plus one of the following courses:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-146A">CHEM 146A</a></td><td class="sc-coursetitle">Advanced Laboratory in Organic Chemistry</td><td><p class="credits">3</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-146B">CHEM 146B</a></td><td class="sc-coursetitle">Advanced Laboratory in Inorganic Chemistry</td><td><p class="credits">3</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-146C">CHEM 146C</a></td><td class="sc-coursetitle">Advanced Laboratory in Physical Chemistry</td><td><p class="credits">3</p></td>
+			</tr>
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Planners
+		</h3><a id="4yrplan"></a><p>This is the ideal academic plan for chemistry B.A. majors. If needed, the plan can be arranged differently.</p>
+<table>
+    <tbody>
+        <tr>
+            <td>&nbsp;</td>
+            <td><strong>Fall</strong></td>
+            <td><strong>Winter</strong></td>
+            <td><strong>Spring</strong></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td rowspan="3"><strong>1st (frosh)</strong></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19A'>MATH 19A</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-11A'>MATH 11A</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19B'>MATH 19B</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-11B'>MATH 11B</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1C'>CHEM 1C</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1N'>CHEM 1N</a></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1A'>CHEM 1A</a>&nbsp;</td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1B'>CHEM 1B</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1M'>CHEM 1M</a>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td rowspan="3"><strong>2nd (soph)</strong></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-8A'>CHEM 8A</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-8L'>CHEM 8L</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-8B'>CHEM 8B</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-8M'>CHEM 8M</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-110'>CHEM 110</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-110L'>CHEM 110L</a></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6A'>PHYS 6A</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6L'>PHYS 6L</a>&nbsp;</td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-22'>MATH 22</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6B'>PHYS 6B</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6M'>PHYS 6M</a></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td rowspan="3"><strong>3rd (junior)</strong></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-163A'>CHEM 163A</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-163B'>CHEM 163B</a></td>
+            <td>CHEM elective</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6C'>PHYS 6C</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6N'>PHYS 6N</a>&nbsp;</td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-151A'>CHEM 151A</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-151L'>CHEM 151L</a></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td rowspan="3"><strong>4th (senior)</strong></td>
+            <td>CHEM elective or CHEM 146 Lab</td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-164'>CHEM 164</a></td>
+            <td>CHEM elective or CHEM 146 Lab</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p>Two of the required general&nbsp; education requirements will be fulfilled by the major requirements listed in the above planner (MF &amp; SI). In addition to the specific courses shown in these planners, a student will also need to complete courses satisfying the following general education requirements:&nbsp;Cross- Cultural Analysis, Ethnicity &amp; Race, Interpreting Arts &amp; Media, &nbsp;Statistical Reasoning, Textual Analysis &amp; Interpretation, Perspectives, and Practice</p>
+<a id="2yrplan"></a><p><strong>Sample Transfer Two-Year Planner</strong></p>
+<p>For students who have transferred in with the recommended courses. <strong>Note:</strong> Failure to do so may require additional time to degree. Please refer to the following&nbsp;<a href="https://www.chemistry.ucsc.edu/academics/undergraduates/transfer_students/transfer_plans.html">academic planners&nbsp;</a>that detail student plans with only the minimum transfer requirements completed.</p>
+<table>
+    <tbody>
+        <tr>
+            <td>&nbsp;</td>
+            <td><strong>Fall</strong></td>
+            <td>&nbsp;</td>
+            <td><strong>Winter</strong></td>
+            <td><strong>Spring</strong></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td rowspan="3"><strong>1st (junior)</strong></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-163A'>CHEM 163A</a></td>
+            <td>&nbsp;</td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-163B'>CHEM 163B</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-110'>CHEM 110</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-110L'>CHEM 110L</a></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6C'>PHYS 6C</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6N'>PHYS 6N</a>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-151A'>CHEM 151A</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-151L'>CHEM 151L</a></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><strong>Fall</strong></td>
+            <td>&nbsp;</td>
+            <td><strong>Winter</strong></td>
+            <td><strong>Spring</strong></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td rowspan="3">&nbsp;<strong>2nd (senior)</strong></td>
+            <td>CHEM elective or CHEM 146 Lab</td>
+            <td>&nbsp;</td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/100-199/CHEM-164'>CHEM 164</a></td>
+            <td>CHEM elective or CHEM 146 Lab</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;<br />
+            &nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<p>*Recommended Courses:</p>
+<ul>
+    <li>General chemistry (full sequence with lab)&nbsp;<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1A'>CHEM 1A</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1B'>CHEM 1B</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1M'>CHEM 1M</a>&nbsp;and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1C'>CHEM 1C</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1N'>CHEM 1N</a></li>
+    <li>Organic chemistry (full sequence with lab) <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-8A'>CHEM 8A</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-8L'>CHEM 8L</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-8B'>CHEM 8B</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-8M'>CHEM 8M</a></li>
+    <li>Calculus-based physics&nbsp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6A'>PHYS 6A</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6L'>PHYS 6L</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6B'>PHYS 6B</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6M'>PHYS 6M</a></li>
+    <li>Single variable calculus (full sequence) <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-11A'>MATH 11A</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-11B'>MATH 11B</a></li>
+    <li>Multivariable calculus (one semester course) <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-22'>MATH 22</a></li>
+</ul><table>
+
+		</table>
+	</div>
+</div>
+							</div><!-- end main -->
+						</div><!--end of rightpanel-->
+						<div style="clear: both;"></div>
+					</div><!--end of middle-->
+					
+					<!-- Footer -->
+					<div id="footer">
+					<!--FOOTER LINKS AND IMAGES CAN GO HERE-->
+						<div class="main-footer">
+<a id="goTop"></a>
+          <div class="row" id="footer">
+              <div class="footer-left">
+                  <img alt="UCSC Seal" class="seal" height="84" src="https://static.ucsc.edu/_responsive/images/logos/uc-seal.svg" width="84">
+<div class="address home">
+<div class="location">UC Santa Cruz, 1156 High Street, Santa Cruz, Ca 95064</div>
+<div class="copyright">&copy;2020 Regents of the University of California. All Rights Reserved.</div>
+</div>
+              </div>
+<div class="footer-right">
+                  
+
+<div class="social-media">
+            
+        
+        <a href="https://www.twitter.com/ucsc"><svg aria-label="Follow us on Twitter" class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg><!-- <i aria-label="Follow us on Twitter" class="fab fa-twitter"></i> --></a>
+            
+        
+        <a href="https://www.instagram.com/ucsc"><svg aria-label="Follow us on Instagram" class="svg-inline--fa fa-instagram fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><!-- <i aria-label="Follow us on Instagram" class="fab fa-instagram"></i> --></a>
+            
+        
+        <a href="https://www.facebook.com/ucsantacruz"><svg aria-label="Follow us on Facebook" class="svg-inline--fa fa-facebook-f fa-w-9" aria-hidden="true" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512" data-fa-i2svg=""><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path></svg><!-- <i aria-label="Follow us on Facebook" class="fab fa-facebook-f"></i> --></a>
+            
+        
+        <a href="http://youtube.com/ucsantacruz"><svg aria-label="Follow us on YouTube" class="svg-inline--fa fa-youtube fa-w-18" aria-hidden="true" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg><!-- <i aria-label="Follow us on YouTube" class="fab fa-youtube"></i> --></a>
+            
+        
+        <a href="http://www.linkedin.com/school/ucsc/"><svg aria-label="Follow us on LinkedIn" class="svg-inline--fa fa-linkedin-in fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z"></path></svg><!-- <i aria-label="Follow us on LinkedIn" class="fab fa-linkedin-in"></i> --></a>
+    </div>
+
+<div class="links">
+            
+                            
+        <a href="https://www.ucsc.edu/feedback/index.html">Feedback</a> 
+    </div>
+
+              </div>
+          </div>
+          <div class="sub-footer row">
+<div class="legal">
+                <ul class="legal">
+<li><a href="https://academicaffairs.ucsc.edu/accreditation/">Accreditation</a></li>
+<li><a href="https://diversity.ucsc.edu/eeo-aa/images/non-discrimination-policy.pdf">Non-Discrimination&nbsp;Policy</a></li>
+<li><a href="land-acknowledgement/index.html">Land Acknowledgement</a></li>
+<li><a href="https://www.ucsc.edu/about/employment.html">Employment</a></li>
+<li><a href="https://its.ucsc.edu/terms/">Privacy&nbsp;Policy&nbsp;&amp;&nbsp;Terms&nbsp;of&nbsp;Use</a></li>
+<li><a href="https://titleix.ucsc.edu/index.html">Sexual Violence Prevention &amp; Response (Title IX)</a></li>
+</ul>
+                
+<p class="page-meta">
+    Last modified: September 22, 2020  <span class="check-ip">128.114.113.74</span>
+</p>
+              </div>
+          </div>   
+        </div>
+					</div><!--end of footer-->
+					
+				</div><!--end of pagwrapper2 -->
+			</div><!--end of pagewrapper1-->
+			</div><!--end of wrap-->
+		
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZF-IhmpGy1TANyacnbq7Lyk973c9ilWmqlgroX0B_F5tMTeNK0D7KOmfpAeG5gd80A2&amp;t=637460801481343508" type="text/javascript"></script>
+</form>
+		<script src="https://static.ucsc.edu/_responsive/lib/modernizr/modernizr.js" type="text/javascript"></script>
+		<script src="https://static.ucsc.edu/_responsive/lib/jquery/dist/jquery.js" type="text/javascript"></script>
+		<script async="async" src="https://static.ucsc.edu/_responsive/js/main.js?t=20180409144600" type="text/javascript"></script>
+		<script type="text/javascript" src="/scripts/firefoxAnchorFix.js"></script>
+	</body>
+</html>

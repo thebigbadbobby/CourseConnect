@@ -1,0 +1,812 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head><title>
+	UCSC General Catalog - Music B.M.
+</title><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-8e849bdf63c6884f6ef","applicationID":"1359705662","transactionName":"Y1NQZhdQC0cHU0ZfCVoZc2E1HglVH19HQhUbWlNLCkQRR0lFXF8QUURBWxFIRVsAEFFXCl1QXUALWAQUFVFcQgcUVUBHHx4WVQhEU1UUQUxBRgRfAVUUVEJXAVEYU0EVSQ==","queueTime":0,"applicationTime":197,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"1359996610",accountID:"3058884",trustKey:"3028485",xpid:"VwYCWV5bDBABV1RbAAECUFID",licenseKey:"NRJS-8e849bdf63c6884f6ef",applicationID:"1359705662"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(29),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{p?p-=1:o(c||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:s.now();i("err",[t,n])}var i=t("handle"),a=t(30),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError";if(!s.disabled){var p=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),s.xhrWrappable&&t(14),d=!0)}c.on("fn-start",function(t,e,n){d&&(p+=1)}),c.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,o(n))}),c.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){L++,T=g.hash,this[u]=y.now()}function o(){L--,g.hash!==T&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var c="-start",s="-end",f="-body",u="fn"+c,d="fn"+s,l="cb"+c,p="cb"+s,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable&&!y.disabled){var x=t(10),b=t(11),E=t(8),R=t(6),O=t(13),N=t(7),M=t(14),P=t(9),C=t("ee"),S=C.get("tracer");t(16),y.features.spa=!0;var T,L=0;C.on(u,r),b.on(l,r),P.on(l,r),C.on(d,o),b.on(p,o),P.on(p,o),C.buffer([u,d,"xhr-done","xhr-resolved"]),R.buffer([u]),O.buffer(["setTimeout"+s,"clearTimeout"+c,u]),M.buffer([u,"new-xhr","send-xhr"+c]),N.buffer([m+c,m+"-done",m+f+c,m+f+s]),E.buffer(["newURL"]),x.buffer([u]),b.buffer(["propagate",l,p,"executor-err","resolve"+c]),S.buffer([u,"no-"+u]),P.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(M,"send-xhr"+c),a(C,"xhr-resolved"),a(C,"xhr-done"),a(N,m+c),a(N,m+"-done"),a(P,"new-jsonp"),a(P,"jsonp-end"),a(P,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,L>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),c=t(12),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,v="fn"+h,w="bstTimer",g="pushState",y=t("loader");if(!y.disabled){y.features.stn=!0,t(8),"addEventListener"in window&&t(6);var x=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),o.on(v,function(t,e){var n=t[0];n instanceof x&&i("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),this.bstType])}),c.on(m,function(){this.bstStart=y.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t("wrap-function")(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var c=r.apply(this,t);return o.emit(n+"start",[t,a],c),c.then(function(t){return o.emit(n+"end",[null,t],c),t},function(t){throw o.emit(n+"end",[t],c),t})})}var o=t("ee").get("fetch"),i=t(30),a=t(29);e.exports=o;var c=window,s="fetch-",f=s+"body-",u=["arrayBuffer","blob","json","text","formData"],d=c.Request,l=c.Response,p=c.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(c,"fetch",s),o.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(s+"done",[null,e],n)}else o.emit(s+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t("wrap-function")(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){s.emit("jsonp-end",[],l),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){s.emit("jsonp-error",[],l),s.emit("jsonp-end",[],l),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=c(a),d="function"==typeof u.parent[u.key];if(d){var l={};f.inPlace(u.parent,[u.key],"cb-",l),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),s.emit("new-jsonp",[t.src],l)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(l),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function c(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var s=t("ee").get("jsonp"),f=t("wrap-function")(s);if(e.exports=s,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,l=/^(\w+)(\.|$)(.*)$/,p=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?f.inPlace(Node.prototype,p,"dom-"):(f.inPlace(HTMLElement.prototype,p,"dom-"),f.inPlace(HTMLHeadElement.prototype,p,"dom-"),f.inPlace(HTMLBodyElement.prototype,p,"dom-")),s.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t("wrap-function")(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=i.context(),n=c(t,"executor-",e,null,!1),r=new f(n);return i.context(r).getCtx=function(){return e},r}var o=t("wrap-function"),i=t("ee").get("promise"),a=t("ee").getOrSetContext,c=o(i),s=t(29),f=NREUM.o.PR;e.exports=i,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){i.emit("propagate",[null,!o],a,!1,!1),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var a=e.apply(f,arguments),c=f.resolve(a);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&i.emit("propagate",[t,!0],n,!1,!1),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),o.wrapInPlace(f.prototype,"then",function(t){return function(){var e=this,n=o.argsToArray.apply(this,arguments),r=a(e);r.promise=e,n[0]=c(n[0],"cb-",r,null,!1),n[1]=c(n[1],"cb-",r,null,!1);var s=t.apply(this,n);return r.nextPromise=s,i.emit("propagate",[e,!0],s,!1,!1),s}}),i.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this,null,!1),t[1]=c(t[1],"resolve-",this,null,!1)}),i.on("executor-err",function(t,e,n){t[1](n)}),i.on("cb-end",function(t,e,n){i.emit("propagate",[n,!0],this.nextPromise,!1,!1)}),i.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=i.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",c)}function i(t){y.push(t),h&&(b?b.then(a):v?v(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,w="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){if(!c(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||s(t)&&l())&&(w.traceContextParentHeader=o(h,m),w.traceContextStateHeader=i(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&s(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function o(t,e){return"00-"+e+"-"+t+"-01"}function i(t,e,n,r,o){var i=0,a="",c=1,s="",f="";return o+"@nr="+i+"-"+c+"-"+n+"-"+r+"-"+t+"-"+a+"-"+s+"-"+f+"-"+e}function a(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var c={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(c.d.tk=i),btoa(JSON.stringify(c))}function c(t){return f()&&s(t)}function s(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var o=h(n.allowed_origins[r]);if(t.hostname===o.hostname&&t.protocol===o.protocol&&t.port===o.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(26),h=t(17);e.exports={generateTracePayload:r,shouldGenerateTrace:c}},{}],16:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function o(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=s(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var c=t("handle"),s=t(17),f=t(15).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(22),m=t(21),v=t(18),w=window.XMLHttpRequest;a.features.xhr=!0,t(14),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){i(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<l;c++)e.addEventListener(d[c],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof w&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=s(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var o=f(this.parsedOrigin);if(o&&(o.newrelicHeader||o.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),e(i.headers,o)&&(this.dt=o),t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&e(t[0].headers,o)&&(this.dt=o)})}},{}],17:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,c=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||c),"/"===o.pathname&&(r[t]=o),o}},{}],18:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(21);e.exports=r},{}],19:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(29),c=t(30),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=o(l+e,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[f.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(p+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],20:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],21:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],22:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],23:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-a}function o(){return i}var i=(new Date).getTime(),a=i,c=t(31);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=o},{}],24:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],25:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function i(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!v){var e=Math.round(t.timeStamp),n={type:t.type};e<=l.now()?n.fid=l.now()-e:e>l.offset&&e<=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),v=!0,d("timing",["fi",e,n])}}function c(t){d("pageHide",[l.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var s,f,u,d=t("handle"),l=t("loader"),p=t(28),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(m){}f=new PerformanceObserver(o);try{f.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}u=new PerformanceObserver(i);try{u.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var v=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(t){document.addEventListener(t,a,!1)})}p(c)}},{}],26:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<i.length;c++)o=i[c],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){return a(16)}function i(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,o=window.crypto||window.msCrypto;o&&o.getRandomValues&&Uint8Array&&(n=o.getRandomValues(new Uint8Array(31)));for(var i=[],a=0;a<t;a++)i.push(e().toString(16));return i.join("")}e.exports={generateUuid:r,generateSpanId:o,generateTraceId:i}},{}],27:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,s=c.match(a);s&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(o="Safari",i=s[1])}e.exports={agent:o,version:i,match:r}},{}],28:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[o]?"hidden":"visible")}"addEventListener"in document&&i&&document.addEventListener(i,e,!1)}e.exports=r;var o,i,a;"undefined"!=typeof document.hidden?(o="hidden",i="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",i="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",i="webkitvisibilitychange",a="webkitVisibilityState")},{}],29:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],30:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],31:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?f(t,s,a):a()}function n(n,r,o,i,a){if(a!==!1&&(a=!0),!p.aborted||i){t&&a&&t(n,r,o);for(var c=e(o),s=m(n),f=s.length,u=0;u<f;u++)s[u].apply(c,r);var l=d[y[n]];return l&&l.push([x,n,r,c]),c}}function i(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return l[t]=l[t]||o(n)}function w(t,e){p.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:i,addEventListener:i,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:c,aborted:!1};return x}function i(t){return f(t,s,a)}function a(){return new r}function c(){(d.api||d.feature)&&(p.aborted=!0,d=p.backlog={})}var s="nr@context",f=t("gos"),u=t(29),d={},l={},p=e.exports=o();e.exports.getOrSetContext=i,p.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!N++){var t=O.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(E,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+O.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=p+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function o(){"complete"===m.readyState&&i()}function i(){c("mark",["domContent",a()+O.offset],null,"api")}var a=t(23),c=t("handle"),s=t(29),f=t("ee"),u=t(27),d=t(24),l=t(20),p=l.getConfiguration("ssl")===!1?"http":"https",h=window,m=h.document,v="addEventListener",w="attachEvent",g=h.XMLHttpRequest,y=g&&g.prototype,x=!d(h.location);NREUM.o={ST:setTimeout,SI:h.setImmediate,CT:clearTimeout,XHR:g,REQ:h.Request,EV:h.Event,PR:h.Promise,MO:h.MutationObserver};var b=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1209.min.js"},R=g&&y&&y[v]&&!/CriOS/.test(navigator.userAgent),O=e.exports={offset:a.getLastTimestamp(),now:a,origin:b,features:{},xhrWrappable:R,userAgent:u,disabled:x};if(!x){t(19),t(25),m[v]?(m[v]("DOMContentLoaded",i,!1),h[v]("load",r,!1)):(m[w]("onreadystatechange",o),h[w]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var N=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,s,f){function nrWrapper(){var i,a,u,l;try{a=this,i=d(arguments),u="function"==typeof r?r(i,a):r||{}}catch(p){o([p,"",[i,a,s],u],t)}c(n+"start",[i,a,s],u,f);try{return l=e.apply(a,i)}catch(h){throw c(n+"err",[i,a,h],u,f),h}finally{c(n+"end",[i,a,l],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[l]=e,i(e,nrWrapper,t),nrWrapper)}function r(t,e,r,o,i){r||(r="");var c,s,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)s=e[f],c=t[s],a(c)||(t[s]=n(c,u?s+r:r,o,s,i))}function c(n,r,i,a){if(!h||e){var c=h;h=!0;try{t.emit(n,r,i,e,a)}catch(s){o([s,n,r,i],t)}h=c}}return t||(t=u),n.inPlace=r,n.flag=l,n}function o(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function i(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(i){o([i],n)}for(var a in t)p.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[l])}function c(t,e){var n=e(t);return n[l]=t,i(t,n,u),n}function s(t,e,n){var r=t[e];t[e]=c(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(30),l="nr@original",p=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=s,e.exports.argsToArray=f},{}]},{},["loader",2,16,5,3,4]);</script><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no" /><meta http-equiv="cleartype" content="on" /><link rel="shortcut icon" href="/Institutions/University-of-California-Santa-Cruz/images/favicon.ico" /><link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /><link href="/Institutions/University-of-California-Santa-Cruz/styles/ucsc.css" rel="stylesheet" type="text/css" /><link href="/Institutions/University-of-California-Santa-Cruz/styles/UCSCCustom.css" rel="stylesheet" type="text/css" /><link href="/Institutions/University-of-California-Santa-Cruz/styles/print.css" rel="stylesheet" type="text/css" media="print" />
+	 
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
+	 
+	 <script type="text/javascript" src="/Institutions/University-of-California-Santa-Cruz/scripts/treeList.js"></script>
+	 <script type="text/javascript" src="/Institutions/University-of-California-Santa-Cruz/scripts/coursepopup.js"></script>
+	 <script type="text/javascript" src="/Institutions/University-of-California-Santa-Cruz/scripts/newscript.js"></script>
+     <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/smoothness/jquery-ui.css" rel="Stylesheet" type="text/css" /><script type='text/javascript'> 
+                                                (function ($) {
+                                                    $(document).ready(
+                                                        function () {
+                                                            var tabList = "<ul><li><a href='#degree-req-1'>Information and Policies</a></li><li><a href='#degree-req-2'>Requirements and Planners</a></li></ul>";
+                                                            $(tabList).insertBefore("#degree-req-1");
+                                                            
+                                                            const queryString = window.location.search;
+                                                            const urlParams = new URLSearchParams(queryString);
+                                                            if (urlParams.has('tab') && !isNaN(urlParams.get('tab')))
+                                                            {
+                                                                $("#degree-req").tabs();
+                                                                var url = '#degree-req-'.concat(urlParams.get('tab'));
+                                                                var element = $('a[href="'+url+'"]')[0];
+                                                                element.click();
+                                                            }
+                                                            else
+                                                            {
+                                                                $("#degree-req").tabs();
+                                                            }
+                                                            
+                                                            function scrollToAnchor(anchorName){
+                                                                var aTag = $("a[name='"+ anchorName +"']");
+                                                                $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+                                                            }
+
+                                                            if(urlParams.has('anchor'))
+                                                            {
+                                                                scrollToAnchor(urlParams.get('anchor'));
+                                                            }
+                                                        });
+                                                    })(jQuery);
+                                                </script>;
+	
+	<!-- Google Tag Manager -->
+
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5RFHNC"
+
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+	<script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+
+        })(window, document, 'script', 'dataLayer', 'GTM-5RFHNC');</script>
+
+	<!-- End Google Tag Manager -->
+	 
+
+</head>
+
+<body class="home www js" >
+	<div id="skiptocontent1"><a id="skip_link" class="skiplink" href="#middle">Skip to main content</a></div>
+		<form method="post" action="/Current/General-Catalog/Academic-Units/Arts-Division/Music/Music-BM" id="Form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="VNMmmIv6BQ8nRvsGXH0MzNgb195tYaL+fbAScsFxBY4qAqJwEQBEbxRsXpMjKkaT8hG9mz2+jpRNxY2AAlRvVtQenzV/JLtMC0u40AZ8qFu69Q3qdLuXtSr+kA1gk4vqyGo+jW/aAAls6lJhfDgim4GWULXaFJR6WiV674fcVIt5P7+h/QFfdn5FEBNcr9WZlAEkyVwqOT1ICe2dPPVcNUsLyn2+/hjoaSP/fvkiJ4kVguwK1eAypkxwOV1Je8KxSoSv1KGdRj+YiPujDjgeIHR9tmi9SiP9uheF7HtVT/5N8n4lb8OUaDZx8+GPC7xMZKhIfePhlVgkxNoCadkXA1ggGkS+HLglueNMb3xOe8fZli9rMZYHQjN0A6hPYGjeIU4dB2O2ChXr+Oj1FJLJAcn+oNxKsCMK1VJ7to9xqHPo9eSbn5QJaUqcpKq7cgPygBxCRRKHLgbnMrSLXM0mu/54H3fcL6mAjTY46M1nuSfWcdmoKGur+SKF5HzxYF0H5JEMXvkoVuEjozOXnZ1SPsxd57xx3wNQeQUkL40Q5e2P5dy/0QwfzhOC+iS8HJeODWO0inz7HL6DelMZ14OGkbOi1AfPBnD/E8q9yojcbMJDHjwn3EtQTM5C9waC9xoptYa/2C1BTOLgBN83f/UtVjJ3XXvg/d6Ri5nVst11/M0HWDxRp0CVgKwG5q/tJF+F+vCwgzbXTl0O5m3MdTYeWytUqhYiFQ8vupRXXY0wV37/gzGCmuT0pWerRxeUJSxjWPQi5s160h/Bwtj6wsZyEWhP5v1iZjHga2ZqsWU1q7G4GhQ2nAkObMVeSv0juRqFChm0+lrww2pbOoB0/yhX386v9j736WtSEL+CKsTjyq5Gj9ZZUwvncTs80FSb98LAQk9npfufcjSgHdXw1YdYVT/m7iMD4lMXVaaCi/lwZJnhd0FZQ9/rVvehDYVNel580IEjipoT423QPOidgzgfEK9+TCLNGUFc/G6LEZxd8VfalSxXocDOrqIpe0U/pCoaHqlL6otBFyIkKfFVu93zOko04Q6BSaT27LxktLNPupgnRZVdmfvkJOFUDxNJN+jV5TsK2rg7KF0BgbYD19viWMzzjqmEDNGTZhImiNOsGV4S7tZtXJqln3/D4vhZ25Bozt1RSPUvPdPKLp0IU+cNKpZKMKBjbDS4cRrlBVJQwI15dUks6mriOU+mad9vz2lR2QwiwaE8pK5YQuJKV/XZ1Qr2JMCHdzYj1fbvRatZxiFpCsLVu5Rxi3e1ONK1EHb2ElqjEMxc1lQG3Vnlsk1oTqELlsJZyevnJxhfakVS2od6omBeeW8wF6bfUVpXe1HGwbyukGBNLvXVD3KYQ2gUKrZK4TyXuke/oLAuX16iaLtQoDPqki4uLsgSMVZZhWsQfFHFAqV46IeO/OwuSLGILYZIAVHRYzNVOtGMxAIhw+Dd0DnvFmMYBnndGeWpwfL9nUKdLBW+DJQw6WImgweBJ4HqWKowOlR5l1ntZV2JOZyiZWG9qbJzR71MNPSfxr1cYRFPaNOnah7JZKfILYH1OKdYYaeth+7KpV0woYvlp4fmOwnEWrcnF59vGeJ8OnxPuOoaIl5mEACPhT9h/hCg/Pck4qAwJlwFq2B0cD12Xw+2vHB3sd08/YpzIZgqabsOEkf5S8bByuJsqwM4j0C2J78c/YoqBsxROjdL4qosFApqsa62xDWQ4VUFUSKumvgorFC0ru7jPF/8opx66qT69SgD4SSscRYFkqelR+MA8Oo+QWg2N5FyeZMagspZ9eSLCoco1jquP4RtWcuyYkPaGswB1OMjtN8Im4HJm5qlUrt2oO9LphXdBVx066yNFGAfjxgHRMVpXBHJ/KGDq7djyN/4FmPHNLKPJythUzmnBghzBRKgdp2bSNqZYfyLSFdJkGzoREY5M7lrdR/D2rrbeKZ6EOuThisp7mnTPYn+YGNqcpZqy3Goc6bE3/NEq3XYN/lkcOFlF1lNBOVmgHtYH4ldJj0FLyjhbFXFR2iV69MCT83fiEMR87+ZpYj8pZJw6zrHHSv1v8dH45z49pzDE+HOQ/sLyuu6V2zUaEHxBpHiELvZ3TEXBbjUge78Ss01fpQHDs4jZloQpEiswmyslEcaJHHbjYD4PXJTdGD825Onoh5CXHQnN31cSe/hVfeheHI4HZajntUemZ+pYILbG8Uf2j3j+LAvjlIuQN5NBTM857CZ1c/kv+Cen1IcWk5J2QB5Bgn6a5K3KjF/CwQ9ojdRx38uMnWH7ZGOFLksLHzwQSvo0DuEbMK2vVgvlOhDkZrVbPwRWxAs7/xrxJgEcpEMe7012z29CWTMvJ1WU/aFD3uYKl7tKUOb285ErnK3/UpNbagGBE2Kn0y0dXoJticCuibJevctDy+3TNODvbbbFhsGG90AE3d7kqsHKzT5No1qV0li+55/3v2vR05hfczId6YWKCkrGnTfIO7EedxQUTs8O2R/dZGXYBPM6eF93Ukkufw5uM5B9gwVrAVKnhit1xoVT9AcIgruDpQkwnZ0i3e2b3u1SSQs9rZ0uibahUiggdYDIrmoB1pWy/PJh9upjv5Y+W+CtH0b5Payy41hOuFiVkPvzDEnZsML7peh+KosmzIKZLPKz9hSGAntUsiXDLpvirLxhODPshzkWL11SPKGxDpawdf1zO69f8mmyzihvF2RqfFv4h23klCY9DoU2rEaRfxUYl3KQNA1fbZp3CcVDmvZXQTJo1jevR3iKbnTLKWRQXekabp+BIUQn5S+6j0lMPCgrXS4Mtshm3AZbIZCkWN337gfhV++5Zr9jgIUfESX/rYB8o4EMq/5jJpNIWbx3cAZBgPzoDMpEGCKnsWgw921klxy5yMxWyYB5Nba9Sz5lE5NTsvSTg/pNMtflDmZX/U8ISr9bNyPnLuMLjIzoirYxpaG6oGGuvD1Xts7qJ1pe1eYydgUKkRaA2LgRvE1xqfBi6FJm/ZHlPSR5fKvmpL48Acx/wwm+jQMoJ4vVRL/WgSBP0sjdTiHozQMb8yu7lActBRIcAnBDabjaX5Ls/z9iremcwckunoZ7rx4DnQ4jWnb5adECPcH/WroKJWZs1WjMEp+LNhjC2b2ao0CjdSbER2a/cf6EqW7EuVxLoZLmv4ODLVfE+7j5SSSFq9fejjFnZUow0CEhIsyLvWva1uc+MnNMs1n2sWfdMcvwda65oKvR5ZiWcLtHlgjgabFKrAs3qrinW9w/dcHaP6aLTuP+h0Ur42q10KnKhV5cOglwVBH7dCBkP1dpOrAL2O85v+SJTS6DbZbNCJwMudbj/epIo58uxXgsnEo6ysq4nclQ8Jxm5z10N9EqgdsujcHEOU283YZtV6afcpHnHDeUtVCudEOz+Yt1nOsz/fUmHQ/lH/bkx7DEID/aykaPN8RSykf+5MQOL4sLwadSoT+iMUYIbHQgBLO6ygYwY1p/EU4s3mai2iP9G5X7YWZFekQZdD+EkOCHJC3VoloCc7sCYqEVJ+m2Qr/+GlXTACi/WoWY9H1/t50UUEUGTKC52+c//qCNt+FbuWzK6a49fKkXOXusEYxEuGiE6VSSIWQhjjBrLyaJRqJNq9RYWsFA2RJzWIVhog4424DTtbdSK4OQ7v1EdVQ1S8wH9zeKbXg/mLfM6fkMEdcevSRxkq+RmsNO6a7qIjPkP1OJZR+9XTP79dBDvIlXienkc93TyvDCUHmczTYONtZ55om+zoNkjWQZXz43jgQTE6tM4oUI2nv4qrmowsQgn6p6qQDUF2JavJ3jfgw45FfblZ1wanpm8T+TOcOomfOkTqzdAkzKFprDI69XumdNkZyPytH0PIaIfQslQlBfe+amjKPuVDYvjYq1Ut8dYAUpAHSfY7UKf6u2g/Buk8DzTmLKhQj1RyWcvVdEb8TD7FpX6G29O2TNrI9mntk+P9EkQqJtOF7ZD6scFfbsHSvecTbxKDWuDCpvNjD2WgJ5g1HEjyeacPh4FPyBiI9jl+yVIvQsnDql2x5YUGet2qMABFX9XfhvRdwkxR6jhBlBOeXjDVWKRif7u5hrynHNvioGSc441yUeMjT8wa9YehnsWPjqUbsycKz5YIQ80pGfryLP3ZsZiAL04o3F2qNyE0svPqferKlOwBvJ+mw4FPMWveADLxjnVmG9mMDzon92UOfJfQzng==" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="845114C5" />
+	<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+	<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="mOr7h7NQ6gCUfjskn1id8V41hFwTvlFDFQYj6A2Kda3r2Ja34MJOeolqQMlaxrSdBEZIgtakSzcRwBG/ZkGT6Or/3XPr9t4+x8HSaNyoOeWCXeKroKA53Nv8NysBPvAe++/FazcKqMqKg7hoeSX30yeInvTv0ALKUSgM5/d37M+le67ylFN5ItW9l8WKFCfeJUbjwGZq39LtCMfFOijvCgqW7+SmjcORkMoWJ1JRF2cvAUOhVcyaERj8081NwUOqqnA0Yvy6A4meGOwxW/+TMw==" />
+</div>
+			<div id="wrap">
+			<div id="pagewrapper1">
+				<div id="pagewrapper2">
+					<div id="banner">
+					<!--LOGO AND HEADER LINKS CAN GO HERE-->
+					  <div class="page-top">
+      <div class="row">
+
+        <div class="page-top-left">
+          <a class="campus-secondary" href="https://www.ucsc.edu/index.html" id="logo">UC Santa Cruz</a>
+        </div>
+
+        <div class="page-top-right">
+          <ul id="topNav">
+<li><a href="https://my.ucsc.edu" title="The student portal">MyUCSC</a></li>
+<li><a href="https://www.ucsc.edu/tools/people.html" title="Campus directory">People</a></li>
+<li><a href="https://www.ucsc.edu/tools/calendars.html" title="Upcoming events, academic, and administrative calendars">Calendars</a></li>
+<li><a href="https://www.ucsc.edu/visit/maps-directions.html">Maps</a></li>
+<li><a href="https://www.ucsc.edu/tools/azindex.html" title="A to Z index of UCSC websites">A-Z Index</a></li>
+</ul>
+        </div>
+
+      </div>
+    </div>
+						 
+						    <!-- Begin Page Banner -->
+                          
+					</div><!-- end banner --> 
+					<div id="middle">			
+						<!--LEFT NAV-->
+						<div id="leftpanel">
+
+                      <div id="searchtoggle">	</div>				
+					  <div id="leftcolumn_0_Panel1" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;leftcolumn_0_btnSubmit&#39;)">
+	
+    <div class="sidebox">
+	    <div class="hdr">
+            <label for="leftcolumn_0_txtBxTerm" id="leftcolumn_0_searchTextLabel">Catalog Search</label>
+	    </div>
+
+	    <div class="sideboxbrdr">
+            <input name="leftcolumn_0$txtBxTerm" type="text" id="leftcolumn_0_txtBxTerm" />
+            <div style="text-indent: -999em;">
+            <label for="leftcolumn_0_drpSearchType" id="leftcolumn_0_filterLabel"></label>
+            </div>
+            <select name="leftcolumn_0$drpSearchType" id="leftcolumn_0_drpSearchType">
+		<option selected="selected" value="">Entire Catalog</option>
+		<option value="programs">Programs</option>
+		<option value="courses">Courses</option>
+
+	</select>
+
+            <input type="submit" name="leftcolumn_0$btnSubmit" value="Search" id="leftcolumn_0_btnSubmit" />
+	    </div>
+    </div> 
+
+</div><div class="sidebox">
+	<div class="hdr">
+		Contents
+	</div>
+</div>
+						 <div class="toc">
+							<ul id="navLocal" class="navLocal">
+	<li><a href="/en/Current/General-Catalog/Welcome-to-UC-Santa-Cruz">Welcome to UC Santa Cruz</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Introducing-UC-Santa-Cruz">Introducing UC Santa Cruz</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Programs">Academic Programs</a></li><li class="hasChildren active"><a href="/en/Current/General-Catalog/Academic-Units">Academic Units</a><ul>
+		<li class="hasChildren active"><a href="/en/Current/General-Catalog/Academic-Units/Arts-Division">Arts Division</a><ul>
+			<li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Arts-Division/Art">Art</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Arts-Division/Art-and-Design-Games-and-Playable-Media">Art and Design: Games and Playable Media</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Arts-Division/Digital-Arts-and-New-Media">Digital Arts and New Media</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Arts-Division/Film-and-Digital-Media">Film and Digital Media</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Arts-Division/History-of-Art-and-Visual-Culture">History of Art and Visual Culture</a></li><li class="hasChildren active"><a href="/en/Current/General-Catalog/Academic-Units/Arts-Division/Music">Music</a><ul>
+				<li><a href="/en/Current/General-Catalog/Academic-Units/Arts-Division/Music/Music-BA">Music B.A.</a></li><li class=" active"><a href="/en/Current/General-Catalog/Academic-Units/Arts-Division/Music/Music-BM">Music B.M.</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Arts-Division/Music/Western-Art-Music-Minor">Western Art Music Minor</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Arts-Division/Music/Electronic-Music-Minor">Electronic Music Minor</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Arts-Division/Music/Jazz-Spontaneous-Composition-and-Improvisation-Minor">Jazz, Spontaneous Composition, and Improvisation Minor</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Arts-Division/Music/Music-MA">Music M.A.</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Arts-Division/Music/Music-DMA">Music D.M.A</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Arts-Division/Music/Music-PhD">Music Ph.D.</a></li>
+			</ul></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Arts-Division/Theater-Arts">Theater Arts</a></li>
+		</ul></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division">Humanities Division</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division">Physical and Biological Sciences Division</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Baskin-School-of-Engineering">Baskin School of Engineering</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division">Social Sciences Division</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/The-Colleges">The Colleges</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Physical-Education">Physical Education</a></li>
+	</ul></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Courses">Courses</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Undergraduate-Information">Undergraduate Information</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Graduate-Information">Graduate Information</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Resources-Residency-and-Policies">Resources, Residency, and Policies</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Teaching-and-Administrative-Staff">Teaching and Administrative Staff</a></li><li><a href="/en/Current/General-Catalog/Academic-Calendar">Academic Calendar</a></li><li><a href="/en/Current/General-Catalog/Catalogs-Prior-to-2019-20">Catalogs Prior to 2019-20</a></li>
+</ul>
+					           <div class="sidebox">
+									<div class="sidebox">
+	<div class="hdr">
+		Catalog Links
+	</div><div class="sideboxbrdr">
+		<ul>
+			<li><a href="/en/Current/General-Catalog">Catalog Home</a></li><li><a href="/en">All Catalogs</a></li>
+		</ul>
+	</div>
+</div>
+								</div><!-- end of sidebox -->
+								<div class="sidebox">
+	<div class="hdr">
+		Share
+	</div><div class="sideboxbrdr">
+		<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_facebook">Share this page on Facebook</a>
+<a class="addthis_button_twitter">Share this page on Twitter</a>
+<a class="addthis_button_email">Email this page</a>
+<a class="addthis_button_print">Print this page</a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+<script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4db17d15194e924f"></script>
+<!-- AddThis Button END -->
+	</div>
+</div>
+							</div><!-- end of TOC -->
+						</div><!--end of leftpanel-->
+						<!-- Main content area -->
+						<div id="rightpanel">
+							<div id="sc-rightpanel-top">
+								<div id="sc-top-links">
+										<span class="print">
+											<a href="javascript:window.print()" title="Print this Page"><span class="printLabel">Print this page</span></a>
+										</span>
+									
+
+<div id="catalog-dropdown">
+    <span id="catalogdropdown_0_Label1"></span>
+
+	<div style="font-size: x-small;">
+		<div style="text-indent: -999em; line-height: 1px; color:#EFEFEF;">
+            <label for="catalogdropdown_0_DropDownList1">Select a Catalog</label>
+		</div>
+		<select name="catalogdropdown_0$DropDownList1" id="catalogdropdown_0_DropDownList1">
+	<option selected="selected" value="{99FCED38-D22F-4053-805D-64F15C2ECDB8}">2020-21 UCSC General Catalog</option>
+	<option value="{1A63CDDE-8554-4CA1-8DAC-3A8014DCE824}">2019-20 UCSC General Catalog</option>
+
+</select>
+		<input type="submit" name="catalogdropdown_0$Button1" value="Select" id="catalogdropdown_0_Button1" style="border-style:Outset;" />
+	</div>
+</div>
+<br />
+
+
+
+
+								</div><!--end of sc-top-links-->
+							</div><!--end sc-rightpanel-top-->
+							<div id="main">
+							<div id="breadcrumb">
+								<p id="breadcrumbs"><a href="/en/Current/General-Catalog">2020-21 UCSC General Catalog</a> &gt; <a href="/en/Current/General-Catalog/Academic-Units">Academic Units</a> &gt; <a href="/en/Current/General-Catalog/Academic-Units/Arts-Division">Arts Division</a> &gt; <a href="/en/Current/General-Catalog/Academic-Units/Arts-Division/Music">Music</a> &gt; Music B.M.</p>
+							</div><!-- end of breadcrumb -->
+								<h1>
+	Music B.M.
+</h1><div id="degree-req">
+	<div id="degree-req-1">
+		<h2>
+			Information and Policies
+		</h2><p>The Music Department at UC Santa Cruz offers two undergraduate degrees: a Bachelor of Arts (B.A.) and a Bachelor of Music (B.M.). The B.A. degree offers a uniquely diverse curriculum, with the option of completing a concentration in either global musics or Western art music. The B.M. degree is designed for students who intend to pursue a career in music performance. The department also offers minors in electronic music, jazz and Western art music, providing more access for music students and students in other disciplines to engage with music during their studies at UC Santa Cruz. Both B.A. and B.M. degrees are distinctive in that they integrate elements of performance, theory, composition, literature, and history and culture. Students leave UC Santa Cruz prepared for graduate studies and music careers in performance, teaching, and the digital arts.</p>
+<p>Through these curricular offerings, students will encounter an extraordinarily rich variety of performance opportunities. Specifically, our students engage with music:</p>
+<p>● As a cultural practice in ensembles focusing on musical traditions from Europe, Eurasia, Latin America, North America, South Africa, South Asia and Southeast Asia;</p>
+<p>● Temporally in ensembles based on Baroque, Classical and contemporary idioms to deepen their understanding of performance practices;</p>
+<p>● Technologically in electronic music ensembles and workshops where students experiment with innovative technologies to develop their own projects with the support of their advisers and peers.</p>
+<p>Students at UC Santa Cruz have extraordinary performance and professionalization opportunities. All instrument and voice faculty are celebrated professional musicians, who provide unparalleled guidance for students in performance and professional development. Ensemble courses culminate in an end-of-quarter performance, providing students with regular performance opportunities in a world-class recital hall. The electronic music minor provides hands-on opportunities for students to learn a variety of techniques related to electronic sound production, composition and recording in a state-of-the-art studio facility. The Opera Program allows students to be involved in every step of a major production, from concept and design considerations to marketing and arts management. As performers, composers, artistic collaborators and event-organizers, these programs allow students to develop musically and professionally for diverse career paths and industries.</p>
+<p>Our programs shape responsible, independent and highly capable young artists that will push the frontiers of their fields. Graduates from the Music Department at UC Santa Cruz are musically attuned and socially engaged global citizens in the 21st century.</p><h3 class="sc-RequiredCoursesHeading1">
+			Introduction
+		</h3><p>The B.M. degree is for students who aspire to academic excellence and an advanced performance level. The B.M. degree is designed for exceptionally talented performers.&nbsp;It requires considerably more performance credits and slightly fewer courses in theoretical disciplines. B.M. students will major in an instrument or voice.</p>
+
+<p>Once accepted to the B.M. program, students must take two juries per academic year: at the end of both fall and spring quarter, for continuing review and criticism of proficiency at their primary instrument.</p>
+
+<p>If a student fails to participate in continuing B.M. juries, or does not attain, or maintain, an advanced level, and fails to maintain academic excellence, the Bachelor of Music Committee will re-examine the student&#39;s continued participation in the B.M. degree in consultation with the applied instructor. In cases in which the B.M. Committee finds the student did not meet these requirements the students will be dismissed from the B.M. program with an option to switch to the B.A. degree.</p>
+
+<p>Time to degree: The determination of a dismissal can be made by the committee as long as a student has three remaining quarters before their expected graduation date. This will ensure enough time to make course changes from a B.M. to B.A. degree. A change to the B.A. degree is 10 to 25 fewer credits to be completed than the B.M. degree.</p>
+
+<p>Students may appeal a dismissal of the B.M. degree by petition to the chair of the Music Department. A letter to the department chair must be submitted within 15 days from the date the notification was mailed. Within 15 days of receipt of the appeal, the department will notify the student, college, and Office of the Registrar of the decision.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Academic Advising for the Program
+		</h3><p>General information about the music degrees&nbsp;is available on<a href="http://music.ucsc.edu/" target="_blank">&nbsp;the department website</a>. Students are also&nbsp;strongly encouraged to consult early with the Music Department adviser&nbsp;to create an academic plan for the major or a minor far in advance of&nbsp;declaration, as early as the summer before beginning at&nbsp;the university.</p>
+
+<p>Transfer students should consult the Transfer Information and Policy section.&nbsp;</p>
+
+<p>Please contact the department adviser by emailing&nbsp;<a href="mailto:music@ucsc.edu">music@ucsc.edu</a>&nbsp;or calling (831) 459-2292. You may also use&nbsp;<a href="https://slugsuccess.ucsc.edu/index.html" rel="noopener noreferrer" target="_blank">Slug Success</a>&nbsp;to make an appointment.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Getting Started in the Major
+		</h3><p>It is essential that students begin the MUSC 30 sequence, ensembles, and applied instruction in fall of their second&nbsp;year or as early as possible to make satisfactory progress toward their degree objectives.</p>
+
+<p>The theory placement exam is for placement of students, including transferring or re-entering students, into the appropriate music core course (<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-13'>MUSC 13</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-14'>MUSC 14</a>, or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-30A'>MUSC 30A</a>). It includes written sections in the areas of theory and musicianship that emphasize aural recognition and identification of musical structures (intervals, chords, rhythms, meters, etc.), and brief definition of terms relating to music history. Students may prepare for the exam by honing skills in reading both bass and treble clef and in recognizing of melodic and harmonic structures, and complex rhythmic patterns.&nbsp;</p>
+
+<p>Students with a theory background should plan to take the theory placement exam to place into&nbsp;<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-30A'>MUSC 30A</a>. Students without any theory background or weak aural skills are not required to take the placement exam and are encouraged to enroll in <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-13'>MUSC 13</a> or&nbsp;<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-14'>MUSC 14</a>&nbsp;in their first year.&nbsp;Taking <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-13'>MUSC 13</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-14'>MUSC 14</a>, or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-15'>MUSC 15</a> will help prepare students for the theory placement exam. However, admission to <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-30A'>MUSC 30A</a> will be based solely on the theory placement exam scores and not on the final grades of the Preparatory theory courses (<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-13'>MUSC 13</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-14'>MUSC 14</a>, and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-15'>MUSC 15</a>).</p>
+
+<p>The theory placement exam is held twice&nbsp;a year: on the Tuesday before instruction begins in fall quarter, from 10:00 a.m.-12:30 p.m., and at the beginning of spring quarter (schedule TBA), both&nbsp;in the Music Center Recital Hall. No signup is necessary. Students should bring a pencil.&nbsp;Students can visit the Music Department&nbsp;website to view the <a href="http://artsites.ucsc.edu/faculty/nauert/sample_exam/index.html" target="_blank">sample exam</a>.&nbsp;</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Program Learning Outcomes
+		</h3><p>The B.A. and B.M. programs in music are designed to accomplish the following learning outcomes:</p>
+
+<ol>
+	<li>Attainment of knowledge and understanding of music in an integrated way, through historical and cultural studies, musicianship, theory, composition, and performance. These studies prepare students to pursue a career in some aspect of music, to further develop their skills in graduate study, and/or to maintain music as a central part of their lives.</li>
+	<li>Acquisition of musical competency, including literacy (the use of music notation in reading, performing, composing, analyzing, and hearing music).</li>
+	<li>Developing skills of critical thinking and writing about music by taking courses on past and present musical cultures in European and other heritages.</li>
+	<li>Creating music by performing, composing, and improvising.</li>
+</ol>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Major Qualification Policy and Declaration Process
+		</h3><a id="mqual"></a><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Major Qualification
+		</h4><p>In order to declare the music major, students must successfully complete <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-30A'>MUSC 30A</a> with a grade of &quot;C&quot; or better. A&nbsp;&quot;Pass&quot; grade is also acceptable since letter grades are not required for lower-division courses.&nbsp;</p>
+
+<p>Bachelor of music students must also audition in the fall or spring juries as a &quot;B.M. Audition.&quot;&nbsp;Applied instructor approval is required to sign-up for this audition. If the B.M. committee determines that the performance level demonstrated is appropriate for the B.M. program, the student can then declare the B.M. major (in addition to passing <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-30A'>MUSC 30A</a>). Students can consult with their applied instrument instructor about this potential. If faculty supports this option they can sign up with the undergraduate adviser for the next available jury.&nbsp;</p>
+
+<p>Transfer students should also see the &quot;Transfer Information and Policy&quot; section below.</p>
+<table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Appeal Process
+		</h4><p>Students may appeal a dismissal of the B.M. degree by petition to the chair of the Music Department. A letter to the department chair must be submitted within 15 days from the date the notification was mailed. Within 15 days of receipt of the appeal, the department will notify the student, college, and Office of the Registrar of the decision.&nbsp;Appeals should be submitted in person at Music Center 244, or sent to <a href="mailto:music@ucsc.edu?subject=Major%20Declaration%20Appeal">music@ucsc.edu</a> care of the undergraduate adviser.</p>
+
+<p>If a student is not accepted into the B.M. program via the results of their B.M. audition, they can sign up for the next available jury. Students may audition for the B.M. program a maximum of two times. The latest that they can audition for the B.M. program is in spring quarter of their junior year.</p><a id="decproc"></a><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			How to Declare a Major
+		</h4><p>To declare the&nbsp;music major or&nbsp;minor, all students meet with the academic adviser to begin the declaration process&nbsp;either by making an appointment (via&nbsp;<a href="https://slugsuccess.ucsc.edu/index.html" target="_blank">Slug Success</a>), by email to <a href="mailto:music@ucsc.edu">music@ucsc.edu</a>,&nbsp;or by stopping by the department office in the&nbsp;Music Center, room 244 or&nbsp;248. Students are also required to meet with a faculty adviser&nbsp;(assigned with help from&nbsp;the academic adviser) as part of the declaration process.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Transfer Information and Policy
+		</h3><a id="tasp"></a><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Transfer Admission Screening Policy
+		</h4><p>Students planning to apply&nbsp;in this major are not required to complete specific courses for consideration of admission to UC Santa Cruz.</p>
+
+<p>Transfer students are strongly recommended to take some music theory courses before transfer to UCSC, which generally enables them to test into <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-30A'>MUSC 30A</a>. They should also have completed most general education requirements. Voice students should have completed&nbsp;one introductory college-level language course each in Italian, French, and German.</p>
+<table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Getting Started at UCSC as a Transfer Student
+		</h4><p>Transfer students should plan to take the theory placement exam to place into <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-14'>MUSC 14</a>&nbsp;or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-30A'>MUSC 30A</a>. Students that place into <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-14'>MUSC 14</a>&nbsp;will be required to take three years to graduate. Students that place into <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-30A'>MUSC 30A</a> will be able to graduate within two years.</p>
+<p>All transfer students should take the theory placement exam during fall of their first quarter (see below for exam schedule). It is an option for transfer students to take the exam prior to applying to UCSC as a practice guide for future preparation. However, students can also visit the Music Department&nbsp;website to view the <a rel="noopener noreferrer" href="http://artsites.ucsc.edu/faculty/nauert/sample_exam/index.html" target="_blank">sample exam</a>.</p>
+<p>Transfer students can also take <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-14'>MUSC 14</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-15'>MUSC 15</a> during Summer Session at UCSC prior to fall of their arrival. Taking MUSC or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-15'>MUSC 15</a> will help prepare students for the theory placement exam and generally results in students placing into <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-30A'>MUSC 30A</a>. However, admission to <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-30A'>MUSC 30A</a> will be based solely on the theory placement exam scores and not on the <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-15'>MUSC 15</a> grades.</p>
+<p>The theory placement exam is held twice&nbsp;a year: on the Tuesday before instruction begins in fall quarter, from 10:00 a.m.-12:30 p.m., and at the beginning of spring quarter (schedule TBA), both&nbsp;in the Music Center Recital Hall. No signup is necessary. Students should bring a pencil.&nbsp;Students can visit the Music Department&nbsp;website to view the <a rel="noopener noreferrer" href="http://artsites.ucsc.edu/faculty/nauert/sample_exam/index.html" target="_blank">sample exam</a>.&nbsp;</p>
+<p>All transfer students are strongly encouraged to email <a href="mailto:music@ucsc.edu">music@ucsc.edu</a> to schedule a phone-advising appointment with &nbsp;the undergraduate adviser prior to application.</p><table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Letter Grade Policy
+		</h3><p>All upper-division courses applied toward the music majors must be taken for a letter grade.</p>
+
+<p>Lower-division courses may be taken Pass/No Pass.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Double Majors and Major/Minor Combinations Policy
+		</h3><p>Double majors <strong>are</strong> possible for the music major. A student can double major with a Music B.A. or B.M. degree, and a major from another department. Students that plan to double major should meet with the Music Department undergraduate adviser for course planning in fall quarter of their first year.&nbsp;</p>
+
+<p>It is not possible to double major as a music B.A. and a music B.M. However, it is possible to pursue the B.M. or the B.A. (with a Western art music concentration)., and additionally add the jazz minor or electronic music minor. It is not possible to add the Western art music minor to either of these majors.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Study Abroad
+		</h3><p>The department encourages students to explore studying abroad while attending UC Santa Cruz. In particular, the UCSC Music Department has an exchange program agreement with the Music Department at the University of Sussex. University of Sussex offers many courses that can be substituted for music major or minor requirements.</p>
+<p>However, due to the intense nature of the Music B.M. program, students are encouraged to plan potential study abroad far in advance to ensure they are able to maintain their UCSC studies.</p>
+<p>For more information on approved course substitutions and the exchange program please visit <a rel="noopener noreferrer" href="https://studyabroad.ucsc.edu/programs/ucsc-exchange/europe/sussex/courses.html" target="_blank">Study Abroad Courses.</a></p><table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Honors
+		</h3><p>Honors in the major are conferred by vote of the music faculty. B.A. or B.M. students can be awarded honors for excellent work in individual areas, including coursework, senior project (thesis or recital), or a capstone course. Excellent work in any two of these areas normally results in honors in the major.</p>
+
+<p>To be considered for highest honors in the major, B.A. students must complete a senior project (not required for the B.A. degree) and B.M. students must complete a capstone course (not required for the B.M. degree). Honors in all three areas&mdash;coursework, senior project, and capstone course&mdash;normally results in highest honors in the major.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			How Music Majors are Assessed
+		</h3><ol>
+	<li>Placement exams at the outset of studies assess students&#39; musical competence, and determine their place in the required lower-division theory and harmony courses.</li>
+	<li>Admission to most performance ensembles is by audition. Assessment is based on successful public performances.</li>
+	<li>A juried &quot;advisory audition&quot; is required for students enrolled in <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-30A'>MUSC 30A</a> to give students feedback so that they can work toward meeting the requirements for the proficiency audition at the end of the next fall quarter.</li>
+	<li>A juried &quot;proficiency audition&quot; is required for students enrolled in <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-130'>MUSC 130</a>. All students must exhibit an upper-intermediate or higher level on their major instrument or voice.</li>
+	<li>Auditions for admission to the B.M. program are held at the end of each fall quarter. Students accepted to the program are required to audition twice a year for continuing review and critique. Students in the B.M. program present a Senior Recital which is evaluated by faculty.</li>
+	<li>In required and elective seminars, critical thinking and writing are assessed when students present a major independent project at the end of term.</li>
+	<li>Compositional skills are assessed through the rehearsal and public performance of student works.</li>
+</ol>
+<table>
+
+		</table>
+	</div><div id="degree-req-2">
+		<h2>
+			Requirements and Planners
+		</h2><h3 class="sc-RequiredCoursesHeading1">
+			Course Requirements
+		</h3><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Lower-Division Courses
+		</h4><table>
+
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Take each of the following courses:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-30A">MUSC 30A</a></td><td class="sc-coursetitle">Theory, Literature, and Musicianship</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-30B">MUSC 30B</a></td><td class="sc-coursetitle">Theory, Literature, and Musicianship</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-30C">MUSC 30C</a></td><td class="sc-coursetitle">Theory, Literature, and Musicianship</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h6 class="sc-RequiredCoursesHeading4">
+			The following course is taken concurrently with the MUSC 30 sequence:
+		</h6><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-60">MUSC 60</a></td><td class="sc-coursetitle">Fundamental Keyboard Skills</td><td><p class="credits">2</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p>May be waived by instructor approval, or if the student is taking piano lessons from a UCSC instructor.</p>
+
+		</div><h5 class="sc-RequiredCoursesHeading3">
+			Foreign Language Requirement
+		</h5><p><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/FREN-French/Lower-Division/FREN-1'>FREN 1</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/GERM-German/Lower-Division/GERM-1'>GERM 1</a>, and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ITAL-Italian/Lower-Division/ITAL-1'>ITAL 1</a> are required for B.M. voice students. High school transcripts or Advanced Placement (AP) examination scores may satisfy this requirement. Students may take these courses during Summer Session or through any other college. The quarter varies for when each class is offered. Students should check with the departments offering these courses to determine when they are regularly offered.&nbsp;</p>
+<p>There are no foreign language requirements for other students in the B.A. or B.M. programs; however, students who are planning to apply for graduate school are strongly advised to study a language pertinent to their research area.</p><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Upper-Division Courses
+		</h4><table>
+
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Take each of the following courses:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-101A">MUSC 101A</a></td><td class="sc-coursetitle">History of Western Art Music (Medieval, Renaissance, and Baroque)</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-101B">MUSC 101B</a></td><td class="sc-coursetitle">History of Western Art Music</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-101C">MUSC 101C</a></td><td class="sc-coursetitle">History of Western Art Music</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-130">MUSC 130</a></td><td class="sc-coursetitle">Harmony and Form in 19th-Century and Early 20th-Century Music</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			One course from the MUSC 105 series, Special Topics in History
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-105A">MUSC 105A</a></td><td class="sc-coursetitle">Music of the United States</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-105E">MUSC 105E</a></td><td class="sc-coursetitle">Early Keyboard Music</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-105I">MUSC 105I</a></td><td class="sc-coursetitle">Improvisation and Collaborative Practices in the 20th Century</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-105M">MUSC 105M</a></td><td class="sc-coursetitle">Solo Song: from Monophony to Monody</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-105O">MUSC 105O</a></td><td class="sc-coursetitle">Opera from Peri to Pergolesi</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-105Q">MUSC 105Q</a></td><td class="sc-coursetitle">The String Quartet from Haydn to the Present</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-105R">MUSC 105R</a></td><td class="sc-coursetitle">History of Russian Music</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			One course from the MUSC 150 series, Special Topics in Theory
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-150A">MUSC 150A</a></td><td class="sc-coursetitle">Music Analysis for Performers</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-150C">MUSC 150C</a></td><td class="sc-coursetitle">Special Topics in Music Theory: Tonal Counterpoint</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-150I">MUSC 150I</a></td><td class="sc-coursetitle">Special Topics in Music Theory: Hindustani Music</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-150P">MUSC 150P</a></td><td class="sc-coursetitle">Special Topics in Music Theory: 20th-Century Popular Song</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-150S">MUSC 150S</a></td><td class="sc-coursetitle">Focus on Spontaneous Composition</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-150T">MUSC 150T</a></td><td class="sc-coursetitle">Post Tonal Analysis</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-150X">MUSC 150X</a></td><td class="sc-coursetitle">Theoretical Practices of American Music</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			One course from the MUSC 180 series, Studies in World Musics
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-180A">MUSC 180A</a></td><td class="sc-coursetitle">Studies in World Musics: Asia and the Pacific</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-180B">MUSC 180B</a></td><td class="sc-coursetitle">Studies in World Musics: Africa and the Americas</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-180C">MUSC 180C</a></td><td class="sc-coursetitle">Studies in World Musics: Central Asia</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-180D">MUSC 180D</a></td><td class="sc-coursetitle">Music of Insular Southeast Asia</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h6 class="sc-RequiredCoursesHeading4">
+			B.M. students who wish to specialize in jazz
+		</h6><p>Take all the following three courses instead of one course from the MUSC 180 series:</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-111B">MUSC 111B</a></td><td class="sc-coursetitle">Seminar in Jazz Analysis</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-174">MUSC 174</a></td><td class="sc-coursetitle">Intermediate Spontaneous Composition and Improvisation</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-175">MUSC 175</a></td><td class="sc-coursetitle">Jazz Theory II</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			A minimum of 12 quarters of ensembles
+		</h5><p>All ensembles are 2 credits each and may be repeated. A maximum of one ensemble per quarter can be counted toward&nbsp;fulfillment of the total 12-quarter requirement.&nbsp;</p>
+<p>Transfer students are required to take six quarters of ensembles.&nbsp;</p>
+<p>If two ensembles in one quarter need to be taken&nbsp;to meet time to degree plans approval can be requested to the department Curriculum Committee by email to <a href="mailto:music@ucsc.edu">music@ucsc.edu</a>.&nbsp;</p><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-1C">MUSC 1C</a></td><td class="sc-coursetitle">University Concert Choir</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-2">MUSC 2</a></td><td class="sc-coursetitle">University Orchestra</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-3">MUSC 3</a></td><td class="sc-coursetitle">Large Jazz Ensemble</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-5A">MUSC 5A</a></td><td class="sc-coursetitle">West Javanese Gamelan Ensemble: Beginning</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-5B">MUSC 5B</a></td><td class="sc-coursetitle">West Javanese Gamelan Ensemble: Intermediate</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-5C">MUSC 5C</a></td><td class="sc-coursetitle">West Javanese Gamelan Ensemble: Advanced</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-8A">MUSC 8A</a></td><td class="sc-coursetitle">Beginning Balinese Gamelan</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-8B">MUSC 8B</a></td><td class="sc-coursetitle">Advanced Balinese Gamelan</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-9">MUSC 9</a></td><td class="sc-coursetitle">Wind Ensemble</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-10">MUSC 10</a></td><td class="sc-coursetitle">Central Asian Ensemble</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-12">MUSC 12</a></td><td class="sc-coursetitle">Mariachi Ensemble</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-102">MUSC 102</a></td><td class="sc-coursetitle">University Orchestra</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-103">MUSC 103</a></td><td class="sc-coursetitle">University Concert Choir</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-158">MUSC 158</a></td><td class="sc-coursetitle">South African Music Ensemble</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-163">MUSC 163</a></td><td class="sc-coursetitle">Early Music Ensemble</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-164">MUSC 164</a></td><td class="sc-coursetitle">Jazz Ensembles</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-166">MUSC 166</a></td><td class="sc-coursetitle">Chamber Singers</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-168">MUSC 168</a></td><td class="sc-coursetitle">Experimental Music Ensemble</td><td><p class="credits">2</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			A minimum of 11 quarters of individual lessons.
+		</h5><p>Eleven quarters of enrollment in any of the courses listed are acceptable for fulfillment of this requirement.&nbsp;</p>
+
+<p>Transfer students are required to take six quarters of applied instruction.&nbsp;</p>
+
+<p>Students can contact the applied instrument instructor of their primary instrument to arrange an audition prior to the start of the quarter. Applied instrument instructor emails are listed on<a href="http://music.ucsc.edu" target="_blank"> the department website</a>.&nbsp;</p>
+
+<p>Students should work with the applied instructor of their primary instrument to determine which of the courses listed would be appropriate.&nbsp;</p>
+
+<p>The lessons carry an additional course fee. Concurrent enrollment in an appropriate ensemble is required. Consult the <a href="http://music.ucsc.edu/programs/undergraduate/handbook" target="_blank">Music Student Handbook</a> for more details.</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-61">MUSC 61</a></td><td class="sc-coursetitle">Individual Lessons: Half Hour</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-62">MUSC 62</a></td><td class="sc-coursetitle">Individual Lessons: One Hour</td><td><p class="credits">3</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-161">MUSC 161</a></td><td class="sc-coursetitle">Individual Lessons: One Hour</td><td><p class="credits">3</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-162">MUSC 162</a></td><td class="sc-coursetitle">Advanced Individual Lessons: One Hour</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Continuing B.M. Juries
+		</h5><p>Demonstration of an advanced level at Continuing B.M. juries each fall and spring quarter</p><table>
+
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Complete the following course
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-196B">MUSC 196B</a></td><td class="sc-coursetitle">Senior Recital Preparation (with individual lessons)</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Disciplinary Communication (DC) Requirement
+		</h4><p>Students of every major must satisfy that major&rsquo;s upper-division Disciplinary Communication (DC) requirement. The DC requirement in music is satisfied by completing <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-101A'>MUSC 101A</a> and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-101C'>MUSC 101C</a> (already a part of the core curriculum and required for the B.A. and B.M.).</p>
+<table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Comprehensive Requirement
+		</h4><p>Students fulfill the comprehensive requirement by completing <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-196B'>MUSC 196B</a>.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Planners
+		</h3><a id="4yrplan"></a><p><strong>B.M.&mdash;Four-Year Plan for Incoming Frosh</strong></p>
+<table>
+    <tbody>
+        <tr>
+            <td>&nbsp;</td>
+            <td><strong>Fall</strong></td>
+            <td><strong>Winter</strong></td>
+            <td><strong>Spring</strong></td>
+        </tr>
+        <tr>
+            <td rowspan="3"><strong>1st (frosh)</strong></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-11A'>MUSC 11A</a><br />
+            (recommended)</td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-15'>MUSC 15</a></td>
+            <td>Language<sup>1</sup></td>
+        </tr>
+        <tr>
+            <td>Individual Lessons<sup>2</sup></td>
+            <td>Individual Lessons</td>
+            <td>Individual Lessons</td>
+        </tr>
+        <tr>
+            <td>Ensemble</td>
+            <td>Ensemble</td>
+            <td>Ensemble<br />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" rowspan="3"><strong>2nd (soph)</strong></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-30A'>MUSC 30A</a>*</td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-30B'>MUSC 30B</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-30C'>MUSC 30C</a>**</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-101A'>MUSC 101A</a>&nbsp;</td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-101B'>MUSC 101B</a></td>
+        </tr>
+        <tr>
+            <td>Individual Lessons</td>
+            <td>Individual Lessons</td>
+            <td>Individual Lessons</td>
+        </tr>
+        <tr>
+            <td>Ensemble</td>
+            <td>Ensemble<br />
+            </td>
+            <td>Ensemble</td>
+        </tr>
+        <tr>
+            <td rowspan="3"><strong>3rd (junior)</strong></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-130'>MUSC 130</a>**</td>
+            <td>MUSC 105</td>
+            <td>MUSC 150**</td>
+        </tr>
+        <tr>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-101C'>MUSC 101C</a></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>Individual Lessons</td>
+            <td>Individual Lessons</td>
+            <td>Individual Lessons</td>
+        </tr>
+        <tr>
+            <td>Ensemble</td>
+            <td>Ensemble</td>
+            <td>Ensemble</td>
+        </tr>
+        <tr>
+            <td rowspan="3"><strong>4th (senior)</strong></td>
+            <td>Language</td>
+            <td>Language</td>
+            <td>MUSC 180</td>
+        </tr>
+        <tr>
+            <td>Individual Lessons</td>
+            <td>Individual Lessons</td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-196B'>MUSC 196B</a></td>
+        </tr>
+        <tr>
+            <td>Ensemble</td>
+            <td>Ensemble</td>
+            <td>Ensemble</td>
+        </tr>
+    </tbody>
+</table>
+<p>* Indicates a performance jury requirement at the end of the quarter.</p>
+<p>**Following acceptance to the B.M. program via audition (can be done anytime up to the end of the third year), continuing B.M. students complete "Continuing B.M." juries at the end of each fall and spring quarter.</p>
+<p><sup>1</sup>Bachelor of music&nbsp;voice majors are required to take <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/FREN-French/Lower-Division/FREN-1'>FREN 1</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/GERM-German/Lower-Division/GERM-1'>GERM 1</a>, and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ITAL-Italian/Lower-Division/ITAL-1'>ITAL 1</a>. High school transcripts or AP scores may satisfy this requirement. Students may take these courses during Summer Session or through any other college. The quarter varies for when each class is offered. Students should check with the departments offering these courses to determine when they are regularly offered.</p>
+<p><sup>2</sup>Students fulfill the individual lessons requirement&nbsp;by taking one of the following courses: <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-61'>MUSC 61</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-62'>MUSC 62</a>, or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-161'>MUSC 161</a>.</p>
+<p><strong>General Education (GE)&nbsp;Codes</strong></p>
+<p><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-11A'>MUSC 11A</a> will fulfill the IM general education&nbsp;requirement.</p>
+<p><sup>3</sup>Most, but not all,&nbsp;ensembles satisfy the PR-C or PR-E general education requirement.&nbsp;Students should check to confirm which courses from the ensembles course list satisfy GE codes.</p>
+<p>Students must complete all other GE&nbsp;requirements.</p>
+<a id="2yrplan"></a><p><strong>B.M.&mdash;Two-Year Plan for Incoming Transfer Students</strong></p>
+<p>The two-year plan assumes that the student places into <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-30A'>MUSC 30A</a>, and has completed most GE requirements. Voice students are assumed to have completed&nbsp;introductory language courses prior to transfer. Transfer students are required to take&nbsp;six quarters of lessons and ensembles at UCSC.&nbsp;</p>
+<table>
+    <tbody>
+        <tr>
+            <td>&nbsp;</td>
+            <td><strong>Fall </strong></td>
+            <td><strong>Winter </strong></td>
+            <td><strong>Spring </strong></td>
+        </tr>
+        <tr>
+            <td colspan="1" rowspan="4"><strong>1st (junior)</strong></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-30A'>MUSC 30A</a>*</td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-30B'>MUSC 30B</a></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-30C'>MUSC 30C</a>**</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-101A'>MUSC 101A</a>&nbsp;</td>
+            <td>MUSIC 101B</td>
+        </tr>
+        <tr>
+            <td>Individual Lessons<sup>1</sup></td>
+            <td>Individual Lessons</td>
+            <td>Individual Lessons</td>
+        </tr>
+        <tr>
+            <td>Ensemble<sup>2</sup></td>
+            <td>Ensemble</td>
+            <td>Ensemble</td>
+        </tr>
+        <tr>
+            <td colspan="1" rowspan="6"><strong>2nd (senior)</strong></td>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-130'>MUSC 130</a>*</td>
+            <td>MUSC 105</td>
+            <td>MUSC196B</td>
+        </tr>
+        <tr>
+            <td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-101C'>MUSC 101C</a>&nbsp;</td>
+            <td>MUSC 150</td>
+            <td>MUSC 180</td>
+        </tr>
+        <tr>
+            <td>Individual Lessons</td>
+            <td>Individual Lessons</td>
+            <td>Individual Lessons</td>
+        </tr>
+        <tr>
+            <td>Ensemble</td>
+            <td>Ensemble</td>
+            <td>Ensemble</td>
+        </tr>
+    </tbody>
+</table>
+<p>* Indicates a performance jury requirement at the end of the quarter.</p>
+<p>**Following acceptance to the B.M. program via audition (can be done anytime up to the end of the third year),&nbsp;continuing B.M. students complete "Continuing B.M." juries at the end of each fall and spring quarter.</p>
+<p><sup>1</sup>Students fulfill the individual lessons requirement&nbsp;by taking one of the following courses: <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-61'>MUSC 61</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Lower-Division/MUSC-62'>MUSC 62</a>, or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MUSC-Music/Upper-Division/MUSC-161'>MUSC 161</a>.</p>
+<p>Bachelor of Music&nbsp;voice majors are required to take <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/FREN-French/Lower-Division/FREN-1'>FREN 1</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/GERM-German/Lower-Division/GERM-1'>GERM 1</a>, and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/ITAL-Italian/Lower-Division/ITAL-1'>ITAL 1</a>. High School transcripts or AP scores may satisfy this requirement. Students may take these courses during Summer Session or through any other college. The quarter varies for when each class is offered. Students should check with the departments offering these courses to determine when they are regularly offered.</p>
+<p><strong>General Education Codes</strong></p>
+<p><sup>2</sup>Most, but not all,&nbsp;ensembles satisfy the PR-C or PR-E general education requirement.&nbsp;Students should check to confirm which courses from the ensembles course list satisfy GE codes.</p>
+<table>
+
+		</table>
+	</div>
+</div>
+							</div><!-- end main -->
+						</div><!--end of rightpanel-->
+						<div style="clear: both;"></div>
+					</div><!--end of middle-->
+					
+					<!-- Footer -->
+					<div id="footer">
+					<!--FOOTER LINKS AND IMAGES CAN GO HERE-->
+						<div class="main-footer">
+<a id="goTop"></a>
+          <div class="row" id="footer">
+              <div class="footer-left">
+                  <img alt="UCSC Seal" class="seal" height="84" src="https://static.ucsc.edu/_responsive/images/logos/uc-seal.svg" width="84">
+<div class="address home">
+<div class="location">UC Santa Cruz, 1156 High Street, Santa Cruz, Ca 95064</div>
+<div class="copyright">&copy;2020 Regents of the University of California. All Rights Reserved.</div>
+</div>
+              </div>
+<div class="footer-right">
+                  
+
+<div class="social-media">
+            
+        
+        <a href="https://www.twitter.com/ucsc"><svg aria-label="Follow us on Twitter" class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg><!-- <i aria-label="Follow us on Twitter" class="fab fa-twitter"></i> --></a>
+            
+        
+        <a href="https://www.instagram.com/ucsc"><svg aria-label="Follow us on Instagram" class="svg-inline--fa fa-instagram fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><!-- <i aria-label="Follow us on Instagram" class="fab fa-instagram"></i> --></a>
+            
+        
+        <a href="https://www.facebook.com/ucsantacruz"><svg aria-label="Follow us on Facebook" class="svg-inline--fa fa-facebook-f fa-w-9" aria-hidden="true" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512" data-fa-i2svg=""><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path></svg><!-- <i aria-label="Follow us on Facebook" class="fab fa-facebook-f"></i> --></a>
+            
+        
+        <a href="http://youtube.com/ucsantacruz"><svg aria-label="Follow us on YouTube" class="svg-inline--fa fa-youtube fa-w-18" aria-hidden="true" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg><!-- <i aria-label="Follow us on YouTube" class="fab fa-youtube"></i> --></a>
+            
+        
+        <a href="http://www.linkedin.com/school/ucsc/"><svg aria-label="Follow us on LinkedIn" class="svg-inline--fa fa-linkedin-in fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z"></path></svg><!-- <i aria-label="Follow us on LinkedIn" class="fab fa-linkedin-in"></i> --></a>
+    </div>
+
+<div class="links">
+            
+                            
+        <a href="https://www.ucsc.edu/feedback/index.html">Feedback</a> 
+    </div>
+
+              </div>
+          </div>
+          <div class="sub-footer row">
+<div class="legal">
+                <ul class="legal">
+<li><a href="https://academicaffairs.ucsc.edu/accreditation/">Accreditation</a></li>
+<li><a href="https://diversity.ucsc.edu/eeo-aa/images/non-discrimination-policy.pdf">Non-Discrimination&nbsp;Policy</a></li>
+<li><a href="land-acknowledgement/index.html">Land Acknowledgement</a></li>
+<li><a href="https://www.ucsc.edu/about/employment.html">Employment</a></li>
+<li><a href="https://its.ucsc.edu/terms/">Privacy&nbsp;Policy&nbsp;&amp;&nbsp;Terms&nbsp;of&nbsp;Use</a></li>
+<li><a href="https://titleix.ucsc.edu/index.html">Sexual Violence Prevention &amp; Response (Title IX)</a></li>
+</ul>
+                
+<p class="page-meta">
+    Last modified: September 22, 2020  <span class="check-ip">128.114.113.74</span>
+</p>
+              </div>
+          </div>   
+        </div>
+					</div><!--end of footer-->
+					
+				</div><!--end of pagwrapper2 -->
+			</div><!--end of pagewrapper1-->
+			</div><!--end of wrap-->
+		
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZF-IhmpGy1TANyacnbq7Lyk973c9ilWmqlgroX0B_F5tMTeNK0D7KOmfpAeG5gd80A2&amp;t=637460801481343508" type="text/javascript"></script>
+</form>
+		<script src="https://static.ucsc.edu/_responsive/lib/modernizr/modernizr.js" type="text/javascript"></script>
+		<script src="https://static.ucsc.edu/_responsive/lib/jquery/dist/jquery.js" type="text/javascript"></script>
+		<script async="async" src="https://static.ucsc.edu/_responsive/js/main.js?t=20180409144600" type="text/javascript"></script>
+		<script type="text/javascript" src="/scripts/firefoxAnchorFix.js"></script>
+	</body>
+</html>

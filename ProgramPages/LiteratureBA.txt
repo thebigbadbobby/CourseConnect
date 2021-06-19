@@ -1,0 +1,1435 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head><title>
+	UCSC General Catalog - Literature B.A.
+</title><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-8e849bdf63c6884f6ef","applicationID":"1359705662","transactionName":"Y1NQZhdQC0cHU0ZfCVoZc2E1HglVH19HQhUbWlNLCkQRR0lFXF8QUURBWxFIRVsAEFFXCl1QXUALWAQUFVFcQgcUVUBHHx4WVQhEU1UUQUxBRgRfAVUUVEJXAVEYU0EVSQ==","queueTime":0,"applicationTime":606,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"1359996610",accountID:"3058884",trustKey:"3028485",xpid:"VwYCWV5bDBABV1RbAAECUFID",licenseKey:"NRJS-8e849bdf63c6884f6ef",applicationID:"1359705662"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(29),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{p?p-=1:o(c||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:s.now();i("err",[t,n])}var i=t("handle"),a=t(30),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError";if(!s.disabled){var p=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),s.xhrWrappable&&t(14),d=!0)}c.on("fn-start",function(t,e,n){d&&(p+=1)}),c.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,o(n))}),c.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){L++,T=g.hash,this[u]=y.now()}function o(){L--,g.hash!==T&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var c="-start",s="-end",f="-body",u="fn"+c,d="fn"+s,l="cb"+c,p="cb"+s,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable&&!y.disabled){var x=t(10),b=t(11),E=t(8),R=t(6),O=t(13),N=t(7),M=t(14),P=t(9),C=t("ee"),S=C.get("tracer");t(16),y.features.spa=!0;var T,L=0;C.on(u,r),b.on(l,r),P.on(l,r),C.on(d,o),b.on(p,o),P.on(p,o),C.buffer([u,d,"xhr-done","xhr-resolved"]),R.buffer([u]),O.buffer(["setTimeout"+s,"clearTimeout"+c,u]),M.buffer([u,"new-xhr","send-xhr"+c]),N.buffer([m+c,m+"-done",m+f+c,m+f+s]),E.buffer(["newURL"]),x.buffer([u]),b.buffer(["propagate",l,p,"executor-err","resolve"+c]),S.buffer([u,"no-"+u]),P.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(M,"send-xhr"+c),a(C,"xhr-resolved"),a(C,"xhr-done"),a(N,m+c),a(N,m+"-done"),a(P,"new-jsonp"),a(P,"jsonp-end"),a(P,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,L>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),c=t(12),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,v="fn"+h,w="bstTimer",g="pushState",y=t("loader");if(!y.disabled){y.features.stn=!0,t(8),"addEventListener"in window&&t(6);var x=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),o.on(v,function(t,e){var n=t[0];n instanceof x&&i("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),this.bstType])}),c.on(m,function(){this.bstStart=y.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t("wrap-function")(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var c=r.apply(this,t);return o.emit(n+"start",[t,a],c),c.then(function(t){return o.emit(n+"end",[null,t],c),t},function(t){throw o.emit(n+"end",[t],c),t})})}var o=t("ee").get("fetch"),i=t(30),a=t(29);e.exports=o;var c=window,s="fetch-",f=s+"body-",u=["arrayBuffer","blob","json","text","formData"],d=c.Request,l=c.Response,p=c.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(c,"fetch",s),o.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(s+"done",[null,e],n)}else o.emit(s+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t("wrap-function")(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){s.emit("jsonp-end",[],l),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){s.emit("jsonp-error",[],l),s.emit("jsonp-end",[],l),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=c(a),d="function"==typeof u.parent[u.key];if(d){var l={};f.inPlace(u.parent,[u.key],"cb-",l),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),s.emit("new-jsonp",[t.src],l)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(l),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function c(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var s=t("ee").get("jsonp"),f=t("wrap-function")(s);if(e.exports=s,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,l=/^(\w+)(\.|$)(.*)$/,p=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?f.inPlace(Node.prototype,p,"dom-"):(f.inPlace(HTMLElement.prototype,p,"dom-"),f.inPlace(HTMLHeadElement.prototype,p,"dom-"),f.inPlace(HTMLBodyElement.prototype,p,"dom-")),s.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t("wrap-function")(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=i.context(),n=c(t,"executor-",e,null,!1),r=new f(n);return i.context(r).getCtx=function(){return e},r}var o=t("wrap-function"),i=t("ee").get("promise"),a=t("ee").getOrSetContext,c=o(i),s=t(29),f=NREUM.o.PR;e.exports=i,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){i.emit("propagate",[null,!o],a,!1,!1),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var a=e.apply(f,arguments),c=f.resolve(a);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&i.emit("propagate",[t,!0],n,!1,!1),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),o.wrapInPlace(f.prototype,"then",function(t){return function(){var e=this,n=o.argsToArray.apply(this,arguments),r=a(e);r.promise=e,n[0]=c(n[0],"cb-",r,null,!1),n[1]=c(n[1],"cb-",r,null,!1);var s=t.apply(this,n);return r.nextPromise=s,i.emit("propagate",[e,!0],s,!1,!1),s}}),i.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this,null,!1),t[1]=c(t[1],"resolve-",this,null,!1)}),i.on("executor-err",function(t,e,n){t[1](n)}),i.on("cb-end",function(t,e,n){i.emit("propagate",[n,!0],this.nextPromise,!1,!1)}),i.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=i.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",c)}function i(t){y.push(t),h&&(b?b.then(a):v?v(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,w="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){if(!c(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||s(t)&&l())&&(w.traceContextParentHeader=o(h,m),w.traceContextStateHeader=i(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&s(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function o(t,e){return"00-"+e+"-"+t+"-01"}function i(t,e,n,r,o){var i=0,a="",c=1,s="",f="";return o+"@nr="+i+"-"+c+"-"+n+"-"+r+"-"+t+"-"+a+"-"+s+"-"+f+"-"+e}function a(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var c={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(c.d.tk=i),btoa(JSON.stringify(c))}function c(t){return f()&&s(t)}function s(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var o=h(n.allowed_origins[r]);if(t.hostname===o.hostname&&t.protocol===o.protocol&&t.port===o.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(26),h=t(17);e.exports={generateTracePayload:r,shouldGenerateTrace:c}},{}],16:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function o(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=s(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var c=t("handle"),s=t(17),f=t(15).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(22),m=t(21),v=t(18),w=window.XMLHttpRequest;a.features.xhr=!0,t(14),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){i(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<l;c++)e.addEventListener(d[c],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof w&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=s(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var o=f(this.parsedOrigin);if(o&&(o.newrelicHeader||o.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),e(i.headers,o)&&(this.dt=o),t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&e(t[0].headers,o)&&(this.dt=o)})}},{}],17:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,c=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||c),"/"===o.pathname&&(r[t]=o),o}},{}],18:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(21);e.exports=r},{}],19:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(29),c=t(30),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=o(l+e,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[f.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(p+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],20:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],21:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],22:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],23:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-a}function o(){return i}var i=(new Date).getTime(),a=i,c=t(31);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=o},{}],24:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],25:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function i(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!v){var e=Math.round(t.timeStamp),n={type:t.type};e<=l.now()?n.fid=l.now()-e:e>l.offset&&e<=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),v=!0,d("timing",["fi",e,n])}}function c(t){d("pageHide",[l.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var s,f,u,d=t("handle"),l=t("loader"),p=t(28),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(m){}f=new PerformanceObserver(o);try{f.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}u=new PerformanceObserver(i);try{u.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var v=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(t){document.addEventListener(t,a,!1)})}p(c)}},{}],26:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<i.length;c++)o=i[c],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){return a(16)}function i(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,o=window.crypto||window.msCrypto;o&&o.getRandomValues&&Uint8Array&&(n=o.getRandomValues(new Uint8Array(31)));for(var i=[],a=0;a<t;a++)i.push(e().toString(16));return i.join("")}e.exports={generateUuid:r,generateSpanId:o,generateTraceId:i}},{}],27:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,s=c.match(a);s&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(o="Safari",i=s[1])}e.exports={agent:o,version:i,match:r}},{}],28:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[o]?"hidden":"visible")}"addEventListener"in document&&i&&document.addEventListener(i,e,!1)}e.exports=r;var o,i,a;"undefined"!=typeof document.hidden?(o="hidden",i="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",i="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",i="webkitvisibilitychange",a="webkitVisibilityState")},{}],29:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],30:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],31:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?f(t,s,a):a()}function n(n,r,o,i,a){if(a!==!1&&(a=!0),!p.aborted||i){t&&a&&t(n,r,o);for(var c=e(o),s=m(n),f=s.length,u=0;u<f;u++)s[u].apply(c,r);var l=d[y[n]];return l&&l.push([x,n,r,c]),c}}function i(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return l[t]=l[t]||o(n)}function w(t,e){p.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:i,addEventListener:i,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:c,aborted:!1};return x}function i(t){return f(t,s,a)}function a(){return new r}function c(){(d.api||d.feature)&&(p.aborted=!0,d=p.backlog={})}var s="nr@context",f=t("gos"),u=t(29),d={},l={},p=e.exports=o();e.exports.getOrSetContext=i,p.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!N++){var t=O.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(E,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+O.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=p+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function o(){"complete"===m.readyState&&i()}function i(){c("mark",["domContent",a()+O.offset],null,"api")}var a=t(23),c=t("handle"),s=t(29),f=t("ee"),u=t(27),d=t(24),l=t(20),p=l.getConfiguration("ssl")===!1?"http":"https",h=window,m=h.document,v="addEventListener",w="attachEvent",g=h.XMLHttpRequest,y=g&&g.prototype,x=!d(h.location);NREUM.o={ST:setTimeout,SI:h.setImmediate,CT:clearTimeout,XHR:g,REQ:h.Request,EV:h.Event,PR:h.Promise,MO:h.MutationObserver};var b=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1209.min.js"},R=g&&y&&y[v]&&!/CriOS/.test(navigator.userAgent),O=e.exports={offset:a.getLastTimestamp(),now:a,origin:b,features:{},xhrWrappable:R,userAgent:u,disabled:x};if(!x){t(19),t(25),m[v]?(m[v]("DOMContentLoaded",i,!1),h[v]("load",r,!1)):(m[w]("onreadystatechange",o),h[w]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var N=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,s,f){function nrWrapper(){var i,a,u,l;try{a=this,i=d(arguments),u="function"==typeof r?r(i,a):r||{}}catch(p){o([p,"",[i,a,s],u],t)}c(n+"start",[i,a,s],u,f);try{return l=e.apply(a,i)}catch(h){throw c(n+"err",[i,a,h],u,f),h}finally{c(n+"end",[i,a,l],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[l]=e,i(e,nrWrapper,t),nrWrapper)}function r(t,e,r,o,i){r||(r="");var c,s,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)s=e[f],c=t[s],a(c)||(t[s]=n(c,u?s+r:r,o,s,i))}function c(n,r,i,a){if(!h||e){var c=h;h=!0;try{t.emit(n,r,i,e,a)}catch(s){o([s,n,r,i],t)}h=c}}return t||(t=u),n.inPlace=r,n.flag=l,n}function o(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function i(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(i){o([i],n)}for(var a in t)p.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[l])}function c(t,e){var n=e(t);return n[l]=t,i(t,n,u),n}function s(t,e,n){var r=t[e];t[e]=c(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(30),l="nr@original",p=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=s,e.exports.argsToArray=f},{}]},{},["loader",2,16,5,3,4]);</script><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no" /><meta http-equiv="cleartype" content="on" /><link rel="shortcut icon" href="/Institutions/University-of-California-Santa-Cruz/images/favicon.ico" /><link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /><link href="/Institutions/University-of-California-Santa-Cruz/styles/ucsc.css" rel="stylesheet" type="text/css" /><link href="/Institutions/University-of-California-Santa-Cruz/styles/UCSCCustom.css" rel="stylesheet" type="text/css" /><link href="/Institutions/University-of-California-Santa-Cruz/styles/print.css" rel="stylesheet" type="text/css" media="print" />
+	 
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
+	 
+	 <script type="text/javascript" src="/Institutions/University-of-California-Santa-Cruz/scripts/treeList.js"></script>
+	 <script type="text/javascript" src="/Institutions/University-of-California-Santa-Cruz/scripts/coursepopup.js"></script>
+	 <script type="text/javascript" src="/Institutions/University-of-California-Santa-Cruz/scripts/newscript.js"></script>
+     <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/smoothness/jquery-ui.css" rel="Stylesheet" type="text/css" /><script type='text/javascript'> 
+                                                (function ($) {
+                                                    $(document).ready(
+                                                        function () {
+                                                            var tabList = "<ul><li><a href='#degree-req-1'>Information and Policies</a></li><li><a href='#degree-req-2'>General Literature Concentration</a></li><li><a href='#degree-req-3'>Language Literature Concentration</a></li><li><a href='#degree-req-4'>Creative Writing Concentration</a></li></ul>";
+                                                            $(tabList).insertBefore("#degree-req-1");
+                                                            
+                                                            const queryString = window.location.search;
+                                                            const urlParams = new URLSearchParams(queryString);
+                                                            if (urlParams.has('tab') && !isNaN(urlParams.get('tab')))
+                                                            {
+                                                                $("#degree-req").tabs();
+                                                                var url = '#degree-req-'.concat(urlParams.get('tab'));
+                                                                var element = $('a[href="'+url+'"]')[0];
+                                                                element.click();
+                                                            }
+                                                            else
+                                                            {
+                                                                $("#degree-req").tabs();
+                                                            }
+                                                            
+                                                            function scrollToAnchor(anchorName){
+                                                                var aTag = $("a[name='"+ anchorName +"']");
+                                                                $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+                                                            }
+
+                                                            if(urlParams.has('anchor'))
+                                                            {
+                                                                scrollToAnchor(urlParams.get('anchor'));
+                                                            }
+                                                        });
+                                                    })(jQuery);
+                                                </script>;
+	
+	<!-- Google Tag Manager -->
+
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5RFHNC"
+
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+	<script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+
+        })(window, document, 'script', 'dataLayer', 'GTM-5RFHNC');</script>
+
+	<!-- End Google Tag Manager -->
+	 
+
+</head>
+
+<body class="home www js" >
+	<div id="skiptocontent1"><a id="skip_link" class="skiplink" href="#middle">Skip to main content</a></div>
+		<form method="post" action="/Current/General-Catalog/Academic-Units/Humanities-Division/Literature/Literature-BA" id="Form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="KxBUJHDr4EwbGCDEJ/Z/LPr23aRT2bxcnxvPigqI5NDlkPt+HtHul1lg+EUOhg0eopO0vtPmVfOfHE1e/Hs/6lDaG8dG9rHKtw44adK0+CRdrnQwo9ZyKXI+mUsB3WYysQBdI+Gv1kf3cH3yOXXsbcppmrK+aYmb77cVc0ZOFLGBHu9xRcnlHFjWLr8H8mCv6MquqhP+W2aV8HEE00QLT5+OM9agG9YhLjpCzJOGXGPUcgL0ZB55WZnX6mSjPLgbfQf7XBtb9qqMaBKM1rJn13D1ooD9OjFfJ9902apcPey19a3YR7oDi6kuqpuC2TrSCvh+Ja3wqi9qEtvjnXu044boNcGmei+s7ttBMvXC/8TbDtfhrjgfNdDYAozFiK4h4nSUsEphWbax76smJBHjZZTuaxBZkFrANYMgBgYZPHICYGtcDXM9R/Ov2ta8ElhSMJ7uA+wdORSBtciW5hxxb0wQy5MwV6tEKi9Iq3SF1a5egB7rDRj4qnUK8EUf4SJQSNsKcLm4IUXrbJtMD4UcTYjd04tjNCj81RGbnm+z9YPCai4pgY9GGpJ3Ew/Y5b+XVur8KohBjdLeCI1OT/HaVXmz6bO/H68JyLqv6Gx0+SJHSAeSz+2hX+HHqU/GM1+8uoc1zBkRfxkEjrOrVqga7wTlwuEPbkvyfzP4gIF3Crn+mduo2QllC+Qcdu99wmB952FH1XhiAbDYYLTNzma7UmbvP9uRvUlNerGh5NO4HAoCz0gHyjVWhHL606E/LY1V1HL+bZNQAjwuoPqzwVl7ncbOzZscq5kSWfiY8qWU2aVYRujw4geV92hMIQEVxzo4ad7SDs7QD6h9sbEq466YXBdYXOpGgR5Fa2CMDr/BM8yTIdmd9OAiNEcHRbaCUpkR6VcXxhNPVHauXB6VeodGRVVQndYMxqA/i4YjXcDN/C97e0e1XNF415EYTdNXyIOhkLs/WiGwucK7CITpy1QJVf5zDTKkF/GlB3PPtEPQ0WEEG1HwHMvmHZkXw3LMavqn+W4zIuenA+hgFRscSX9HYJhiLMvaCNdLu+yykjisdKqUuosX3X9EOBWmglQqVpwk7ziABd1Wvw/6CQ498ZoXAcrCJ37T9yzHfp+s7h+DWQyX11LzfRXck8HpxBl1vDzJWjJJ7jhyJAPI1jv39ukVhADU//DRwZBbR9YBPFNKDhGwl2MciQ9qCuuEhlO18sWgzdFDWvJEi2v8ZcBHaQeSls3ojGFsps9dKXVWXwhzMkgQAR/4BnOVYT4lSGf07e0jcX6wUeZoZ3xvDh18odVOe6XqNnz+rn/t9p9TLET2y7gr1ABtKQxZElJ4FCn7zQkB5G+t/LcE3VWRctgYmzZHXSd096DniSkF+mR0o2xobbFof1DVH6wAOICtzaCdgSFzBkAiuqZgwBAAjzOniG0E0sFA8R+Qm8LaW6XBdBwt6reV6DC+73MvkfIdiBWmI944aedjfoSgdCZZsSabRF7Lpx1bMVvX5pUsvsP3sPB8gBuPVP+0yHOYyIx/t7WZT/6R318x6m0j/UzaCfZAAoMhqjUm3fdDo9JF/OUlB4XkQ9PBckdaByctKoNjv2NswwKd9sZe9V9qhyDUetVifgYND8gHYax9osbMjo4pTUn3oNqbQWZw331W9ciq3r3J1hwaig9K1gGqGpezd6dobMGAmumnNz3VTSmG7Qw9U0fh6KhqY/Dj2gLK0Y5jA2gvn8hr3MhdymNyuJXCtZQrL7ESYjMFKCoX+0dIwgs6q5+U61A/1sYNz4X4Yr57oUhaYdmeTX7RMsdkWEyV6008MZoeIJCr4FJirta4JbR3LWdlL7EjnjjUSrgk7Yd21Y6Q8I853sXHuQX9uQV6Y8gmoO3KHHGhJ1d4EACtIgTCvioDI8RHpmKcccdVeDG4RByjPDt+cX4y7aaObxsSrARfFFe8NA+MD045Te+5YiXta6gqyFFUS/sg9DZMEJvgXkYguZQvHMr7X7oh6eRAOPZc9mRlXU/1p3JKCTLtNirYty36RBg5geMhqhqdTYPB9b/4rRelZH9yMCezeOJQGrKcg+73getPEtqOIakaOU9Ot71FGH15YKGm1Dg1+V7hKpDIGuKxvu1JCqObkTz+ChNRbsnK+6BZ+qfNofYHzHNXF+q1S1WDOcVYblAv62cqe6V7GIQW4rA8/w/L6/DF/4SJp3gEtYuxap7DYOMu2x/Dz/ISCrmtZDVNRwFJnUQXWr3xzH2X/eWuhllrtUg+6UhTQH0WOG2+gMIo1OqlSTQBgal8g1Y53qvaX98NvH0IR+0dwL8WlEy8dGzVgvzFylTokVKFmLh8HquuL8IQvE8vlaW+ukOTaiIh6NXY/cwqGQv5ocVUPn05Qo0RZDiEQmp8mPL8bl+tAwMbxHGIY5DZB+8EU9ddnn1beuc5oyMT9hjBPzAeGqt4jyCRBYtcl6UvQ0YJB4e/NBYT94VlcLZpSAlxEDNZyBfqRywhPiOji6g6mg657vhPLB+Zh8PRhGqxH6Olrs3C+kQMXsK3dUH8WhQWL37QZiQAo37Zt8hAfTDEXVteFRB2OWEz10fWo5VMGxVV/ptqqgbpW5umRWxrmJ2GVKNITkUsZ56gyECbOZ9jTOtPfqE2gj3IKOGbifcSQ/c+3p7rHDThnlMWm9Qgk6ROMc5B+Rqbc3RfCEyWoUNJ3zXQ/31Spp7cCS26JXbo3PjyPDjnE8uPTEGRiWddRSm33cY+2Sk2H4am5eH07+xzW+VFpfKo6ZDbyG8c9o0ViZ5fl5q+z2n21fqp0Gl1/yvbv69Lkb4V8MKhyMEDjMAJKpsC683bllBrxVQvfcSQKEouD3a5ouGy2tgVo6UHaRyxh9X1hsNFlRQmEV8iN0LS8lylnv37s/NIlHnCpSmqvh/M/rO5IjBOtdt3jaQiU6vxQ7eqQkDKFslMlctLE8vEXhG7fAYTT/DxygMQ92RqCC0ow4O9puM1sP6eiBNCz/JT3X+OWPUWI1XYprxcqqeFoWZUOP8XAUXrcvOKkLt7r+0z3Bc/uCZNZWNM0JkriaAX8cIo7BfH+bKSj+R3U65drfxXB2b4CcsFPZ/IPmTtZuvk8lq9GZwXcHUEkVa6zagejIYeLmMHAQkk/1OXhP1LRjZno0vZabUZ3Jt1mxIaN9rpUyrewFdQ+TO2kkpAge2PVcMVq2f1Sm+5upAYlwkEbtIdTlqJN1HlmY71VVF9wHh0+4vmbvqhl+MdDUuct0O07ShrDGWzhyRC8Dor9dmT197trGQonYngSKi7Xmoh0x9GNZvfXFPh8PYh2poAKrBQ1LnvENFDF59Q0ySmutViaGetfDn5i0XjDKb0gDCGA1v5/RkD6kZmEEELxbVXtE0EiNMCvyGbiOoxD3c/aDe6BN9YKmekBjwDto4tp5fgueUzZMoZYUaQkRTbgLQeE2l985wIWdKWmeY15C493Kp/rXNU1hfMHWSYxwhGgVs8LwFrCYmPrN/slbHM8jBFDqWewFyfcLP7wDHeCY8V6UaySnTmqXmGBmQUWBTE2hgHX3TRLsPEf5FlMS8mjhd3nmOpxNnyEeuS7buOBPt0ZP3BCGmwODvho6WOltFQwtVvg6vP6f2kVRp6OWpaWRCkbjcqZS0Bil9bVIUSDjgjWHlt60s0QwtOJ/Tv0ciirPIumjhgnrBjsOmCngL7XTr6PXinZAZtfRjkcDLRMLsze0BGbcgaNOol87qDVI6jtQDTWMqwj/uK4wDnRwhwkgpZodxPnN6KypC/mo+N4g3oJNZYZd1/Wu+cZ2fHQUOf+9E3ABspuLQqIa78KUUFkTfue0e21aeo3kBANZgThxvc1LMQa+wzT2w2bAJY6u3Yus6pang7cRLy1r9rtT7jLETqtuYToF2eXk4qH5zmYrOH1V4lyD3dQY6FzxhP0iZiLB9ZsKxHU7fHslYZu/uIdMbqHUky25i6nBLRXn6DDAVWxfIl1zIQhOhH+FacuV8xQw2zj4IMONzW1jru2d2uaTUFmDybBN/O+2PCld7bzB54HzL+89DHfA9OeJe9LwoStqUgxCSVtZYiKK6snDmrnvXgIPQUaErHuhSa+560KIxVh2VdeQ7Hgiccjxbq2CHdg5pY0BmWwc+l30nL16hI+btz/pCnPyawCucRTvtW4c59QSTe32Guxrrksbk6wnDhk5+rfEm5Ed0px9DYctPvDWE5UDJRmkAMgZhH+AYvJ1+o3J8SN1aXVCfDGvZGpYEZfKGFHW8bKjGqkqlC/Ru+2dauDWLM/kNjXGbxAbhjR6AGURN5PiwzjYOjQh2Q+jaU7KdWGBYHsclwPvvOZimUAEhXUgWtDx2Ftoy2tGlFE8odXAYa0CnA2+0VCucuneObxPPBIdFRFg==" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="845114C5" />
+	<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+	<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="Ni+Zxjegt9HOynVq35IBdTKht79VaJgLaK+9C/1vQ7Zp3JMEQGek+akYZ60kyrHTbEVNF41ZBNY8k6pAIJeS20tphIxHDBO45cX4gwU91wOO/m97czX/tNQfc0IrPZ1g6WzzoMWUV4V5fZuYqfenv06MI4AFrZ4kONvdB1DB7a8zomhiMQ4XK+/dnsk8OeyjUpbh0/8iqiwbf9ns2smZbN/NjNnKtqj5dvUb90EMzJy6Os/G+pVewURkl2cZscHJclE/9XbHGLH6x2aWIsMWtA==" />
+</div>
+			<div id="wrap">
+			<div id="pagewrapper1">
+				<div id="pagewrapper2">
+					<div id="banner">
+					<!--LOGO AND HEADER LINKS CAN GO HERE-->
+					  <div class="page-top">
+      <div class="row">
+
+        <div class="page-top-left">
+          <a class="campus-secondary" href="https://www.ucsc.edu/index.html" id="logo">UC Santa Cruz</a>
+        </div>
+
+        <div class="page-top-right">
+          <ul id="topNav">
+<li><a href="https://my.ucsc.edu" title="The student portal">MyUCSC</a></li>
+<li><a href="https://www.ucsc.edu/tools/people.html" title="Campus directory">People</a></li>
+<li><a href="https://www.ucsc.edu/tools/calendars.html" title="Upcoming events, academic, and administrative calendars">Calendars</a></li>
+<li><a href="https://www.ucsc.edu/visit/maps-directions.html">Maps</a></li>
+<li><a href="https://www.ucsc.edu/tools/azindex.html" title="A to Z index of UCSC websites">A-Z Index</a></li>
+</ul>
+        </div>
+
+      </div>
+    </div>
+						 
+						    <!-- Begin Page Banner -->
+                          
+					</div><!-- end banner --> 
+					<div id="middle">			
+						<!--LEFT NAV-->
+						<div id="leftpanel">
+
+                      <div id="searchtoggle">	</div>				
+					  <div id="leftcolumn_0_Panel1" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;leftcolumn_0_btnSubmit&#39;)">
+	
+    <div class="sidebox">
+	    <div class="hdr">
+            <label for="leftcolumn_0_txtBxTerm" id="leftcolumn_0_searchTextLabel">Catalog Search</label>
+	    </div>
+
+	    <div class="sideboxbrdr">
+            <input name="leftcolumn_0$txtBxTerm" type="text" id="leftcolumn_0_txtBxTerm" />
+            <div style="text-indent: -999em;">
+            <label for="leftcolumn_0_drpSearchType" id="leftcolumn_0_filterLabel"></label>
+            </div>
+            <select name="leftcolumn_0$drpSearchType" id="leftcolumn_0_drpSearchType">
+		<option selected="selected" value="">Entire Catalog</option>
+		<option value="programs">Programs</option>
+		<option value="courses">Courses</option>
+
+	</select>
+
+            <input type="submit" name="leftcolumn_0$btnSubmit" value="Search" id="leftcolumn_0_btnSubmit" />
+	    </div>
+    </div> 
+
+</div><div class="sidebox">
+	<div class="hdr">
+		Contents
+	</div>
+</div>
+						 <div class="toc">
+							<ul id="navLocal" class="navLocal">
+	<li><a href="/en/Current/General-Catalog/Welcome-to-UC-Santa-Cruz">Welcome to UC Santa Cruz</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Introducing-UC-Santa-Cruz">Introducing UC Santa Cruz</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Programs">Academic Programs</a></li><li class="hasChildren active"><a href="/en/Current/General-Catalog/Academic-Units">Academic Units</a><ul>
+		<li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Arts-Division">Arts Division</a></li><li class="hasChildren active"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division">Humanities Division</a><ul>
+			<li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Critical-Race-and-Ethnic-Studies">Critical Race and Ethnic Studies</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Feminist-Studies">Feminist Studies</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/History">History</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/History-of-Consciousness">History of Consciousness</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Languages-and-Applied-Linguistics">Languages and Applied Linguistics</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Linguistics">Linguistics</a></li><li class="hasChildren active"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Literature">Literature</a><ul>
+				<li class=" active"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Literature/Literature-BA">Literature B.A.</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Literature/Literature-Minor">Literature Minor</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Literature/Italian-Studies-BA">Italian Studies B.A.</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Literature/Italian-Studies-Minor">Italian Studies Minor</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Literature/Literature-MA">Literature M.A.</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Literature/Literature-PhD">Literature Ph.D.</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Literature/Literature-Designated-Emphasis">Literature Designated Emphasis</a></li>
+			</ul></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Philosophy">Philosophy</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Writing-Program">Writing Program</a></li>
+		</ul></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division">Physical and Biological Sciences Division</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Baskin-School-of-Engineering">Baskin School of Engineering</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division">Social Sciences Division</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/The-Colleges">The Colleges</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Physical-Education">Physical Education</a></li>
+	</ul></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Courses">Courses</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Undergraduate-Information">Undergraduate Information</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Graduate-Information">Graduate Information</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Resources-Residency-and-Policies">Resources, Residency, and Policies</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Teaching-and-Administrative-Staff">Teaching and Administrative Staff</a></li><li><a href="/en/Current/General-Catalog/Academic-Calendar">Academic Calendar</a></li><li><a href="/en/Current/General-Catalog/Catalogs-Prior-to-2019-20">Catalogs Prior to 2019-20</a></li>
+</ul>
+					           <div class="sidebox">
+									<div class="sidebox">
+	<div class="hdr">
+		Catalog Links
+	</div><div class="sideboxbrdr">
+		<ul>
+			<li><a href="/en/Current/General-Catalog">Catalog Home</a></li><li><a href="/en">All Catalogs</a></li>
+		</ul>
+	</div>
+</div>
+								</div><!-- end of sidebox -->
+								<div class="sidebox">
+	<div class="hdr">
+		Share
+	</div><div class="sideboxbrdr">
+		<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_facebook">Share this page on Facebook</a>
+<a class="addthis_button_twitter">Share this page on Twitter</a>
+<a class="addthis_button_email">Email this page</a>
+<a class="addthis_button_print">Print this page</a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+<script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4db17d15194e924f"></script>
+<!-- AddThis Button END -->
+	</div>
+</div>
+							</div><!-- end of TOC -->
+						</div><!--end of leftpanel-->
+						<!-- Main content area -->
+						<div id="rightpanel">
+							<div id="sc-rightpanel-top">
+								<div id="sc-top-links">
+										<span class="print">
+											<a href="javascript:window.print()" title="Print this Page"><span class="printLabel">Print this page</span></a>
+										</span>
+									
+
+<div id="catalog-dropdown">
+    <span id="catalogdropdown_0_Label1"></span>
+
+	<div style="font-size: x-small;">
+		<div style="text-indent: -999em; line-height: 1px; color:#EFEFEF;">
+            <label for="catalogdropdown_0_DropDownList1">Select a Catalog</label>
+		</div>
+		<select name="catalogdropdown_0$DropDownList1" id="catalogdropdown_0_DropDownList1">
+	<option selected="selected" value="{99FCED38-D22F-4053-805D-64F15C2ECDB8}">2020-21 UCSC General Catalog</option>
+	<option value="{1A63CDDE-8554-4CA1-8DAC-3A8014DCE824}">2019-20 UCSC General Catalog</option>
+
+</select>
+		<input type="submit" name="catalogdropdown_0$Button1" value="Select" id="catalogdropdown_0_Button1" style="border-style:Outset;" />
+	</div>
+</div>
+<br />
+
+
+
+
+								</div><!--end of sc-top-links-->
+							</div><!--end sc-rightpanel-top-->
+							<div id="main">
+							<div id="breadcrumb">
+								<p id="breadcrumbs"><a href="/en/Current/General-Catalog">2020-21 UCSC General Catalog</a> &gt; <a href="/en/Current/General-Catalog/Academic-Units">Academic Units</a> &gt; <a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division">Humanities Division</a> &gt; <a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Literature">Literature</a> &gt; Literature B.A.</p>
+							</div><!-- end of breadcrumb -->
+								<h1>
+	Literature B.A.
+</h1><div id="degree-req">
+	<div id="degree-req-1">
+		<h2>
+			Information and Policies
+		</h2><h3 class="sc-RequiredCoursesHeading1">
+			Introduction
+		</h3><p>The Literature Department at UC Santa Cruz&nbsp;fosters innovative and comparative approaches to reading and interpretation in courses&nbsp; in a variety of languages that encompass traditional literary history, cross-cultural inquiry, current theoretical debates, and new media.</p>
+
+<p>Literature majors learn to read, think, and write critically. These skills have wide applicability, and offer pathways into related disciplines such as history, philosophy, psychology, sociology, anthropology, politics, and the history of art and visual culture. Literature majors enter a variety of careers ranging from law and journalism to management, government, international studies, publishing, technical writing, and teaching at all levels. The literature major prepares students for careers in digital storytelling and electronic media; film, television, and video; theater and the visual arts; and many other fields.</p>
+
+<p>The Literature Department faculty requires that all literature majors have basic proficiency in a second language. Proficiency in more than one language enhances understanding of any literature and culture. Graduate programs in literature and other humanities disciplines generally require competence in at least one language other than English.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Academic Advising for the Program
+		</h3><p>Faculty advisers are available in the Literature Department office throughout each academic term; students may make appointments in advance to meet with them. Staff advisers are available by appointment and on a drop-in basis. Students are encouraged to consult with an adviser once per quarter.</p>
+
+<p>Transfer students should also consult the section Transfer Information and Policy.</p>
+
+<p>Advisers for the literature program are available at <a href="mailto:litdept@ucsc.edu">litdept@ucsc.edu</a>, (831) 459-4778, or by visiting the Literature Department office in Humanities 1, room 303.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Getting Started in the Major
+		</h3><p>All students considering a literature major or minor should consult with staff and/or faculty advisers at the Literature Department office as early as possible, and declare the major or minor before the end of their sophomore year. Transfer students are urged to declare their major or minor during their first quarter at UCSC, and should also consult the section Transfer Information and Policy.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Program Learning Outcomes
+		</h3><p>Following is a summary of the program learning outcomes for the Literature B.A.:</p>
+
+<p>Students who complete the literature major should emerge with the following knowledge and skills:</p>
+
+<ol>
+	<li>A capacity for critical analysis of texts that is attentive to:
+	<ul>
+		<li>the formal structures, genres, and rhetorical strategies of different kinds of writing, public discourse, and media;</li>
+		<li>the historical and social contexts of such texts;</li>
+		<li>the role cultural and linguistic difference play in the interpretation of texts read in translation and in a language not one&#39;s own.</li>
+	</ul>
+	</li>
+	<li>Effective written communication that demonstrates the following abilities:
+	<ul>
+		<li>to evaluate multiple interpretations of texts;</li>
+		<li>to write effective argumentative prose;</li>
+		<li>to situate texts in relation to a critical/theoretical tradition;</li>
+		<li>to design and initiate a substantive independent project of research or creative activity.</li>
+	</ul>
+	</li>
+	<li>Experience reading a variety of texts:
+	<ul>
+		<li>from a breadth of world cultures and traditions;</li>
+		<li>from different historical periods, including the pre-modern;</li>
+		<li>originally written in languages other than English.</li>
+	</ul>
+	</li>
+</ol>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Major Qualification Policy and Declaration Process
+		</h3><a id="mqual"></a><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Major Qualification
+		</h4><p>Students must complete&nbsp;<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-1'>LIT 1</a>&nbsp;or its transfer equivalent in order to declare the literature major or minor.</p>
+<p>Transfer students should also consult the section Transfer Information and Policy.</p><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Appeal Process
+		</h4><p>Students notified that they are not eligible to declare the literature major may appeal this decision by submitting a letter to the department chair within 15 working days from the date of notification. Within 15 working days of receipt of the student&#39;s appeal, the department will notify the student and their college of its decision regarding the appeal.</p><a id="decproc"></a>
+<table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			How to Declare a Major
+		</h4><p>Students must complete&nbsp;<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-1'>LIT 1</a>&nbsp;or its transfer equivalent in order to declare the literature major. In order to declare the major, students meet with a department adviser to complete and submit a Proposed Study Plan and <a rel="noopener noreferrer" href="https://advising.ucsc.edu/planning/your-major/declaration/docs/major-declaration.pdf" target="_blank">Declaration of Major/Minor petition</a>. All students considering a major should consult with a department adviser as early as possible to make an academic plan.</p><table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Transfer Information and Policy
+		</h3><a id="tasp"></a><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Transfer Admission Screening Policy
+		</h4><p>Students planning to apply to UC Santa Cruz in this major are not required to complete specific major preparation courses for consideration of admission to UC Santa Cruz.</p>
+<p>Students transferring from California community colleges may use an articulated equivalent of <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-1'>LIT 1</a> to satisfy the&nbsp;<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-1'>LIT 1</a> course requirement. Students transferring from other colleges may petition to use an introduction to literature course to satisfy the <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-1'>LIT 1</a> course requirement. Another literature course may be applied toward the LIT 60/LIT 61 or the LIT 80/LIT 81 course requirement.</p>
+<p>Transfer students planning to major in literature are strongly recommended&nbsp;to complete the equivalent of one year of college-level study of a language other than English&nbsp; before entering UCSC.</p><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Getting Started at UCSC as a Transfer Student
+		</h4><p>Transfer students may declare the literature major or minor after completing <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-1'>LIT 1</a> or its transfer equivalent, and are urged to declare the major during their first quarter at UCSC.</p>
+<p>For information about declaring the literature major or minor, please see the section How to Declare a Major.</p>
+<p>A student may receive credit toward the lower-division requirements of the major or minor for up to two courses taken at other institutions.</p>
+<p>Students who attend another campus of the University of California may petition to apply a maximum of three upper-division courses toward the literature major, or two upper-division courses toward the literature minor.</p>
+<p>Students may not use upper-division coursework taken at non-UC colleges or universities to satisfy upper-division literature major or minor credit.</p><table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Letter Grade Policy
+		</h3><p>Letter grades are required for 75 percent of the upper-division courses applied toward the literature major. The senior seminar or senior thesis must be taken for a letter grade.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Course Substitution Policy
+		</h3><p>Students who participate in a UC Education Abroad Program and/or attend another campus of the University of California may petition to apply a combined maximum of three upper-division courses toward the literature major, or two upper-division courses toward the literature minor.</p>
+
+<p>Students may petition to receive literature elective credit for a maximum of one upper-division course taken in another department at UCSC. In order to petition for a course from another department to substitute for a literature elective, students should submit a current course syllabus to the literature undergraduate program coordinator. Courses accepted from other departments may not be used to satisfy the literature major&#39;s critical approaches or distribution requirements.</p>
+
+<p>&nbsp;</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Study Abroad
+		</h3><p>The University of California&rsquo;s Education Abroad Program (EAP) operates study centers in countries throughout the world, all associated with host institutions of high academic standing. EAP serves more than 1500 upper-division students from the nine UC campuses every year. Students who participate in a UC Education Abroad Program may petition to apply up to three upper-division courses from EAP toward the literature major, or two upper-division courses toward the literature minor.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Honors
+		</h3><p>Honors in the literature major are awarded to graduating seniors who have earned a 3.70 to 3.89 grade-point average in their upper-division literature courses. Highest honors in the literature major are awarded to graduating seniors who have earned a 3.90 or higher grade-point average in their upper-division literature courses. Honors are not awarded in the minor.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Creative Writing Courses
+		</h3><p>Any qualified student may take creative writing courses for credit toward graduation. Only students accepted into the creative writing concentration, however, may use Literature/Creative Writing courses <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179A'>LIT 179A</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179B'>LIT 179B</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-190V'>LIT 190V</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-190W'>LIT 190W</a>, and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-195C'>LIT 195C</a> to satisfy major requirements.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Senior Checklist
+		</h3><p>Three quarters before anticipated graduation, all literature majors must complete a checklist in collaboration with a department adviser. The purpose of the checklist is to confirm progress toward graduation and the satisfaction of all major requirements. Completion and approval of a senior checklist are required for graduation.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Credit for Repeated Courses
+		</h3><p>Courses that vary significantly in material or methodology from one presentation to the next may be repeated for credit and are so designated in the course description in the UCSC General Catalog.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Individual Study Credit for the Major
+		</h3><p>Students may apply a maximum of two of the following courses&ndash;LIT 195 (Senior Essay), LIT 198 (Group Tutorial), and/or LIT 199 (Tutorial)&ndash;for satisfaction of literature major requirements. LIT 195 may be used only once for satisfaction of literature major requirements.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Intensive Literature Major Option
+		</h3><p>The intensive literature major requires students to complete upper-division literature coursework in a second language. The intensive literature major is especially useful for students who plan to apply to graduate programs in literature and other humanities disciplines; those programs typically require students to do academic work in at least two languages. In order to satisfy an intensive literature major, students complete all of the requirements for a general literature, language literature, or creative writing concentration (including the critical approaches and distribution requirements); students must also complete at least two additional upper-division courses in a second-language literature studied in the original language, for a total of 14 courses (12 upper-division courses and two lower-division courses).</p>
+
+<p>Two years of college-level language study (or comparable ability) are needed before a student is prepared to enter an upper-division language-literature course. In select languages (Greek, Latin, Middle Egyptian hieroglyphics, Sanskrit), less time is needed for this purpose.</p>
+<table>
+
+		</table>
+	</div><div id="degree-req-2">
+		<h2>
+			General Literature Concentration
+		</h2><h3 class="sc-RequiredCoursesHeading1">
+			Course Requirements
+		</h3><p>The general literature concentration of the Literature major requires: (1) basic proficiency in a second language; and (2) 12 courses in literature.</p>
+
+<ul>
+	<li>Basic language proficiency: One year (three quarters or equivalent) of college-level study of a non-English language or demonstrated reading ability at this level.</li>
+	<li>The 12 required courses must include two lower-division and 10 upper-division courses.</li>
+</ul>
+<table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Lower-Division Requirements
+		</h4><p>&bull; Basic language proficiency: One year (three quarters or equivalent) of college-level study of a non-English language or demonstrated reading ability at this level.</p>
+
+<p>Lower-division courses are introductions to critical reading and writing. Students should complete their lower-division coursework before beginning upper-division work.</p>
+
+<p>&bull; Two lower-division courses are required:</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-1">LIT 1</a></td><td class="sc-coursetitle">Literary Interpretation</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Plus
+		</h5><p>One LIT 60/LIT 61-series course</p>
+
+<p>or</p>
+
+<p>One LIT 80/LIT 81-series course</p>
+<table>
+
+		</table><div class="sc-requirementsNote">
+			<p><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-1'>LIT 1</a> is a writing-intensive course.</p>
+
+<p>LIT 60/LIT 61-series courses focus on categories, methodologies, and problems of literary study.</p>
+
+<p>LIT 80/LIT 81-series courses focus on topical, thematic, and comparative studies of literary and filmic texts.</p>
+
+<p>LIT 60/LIT 61 and LIT 80/LIT 81 courses are also recommended for non-majors.</p>
+
+		</div><h4 class="sc-RequiredCoursesHeading2">
+			Upper-Division Courses
+		</h4><p>Ten upper-division courses are required:</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-101">LIT 101</a></td><td class="sc-coursetitle">Theory and Interpretation</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-102">LIT 102</a></td><td class="sc-coursetitle">Translation Theory</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p>Students must successfully complete the language proficiency requirement before enrolling in <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-102'>LIT 102</a>.&nbsp;</p>
+
+<p>Students may substitute one upper-division non-English literature course studied in the original language for <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-102'>LIT 102</a>.</p>
+
+		</div><h5 class="sc-RequiredCoursesHeading3">
+			Plus
+		</h5><p>&bull; Eight additional upper-division literature courses.</p>
+
+<p>These eight courses must between them fulfill the critical approaches and distribution requirements specified below. Some courses may be used to fulfill more than one distribution requirement, as specified below.</p>
+
+<p>Upper-division courses provide detailed treatment of literary and theoretical problems, themes, and periods. Students are strongly encouraged to take courses across chronological periods and national boundaries, and to balance small seminars with lecture courses.</p>
+<table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Critical Approaches Requirements
+		</h4><p>&bull; Six courses, one satisfying each of the six critical approaches to the study of literature.</p>
+
+<p>While most upper-division courses have two critical approaches designations, no single course may be used to satisfy more than one critical approaches requirement.</p>
+
+<p><strong>Canons:</strong> The study of influential authors or works, and their critical afterlives: what books get read, which are forgotten, and how is that decided?</p>
+
+<p><strong>Genres:</strong> The study of fiction, poetry, drama, epic, testimonio, etc., across time and space: what happens when we classify together works of similar form?</p>
+
+<p><strong>Geographies:</strong> The study of local, regional, national, transnational, or global contexts: how do we use notions of place to group texts together?</p>
+
+<p><strong>Histories:</strong> The study of texts through socially or aesthetically defined periods or movements: how do historical pressures affect literature&rsquo;s possibilities?</p>
+
+<p><strong>Media:</strong> The study of the written word as one medium among others: what can we learn from the analysis of visual, performative, sonic, filmic, and other media?</p>
+
+<p><strong>Power and Subjectivities: </strong>The study of human and other subjects as individuals and in collective groups: who has the power to speak, write, and read under different social conditions?</p>
+
+<p>The course descriptions in the General Catalog specify the critical approaches satisfied by each course.</p>
+
+<p>These courses may also satisfy distribution requirements (below).</p>
+
+<p>A list of annual course offerings indicating critical approaches and distribution codes for each course is available in the department office and on <a href="https://literature.ucsc.edu/courses/index.php" target="_blank">the Literature Department website</a>.</p>
+<table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Distribution Requirements
+		</h4><p>&bull; Two upper-division courses on literature written before 1750.<br />
+&bull; One upper-division course on non-Western literature or literature in a global perspective.<br />
+&bull; One upper-division course on poetry and poetics (may not be a creative writing course).<br />
+&bull; A senior seminar (a course in the LIT 190 series) or a senior thesis (LIT 195), which satisfies the campus comprehensive requirement (see below).</p>
+
+<p>The course descriptions in the General Catalog specify the distribution requirements&nbsp;satisfied by each course.</p>
+
+<p>Each of these courses may also satisfy a critical approaches requirement (above). Some courses satisfy more than one distribution requirement.</p>
+
+<p>A list of annual course offerings indicating critical approaches and distribution codes for each course is available in the department office and on <a href="https://literature.ucsc.edu/courses/index.php" rel="noopener noreferrer" target="_blank">the Literature Department website</a>.</p>
+<table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Disciplinary Communication (DC) Requirement
+		</h4><p>Students of every major must satisfy that major&rsquo;s upper-division disciplinary communication (DC) requirement. Literature majors must satisfy the disciplinary communication requirement by passing:</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-101">LIT 101</a></td><td class="sc-coursetitle">Theory and Interpretation</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Comprehensive Requirement
+		</h4><p>Students must successfully complete <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-101'>LIT 101</a> before taking any comprehensive requirement.</p>
+
+<p>Seniors must select one of the following options to satisfy the campus exit requirement:</p>
+<table>
+
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Senior seminar.
+		</h5><p>The senior seminar (courses in the LIT 190 series) may be counted as one of the required upper-division courses. Several senior seminars are offered each quarter; extensive writing is required in all seminars.</p>
+<table>
+
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Senior thesis.
+		</h5><p>Students who wish to propose a senior thesis (30&ndash;40 pages) must apply to a Literature Department faculty sponsor at least two quarters before the projected date of graduation. The application must include a proposed subject, a brief outline, a bibliography, and a sample of previous written work. Only those students who have received written permission from a faculty supervisor may complete a thesis to satisfy the senior exit requirement.</p>
+
+<p>A student whose application has been approved may receive course credit toward the major for one independent study (<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-195A'>LIT 195A</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-195B'>LIT 195B</a>), and may count <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-195A'>LIT 195A</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-195B'>LIT 195B</a> as one of the upper-division courses required for the major.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Planners
+		</h3><a id="4yrplan"></a><p><strong>Four-Year Major Planner</strong></p>
+
+<table>
+	<tbody>
+		<tr>
+			<td rowspan="3"><strong>1st (frosh)</strong></td>
+			<td>LIT 60/LIT 61<br />
+			or LIT 80/LIT 81</td>
+			<td>LIT 60/LIT 61<br />
+			or LIT 80/LIT 81 (optional)</td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-1'>LIT 1</a></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>2nd (soph)</strong></td>
+			<td>Upper-division LIT course<br />
+			(Media critical approach)</td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-101'>LIT 101</a></td>
+			<td>Upper-division LIT course<br />
+			(Power and Subjectivities<br />
+			critical approach)</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>Language Level 1</td>
+			<td>Language Level 2</td>
+			<td>Language Level 3</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>3rd (junior)</strong></td>
+			<td>Upper-division LIT course<br />
+			(Geographies critical<br />
+			approach, global<br />
+			distribution requirement)</td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-102'>LIT 102</a></td>
+			<td>Upper-division LIT course<br />
+			(Genres critical approach,<br />
+			poetry/poetics<br />
+			distribution requirement)</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>Upper-division LIT course<br />
+			(Canons critical approach,<br />
+			pre-1750 distribution<br />
+			requirement)</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>4th (senior)</strong></td>
+			<td>Upper-division LIT course<br />
+			(Histories critical<br />
+			approach, pre-1750<br />
+			distribution requirement)</td>
+			<td>LIT 190<br />
+			(senior seminar)</td>
+			<td>Upper-division LIT course</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>Courses required for the major fulfill the TA General Education requirement. Other requirements may be fulfilled depending on the choice of electives. The MF, SI and SR requirements are never fulfilled.</p>
+
+<a id="2yrplan"></a><p><strong>Transfer Student Planner #1</strong> (for transfer students who have completed literature&#39;s lower-division and one-year language requirement at the time of transfer)</p>
+
+<table>
+	<tbody>
+		<tr>
+			<td rowspan="3"><strong>3rd (junior)</strong></td>
+			<td>Upper-division LIT course<br />
+			(Canons critical approach,<br />
+			pre-1750 distribution<br />
+			requirement)</td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-102'>LIT 102</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-101'>LIT 101</a></td>
+		</tr>
+		<tr>
+			<td>Upper-division LIT course<br />
+			(Genres critical approach,<br />
+			poetry distribution<br />
+			requirement)</td>
+			<td>Upper-division LIT course<br />
+			(Geographies critical<br />
+			approach, global<br />
+			distribution requirement)</td>
+			<td>Upper-division LIT course<br />
+			(Histories critical approach,<br />
+			pre-1750 distribution requirement)</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>4th (senior)</strong></td>
+			<td>Upper-division LIT course<br />
+			(Media critical approach)</td>
+			<td>LIT 190 (senior seminar)</td>
+			<td>Upper-division LIT course</td>
+		</tr>
+		<tr>
+			<td>Upper-division LIT course<br />
+			(Power and Subjectivities<br />
+			critical approach)</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><strong>Transfer Student Planner #2 </strong>(for transfer students who have completed no literature requirements or language coursework at the time of transfer, but have completed most general education requirements)</p>
+
+<table>
+	<tbody>
+		<tr>
+			<td rowspan="3"><strong>3rd (junior)</strong></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-1'>LIT 1</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-101'>LIT 101</a></td>
+			<td>Upper-division LIT course<br />
+			(Genres critical approach,<br />
+			poetry distribution<br />
+			requirement)</td>
+		</tr>
+		<tr>
+			<td>LIT 60/LIT 61 or LIT 80/LIT 81</td>
+			<td>Upper-division LIT course<br />
+			(Canons critical approach,<br />
+			pre-1750 distribution<br />
+			requirement)</td>
+			<td>Upper division LIT course<br />
+			(Geographies critical approach,<br />
+			global distribution<br />
+			requirement)</td>
+		</tr>
+		<tr>
+			<td>Language Level 1</td>
+			<td>Language Level 2</td>
+			<td>Language Level 3</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>4th (senior)</strong></td>
+			<td>Upper-division LIT course<br />
+			(Histories&nbsp;critical approach,<br />
+			pre-1750 distribution<br />
+			requirement)</td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-102'>LIT 102</a></td>
+			<td>LIT 190 (senior seminar)</td>
+		</tr>
+		<tr>
+			<td>Upper-division LIT course<br />
+			(Media critical approach)</td>
+			<td>Upper-division LIT course<br />
+			(Power and Subjectivities<br />
+			critical approach)</td>
+			<td>Upper-division LIT course</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+<table>
+
+		</table>
+	</div><div id="degree-req-3">
+		<h2>
+			Language Literature Concentration
+		</h2><p>The language literature concentration examines literature within the frameworks of particular languages or national and regional traditions, and requires that texts be read in the original language. Enrollment in upper-division language literature courses normally requires completion of two years of college-level language coursework, or the equivalent.</p>
+<h3 class="sc-RequiredCoursesHeading1">
+			Course Requirements
+		</h3><p>The language literature concentration of the literature major requires: (1) completion of two years of college-level language coursework, or the equivalent; and (2) 12 courses in literature.</p>
+
+<ul>
+	<li>The 12 required courses must include two lower-division and 10 upper-division courses.</li>
+</ul>
+<table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Lower-Division Requirements
+		</h4><p>&bull; Language proficiency: Two years (six quarters or equivalent) of college-level study of a non-English language or demonstrated reading ability at this level.</p>
+
+<p>Lower-division courses are introductions to critical reading and writing. Students should complete their lower-division coursework before beginning upper-division work.</p>
+
+<p>&bull; Two lower-division courses are required:</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-1">LIT 1</a></td><td class="sc-coursetitle">Literary Interpretation</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Plus
+		</h5><p>One LIT 60/LIT 61-series course</p>
+
+<p>or</p>
+
+<p>One LIT 80/LIT 81-series course</p>
+<table>
+
+		</table><div class="sc-requirementsNote">
+			<p><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-1'>LIT 1</a> is a writing-intensive course.</p>
+
+<p>LIT 60/LIT&nbsp;61-series courses focus on categories, methodologies, and problems of literary study.</p>
+
+<p>LIT 80/LIT&nbsp;81-series courses focus on topical, thematic, and comparative studies of literary and filmic texts.</p>
+
+<p>LIT 60/LIT&nbsp;61 and LIT 80/LIT&nbsp;81 courses are also recommended for non-majors.</p>
+
+		</div><h4 class="sc-RequiredCoursesHeading2">
+			Upper-Division Courses
+		</h4><p>Ten upper-division courses are required:</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-101">LIT 101</a></td><td class="sc-coursetitle">Theory and Interpretation</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-102">LIT 102</a></td><td class="sc-coursetitle">Translation Theory</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p>Students must successfully complete the language proficiency requirement before enrolling in <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-102'>LIT 102</a>.</p>
+
+<p>Students may substitute one upper-division non-English literature course studied in the original language for <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-102'>LIT 102</a>.</p>
+
+		</div><h5 class="sc-RequiredCoursesHeading3">
+			Plus
+		</h5><p>&bull; Eight additional upper-division literature courses.</p>
+
+<p>These eight courses must between them fulfill the requirements specified below. Some courses may be used to fulfill more than one requirement, as specified below.</p>
+
+<p>Upper-division courses provide detailed treatment of literary and theoretical problems, themes, and periods. Students are strongly encouraged to take courses across chronological periods and national boundaries, and to balance small seminars with lecture courses.</p>
+<table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Critical Approaches Requirements
+		</h4><p>&bull; Six courses, one satisfying each of the six critical approaches to the study of Literature.</p>
+
+<p>While most upper-division courses have two critical approaches designations, no single course may be used to satisfy more than one critical approaches requirement.</p>
+
+<p><strong>Canons:</strong> The study of influential authors or works, and their critical afterlives: what books get read, which are forgotten, and how is that decided?</p>
+
+<p><strong>Genres:</strong> The study of fiction, poetry, drama, epic, testimonio, etc., across time and space: what happens when we classify together works of similar form?</p>
+
+<p><strong>Geographies:</strong> The study of local, regional, national, transnational, or global contexts: how do we use notions of place to group texts together?</p>
+
+<p><strong>Histories:</strong> The study of texts through socially or aesthetically defined periods or movements: how do historical pressures affect literature&rsquo;s possibilities?</p>
+
+<p><strong>Media:</strong> The study of the written word as one medium among others: what can we learn from the analysis of visual, performative, sonic, filmic, and other media?</p>
+
+<p><strong>Power and Subjectivities: </strong>The study of human and other subjects as individuals and in collective groups: who has the power to speak, write, and read under different social conditions?</p>
+
+<p>The course descriptions in the General Catalog specify the critical approaches satisfied by each course.</p>
+
+<p>These courses may also satisfy distribution requirements (below).</p>
+
+<p>A list of annual course offerings indicating critical approaches and distribution codes for each course is available in the department office and on <a href="https://literature.ucsc.edu/courses/index.php" target="_blank">the Literature Department website</a>.</p>
+<table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Language Literature Concentration Requirements
+		</h4><p style="margin-left:0in; margin-right:0in">&bull; Five courses in a single language literature.</p>
+
+<p style="margin-left:0in; margin-right:0in"><strong>French Literature (courses in the LIT 182 series)</strong></p>
+
+<p>The study of French and Francophone literatures, languages, and cultural practices of France, Africa, and the Caribbean.</p>
+
+<p><strong>German Literature (courses in the LIT 183 series)</strong></p>
+
+<p>The study of the literature, language, and cultural practices of the German-speaking areas of central Europe including Germany, Austria, and Switzerland.</p>
+
+<p><strong>Greek and/or Latin Literature (courses in the LIT 184 and LIT 186 series)</strong></p>
+
+<p>The study of the literature, languages, and cultural practices of ancient Greece and Rome. Students may choose to concentrate in Greek or Latin or both.</p>
+
+<p><strong>Italian Literature (courses in the LIT 185 series)</strong></p>
+
+<p>The study of Italian literature, language, and cultural practices from the Middle Ages to the present.</p>
+
+<p><strong>Spanish/Latin American/Latino Literatures (courses in the LIT 188-LIT 189 series, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-190X'>LIT 190X</a>)</strong></p>
+
+<p>The study of literatures, language, and cultural practices of Spain, Latin America, and Latino populations in the United States.</p>
+
+<p><em>Each of these courses may also satisfy one of the critical approaches requirements, and/or one or more distribution requirements (see below).</em></p>
+<table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Distribution Requirements
+		</h4><p>&bull; Two upper-division courses on literature written before 1750.<br />
+&bull; One upper-division course on non-Western literature or literature in a global perspective.<br />
+&bull; One upper-division course on poetry and poetics (may not be a creative writing course).<br />
+&bull; A senior seminar (a course in the LIT 190 series) or a senior thesis (LIT 195), which satisfies the campus comprehensive requirement (see below).</p>
+
+<p>The course descriptions in the General Catalog specify the distribution requirements&nbsp;satisfied by each course.</p>
+
+<p>Each of these courses may also satisfy a critical approaches requirement (above). Some courses satisfy more than one distribution requirement.</p>
+
+<p>A list of annual course offerings indicating critical approaches and distribution codes for each course is available in the department office and on <a href="https://literature.ucsc.edu/courses/index.php" target="_blank">the Literature Department website</a>.</p>
+
+<p>&nbsp;</p>
+<table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Disciplinary Communication (DC) Requirement
+		</h4><p>Students of every major must satisfy that major&rsquo;s upper-division disciplinary communication (DC) requirement. Literature majors must satisfy the disciplinary communication requirement by passing:</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-101">LIT 101</a></td><td class="sc-coursetitle">Theory and Interpretation</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Comprehensive Requirement
+		</h4><p>Students must successfully complete <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-101'>LIT 101</a> before taking any comprehensive requirement.</p>
+
+<p>Seniors must select one of the following options to satisfy the campus exit requirement:</p>
+<table>
+
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Senior seminar.
+		</h5><p>The senior seminar (courses in the LIT 190 series) may be counted as one of the required upper-division courses. Several senior seminars are offered each quarter; extensive writing is required in all seminars.</p>
+<table>
+
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Senior thesis.
+		</h5><p>Students who wish to propose a senior thesis (30&ndash;40 pages) must apply to a Literature Department faculty sponsor at least two quarters before the projected date of graduation. The application must include a proposed subject, a brief outline, a bibliography, and a sample of previous written work. Only those students who have received written permission from a faculty supervisor may complete a thesis to satisfy the senior exit requirement.</p>
+
+<p>A student whose application has been approved may receive course credit toward the major for one independent study (<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-195A'>LIT 195A</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-195B'>LIT 195B</a>), and may count <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-195A'>LIT 195A</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-195B'>LIT 195B</a> as one of the upper-division courses required for the major.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Planners
+		</h3><p><strong>Four-Year Major Planner</strong></p>
+
+<table>
+	<tbody>
+		<tr>
+			<td rowspan="3"><strong>1st (frosh)</strong></td>
+			<td>LIT 60/LIT 61 or LIT 80/LIT 81</td>
+			<td>LIT 60/LIT 61 or LIT 80/LIT 81 (optional)</td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-1'>LIT 1</a></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>Language Level 1</td>
+			<td>Language Level 2</td>
+			<td>Language Level 3</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>2nd (soph)</strong></td>
+			<td>Upper-division LIT course (Canons critical approach, pre-1750 and poetry distribution requirements)</td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-101'>LIT 101</a></td>
+			<td>Upper-division LIT course (Power and Subjectivities critical approach, global distribution requirement)</td>
+		</tr>
+		<tr>
+			<td>Language Level 4</td>
+			<td>Language Level 5</td>
+			<td>Language Level 6</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>3rd (junior)</strong></td>
+			<td>Upper-division LIT Language course (Genres critical approach)</td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-102'>LIT 102</a></td>
+			<td>Upper-division LIT Language course (Histories critical approach, pre-1750 distribution requirement)</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>Upper-division LIT Language course (Geographies critical approach)</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>4th (senior)</strong></td>
+			<td>Upper-division LIT Language course (Media critical approach)</td>
+			<td>Upper-division LIT Language course</td>
+			<td>LIT 190 (senior seminar)</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>Courses required for the major fulfill the TA general education requirement. Other requirements may be fulfilled depending on the choice of electives. The MF, SI and SR requirements are never fulfilled.</p>
+
+<p><strong>Transfer Student Planner #1</strong> (for transfer students who have completed literature&#39;s lower-division, most general education requirements, and one year of&nbsp;language coursework&nbsp;at the time of transfer)</p>
+
+<table>
+	<tbody>
+		<tr>
+			<td rowspan="3"><strong>3rd (junior)</strong></td>
+			<td>Upper-division LIT course (Canons critical approach, pre-1750 and poetry distribution requirements)</td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-102'>LIT 102</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-101'>LIT 101</a></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>Upper-division LIT course (Geographies critical approach, global distribution requirement)</td>
+			<td>Upper-division LIT Language course (Power and Subjectivities critical approach)</td>
+		</tr>
+		<tr>
+			<td>Language Level 4</td>
+			<td>Language Level 5</td>
+			<td>Language Level 6</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>4th (senior)</strong></td>
+			<td>Upper-division LIT Language course (Media critical approach)</td>
+			<td>Upper-division LIT Language course (Genres critical approach)</td>
+			<td>Upper-division LIT Language course</td>
+		</tr>
+		<tr>
+			<td>Upper-division LIT Language course (Histories critical approach, pre-1750 distribution requirement)</td>
+			<td>&nbsp;</td>
+			<td>LIT 190 (senior seminar)</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><strong>Transfer Student Planner #2 </strong>(for transfer students who have completed literature&#39;s lower-division requirements and two years of language coursework at the time of transfer)</p>
+
+<table>
+	<tbody>
+		<tr>
+			<td rowspan="3"><strong>3rd (junior)</strong></td>
+			<td>Upper-division LIT Language course (Media critical approach)</td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-102'>LIT 102</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-101'>LIT 101</a></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>Upper-division LIT Language course (Canons critical approach)</td>
+			<td>Upper division LIT Language course (Geographies critical approach)</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>4th (senior)</strong></td>
+			<td>Upper-division LIT Language course (Histories critical approach, pre-1750 distribution requirement)</td>
+			<td>Upper-division LIT Language course (Genres critical approach, poetry distribution requirement)</td>
+			<td>Upper-division LIT course (pre-1750 and global distribution requirements)</td>
+		</tr>
+		<tr>
+			<td>Upper-division LIT course (Power and Subjectivities critical approach)</td>
+			<td>LIT 190 (senior seminar)</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+<table>
+
+		</table>
+	</div><div id="degree-req-4">
+		<h2>
+			Creative Writing Concentration
+		</h2><p>The Literature Department offers a sequence of creative writing workshops from introductory through advanced levels. Admission to the creative writing concentration is selective. Interested students are required to take one lower-division creative writing workshop at UCSC (<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-90'>LIT 90</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-90X'>LIT 90X</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-91A'>LIT 91A</a> or&nbsp;<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-91B'>LIT 91B</a>) before applying to the concentration; however, students are strongly encouraged to complete two lower-division workshops (at least one at UCSC) before applying. To apply for admission to the creative writing concentration, students should submit a completed application form (available at the Literature Department office and <a href="https://creativewriting.ucsc.edu/for-students/apply.html" target="_blank">online</a>). Once accepted into the concentration, students are required to declare (or redeclare) the major in literature, with a concentration in creative writing.</p>
+
+<p>In addition to the critical approaches and distribution requirements required for all literature majors, students in the creative writing concentration must complete four of their eight upper-division literature courses in creative writing, including a senior project seminar.</p>
+<h3 class="sc-RequiredCoursesHeading1">
+			Course Requirements
+		</h3><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Lower-Division Requirements
+		</h4><p>&bull; Basic language proficiency: One year (three quarters or equivalent) of college-level study of a non-English language or demonstrated reading ability at this level.</p>
+
+<p>Lower-division courses are introductions to critical reading and writing. Students should complete their lower-division coursework before beginning upper-division work.</p>
+
+<p>&bull; Three lower-division courses are required:</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-1">LIT 1</a></td><td class="sc-coursetitle">Literary Interpretation</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Plus
+		</h5><p>One LIT 60/LIT 61-series course</p>
+
+<p>or</p>
+
+<p>One LIT 80/LIT 81-series course</p>
+<table>
+
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Plus at least one of the following
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-90">LIT 90</a></td><td class="sc-coursetitle">Introduction to Creative Writing</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-90X">LIT 90X</a></td><td class="sc-coursetitle">Introduccion a la Escritura Creativa/Introduction to Creative Writing</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-91A">LIT 91A</a></td><td class="sc-coursetitle">Intermediate Fiction/Prose Writing</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-91B">LIT 91B</a></td><td class="sc-coursetitle">Intermediate Poetry Writing</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p>An additional course from among <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-90'>LIT 90</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-90X'>LIT 90X</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-91A'>LIT 91A</a> and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-91B'>LIT 91B</a> is strongly encouraged.</p>
+
+<p><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-1'>LIT 1</a> is a writing-intensive course.</p>
+
+<p>LIT 60/LIT 61-series courses focus on categories, methodologies, and problems of literary study.</p>
+
+<p>LIT 80/LIT 81-series courses focus on topical, thematic, and comparative studies of literary and filmic texts.</p>
+
+<p>LIT 60/LIT 61 and LIT 80/LIT 81 courses are also recommended for non-majors.</p>
+
+		</div><h4 class="sc-RequiredCoursesHeading2">
+			Upper-Division Courses
+		</h4><p>Ten upper-division literature courses are required:</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-101">LIT 101</a></td><td class="sc-coursetitle">Theory and Interpretation</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-102">LIT 102</a></td><td class="sc-coursetitle">Translation Theory</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p>Students must successfully complete the language proficiency requirement before enrolling in <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-102'>LIT 102</a>.</p>
+
+<p>Students may substitute one upper-division non-English literature course studied in the original language for <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-102'>LIT 102</a>.</p>
+
+		</div><h5 class="sc-RequiredCoursesHeading3">
+			Plus
+		</h5><p>&bull; Eight additional upper-division courses.<br />
+These eight courses must between them fulfill the creative writing workshop, critical approaches, and distribution requirements specified below. Some courses may be used to fulfill more than one distribution requirement, as specified below.</p>
+
+<p>Upper-division courses provide detailed treatment of literary and theoretical problems, themes, and periods. Students are strongly encouraged to take courses across chronological periods and national boundaries, and to balance small seminars with lecture courses.</p>
+<table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Critical Approaches Requirements
+		</h4><p>Six courses, one satisfying each of the six critical approaches to the study of literature. While most upper-division courses have two critical approaches designations, no single course may be used to satisfy more than one critical approaches requirement.</p>
+
+<p><strong>Canons:</strong> The study of influential authors or works, and their critical afterlives: what books get read, which are forgotten, and how is that decided?</p>
+
+<p><strong>Genres:</strong> The study of fiction, poetry, drama, epic, testimonio, etc., across time and space: what happens when we classify together works of similar form?</p>
+
+<p><strong>Geographies:</strong> The study of local, regional, national, transnational, or global contexts: how do we use notions of place to group texts together?</p>
+
+<p><strong>Histories:</strong> The study of texts through socially or aesthetically defined periods or movements: how do historical pressures affect literature&rsquo;s possibilities?</p>
+
+<p><strong>Media:</strong> The study of the written word as one medium among others: what can we learn from the analysis of visual, performative, sonic, filmic, and other media?</p>
+
+<p><strong>Power and Subjectivities: </strong>The study of human and other subjects as individuals and in collective groups: who has the power to speak, write, and read under different social conditions?</p>
+
+<p>Students in the creative writing concentration will fulfill the genres critical approaches requirement through an upper-division creative writing workshop (<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179A'>LIT 179A</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179B'>LIT 179B</a>, or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179C'>LIT 179C</a>); they will fulfill the Media Critical Approaches requirement through the creative writing senior project seminar (<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-190V'>LIT 190V</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-190W'>LIT 190W</a>) if they choose the Senior Seminar option to fulfill the comprehensive requirement.</p>
+
+<p>The course descriptions in the General Catalog specify the critical approaches satisfied by each course.</p>
+
+<p>These courses may also satisfy distribution requirements (below).</p>
+
+<p>A list of annual course offerings indicating critical approaches and distribution codes for each course is available in the department office and on <a href="https://literature.ucsc.edu/courses/index.php" rel="noopener noreferrer" target="_blank">the Literature Department website</a>.</p>
+<table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Advanced Creative Writing Workshops
+		</h4><p>Three advanced writing workshops, as follows:<br />
+Fiction/Prose students: Any combination of three iterations of <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179A'>LIT 179A</a> and/or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179C'>LIT 179C</a></p>
+
+<p>Poetry students: Any combination of three iterations of <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179B'>LIT 179B</a> and/or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179C'>LIT 179C</a></p>
+
+<p><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179A'>LIT 179A</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179B'>LIT 179B</a>, and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179C'>LIT 179C</a> satisfy the Genre component of the critical approaches requirements.</p>
+<table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Distribution Requirements
+		</h4><p>&bull; Two upper-division courses on literature written before 1750.<br />
+&bull; One upper-division course on non-Western literature or literature in a global perspective.<br />
+&bull; One upper-division course on poetry and poetics (may not be a creative writing course).<br />
+&bull; A creative project senior seminar (<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-190V'>LIT 190V</a> [Fiction] or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-190W'>LIT 190W</a> [Poetry]) or a senior thesis (<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-195C'>LIT 195C</a>), which satisfies the campus comprehensive requirement (see below).</p>
+
+<p>The course descriptions in the General Catalog specify the distribution requirements&nbsp;satisfied by each course.</p>
+
+<p>Each of these courses may also satisfy a critical approaches requirement (above). Some courses satisfy more than one distribution requirement.</p>
+
+<p>A list of annual course offerings indicating critical approaches and distribution codes for each course is available in the department office and on <a href="https://literature.ucsc.edu/courses/index.php" target="_blank">the Literature Department website</a>.</p>
+<table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Disciplinary Communication (DC) Requirement
+		</h4><p>Students of every major must satisfy that major&rsquo;s upper-division disciplinary communication (DC) requirement. Literature majors must satisfy the disciplinary communication requirement by passing:</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-101">LIT 101</a></td><td class="sc-coursetitle">Theory and Interpretation</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Comprehensive Requirement
+		</h4><p>Students must successfully complete <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-101'>LIT 101</a> before taking any comprehensive requirement.</p>
+
+<p>Seniors must select one of the following options to satisfy the campus exit requirement:</p>
+<table>
+
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Senior seminar
+		</h5><p>The senior seminar may be counted as one of the required upper-division courses. Extensive writing is required in all seminars. Creative writing senior seminars are offered only during spring quarter.</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-190V">LIT 190V</a></td><td class="sc-coursetitle">Fiction Senior Seminar</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-190W">LIT 190W</a></td><td class="sc-coursetitle">Poetry Senior Seminar</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Senior essay
+		</h5><p>Students who wish to propose a creative writing senior essay (30&ndash;40 pages) must apply to a Literature Department faculty sponsor at least two quarters before the projected date of graduation. The application must include a proposed subject, a brief outline, a bibliography, and a sample of previous written work. Only those students who have received written permission from a faculty supervisor may complete a senior essay to satisfy the senior exit requirement.</p>
+
+<p>A student whose application has been approved may receive course credit toward the major for one independent study (<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-195C'>LIT 195C</a>), and may count <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-195C'>LIT 195C</a> as one of the required upper-division courses for the major.</p>
+
+<p>Note: <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-195C'>LIT 195C</a> does not satisfy the Media Critical Approaches requirement.</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-195C">LIT 195C</a></td><td class="sc-coursetitle">Senior Essay</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Planners
+		</h3><p><strong>Four-Year Major Planner</strong></p>
+
+<table>
+	<tbody>
+		<tr>
+			<td rowspan="3"><strong>1st (frosh)</strong></td>
+			<td>LIT 60/LIT 61 or LIT 80/LIT 81</td>
+			<td>LIT 60/LIT 61 or LIT 80/LIT 81 (optional)</td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-1'>LIT 1</a></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>2nd (soph)</strong></td>
+			<td>Upper-division LIT course (Histories critical approach, pre-1750 distribution requirement)</td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-101'>LIT 101</a></td>
+			<td>Upper-division LIT course (Power and Subjectivities critical approach)</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-90'>LIT 90</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-90X'>LIT 90X</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-91A'>LIT 91A</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-91B'>LIT 91B</a>*</td>
+		</tr>
+		<tr>
+			<td>Language Level 1</td>
+			<td>Language Level 2</td>
+			<td>Language Level 3</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>3rd (junior)</strong></td>
+			<td>Upper-division LIT course (Geographies critical approach, global distribution requirement)</td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-102'>LIT 102</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179A'>LIT 179A</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179B'>LIT 179B</a>, or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179C'>LIT 179C</a> (Genres critical approach)</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>Upper-division LIT course (Canons critical approach, pre-1750 and poetry distribution requirements)</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>4th (senior)</strong></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179A'>LIT 179A</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179B'>LIT 179B</a>, or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179C'>LIT 179C</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179A'>LIT 179A</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179B'>LIT 179B</a>, or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179C'>LIT 179C</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-190V'>LIT 190V</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-190W'>LIT 190W</a> (Media critical approach, senior seminar)</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>*Not required for the major, but strongly recommended before applying for admission to the Creative Writing concentration.</p>
+
+<p>Courses required for the major fulfill the TA general education requirement. Other requirements may be fulfilled depending on the choice of electives. The MF, SI and SR requirements are never fulfilled.</p>
+
+<p><strong>Transfer Student Planner #1</strong> (for transfer students who have completed literature&#39;s lower-division and one-year language requirements, and one creative writing course, at the time of transfer)</p>
+
+<table>
+	<tbody>
+		<tr>
+			<td rowspan="3"><strong>3rd (junior)</strong></td>
+			<td>Upper-division LIT course (Canons critical approach, pre-1750 and poetry distribution requirements)</td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-102'>LIT 102</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-101'>LIT 101</a></td>
+		</tr>
+		<tr>
+			<td>Upper-division LIT course (Power and Subjectivities critical approach)</td>
+			<td>Upper-division LIT course (Geographies critical approach, global distribution requirement)</td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179A'>LIT 179A</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179B'>LIT 179B</a>, or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179C'>LIT 179C</a> (Genres critical approach)</td>
+		</tr>
+		<tr>
+			<td>
+			<p><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-90'>LIT 90</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-90X'>LIT 90X</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-91A'>LIT 91A</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-91B'>LIT 91B</a></p>
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>4th (senior)</strong></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179A'>LIT 179A</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179B'>LIT 179B</a>, or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179C'>LIT 179C</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179A'>LIT 179A</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179B'>LIT 179B</a>, or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179C'>LIT 179C</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-190V'>LIT 190V</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-190W'>LIT 190W</a> (Media critical approach, senior seminar)</td>
+		</tr>
+		<tr>
+			<td>Upper-division LIT course (Histories critical approach, pre-1750 distribution requirement)</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><strong>&nbsp;</strong></p>
+
+<p><strong>Transfer Student Planner #2</strong> (for transfer students who have completed no literature requirements, language coursework, or creative writing course at the time of transfer, but have completed general education requirements)</p>
+
+<table>
+	<tbody>
+		<tr>
+			<td rowspan="3"><strong>3rd (junior)</strong></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-1'>LIT 1</a></td>
+			<td>LIT 60/61 or LIT 80/81</td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-101'>LIT 101</a></td>
+		</tr>
+		<tr>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-90'>LIT 90</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-91A'>LIT 91A</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Lower-Division/LIT-91B'>LIT 91B</a>*</td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179A'>LIT 179A</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179B'>LIT 179B</a>, or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179C'>LIT 179C</a> (Genres critical approach)</td>
+		</tr>
+		<tr>
+			<td>Language Level 1</td>
+			<td>Language Level 2</td>
+			<td>Language Level 3</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>4th (senior)</strong></td>
+			<td>Upper-division LIT course (Histories critical approach, pre-1750 distribution requirement)</td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-102'>LIT 102</a></td>
+			<td>Upper-division LIT course (Geographies critical approach, global distribution requirement)</td>
+		</tr>
+		<tr>
+			<td>Upper-division LIT course (Power and Subjectivities critical approach)</td>
+			<td>Upper-division LIT course (Canons critical approach, pre-1750 and poetry distribution requirements)</td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-190V'>LIT 190V</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-190W'>LIT 190W</a> (Media critical approach, senior seminar)</td>
+		</tr>
+		<tr>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179A'>LIT 179A</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179B'>LIT 179B</a>, or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179C'>LIT 179C</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179A'>LIT 179A</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179B'>LIT 179B</a>, or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-179C'>LIT 179C</a></td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>*Not required for the major, but strongly recommended before applying for admission to the Creative Writing concentration.</p>
+<table>
+
+		</table>
+	</div>
+</div>
+							</div><!-- end main -->
+						</div><!--end of rightpanel-->
+						<div style="clear: both;"></div>
+					</div><!--end of middle-->
+					
+					<!-- Footer -->
+					<div id="footer">
+					<!--FOOTER LINKS AND IMAGES CAN GO HERE-->
+						<div class="main-footer">
+<a id="goTop"></a>
+          <div class="row" id="footer">
+              <div class="footer-left">
+                  <img alt="UCSC Seal" class="seal" height="84" src="https://static.ucsc.edu/_responsive/images/logos/uc-seal.svg" width="84">
+<div class="address home">
+<div class="location">UC Santa Cruz, 1156 High Street, Santa Cruz, Ca 95064</div>
+<div class="copyright">&copy;2020 Regents of the University of California. All Rights Reserved.</div>
+</div>
+              </div>
+<div class="footer-right">
+                  
+
+<div class="social-media">
+            
+        
+        <a href="https://www.twitter.com/ucsc"><svg aria-label="Follow us on Twitter" class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg><!-- <i aria-label="Follow us on Twitter" class="fab fa-twitter"></i> --></a>
+            
+        
+        <a href="https://www.instagram.com/ucsc"><svg aria-label="Follow us on Instagram" class="svg-inline--fa fa-instagram fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><!-- <i aria-label="Follow us on Instagram" class="fab fa-instagram"></i> --></a>
+            
+        
+        <a href="https://www.facebook.com/ucsantacruz"><svg aria-label="Follow us on Facebook" class="svg-inline--fa fa-facebook-f fa-w-9" aria-hidden="true" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512" data-fa-i2svg=""><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path></svg><!-- <i aria-label="Follow us on Facebook" class="fab fa-facebook-f"></i> --></a>
+            
+        
+        <a href="http://youtube.com/ucsantacruz"><svg aria-label="Follow us on YouTube" class="svg-inline--fa fa-youtube fa-w-18" aria-hidden="true" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg><!-- <i aria-label="Follow us on YouTube" class="fab fa-youtube"></i> --></a>
+            
+        
+        <a href="http://www.linkedin.com/school/ucsc/"><svg aria-label="Follow us on LinkedIn" class="svg-inline--fa fa-linkedin-in fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z"></path></svg><!-- <i aria-label="Follow us on LinkedIn" class="fab fa-linkedin-in"></i> --></a>
+    </div>
+
+<div class="links">
+            
+                            
+        <a href="https://www.ucsc.edu/feedback/index.html">Feedback</a> 
+    </div>
+
+              </div>
+          </div>
+          <div class="sub-footer row">
+<div class="legal">
+                <ul class="legal">
+<li><a href="https://academicaffairs.ucsc.edu/accreditation/">Accreditation</a></li>
+<li><a href="https://diversity.ucsc.edu/eeo-aa/images/non-discrimination-policy.pdf">Non-Discrimination&nbsp;Policy</a></li>
+<li><a href="land-acknowledgement/index.html">Land Acknowledgement</a></li>
+<li><a href="https://www.ucsc.edu/about/employment.html">Employment</a></li>
+<li><a href="https://its.ucsc.edu/terms/">Privacy&nbsp;Policy&nbsp;&amp;&nbsp;Terms&nbsp;of&nbsp;Use</a></li>
+<li><a href="https://titleix.ucsc.edu/index.html">Sexual Violence Prevention &amp; Response (Title IX)</a></li>
+</ul>
+                
+<p class="page-meta">
+    Last modified: September 22, 2020  <span class="check-ip">128.114.113.74</span>
+</p>
+              </div>
+          </div>   
+        </div>
+					</div><!--end of footer-->
+					
+				</div><!--end of pagwrapper2 -->
+			</div><!--end of pagewrapper1-->
+			</div><!--end of wrap-->
+		
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZF-IhmpGy1TANyacnbq7Lyk973c9ilWmqlgroX0B_F5tMTeNK0D7KOmfpAeG5gd80A2&amp;t=637460801481343508" type="text/javascript"></script>
+</form>
+		<script src="https://static.ucsc.edu/_responsive/lib/modernizr/modernizr.js" type="text/javascript"></script>
+		<script src="https://static.ucsc.edu/_responsive/lib/jquery/dist/jquery.js" type="text/javascript"></script>
+		<script async="async" src="https://static.ucsc.edu/_responsive/js/main.js?t=20180409144600" type="text/javascript"></script>
+		<script type="text/javascript" src="/scripts/firefoxAnchorFix.js"></script>
+	</body>
+</html>

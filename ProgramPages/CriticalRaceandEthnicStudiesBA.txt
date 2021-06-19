@@ -1,0 +1,1223 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head><title>
+	UCSC General Catalog - Critical Race and Ethnic Studies B.A.
+</title><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-8e849bdf63c6884f6ef","applicationID":"1359705662","transactionName":"Y1NQZhdQC0cHU0ZfCVoZc2E1HglVH19HQhUbWlNLCkQRR0lFXF8QUURBWxFIRVsAEFFXCl1QXUALWAQUFVFcQgcUVUBHHx4WVQhEU1UUQUxBRgRfAVUUVEJXAVEYU0EVSQ==","queueTime":0,"applicationTime":247,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"1359996610",accountID:"3058884",trustKey:"3028485",xpid:"VwYCWV5bDBABV1RbAAECUFID",licenseKey:"NRJS-8e849bdf63c6884f6ef",applicationID:"1359705662"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(29),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{p?p-=1:o(c||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:s.now();i("err",[t,n])}var i=t("handle"),a=t(30),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError";if(!s.disabled){var p=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),s.xhrWrappable&&t(14),d=!0)}c.on("fn-start",function(t,e,n){d&&(p+=1)}),c.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,o(n))}),c.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){L++,T=g.hash,this[u]=y.now()}function o(){L--,g.hash!==T&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var c="-start",s="-end",f="-body",u="fn"+c,d="fn"+s,l="cb"+c,p="cb"+s,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable&&!y.disabled){var x=t(10),b=t(11),E=t(8),R=t(6),O=t(13),N=t(7),M=t(14),P=t(9),C=t("ee"),S=C.get("tracer");t(16),y.features.spa=!0;var T,L=0;C.on(u,r),b.on(l,r),P.on(l,r),C.on(d,o),b.on(p,o),P.on(p,o),C.buffer([u,d,"xhr-done","xhr-resolved"]),R.buffer([u]),O.buffer(["setTimeout"+s,"clearTimeout"+c,u]),M.buffer([u,"new-xhr","send-xhr"+c]),N.buffer([m+c,m+"-done",m+f+c,m+f+s]),E.buffer(["newURL"]),x.buffer([u]),b.buffer(["propagate",l,p,"executor-err","resolve"+c]),S.buffer([u,"no-"+u]),P.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(M,"send-xhr"+c),a(C,"xhr-resolved"),a(C,"xhr-done"),a(N,m+c),a(N,m+"-done"),a(P,"new-jsonp"),a(P,"jsonp-end"),a(P,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,L>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),c=t(12),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,v="fn"+h,w="bstTimer",g="pushState",y=t("loader");if(!y.disabled){y.features.stn=!0,t(8),"addEventListener"in window&&t(6);var x=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),o.on(v,function(t,e){var n=t[0];n instanceof x&&i("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),this.bstType])}),c.on(m,function(){this.bstStart=y.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t("wrap-function")(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var c=r.apply(this,t);return o.emit(n+"start",[t,a],c),c.then(function(t){return o.emit(n+"end",[null,t],c),t},function(t){throw o.emit(n+"end",[t],c),t})})}var o=t("ee").get("fetch"),i=t(30),a=t(29);e.exports=o;var c=window,s="fetch-",f=s+"body-",u=["arrayBuffer","blob","json","text","formData"],d=c.Request,l=c.Response,p=c.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(c,"fetch",s),o.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(s+"done",[null,e],n)}else o.emit(s+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t("wrap-function")(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){s.emit("jsonp-end",[],l),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){s.emit("jsonp-error",[],l),s.emit("jsonp-end",[],l),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=c(a),d="function"==typeof u.parent[u.key];if(d){var l={};f.inPlace(u.parent,[u.key],"cb-",l),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),s.emit("new-jsonp",[t.src],l)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(l),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function c(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var s=t("ee").get("jsonp"),f=t("wrap-function")(s);if(e.exports=s,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,l=/^(\w+)(\.|$)(.*)$/,p=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?f.inPlace(Node.prototype,p,"dom-"):(f.inPlace(HTMLElement.prototype,p,"dom-"),f.inPlace(HTMLHeadElement.prototype,p,"dom-"),f.inPlace(HTMLBodyElement.prototype,p,"dom-")),s.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t("wrap-function")(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=i.context(),n=c(t,"executor-",e,null,!1),r=new f(n);return i.context(r).getCtx=function(){return e},r}var o=t("wrap-function"),i=t("ee").get("promise"),a=t("ee").getOrSetContext,c=o(i),s=t(29),f=NREUM.o.PR;e.exports=i,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){i.emit("propagate",[null,!o],a,!1,!1),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var a=e.apply(f,arguments),c=f.resolve(a);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&i.emit("propagate",[t,!0],n,!1,!1),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),o.wrapInPlace(f.prototype,"then",function(t){return function(){var e=this,n=o.argsToArray.apply(this,arguments),r=a(e);r.promise=e,n[0]=c(n[0],"cb-",r,null,!1),n[1]=c(n[1],"cb-",r,null,!1);var s=t.apply(this,n);return r.nextPromise=s,i.emit("propagate",[e,!0],s,!1,!1),s}}),i.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this,null,!1),t[1]=c(t[1],"resolve-",this,null,!1)}),i.on("executor-err",function(t,e,n){t[1](n)}),i.on("cb-end",function(t,e,n){i.emit("propagate",[n,!0],this.nextPromise,!1,!1)}),i.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=i.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",c)}function i(t){y.push(t),h&&(b?b.then(a):v?v(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,w="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){if(!c(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||s(t)&&l())&&(w.traceContextParentHeader=o(h,m),w.traceContextStateHeader=i(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&s(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function o(t,e){return"00-"+e+"-"+t+"-01"}function i(t,e,n,r,o){var i=0,a="",c=1,s="",f="";return o+"@nr="+i+"-"+c+"-"+n+"-"+r+"-"+t+"-"+a+"-"+s+"-"+f+"-"+e}function a(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var c={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(c.d.tk=i),btoa(JSON.stringify(c))}function c(t){return f()&&s(t)}function s(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var o=h(n.allowed_origins[r]);if(t.hostname===o.hostname&&t.protocol===o.protocol&&t.port===o.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(26),h=t(17);e.exports={generateTracePayload:r,shouldGenerateTrace:c}},{}],16:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function o(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=s(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var c=t("handle"),s=t(17),f=t(15).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(22),m=t(21),v=t(18),w=window.XMLHttpRequest;a.features.xhr=!0,t(14),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){i(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<l;c++)e.addEventListener(d[c],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof w&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=s(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var o=f(this.parsedOrigin);if(o&&(o.newrelicHeader||o.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),e(i.headers,o)&&(this.dt=o),t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&e(t[0].headers,o)&&(this.dt=o)})}},{}],17:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,c=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||c),"/"===o.pathname&&(r[t]=o),o}},{}],18:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(21);e.exports=r},{}],19:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(29),c=t(30),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=o(l+e,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[f.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(p+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],20:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],21:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],22:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],23:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-a}function o(){return i}var i=(new Date).getTime(),a=i,c=t(31);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=o},{}],24:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],25:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function i(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!v){var e=Math.round(t.timeStamp),n={type:t.type};e<=l.now()?n.fid=l.now()-e:e>l.offset&&e<=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),v=!0,d("timing",["fi",e,n])}}function c(t){d("pageHide",[l.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var s,f,u,d=t("handle"),l=t("loader"),p=t(28),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(m){}f=new PerformanceObserver(o);try{f.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}u=new PerformanceObserver(i);try{u.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var v=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(t){document.addEventListener(t,a,!1)})}p(c)}},{}],26:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<i.length;c++)o=i[c],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){return a(16)}function i(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,o=window.crypto||window.msCrypto;o&&o.getRandomValues&&Uint8Array&&(n=o.getRandomValues(new Uint8Array(31)));for(var i=[],a=0;a<t;a++)i.push(e().toString(16));return i.join("")}e.exports={generateUuid:r,generateSpanId:o,generateTraceId:i}},{}],27:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,s=c.match(a);s&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(o="Safari",i=s[1])}e.exports={agent:o,version:i,match:r}},{}],28:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[o]?"hidden":"visible")}"addEventListener"in document&&i&&document.addEventListener(i,e,!1)}e.exports=r;var o,i,a;"undefined"!=typeof document.hidden?(o="hidden",i="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",i="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",i="webkitvisibilitychange",a="webkitVisibilityState")},{}],29:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],30:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],31:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?f(t,s,a):a()}function n(n,r,o,i,a){if(a!==!1&&(a=!0),!p.aborted||i){t&&a&&t(n,r,o);for(var c=e(o),s=m(n),f=s.length,u=0;u<f;u++)s[u].apply(c,r);var l=d[y[n]];return l&&l.push([x,n,r,c]),c}}function i(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return l[t]=l[t]||o(n)}function w(t,e){p.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:i,addEventListener:i,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:c,aborted:!1};return x}function i(t){return f(t,s,a)}function a(){return new r}function c(){(d.api||d.feature)&&(p.aborted=!0,d=p.backlog={})}var s="nr@context",f=t("gos"),u=t(29),d={},l={},p=e.exports=o();e.exports.getOrSetContext=i,p.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!N++){var t=O.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(E,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+O.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=p+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function o(){"complete"===m.readyState&&i()}function i(){c("mark",["domContent",a()+O.offset],null,"api")}var a=t(23),c=t("handle"),s=t(29),f=t("ee"),u=t(27),d=t(24),l=t(20),p=l.getConfiguration("ssl")===!1?"http":"https",h=window,m=h.document,v="addEventListener",w="attachEvent",g=h.XMLHttpRequest,y=g&&g.prototype,x=!d(h.location);NREUM.o={ST:setTimeout,SI:h.setImmediate,CT:clearTimeout,XHR:g,REQ:h.Request,EV:h.Event,PR:h.Promise,MO:h.MutationObserver};var b=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1209.min.js"},R=g&&y&&y[v]&&!/CriOS/.test(navigator.userAgent),O=e.exports={offset:a.getLastTimestamp(),now:a,origin:b,features:{},xhrWrappable:R,userAgent:u,disabled:x};if(!x){t(19),t(25),m[v]?(m[v]("DOMContentLoaded",i,!1),h[v]("load",r,!1)):(m[w]("onreadystatechange",o),h[w]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var N=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,s,f){function nrWrapper(){var i,a,u,l;try{a=this,i=d(arguments),u="function"==typeof r?r(i,a):r||{}}catch(p){o([p,"",[i,a,s],u],t)}c(n+"start",[i,a,s],u,f);try{return l=e.apply(a,i)}catch(h){throw c(n+"err",[i,a,h],u,f),h}finally{c(n+"end",[i,a,l],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[l]=e,i(e,nrWrapper,t),nrWrapper)}function r(t,e,r,o,i){r||(r="");var c,s,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)s=e[f],c=t[s],a(c)||(t[s]=n(c,u?s+r:r,o,s,i))}function c(n,r,i,a){if(!h||e){var c=h;h=!0;try{t.emit(n,r,i,e,a)}catch(s){o([s,n,r,i],t)}h=c}}return t||(t=u),n.inPlace=r,n.flag=l,n}function o(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function i(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(i){o([i],n)}for(var a in t)p.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[l])}function c(t,e){var n=e(t);return n[l]=t,i(t,n,u),n}function s(t,e,n){var r=t[e];t[e]=c(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(30),l="nr@original",p=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=s,e.exports.argsToArray=f},{}]},{},["loader",2,16,5,3,4]);</script><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no" /><meta http-equiv="cleartype" content="on" /><link rel="shortcut icon" href="/Institutions/University-of-California-Santa-Cruz/images/favicon.ico" /><link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /><link href="/Institutions/University-of-California-Santa-Cruz/styles/ucsc.css" rel="stylesheet" type="text/css" /><link href="/Institutions/University-of-California-Santa-Cruz/styles/UCSCCustom.css" rel="stylesheet" type="text/css" /><link href="/Institutions/University-of-California-Santa-Cruz/styles/print.css" rel="stylesheet" type="text/css" media="print" />
+	 
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
+	 
+	 <script type="text/javascript" src="/Institutions/University-of-California-Santa-Cruz/scripts/treeList.js"></script>
+	 <script type="text/javascript" src="/Institutions/University-of-California-Santa-Cruz/scripts/coursepopup.js"></script>
+	 <script type="text/javascript" src="/Institutions/University-of-California-Santa-Cruz/scripts/newscript.js"></script>
+     <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/smoothness/jquery-ui.css" rel="Stylesheet" type="text/css" /><script type='text/javascript'> 
+                                                (function ($) {
+                                                    $(document).ready(
+                                                        function () {
+                                                            var tabList = "<ul><li><a href='#degree-req-1'>Information and Policies</a></li><li><a href='#degree-req-2'>Requirements and Planners</a></li></ul>";
+                                                            $(tabList).insertBefore("#degree-req-1");
+                                                            
+                                                            const queryString = window.location.search;
+                                                            const urlParams = new URLSearchParams(queryString);
+                                                            if (urlParams.has('tab') && !isNaN(urlParams.get('tab')))
+                                                            {
+                                                                $("#degree-req").tabs();
+                                                                var url = '#degree-req-'.concat(urlParams.get('tab'));
+                                                                var element = $('a[href="'+url+'"]')[0];
+                                                                element.click();
+                                                            }
+                                                            else
+                                                            {
+                                                                $("#degree-req").tabs();
+                                                            }
+                                                            
+                                                            function scrollToAnchor(anchorName){
+                                                                var aTag = $("a[name='"+ anchorName +"']");
+                                                                $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+                                                            }
+
+                                                            if(urlParams.has('anchor'))
+                                                            {
+                                                                scrollToAnchor(urlParams.get('anchor'));
+                                                            }
+                                                        });
+                                                    })(jQuery);
+                                                </script>;
+	
+	<!-- Google Tag Manager -->
+
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5RFHNC"
+
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+	<script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+
+        })(window, document, 'script', 'dataLayer', 'GTM-5RFHNC');</script>
+
+	<!-- End Google Tag Manager -->
+	 
+
+</head>
+
+<body class="home www js" >
+	<div id="skiptocontent1"><a id="skip_link" class="skiplink" href="#middle">Skip to main content</a></div>
+		<form method="post" action="/Current/General-Catalog/Academic-Units/Humanities-Division/Critical-Race-and-Ethnic-Studies/Critical-Race-and-Ethnic-Studies-BA" id="Form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="lmUyYEatFAb3tc3hku2AkVSshnJ1jS74b+HJYN5Yhz61xFOA8YMdPYhSbQt8f4kyD9TVeNeozthLNd76/etSwOzfT3fNPAY/81NydR+G8Ri1oW25+Isk986YHMxqHbZ6dCm1eAJAv1XxjON0c2L48aIoUQJn1suAGehUpyOtS/+GtO1Zwn57ib4eI60e8y2Kn9bhkV5ZgSeI3xhVPpEIEBWR1urKALiAlTo5ojvPqmH5oQXzqU0JUVCEjOvQkOZQ66WVqcdzu2np3ctlgw/u1UHb2VbdjRcbwss0iqMbjuGeA3wOh4ZJOd2aKyzRsgDJU8iZL1Yoy5Fm79NcEkgw56IJ4Sblznaf6DxDVXnSdbfLTcb3DOdeew/mMPJNwoYvcVRPnk5vwW1kL9e+Rps6dXUJPiJ9Nnt8lksRmWsob4XSfQn0TSa9uJvkWqGRRXfER9LT8EWAHYSpxLMLEG41nCLv984TK8T381S4bNpTyHO1r1C5ndDNBAi6uHlv6aXCTttdlA/m+W2a1JqtXdYKYurML/CyFw6c+NZySXnhIQpgNLhIt5zy+NDPodtMGOHst/H9mj7uNEYUy2XDz7jk7mCsq8z/u1JyXzsFiGL553WPfP1tnxP+6E2BqMnFCzfl0GMD2vMZ5PxeY3Un9DqIcFygR4hQqKovAPEAi3KsTaOdmcs8hRv/vXwIL4gprXwqGpswnegqK1xn9JTB0KWaVWsEx6Wpn5Elb42OiWTDkQRW/tc+u9RMMXIGll3XpNSXzK2WIOJL9AAuV4+dwz+Z/aFv9UBqSnro0Oidk2v54hZSb1TMHkT+reVz9aRQKlaLjCtFKRWrA5nTvpHBjooHRcK7TnxZU9wvTtjGo53Bx4iMbHFYEJ+keKaV6j4BgmpBuj0h/6cLT7L6L8YylVPJo3QuCr/nF8SQ+4fOAQnUb3SCX91zNDH7/TinQqtR/2KO38KopEfKinAreY487IU3O4yoMpt47WN4jfQoOoWhVaooWss2XpNtTuKul7yARjhGo/IfVW/9iuKBoLB+07b+w9U5StQEOqUMywJc9NkxyoAcYExdEX899njBe3BqShqOlWDb9V4gysi05xsLodNlrx/JXu3WM/JyEitK8oGmJR1lnxo8LatCJERTRXxu++6XD9RsuQCyhavfT0m5hF+FXIGqbmqTjMiYo/msxv+rhMofUm4lzKiJX48ZwnxGDjlaVzgq4R4ZL3z7a9C2bRbfMjTADj1EKG1CoUg+nyTeLTr0CnfvGk0tk9eDuZegjqWrzkuwtoz9VyfexBtzIv2dXHpKfzmczaRaKxccN0Enu0mqk4Vl2AwtaTVs5zC71VhpL3vdYBZ38RoowoMLhX/+a86DLmxIQQ+xvQfkenuLXndOdhSaj8q0Uid9A3+cg976K14I6RnxteMFcfOtnTpxvzkc4er25D03b6Z9kHpFxchzQ1+MqFIKHicbnWlG8vvnZIzNqX10OpCCxRmsr52wT2+4wLEGJvTszXW99lRfr78G9p9oC1pqPHZRTu0imFRNMUQJl2xlftoiC27vS0fir6EflvVKDn4WA8FIqgX3ByHNvxv1yXhOY4w+P1DZTLaWbrgA1khet78IexqBpormV68U5+zTQTEDdfiMIi93tFORcA5dJFm5HAE5b2ynmFyOC+IpmOG9JaODwYt+6sBFBTTnNGd30BK+50bkPHGrmixTBG9qxBpfLzxryKU9WIoYbitEFtPfkwva+eoB3WMLFiddFjcvL4oNBVpigMHAod1AD+PmVDa7QUDqdvez6dYAvx8YJNqJPgAfG2ZOuFUqNhiEhjnC9mefveRFah/ytOSR+TBFDkwlfPVPy1uZ38y7DBpnQcHNIoO2FK2ptTF+vW/uQj6hiMR5d5o/6uHwE2sd6xuV/e3yHNex25UHVgmU792GoenUOm/Kr7Be7p+DliSq2n9Qo8WdZYmMmBH/gIPGVN0Qcb/5QVnWFkQvsR175c228AeWgzY+9L/sZqbOKnRMW5Gf5mATdVeSRlQVRzfBKHaQ4f1o3yj5Kn0ZF1LkEFbpdTpvs6tP6fxP1qVldq2gK0Bl9fXG1WIwO7/uNddO4Rxca2SouF9NaZJ00pY0YtDCoEOsNRI6Gk7igXv4thSWYq4Ctr2KNcJvaX1wg0wPvGqTiM+rsO5380kW6XBMiRzjIbqEs+HF6SSr1xRtHgGunF4569Ey4MEpDLosUaCZWpbI22to1wVwRHvDQq2fVAN/pVgbKFTAVVMKhWOLurdz8uWPn+lHGtI0fdOoQtcSe2F+VFBrFPoP0nOwiJkRMxIuDXIqjLbCf2RO7rYXXDwCZSP8FVDXSisybVD+5gS4q3hLUF0SVQ01tCZpjTckHLoWOSc5MzHzVWQ8UqXnuP6r1z/hX3JN/CXb8LdVEmATj9RRp4qcvSGbhOe5aa2TIy9ihU0V6BejEAOVeLI0Ycz8FlhBrrvzIIiuo2il5oqTCddnsUoiiCaDxy4ycf4al6/1mjbpuucPljWj/T3vXdTkiqfkQMet9UYpz0X5WzGyJj1MxlPXD3+SXX6EBDEyudxAYVnhPoHuet2F9GSWgR0APjABBuFC7a1Ks1KlrjpLAWpUXsZqmYvl7XHPucwusGydycfsKV+aatGsyF5xvzyNrNSEC5LB8D8E8r8AZV0n1K0P1CcD7rjTnuGNHibkYW2TNtRyUpgsdOUOlRJSxkon3d8KY536YFGKBrHiMr+89pRCBSYh8fZvFieY/2Rio7FaT9x0XLO458QKuEC0rw3tr32r2JvsZEn0/3ncGO5Upy2pmjdnml+Aog3iF4xv+i1ulRHE7rxr8+taSurj+6JIBtR4/seSjcdBNuYkICJsA1Asm4akELONKav8rt7nszt67YrjCfMbmHrf00HG4hzRzEOKIFrU11vNjHvwoVierdZRZBWuzHbkGnybH8A10s3nSLBbFotBUFFzazl7o+xad8445LlTSI8X+m4RSQxORhy3Y8j7wKUUmU+R8noqeZGUG8+JXJ1y/7GABCQY78zgCa3UYlzlecrW6RKpXBQsEow6Ra7tkL9w8lR0rt4LLzZWLyK91peYhL02yI9Z5xkdkSwBA3jkQ7MSh3LpXiKd32LP3qaRrW1aUNpWTQ/PgkZMex+aI0l+WG58pV2sPLHJfDapoHAxPJ5kg0nusqIXrOQfIsONPnLqgV2KAgnXcMEJdY20+6H4PM9remXK6tA3ISFjgG05PtiQBATO+Ziu9Bs9moPQAE5t9QOcHjG2BUjdl14791dReT2JAs4yvaotsmddrJLNfGpUFq6ZksKVO23MXGM18JHGLEy4UgdLnN0tGTgRwxvIWqumzckJgDsaGB57e4o7sQH5QWukKuQFR67FrTE/sNynos4GRuC8Lr3tQOwn9rmL7nKS13hrTHif7IEp3BIcH9XX16h9UYrdGPaGQfsqaLUTOHFXf8C3zngAE3OPFlQvSc+Hf1Baba3RYfSAjM/KNEGjoOe/VuhxSVhUM2mx+k69SqUsaEqGdb1dBzurV0aR9VZzxCsiB24AHUokhRYw59XQCh0gLyF8dGQz+gPkghi0K2ZWctp98wRDrcLNyA76atrmDPTmqsNpdHtNSIPtcuQB83aGhcsr5CNb9EYp8XTrDB6V7g85Ktkhaqv1div+ZkdY/x8L9hGrajjaRsI2/16lgWYIyhDTAr+w4DjMXP/AxhalO4k7vl1Db3a/Mq/VcKWv4qNa3vKh1M7/CmV0O/v0GS9j4jUhqs6Bhq8OKrXW0vVPKSssyEaSV+VmHW8s8bdNJgdB17nzRhFUvcPJD0r98eVfs4yRhUmuiAk+IOksmp+qTTcfX73daMPlKk8du0YEPZyk4Aj/PKPEQ4Q+eqi7DHXuHxvoJ49/sEIp0hxEWJhAhCLMwSHnDq6L3UInzSct+wEANdmJtAl9CM4y+8em6+U5tjqAiybY5oW2AkDpjawkhFQqxDBz3XJ3CdU5ZHwXyGKFXFBz2gG+DmyPXmhD/hCHkd67t6YLrhc2dlcx+oWOsD/jtu48AZKHXWtGQ/8aDQNXA19oHs3nS8Ulh08ye7kuCCt6042uqqoGy1+OX/zF3V9DyJBkCUXCNsR+MsmjrtlDK7x4ounoUifHWHnE974W2M7oVqopOT/ardOvCO4PflJor/QSSMakq7cB/kkYqEM5Yg==" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="845114C5" />
+	<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+	<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="IBFzk5jTy+Yf9SXECPCacrEAlFkdt3/oGXpuxLPtRz4DquASvJ5N1IkQd6wsHnrwWKRB3MfrPC+NPFE8CuiPDpE2WZOvEDEo/aE/vJuaEf/nES1YCOm5qR4GtYATbbQqQo3xfut90M3cvTPMhqo+RYYZ25Jg6JSE4orzOLUVz0BAJVW8dUVg/w1GbBwGdUDdnCNSpziHZrmnRmP3AkchYJNH3hRhnWvdZvuziDxZee7YBeIrhs5RFREc7GCyNP49Kk/4N8N6DQZ/BLbp5WMegA==" />
+</div>
+			<div id="wrap">
+			<div id="pagewrapper1">
+				<div id="pagewrapper2">
+					<div id="banner">
+					<!--LOGO AND HEADER LINKS CAN GO HERE-->
+					  <div class="page-top">
+      <div class="row">
+
+        <div class="page-top-left">
+          <a class="campus-secondary" href="https://www.ucsc.edu/index.html" id="logo">UC Santa Cruz</a>
+        </div>
+
+        <div class="page-top-right">
+          <ul id="topNav">
+<li><a href="https://my.ucsc.edu" title="The student portal">MyUCSC</a></li>
+<li><a href="https://www.ucsc.edu/tools/people.html" title="Campus directory">People</a></li>
+<li><a href="https://www.ucsc.edu/tools/calendars.html" title="Upcoming events, academic, and administrative calendars">Calendars</a></li>
+<li><a href="https://www.ucsc.edu/visit/maps-directions.html">Maps</a></li>
+<li><a href="https://www.ucsc.edu/tools/azindex.html" title="A to Z index of UCSC websites">A-Z Index</a></li>
+</ul>
+        </div>
+
+      </div>
+    </div>
+						 
+						    <!-- Begin Page Banner -->
+                          
+					</div><!-- end banner --> 
+					<div id="middle">			
+						<!--LEFT NAV-->
+						<div id="leftpanel">
+
+                      <div id="searchtoggle">	</div>				
+					  <div id="leftcolumn_0_Panel1" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;leftcolumn_0_btnSubmit&#39;)">
+	
+    <div class="sidebox">
+	    <div class="hdr">
+            <label for="leftcolumn_0_txtBxTerm" id="leftcolumn_0_searchTextLabel">Catalog Search</label>
+	    </div>
+
+	    <div class="sideboxbrdr">
+            <input name="leftcolumn_0$txtBxTerm" type="text" id="leftcolumn_0_txtBxTerm" />
+            <div style="text-indent: -999em;">
+            <label for="leftcolumn_0_drpSearchType" id="leftcolumn_0_filterLabel"></label>
+            </div>
+            <select name="leftcolumn_0$drpSearchType" id="leftcolumn_0_drpSearchType">
+		<option selected="selected" value="">Entire Catalog</option>
+		<option value="programs">Programs</option>
+		<option value="courses">Courses</option>
+
+	</select>
+
+            <input type="submit" name="leftcolumn_0$btnSubmit" value="Search" id="leftcolumn_0_btnSubmit" />
+	    </div>
+    </div> 
+
+</div><div class="sidebox">
+	<div class="hdr">
+		Contents
+	</div>
+</div>
+						 <div class="toc">
+							<ul id="navLocal" class="navLocal">
+	<li><a href="/en/Current/General-Catalog/Welcome-to-UC-Santa-Cruz">Welcome to UC Santa Cruz</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Introducing-UC-Santa-Cruz">Introducing UC Santa Cruz</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Programs">Academic Programs</a></li><li class="hasChildren active"><a href="/en/Current/General-Catalog/Academic-Units">Academic Units</a><ul>
+		<li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Arts-Division">Arts Division</a></li><li class="hasChildren active"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division">Humanities Division</a><ul>
+			<li class="hasChildren active"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Critical-Race-and-Ethnic-Studies">Critical Race and Ethnic Studies</a><ul>
+				<li class=" active"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Critical-Race-and-Ethnic-Studies/Critical-Race-and-Ethnic-Studies-BA">Critical Race and Ethnic Studies B.A.</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Critical-Race-and-Ethnic-Studies/Black-Studies-Minor">Black Studies Minor</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Critical-Race-and-Ethnic-Studies/Critical-Race-and-Ethnic-Studies-Designated-Emphasis">Critical Race and Ethnic Studies Designated Emphasis</a></li>
+			</ul></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Feminist-Studies">Feminist Studies</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/History">History</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/History-of-Consciousness">History of Consciousness</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Languages-and-Applied-Linguistics">Languages and Applied Linguistics</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Linguistics">Linguistics</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Literature">Literature</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Philosophy">Philosophy</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Writing-Program">Writing Program</a></li>
+		</ul></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division">Physical and Biological Sciences Division</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Baskin-School-of-Engineering">Baskin School of Engineering</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division">Social Sciences Division</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/The-Colleges">The Colleges</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Physical-Education">Physical Education</a></li>
+	</ul></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Courses">Courses</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Undergraduate-Information">Undergraduate Information</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Graduate-Information">Graduate Information</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Resources-Residency-and-Policies">Resources, Residency, and Policies</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Teaching-and-Administrative-Staff">Teaching and Administrative Staff</a></li><li><a href="/en/Current/General-Catalog/Academic-Calendar">Academic Calendar</a></li><li><a href="/en/Current/General-Catalog/Catalogs-Prior-to-2019-20">Catalogs Prior to 2019-20</a></li>
+</ul>
+					           <div class="sidebox">
+									<div class="sidebox">
+	<div class="hdr">
+		Catalog Links
+	</div><div class="sideboxbrdr">
+		<ul>
+			<li><a href="/en/Current/General-Catalog">Catalog Home</a></li><li><a href="/en">All Catalogs</a></li>
+		</ul>
+	</div>
+</div>
+								</div><!-- end of sidebox -->
+								<div class="sidebox">
+	<div class="hdr">
+		Share
+	</div><div class="sideboxbrdr">
+		<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_facebook">Share this page on Facebook</a>
+<a class="addthis_button_twitter">Share this page on Twitter</a>
+<a class="addthis_button_email">Email this page</a>
+<a class="addthis_button_print">Print this page</a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+<script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4db17d15194e924f"></script>
+<!-- AddThis Button END -->
+	</div>
+</div>
+							</div><!-- end of TOC -->
+						</div><!--end of leftpanel-->
+						<!-- Main content area -->
+						<div id="rightpanel">
+							<div id="sc-rightpanel-top">
+								<div id="sc-top-links">
+										<span class="print">
+											<a href="javascript:window.print()" title="Print this Page"><span class="printLabel">Print this page</span></a>
+										</span>
+									
+
+<div id="catalog-dropdown">
+    <span id="catalogdropdown_0_Label1"></span>
+
+	<div style="font-size: x-small;">
+		<div style="text-indent: -999em; line-height: 1px; color:#EFEFEF;">
+            <label for="catalogdropdown_0_DropDownList1">Select a Catalog</label>
+		</div>
+		<select name="catalogdropdown_0$DropDownList1" id="catalogdropdown_0_DropDownList1">
+	<option selected="selected" value="{99FCED38-D22F-4053-805D-64F15C2ECDB8}">2020-21 UCSC General Catalog</option>
+	<option value="{1A63CDDE-8554-4CA1-8DAC-3A8014DCE824}">2019-20 UCSC General Catalog</option>
+
+</select>
+		<input type="submit" name="catalogdropdown_0$Button1" value="Select" id="catalogdropdown_0_Button1" style="border-style:Outset;" />
+	</div>
+</div>
+<br />
+
+
+
+
+								</div><!--end of sc-top-links-->
+							</div><!--end sc-rightpanel-top-->
+							<div id="main">
+							<div id="breadcrumb">
+								<p id="breadcrumbs"><a href="/en/Current/General-Catalog">2020-21 UCSC General Catalog</a> &gt; <a href="/en/Current/General-Catalog/Academic-Units">Academic Units</a> &gt; <a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division">Humanities Division</a> &gt; <a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division/Critical-Race-and-Ethnic-Studies">Critical Race and Ethnic Studies</a> &gt; Critical Race and Ethnic Studies B.A.</p>
+							</div><!-- end of breadcrumb -->
+								<h1>
+	Critical Race and Ethnic Studies B.A.
+</h1><div id="degree-req">
+	<div id="degree-req-1">
+		<h2>
+			Information and Policies
+		</h2><h3 class="sc-RequiredCoursesHeading1">
+			Introduction
+		</h3><p>Critical race and ethnic studies (CRES) majors develop a deep understanding of how race and other modalities of power have structured human life and have informed the imagination of social transformation and justice in the past and the present. They study the historical production of race and ethnicity both in the United States and across the globe, and&nbsp;learn how the contours of race and racism have changed over time. Students analyze systems of racial and colonial violence&mdash;for example, racial capitalism, white supremacy, settler colonialism and imperialist war. They examine historical racial/ethnic ideologies such multiculturalism, colorblindness, and postracialism&nbsp;as well as contemporary social phenomena such as changing working conditions, new migration patterns and emergent cultural expressions.&nbsp;Students also explore the ways that race and ethnicity have developed in concert with gender, sexuality, class, indigeneity, citizenship, and other modalities of power and lived identity.</p>
+
+<p>CRES majors draw on methods and concepts from different academic disciplines in order to better understand historical and contemporary social phenomena and problems. By immersing themselves in interdisciplinary study, they learn to recognize both the limits and value of knowledge production practices.&nbsp;The major allows students flexibility at the upper-division level to design a course of study that enables a general overview of areas of interest or deep engagement with a key area of focus.&nbsp;Students can craft an elective distribution from multiple areas of specific research and career interests. Or, they may wish to take a number of elective courses in a particular area in order to develop expertise in it.&nbsp;For example, they may wish to focus on a social group (e.g., members of the African Diaspora), on a discipline (e.g., history), on a social phenomenon (e.g., social movements), or on a methodological or theoretical orientation (e.g., theories of race, gender and sexuality).</p>
+
+<p>Through their immersion in a program of study that is multidisciplinary, comparative, and transnational in scope, CRES majors develop a critical, situated perspective on race, racial relations, and racial justice in the United States&nbsp;and beyond. CRES also helps students develop skills in critical thinking, comparative analysis, the application of social theory, research, communication, and writing so that they can act effectively in an ever-changing, complex, and culturally diverse world.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Academic Advising for the Program
+		</h3><p>Email: <a href="mailto:cres@ucsc.edu">cres@ucsc.edu</a><br />
+Phone: (831) 459-2757</p>
+
+<p>CRES advising is held in Humanities 1, room 416.&nbsp; Drop in hours are posted on the CRES website.&nbsp; Students can make an appointment by using the Slug Success application found under Resources in their student portal (MyUCSC).&nbsp;</p>
+
+<p>Transfer students should consult the Transfer Student Information and Policy section for specific requirements.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Getting Started in the Major
+		</h3><p>Students interested in the CRES major do not need preparation to start in the major, but must be enrolled in or have completed <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Lower-Division/CRES-10'>CRES 10</a> to declare the major. (Please see the section &quot;How to Declare a Major&quot; for details.) All requirements of the major can be completed within two years.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Program Learning Outcomes
+		</h3><p>Students who complete the CRES major should emerge with the following skills, competencies, and knowledge:</p>
+
+<p><strong>Critical Frameworks</strong></p>
+
+<ul>
+	<li>Demonstrate deep knowledge of historical, contemporary, and intersectional perspectives on race and ethnicity.</li>
+	<li>Demonstrate familiarity with different disciplinary methods applied to race and ethnicity.</li>
+	<li>Demonstrate a critical perspective on institutional power and knowledge.</li>
+</ul>
+
+<p><strong>Communication</strong></p>
+
+<ul>
+	<li>Demonstrate ability to account for other people&rsquo;s arguments, to formulate one&rsquo;s own arguments, and to locate both arguments in the larger context of the field.</li>
+	<li>Demonstrate ability to formulate an argument in alternative media, such as speech, audiovisual, digital, and other forms of non-written communication.</li>
+	<li>Demonstrate writing effectively in the interdisciplinary field.</li>
+</ul>
+
+<p><strong>Research</strong></p>
+
+<ul>
+	<li>Demonstrate ability to design and implement a collaborative research project.</li>
+	<li>Demonstrate ability to design and implement an independent research project.</li>
+</ul>
+
+<p><strong>Community Collaboration, Engagement, and Activism</strong></p>
+
+<ul>
+	<li>Demonstrate an understanding of the issues, ethics, and methods surrounding activist, collaborative, and community-based research projects.</li>
+	<li>Demonstrate an understanding of collaborative knowledge that effectively integrates theoretical and experiential thinking about social justice.</li>
+</ul>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Major Qualification Policy and Declaration Process
+		</h3><a id="mqual"></a><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Major Qualification
+		</h4><p>Students must be enrolled in or have completed <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Lower-Division/CRES-10'>CRES 10</a>, with a C or better, in order to declare the major.&nbsp;Transfer students should consult the Transfer and Information Policy section below.</p>
+<table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Appeal Process
+		</h4><p>A student&nbsp;may file an appeal with the CRES adviser within 15 days of the denial of major declaration. The CRES program will notify the student and the college of the decision within 15 days of the receipt of the appeal.</p><a id="decproc"></a><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			How to Declare a Major
+		</h4><p>Students may declare the major by submitting a proposed <a rel="noopener noreferrer" href="https://advising.ucsc.edu/planning/your-major/declaration/docs/major-declaration.pdf" target="_blank">Petition for Major/Minor Declaration</a> to the program adviser.&nbsp;The major declaration should include a plan to complete <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Upper-Division/CRES-100'>CRES 100</a> and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Upper-Division/CRES-101'>CRES 101</a> at the next possible opportunity.</p>
+<p>Per campus policy, students must submit their major declaration no later than the third quarter of their sophomore year or, in the case of transfer students, no later than the second quarter of their junior year. CRES welcomes students to declare after this time frame who are pursuing more than one major&nbsp;or who are transferring from another major.</p><table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Transfer Information and Policy
+		</h3><a id="tasp"></a><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Transfer Admission Screening Policy
+		</h4><p>Students planning to apply in this major are not required to complete specific major preparation courses for consideration of admission to UC Santa Cruz.</p>
+<table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Getting Started at UCSC as a Transfer Student
+		</h4><p>Students must be enrolled in or have completed <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Lower-Division/CRES-10'>CRES 10</a>, with a C or better, in order to declare the major.&nbsp;Transfer students and students in exceptional circumstances may substitute an equivalent course with the program director&rsquo;s or undergraduate director&rsquo;s approval.&nbsp;</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Letter Grade Policy
+		</h3><p>This program does not have a letter grade policy.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Course Substitution Policy
+		</h3><p>CRES is an interdisciplinary major that includes courses taught by faculty in other departments (see the Electives section&nbsp;below for a list of approved courses).&nbsp;Students who wish to substitute a course not on the electives list should complete the <a rel="noopener noreferrer" href="https://cres.ucsc.edu/undergraduate/advising/petition-course-credit.pdf" target="_blank">Petition for Course Credit</a>&nbsp;form available on the CRES website and submit the completed form to CRES advising.&nbsp;&nbsp;&nbsp;</p><table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Double Majors and Major/Minor Combinations Policy
+		</h3><p><!--[if !supportAnnotations]-->The CRES major works very well as a double major with numerous fields of study such as anthropology, community studies, creative writing, feminist studies, film and digital media, education, environmental studies, history, legal studies, literature, politics, sociology,&nbsp;and more.</p>
+<p><!--[if !supportAnnotations]--><!--[endif]--></p><table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Honors
+		</h3><p>CRES awards honors and highest honors in the major. Students are considered for honors and highest honors based on their cumulative GPA, calculated from grades earned in coursework and the senior exit requirement undertaken for completion of the major. For honors, students must earn a minimum GPA of 3.70 in the relevant courses, while for highest honors, the GPA must be 3.90 or higher. Writing a thesis is not a requirement for receiving honors or highest honors.</p>
+<table>
+
+		</table>
+	</div><div id="degree-req-2">
+		<h2>
+			Requirements and Planners
+		</h2><h3 class="sc-RequiredCoursesHeading1">
+			Course Requirements
+		</h3><p>To graduate with a major in CRES, a student is required to complete 10 courses with the approval of the program.</p>
+<table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Lower-Division Courses
+		</h4><p>One lower-division foundation course:</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Lower-Division/CRES-10">CRES 10</a></td><td class="sc-coursetitle">Critical Race and Ethnic Studies: An Introduction</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Upper-Division Courses
+		</h4><p>Two upper-division courses are required for the major:</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Upper-Division/CRES-100">CRES 100</a></td><td class="sc-coursetitle">Comparative Theories of Race and Ethnicity</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Upper-Division/CRES-101">CRES 101</a></td><td class="sc-coursetitle">Research Methods and Writing in Critical Race and Ethnic Studies</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Electives
+		</h4><p>Students must complete at least six upper-division electives offered in critical race and ethnic studies (with the CRES designation)&nbsp;or&nbsp;from the lists below.&nbsp;For current offerings, please visit the <a href="https://cres.ucsc.edu/courses/" target="_blank">CRES course page</a>.</p>
+
+<ul>
+	<li>At least two electives must be from the list of designated courses focusing on phenomena outside of the U.S. or on transnational or hemispheric subjects.</li>
+	<li>At least two academic divisions must be represented in the elective coursework.</li>
+</ul>
+
+<p>Students are encouraged to supplement their upper-division coursework with language study, internships, and individual or group independent studies. Students may petition to have up to 10 credits of such activities substituted for upper-division elective requirements, so long as these activities serve, or do not interfere with, the breadth requirements.</p>
+<table>
+
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Arts
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/FILM-Film-and-Digital-Media/Upper-Division/FILM-165B">FILM 165B</a></td><td class="sc-coursetitle">Race on Screen</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/FILM-Film-and-Digital-Media/Upper-Division/FILM-165D">FILM 165D</a></td><td class="sc-coursetitle">Asian Americans and Media</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/FILM-Film-and-Digital-Media/Upper-Division/FILM-165E">FILM 165E</a></td><td class="sc-coursetitle">Chicana/o Cinema, Video</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-140A">HAVC 140A</a></td><td class="sc-coursetitle">America in Art</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-140B">HAVC 140B</a></td><td class="sc-coursetitle">Victorian America</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-140C">HAVC 140C</a></td><td class="sc-coursetitle">Race and American Visual Arts</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-140D">HAVC 140D</a></td><td class="sc-coursetitle">Chicano/Chicana Art: 1970-Present</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-141B">HAVC 141B</a></td><td class="sc-coursetitle">Death, Desire, and Modernity</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-141F">HAVC 141F</a></td><td class="sc-coursetitle">The Camera and the Body</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-141K">HAVC 141K</a></td><td class="sc-coursetitle">Activist Art Since 1960: Art, Technology, Activism</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-142">HAVC 142</a></td><td class="sc-coursetitle">Contemporary Art and Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-190J">HAVC 190J</a></td><td class="sc-coursetitle">Visual Cultures of the Vietnam-American War</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-191B">HAVC 191B</a></td><td class="sc-coursetitle">The Virgin of Guadalupe: Images and Symbolism in Spain, Mexico, and the U.S</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-191C">HAVC 191C</a></td><td class="sc-coursetitle">Subalternatives: Representing Others</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-191E">HAVC 191E</a></td><td class="sc-coursetitle">Feminist Theory and Art Production</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-191K">HAVC 191K</a></td><td class="sc-coursetitle">Decolonial Visual Culture</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Humanities
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Upper-Division/CRES-111">CRES 111</a></td><td class="sc-coursetitle">The Sounds of Struggle</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Upper-Division/CRES-114">CRES 114</a></td><td class="sc-coursetitle">Race and Disability in American Drama</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Upper-Division/CRES-118">CRES 118</a></td><td class="sc-coursetitle">Abolitionist Futures</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Upper-Division/CRES-150">CRES 150</a></td><td class="sc-coursetitle">Race, Gender and Algorithms</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Upper-Division/CRES-181">CRES 181</a></td><td class="sc-coursetitle">The Lynch Doctrine: From Rough Justice to Stand Your Ground</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Upper-Division/CRES-185A">CRES 185A</a></td><td class="sc-coursetitle">Race, Gender, and Science</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/FMST-Feminist-Studies/Upper-Division/FMST-123">FMST 123</a></td><td class="sc-coursetitle">Feminism and Cultural Production</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/FMST-Feminist-Studies/Upper-Division/FMST-124">FMST 124</a></td><td class="sc-coursetitle">Technology, Science, and Race Across the Americas</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/FMST-Feminist-Studies/Upper-Division/FMST-125">FMST 125</a></td><td class="sc-coursetitle">Race, Sex, and Technology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/FMST-Feminist-Studies/Upper-Division/FMST-126">FMST 126</a></td><td class="sc-coursetitle">Images, Power, and Politics: Methods in Visual and Textual Analysis</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/FMST-Feminist-Studies/Upper-Division/FMST-131">FMST 131</a></td><td class="sc-coursetitle">The Politics of Matter and the Matter of Politics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/FMST-Feminist-Studies/Upper-Division/FMST-139">FMST 139</a></td><td class="sc-coursetitle">African American Women's History</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/FMST-Feminist-Studies/Upper-Division/FMST-145">FMST 145</a></td><td class="sc-coursetitle">Racial and Gender Formations in the U.S</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-104C">HIS 104C</a></td><td class="sc-coursetitle">Celluloid Natives: American Indian History on Film</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-104D">HIS 104D</a></td><td class="sc-coursetitle">Museums and the Representation of Native American History, Memory, and Culture</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-106B">HIS 106B</a></td><td class="sc-coursetitle">Asian and Asian American History, 1941-Present</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-109A">HIS 109A</a></td><td class="sc-coursetitle">Race, Gender, and Power in the Antebellum South</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-110D">HIS 110D</a></td><td class="sc-coursetitle">The Civil War Era</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-110H">HIS 110H</a></td><td class="sc-coursetitle">Greater Reconstruction: Race, Empire, and Citizenship in the Post-Civil War United States</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-111">HIS 111</a></td><td class="sc-coursetitle">Popular Conceptions of Race in U.S. History, 1600-Present</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-116A">HIS 116A</a></td><td class="sc-coursetitle">Unchained Memory: Slavery and the Politics of the Past</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-120">HIS 120</a></td><td class="sc-coursetitle">W.E.B. Du Bois</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-121A">HIS 121A</a></td><td class="sc-coursetitle">African American History to 1877</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-121B">HIS 121B</a></td><td class="sc-coursetitle">African American History: 1877 to the Present</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-122A">HIS 122A</a></td><td class="sc-coursetitle">Jazz and United States Cultural History, 1900-1945</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-122B">HIS 122B</a></td><td class="sc-coursetitle">Jazz and United States Cultural History, 1945 to the Present</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-123">HIS 123</a></td><td class="sc-coursetitle">Immigrants and Immigration in U.S. History</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-128">HIS 128</a></td><td class="sc-coursetitle">Chicana/Chicano History</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-145">HIS 145</a></td><td class="sc-coursetitle">Gender, Colonialism, and Third-World Feminisms</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-151A">HIS 151A</a></td><td class="sc-coursetitle">Medicine and the Body in the Colonial World</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-158A">HIS 158A</a></td><td class="sc-coursetitle">The Escapes of David George: Biographical Research on Slavery and Early America</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-190D">HIS 190D</a></td><td class="sc-coursetitle">Asian and Latino Immigration Since 1875</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-190Y">HIS 190Y</a></td><td class="sc-coursetitle">The Atlantic Slave Trade</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-194I">HIS 194I</a></td><td class="sc-coursetitle">U.S. Bases and Social Movements in Asia</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HISC-History-of-Consciousness/Upper-Division/HISC-117">HISC 117</a><div class="sc-crosslisted">
+					/CRES 117
+				</div></td><td class="sc-coursetitle">Making the Refugee Century: Non-Citizens and Modernity</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-102">LIT 102</a></td><td class="sc-coursetitle">Translation Theory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-121L">LIT 121L</a></td><td class="sc-coursetitle">Green Ache: Ecopoetics, Race, and Material</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-125H">LIT 125H</a></td><td class="sc-coursetitle">Modern Arabic Novel</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-133H">LIT 133H</a></td><td class="sc-coursetitle">Haunted by the Forgotten War: Literature and Film of the Korean War</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-134A">LIT 134A</a></td><td class="sc-coursetitle">Caribbean Literature</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-135F">LIT 135F</a></td><td class="sc-coursetitle">Empire and After in the Anglophone Novel</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-135G">LIT 135G</a></td><td class="sc-coursetitle">Postcolonial Writing</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-138B">LIT 138B</a></td><td class="sc-coursetitle">Regions in American Literature</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-145A">LIT 145A</a></td><td class="sc-coursetitle">Colonial American Literatures</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-146D">LIT 146D</a></td><td class="sc-coursetitle">Nineteenth-Century American Fiction</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-147A">LIT 147A</a></td><td class="sc-coursetitle">Twain, Slavery, and the Literary Imagination</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-149B">LIT 149B</a></td><td class="sc-coursetitle">Contemporary American Literature</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-149E">LIT 149E</a></td><td class="sc-coursetitle">Modern Fiction and Poetry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-160E">LIT 160E</a></td><td class="sc-coursetitle">Theorizing Race and Comics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-160K">LIT 160K</a></td><td class="sc-coursetitle">Race, Labor, and Migration</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-161A">LIT 161A</a></td><td class="sc-coursetitle">African American Literature</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-161B">LIT 161B</a></td><td class="sc-coursetitle">African American Women Writers</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-162A">LIT 162A</a></td><td class="sc-coursetitle">Asian American Literature</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-163A">LIT 163A</a></td><td class="sc-coursetitle">American Indian Literature</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-164A">LIT 164A</a></td><td class="sc-coursetitle">Jewish Travel Narratives</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-164D">LIT 164D</a></td><td class="sc-coursetitle">Jewish Diaspora, Ethnicity, and Urban Life</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-164J">LIT 164J</a></td><td class="sc-coursetitle">Jewish Writers and the American City</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-165B">LIT 165B</a></td><td class="sc-coursetitle">Latino Fictions of the Americas</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-169A">LIT 169A</a></td><td class="sc-coursetitle">White Flow(n): Race, Gender, and Material</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-182I">LIT 182I</a></td><td class="sc-coursetitle">Littérature d'expression française hors de France</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-183P">LIT 183P</a></td><td class="sc-coursetitle">Fremdenangst: Ausländerfeindlichkeit in der deutschen Literatur und Kultur</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-189F">LIT 189F</a></td><td class="sc-coursetitle">Literaturas Latinas en los Estados Unidos: en inglés, español y Spanglish</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-189U">LIT 189U</a></td><td class="sc-coursetitle">Modernidad y literatura: El Boom de la novela latinoamericana</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-189V">LIT 189V</a></td><td class="sc-coursetitle">Andean Indigenismo</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-190Y">LIT 190Y</a></td><td class="sc-coursetitle">Topics in Jewish Literature and Culture</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Social Sciences
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ANTH-Anthropology/100/ANTH-110Q">ANTH 110Q</a><div class="sc-crosslisted">
+					/CRES 110Q/FMST 110Q
+				</div></td><td class="sc-coursetitle">Queer Sexuality in Black Popular Culture</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ANTH-Anthropology/100/ANTH-130O">ANTH 130O</a></td><td class="sc-coursetitle">Native Feminisms, Gender, and Settler Colonialism</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ANTH-Anthropology/100/ANTH-131">ANTH 131</a></td><td class="sc-coursetitle">Gender in Cross-Cultural Context</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ANTH-Anthropology/100/ANTH-140">ANTH 140</a><div class="sc-crosslisted">
+					/CRES 140
+				</div></td><td class="sc-coursetitle">The Body in Rain: Environmental and Medical Intersections</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ANTH-Anthropology/100/ANTH-149">ANTH 149</a></td><td class="sc-coursetitle">Anthropology of Activism</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ANTH-Anthropology/100/ANTH-158">ANTH 158</a></td><td class="sc-coursetitle">Feminist Ethnographies</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ANTH-Anthropology/100/ANTH-187">ANTH 187</a></td><td class="sc-coursetitle">Cultural Heritage in Colonial Contexts</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ANTH-Anthropology/100/ANTH-196J">ANTH 196J</a></td><td class="sc-coursetitle">Imagining America</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CMMU-Community-Studies/Upper-Division/CMMU-101">CMMU 101</a></td><td class="sc-coursetitle">Communities, Social Movements, and the Third Sector</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CMMU-Community-Studies/Upper-Division/CMMU-163">CMMU 163</a></td><td class="sc-coursetitle">Health Care Inequalities</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-128">ECON 128</a><div class="sc-crosslisted">
+					/LGST 128
+				</div></td><td class="sc-coursetitle">Poverty and Public Policy</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/EDUC-Education/Upper-Division/EDUC-104">EDUC 104</a></td><td class="sc-coursetitle">Ethical Issues and Teaching</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/EDUC-Education/Upper-Division/EDUC-125">EDUC 125</a></td><td class="sc-coursetitle">Multicultural Children's Literature for Elementary Classrooms</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/EDUC-Education/Upper-Division/EDUC-128">EDUC 128</a></td><td class="sc-coursetitle">Immigrants and Education</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/EDUC-Education/Upper-Division/EDUC-141">EDUC 141</a></td><td class="sc-coursetitle">Bilingualism and Schooling</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/EDUC-Education/Upper-Division/EDUC-160">EDUC 160</a></td><td class="sc-coursetitle">Issues in Educational Reform</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/EDUC-Education/Upper-Division/EDUC-164">EDUC 164</a></td><td class="sc-coursetitle">Urban Education</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/EDUC-Education/Upper-Division/EDUC-173">EDUC 173</a></td><td class="sc-coursetitle">Seminar in Critical Pedagogy</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/EDUC-Education/Upper-Division/EDUC-177">EDUC 177</a></td><td class="sc-coursetitle">Teaching Linguistically Diverse Students</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/EDUC-Education/Upper-Division/EDUC-181">EDUC 181</a></td><td class="sc-coursetitle">Race, Class, and Culture in Education</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LALS-Latin-American-and-Latino-Studies/Upper-Division/LALS-112">LALS 112</a></td><td class="sc-coursetitle">Immigration and Assimilation</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LALS-Latin-American-and-Latino-Studies/Upper-Division/LALS-128">LALS 128</a><div class="sc-crosslisted">
+					/OAKS 128
+				</div></td><td class="sc-coursetitle">Latino Media in the U.S</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LALS-Latin-American-and-Latino-Studies/Upper-Division/LALS-131">LALS 131</a></td><td class="sc-coursetitle">Latino Literatures: Assimilation and Assimilability</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LALS-Latin-American-and-Latino-Studies/Upper-Division/LALS-143">LALS 143</a></td><td class="sc-coursetitle">Race and Ethnicity</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LALS-Latin-American-and-Latino-Studies/Upper-Division/LALS-144">LALS 144</a></td><td class="sc-coursetitle">Mexicana/Chicana Histories</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LGST-Legal-Studies/Upper-Division/LGST-111B">LGST 111B</a><div class="sc-crosslisted">
+					/POLI 111B
+				</div></td><td class="sc-coursetitle">Civil Liberties</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LGST-Legal-Studies/Upper-Division/LGST-135">LGST 135</a></td><td class="sc-coursetitle">Native Peoples Law</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/POLI-Politics/Upper-Division/POLI-110">POLI 110</a><div class="sc-crosslisted">
+					/LGST 110
+				</div></td><td class="sc-coursetitle">Law and Social Issues</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PSYC-Psychology/Upper-Division/PSYC-153">PSYC 153</a></td><td class="sc-coursetitle">The Psychology of Poverty and Social Class</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PSYC-Psychology/Upper-Division/PSYC-155">PSYC 155</a></td><td class="sc-coursetitle">Social-Community Psychology in Practice</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PSYC-Psychology/Upper-Division/PSYC-159H">PSYC 159H</a></td><td class="sc-coursetitle">Community-Based Interventions</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PSYC-Psychology/Upper-Division/PSYC-159I">PSYC 159I</a></td><td class="sc-coursetitle">Psychology of Immigration</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/SOCY-Sociology/Upper-Division/SOCY-120">SOCY 120</a></td><td class="sc-coursetitle">Gender, Race/Ethnicity, Sexuality and Cultural Politics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/SOCY-Sociology/Upper-Division/SOCY-121">SOCY 121</a></td><td class="sc-coursetitle">Sociology of Health and Medicine</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/SOCY-Sociology/Upper-Division/SOCY-126">SOCY 126</a></td><td class="sc-coursetitle">Sex and Sexuality as Social Practice and Representation</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/SOCY-Sociology/Upper-Division/SOCY-128C">SOCY 128C</a><div class="sc-crosslisted">
+					/LGST 128C
+				</div></td><td class="sc-coursetitle">Social History of Democracy, Anarchism, and Indigenism</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/SOCY-Sociology/Upper-Division/SOCY-128I">SOCY 128I</a><div class="sc-crosslisted">
+					/LGST 128I
+				</div></td><td class="sc-coursetitle">Race and Law</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/SOCY-Sociology/Upper-Division/SOCY-132">SOCY 132</a></td><td class="sc-coursetitle">Sociology of Science and Technology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/SOCY-Sociology/Upper-Division/SOCY-133">SOCY 133</a></td><td class="sc-coursetitle">Currents in African American Cultural Politics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/SOCY-Sociology/Upper-Division/SOCY-139T">SOCY 139T</a></td><td class="sc-coursetitle">Community-Engaged Research Practicum</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/SOCY-Sociology/Upper-Division/SOCY-145">SOCY 145</a></td><td class="sc-coursetitle">Sociology of Masculinities</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/SOCY-Sociology/Upper-Division/SOCY-148">SOCY 148</a></td><td class="sc-coursetitle">Educational Inequality</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/SOCY-Sociology/Upper-Division/SOCY-152">SOCY 152</a></td><td class="sc-coursetitle">Body and Society</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/SOCY-Sociology/Upper-Division/SOCY-156">SOCY 156</a></td><td class="sc-coursetitle">U.S. Latinx Identities: Centers and Margins</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/SOCY-Sociology/Upper-Division/SOCY-168">SOCY 168</a></td><td class="sc-coursetitle">Social Justice</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/SOCY-Sociology/Upper-Division/SOCY-169">SOCY 169</a></td><td class="sc-coursetitle">Social Inequality</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/SOCY-Sociology/Upper-Division/SOCY-170">SOCY 170</a></td><td class="sc-coursetitle">Ethnicity and Race</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/SOCY-Sociology/Upper-Division/SOCY-170P">SOCY 170P</a></td><td class="sc-coursetitle">The Political Economy of Race</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/SOCY-Sociology/Upper-Division/SOCY-171">SOCY 171</a></td><td class="sc-coursetitle">Exploring Global Inequality</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/SOCY-Sociology/Upper-Division/SOCY-172">SOCY 172</a></td><td class="sc-coursetitle">Sociology of Social Movements</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/SOCY-Sociology/Upper-Division/SOCY-173X">SOCY 173X</a></td><td class="sc-coursetitle">Water and Sanitation Justice</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Transnational Requirement
+		</h5><p>Students must select at least two electives focusing on phenomena outside of the U.S. or on transnational or hemispheric subjects.</p>
+<table>
+
+		</table><h6 class="sc-RequiredCoursesHeading4">
+			Division of the Arts
+		</h6><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-110">HAVC 110</a></td><td class="sc-coursetitle">Visual Cultures of West Africa</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-111">HAVC 111</a></td><td class="sc-coursetitle">Visual Cultures of Central Africa</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-115">HAVC 115</a></td><td class="sc-coursetitle">Gender in African Visual Culture</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-116">HAVC 116</a></td><td class="sc-coursetitle">African Architecture</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-117">HAVC 117</a></td><td class="sc-coursetitle">Contemporary Art of Africa</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-118">HAVC 118</a></td><td class="sc-coursetitle">Art of the Contemporary African Diaspora</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-119">HAVC 119</a></td><td class="sc-coursetitle">Arts and Politics of African Urban Space</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-123A">HAVC 123A</a></td><td class="sc-coursetitle">Modernity and the Arts of India</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-124B">HAVC 124B</a></td><td class="sc-coursetitle">History of Photography in Southeast Asia</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-162A">HAVC 162A</a></td><td class="sc-coursetitle">Advanced Studies in Early Indigenous American Visual Culture: The Ancient Maya</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-163">HAVC 163</a></td><td class="sc-coursetitle">The Native in Colonial Spanish America</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-170">HAVC 170</a></td><td class="sc-coursetitle">Art of the Body in Oceania</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-172">HAVC 172</a></td><td class="sc-coursetitle">Textile Traditions of Oceania</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-179">HAVC 179</a></td><td class="sc-coursetitle">Topics in Oceanic Visual Culture</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-190O">HAVC 190O</a></td><td class="sc-coursetitle">Berlin: History and the Built Environment</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-190W">HAVC 190W</a></td><td class="sc-coursetitle">Art and Culture Contact in Oceania</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture/Upper-Division/HAVC-190X">HAVC 190X</a></td><td class="sc-coursetitle">Art and Identity in Oceania</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h6 class="sc-RequiredCoursesHeading4">
+			Division of the Humanities
+		</h6><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Upper-Division/CRES-116">CRES 116</a></td><td class="sc-coursetitle">Race and the Pacific: U.S. and Japanese Empires in Comparative Perspective</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/FMST-Feminist-Studies/Upper-Division/FMST-112">FMST 112</a><div class="sc-crosslisted">
+					/POLI 112
+				</div></td><td class="sc-coursetitle">Women and the Law</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/FMST-Feminist-Studies/Upper-Division/FMST-115">FMST 115</a></td><td class="sc-coursetitle">Gender, Sexuality, and Transnational Migration Across the Americas</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-101C">HIS 101C</a></td><td class="sc-coursetitle">Oceans in World History</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-106A">HIS 106A</a></td><td class="sc-coursetitle">Vietnam War Memories</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-110A">HIS 110A</a></td><td class="sc-coursetitle">Colonial America, 1500-1750</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-116">HIS 116</a></td><td class="sc-coursetitle">Slavery Across the Americas</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-130">HIS 130</a></td><td class="sc-coursetitle">History of Modern Cuba</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-131">HIS 131</a></td><td class="sc-coursetitle">Women in Colonial Latin America</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-134A">HIS 134A</a></td><td class="sc-coursetitle">Colonial Mexico</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-134B">HIS 134B</a></td><td class="sc-coursetitle">History of Mexico, 1850 to Present</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-137A">HIS 137A</a></td><td class="sc-coursetitle">Africa to 1800</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-137B">HIS 137B</a></td><td class="sc-coursetitle">Africa from 1800 to the Present</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-137C">HIS 137C</a></td><td class="sc-coursetitle">African Cinema</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-140D">HIS 140D</a></td><td class="sc-coursetitle">Recent Chinese History</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-150C">HIS 150C</a></td><td class="sc-coursetitle">Inventing Modern Japan: The State and the People</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-150E">HIS 150E</a></td><td class="sc-coursetitle">History and Memory in the Okinawan Islands</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-154">HIS 154</a></td><td class="sc-coursetitle">Post-Colonial North Africa</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-155">HIS 155</a></td><td class="sc-coursetitle">History of Modern Israel</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-156">HIS 156</a></td><td class="sc-coursetitle">Interrogating Politics in the Post-Colonial Middle East</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-157">HIS 157</a></td><td class="sc-coursetitle">The Ottoman Empire</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-158C">HIS 158C</a><div class="sc-crosslisted">
+					/ANTH 179
+				</div></td><td class="sc-coursetitle">Slavery in the Atlantic World: Historical and Archaeological Perspectives</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-166">HIS 166</a></td><td class="sc-coursetitle">Northern Ireland: Communities in Conflict</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-170C">HIS 170C</a></td><td class="sc-coursetitle">From the Trenches to the Casbah: France and its Empire in the 20th Century</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-177A">HIS 177A</a></td><td class="sc-coursetitle">Slaves, Soldiers, and Scientists: History of the Tropics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-178E">HIS 178E</a></td><td class="sc-coursetitle">Modern Jewish Intellectual History</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-181B">HIS 181B</a></td><td class="sc-coursetitle">Africa and Britain in an Imperial World</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-184B">HIS 184B</a></td><td class="sc-coursetitle">Racism and Antiracism in Europe: From 1870 to the Present</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-185I">HIS 185I</a></td><td class="sc-coursetitle">Latin American Jewish History in the Modern Period</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-185J">HIS 185J</a></td><td class="sc-coursetitle">The Modern Jewish Experience</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-190A">HIS 190A</a></td><td class="sc-coursetitle">Slavery and Race in Latin America</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-190B">HIS 190B</a></td><td class="sc-coursetitle">Race and the Nation in Latin America</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-190N">HIS 190N</a></td><td class="sc-coursetitle">Topics in African History</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-190X">HIS 190X</a></td><td class="sc-coursetitle">History of the Atlantic World, 1492-1824</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-194T">HIS 194T</a></td><td class="sc-coursetitle">Worlds of Labor in Asia</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-194U">HIS 194U</a></td><td class="sc-coursetitle">The Cold War and East Asia</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/HIS-History/Upper-Division/HIS-196N">HIS 196N</a></td><td class="sc-coursetitle">Eastern European Jewish Social History</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-131C">LIT 131C</a></td><td class="sc-coursetitle">Worldings</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-133F">LIT 133F</a></td><td class="sc-coursetitle">Pacific Rim Discourse</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-133G">LIT 133G</a></td><td class="sc-coursetitle">The Nuclear Pacific</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-133I">LIT 133I</a></td><td class="sc-coursetitle">Global Japan: Literatures of the Japanese Diaspora</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-135A">LIT 135A</a></td><td class="sc-coursetitle">Topics in African Literature</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-137A">LIT 137A</a></td><td class="sc-coursetitle">Global Cities</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-138A">LIT 138A</a></td><td class="sc-coursetitle">Culture and Nation</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-149F">LIT 149F</a></td><td class="sc-coursetitle">Contemporary Mexican Narrative</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-155A">LIT 155A</a></td><td class="sc-coursetitle">Cinema and Subjectivity</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-155E">LIT 155E</a></td><td class="sc-coursetitle">Cinema and Social Change in Latin America</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-160I">LIT 160I</a></td><td class="sc-coursetitle">Race, Militarism, and Empire in Asia and the Pacific</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-160J">LIT 160J</a></td><td class="sc-coursetitle">Exile, Diaspora, Migration</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-162B">LIT 162B</a></td><td class="sc-coursetitle">Literature of the Asian Diaspora</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-164C">LIT 164C</a></td><td class="sc-coursetitle">Global Jewish Writing</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-164G">LIT 164G</a></td><td class="sc-coursetitle">Literature and the Holocaust</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-164H">LIT 164H</a></td><td class="sc-coursetitle">Jewish Writers and the European City</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-165A">LIT 165A</a></td><td class="sc-coursetitle">Chicano/Mexicano Geographies</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-165C">LIT 165C</a></td><td class="sc-coursetitle">Mesoamerican Indigenous/Indigenista Literature</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-168A">LIT 168A</a></td><td class="sc-coursetitle">The Culture of Islamic Law</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-189A">LIT 189A</a></td><td class="sc-coursetitle">De la conquista a Sor Juana</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-189E">LIT 189E</a></td><td class="sc-coursetitle">Cuba</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-189H">LIT 189H</a></td><td class="sc-coursetitle">La Globalizacion en/del Cine Latin/o Americano</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-189L">LIT 189L</a></td><td class="sc-coursetitle">Poesía latinoamericana</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-189M">LIT 189M</a></td><td class="sc-coursetitle">Prosa contemporánea hispanoamericana</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-189N">LIT 189N</a></td><td class="sc-coursetitle">Latinoamericano testimonio</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-189O">LIT 189O</a></td><td class="sc-coursetitle">El Cuento Hispanoamericano: Variedades esteticas de la literatura breve en America Latina</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-189P">LIT 189P</a></td><td class="sc-coursetitle">Las mujeres en la literatura latinoamericana</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-189Q">LIT 189Q</a></td><td class="sc-coursetitle">Ficción y marginalidad</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-189S">LIT 189S</a></td><td class="sc-coursetitle">La cultura popular en la narrativa latinoamericana</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-189T">LIT 189T</a></td><td class="sc-coursetitle">Historia de la lectura y los lectores: Recepcion y consumo cultural en el mundo Latino Americano</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LIT-Literature/Upper-Division/LIT-190O">LIT 190O</a></td><td class="sc-coursetitle">Studies in Slavery, Race, and Nation in the Americas</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h6 class="sc-RequiredCoursesHeading4">
+			Division of the Social Sciences
+		</h6><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ANTH-Anthropology/100/ANTH-110O">ANTH 110O</a><div class="sc-crosslisted">
+					/HIS 181A
+				</div></td><td class="sc-coursetitle">Postcolonial Britain and France</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ANTH-Anthropology/100/ANTH-110P">ANTH 110P</a></td><td class="sc-coursetitle">India and Indian Diaspora through Film</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ANTH-Anthropology/100/ANTH-129">ANTH 129</a></td><td class="sc-coursetitle">Beyond Borders: Other Globalizations and Histories of Interconnection</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ANTH-Anthropology/100/ANTH-130A">ANTH 130A</a></td><td class="sc-coursetitle">Anthropology of Africa.</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ANTH-Anthropology/100/ANTH-130C">ANTH 130C</a></td><td class="sc-coursetitle">Politics and Culture in China</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ANTH-Anthropology/100/ANTH-130F">ANTH 130F</a><div class="sc-crosslisted">
+					/CRES 130
+				</div></td><td class="sc-coursetitle">Blackness In Motion: Anthology of the African Diasporas</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ANTH-Anthropology/100/ANTH-130I">ANTH 130I</a></td><td class="sc-coursetitle">Cultures of India</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ANTH-Anthropology/100/ANTH-130L">ANTH 130L</a></td><td class="sc-coursetitle">Ethnographies of Latin America</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ANTH-Anthropology/100/ANTH-130T">ANTH 130T</a></td><td class="sc-coursetitle">Religion and Politics in the Muslim World</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ANTH-Anthropology/100/ANTH-159">ANTH 159</a></td><td class="sc-coursetitle">Race and Anthropology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ANTH-Anthropology/100/ANTH-194X">ANTH 194X</a></td><td class="sc-coursetitle">Women in Politics: A Third World Perspective</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CMMU-Community-Studies/Upper-Division/CMMU-145">CMMU 145</a></td><td class="sc-coursetitle">Global Capitalism: a History of the Present</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/EDUC-Education/Upper-Division/EDUC-170">EDUC 170</a></td><td class="sc-coursetitle">East Asian Schooling and Immigration</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/EDUC-Education/Upper-Division/EDUC-171">EDUC 171</a></td><td class="sc-coursetitle">South and Southeast Asian Schooling and Immigration</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LALS-Latin-American-and-Latino-Studies/Upper-Division/LALS-100">LALS 100</a></td><td class="sc-coursetitle">Concepts and Theories in Latin American and Latina/o Studies</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LALS-Latin-American-and-Latino-Studies/Upper-Division/LALS-115">LALS 115</a></td><td class="sc-coursetitle">Mexico-United States Migration</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LALS-Latin-American-and-Latino-Studies/Upper-Division/LALS-127">LALS 127</a></td><td class="sc-coursetitle">Genero, Nacion Y Modernidad En El Cine</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LALS-Latin-American-and-Latino-Studies/Upper-Division/LALS-145">LALS 145</a></td><td class="sc-coursetitle">Grassroots Social Change in Latin America</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LALS-Latin-American-and-Latino-Studies/Upper-Division/LALS-150">LALS 150</a></td><td class="sc-coursetitle">Afro-Latinos/as: Social, Cultural, and Political Dimensions</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LALS-Latin-American-and-Latino-Studies/Upper-Division/LALS-152">LALS 152</a></td><td class="sc-coursetitle">Consumer Cultures Between the Americas</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LALS-Latin-American-and-Latino-Studies/Upper-Division/LALS-165">LALS 165</a></td><td class="sc-coursetitle">Contemporary Peru</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LALS-Latin-American-and-Latino-Studies/Upper-Division/LALS-170">LALS 170</a></td><td class="sc-coursetitle">Indigenous Struggles in the Americas</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LALS-Latin-American-and-Latino-Studies/Upper-Division/LALS-171">LALS 171</a></td><td class="sc-coursetitle">Brazil in Black and White</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LALS-Latin-American-and-Latino-Studies/Upper-Division/LALS-172">LALS 172</a></td><td class="sc-coursetitle">Visualizing Human Rights</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LALS-Latin-American-and-Latino-Studies/Upper-Division/LALS-175">LALS 175</a></td><td class="sc-coursetitle">Migration, Gender, and Health</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LALS-Latin-American-and-Latino-Studies/Upper-Division/LALS-178">LALS 178</a></td><td class="sc-coursetitle">Gender, Transnationalism, and Globalization</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LALS-Latin-American-and-Latino-Studies/Upper-Division/LALS-180">LALS 180</a></td><td class="sc-coursetitle">Borders: Real and Imagined</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/LALS-Latin-American-and-Latino-Studies/Upper-Division/LALS-194H">LALS 194H</a></td><td class="sc-coursetitle">Central America and the United States</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/POLI-Politics/Upper-Division/POLI-140C">POLI 140C</a></td><td class="sc-coursetitle">Latin American Politics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/SOCY-Sociology/Upper-Division/SOCY-128">SOCY 128</a><div class="sc-crosslisted">
+					/LGST 126
+				</div></td><td class="sc-coursetitle">Law and Politics in Contemporary Japan and East Asian Societies</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/SOCY-Sociology/Upper-Division/SOCY-128M">SOCY 128M</a><div class="sc-crosslisted">
+					/LGST 128M
+				</div></td><td class="sc-coursetitle">International Law and Global Justice</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			The Colleges
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CLTE-College-Ten/Upper-Division/CLTE-135">CLTE 135</a></td><td class="sc-coursetitle">Apprenticeship in Community Engaged Research</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CLTE-College-Ten/Upper-Division/CLTE-136">CLTE 136</a></td><td class="sc-coursetitle">Methodologies of Critical Praxis</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Disciplinary Communication (DC) Requirement
+		</h4><p>Students of every major must satisfy that major&rsquo;s upper-division disciplinary communication (DC) requirement. The DC requirement in CRES is satisfied by completing the Comprehensive Requirement (see below).</p>
+<table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Comprehensive Requirement
+		</h4><p>The comprehensive requirement&nbsp;is fulfilled by&nbsp;completing a senior seminar from the CRES 190 series, or one of the other senior seminars&nbsp;listed below.&nbsp;CRES 190 series courses in the current General Catalog are also listed below; any CRES 190 series course that is listed in a subsequent General Catalog will also satisfy the comprehensive requirement.</p>
+
+<p>Prerequisites for the CRES 190 series include <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Lower-Division/CRES-10'>CRES 10</a> and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Upper-Division/CRES-100'>CRES 100</a> and satisfaction of the Entry Level Writing and Composition requirements.&nbsp;Senior seminars outside of CRES may have additional enrollment restrictions or prerequisites.</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Upper-Division/CRES-190A">CRES 190A</a><div class="sc-crosslisted">
+					/FMST 194S
+				</div></td><td class="sc-coursetitle">Critical Race Feminisms</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Upper-Division/CRES-190B">CRES 190B</a></td><td class="sc-coursetitle">Critical Migration Studies</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Upper-Division/CRES-190P">CRES 190P</a></td><td class="sc-coursetitle">Trans of Color Movements in Media, Art and Performance</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Upper-Division/CRES-190S">CRES 190S</a></td><td class="sc-coursetitle">From Slavery to Precarity: Race, Logistics and Globalization</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Upper-Division/CRES-190T">CRES 190T</a></td><td class="sc-coursetitle">The War on Terror: Imperialism Past and Present</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/FMST-Feminist-Studies/Upper-Division/FMST-194K">FMST 194K</a><div class="sc-crosslisted">
+					/CRES 190K
+				</div></td><td class="sc-coursetitle">Black Diaspora</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/FMST-Feminist-Studies/Upper-Division/FMST-194L">FMST 194L</a><div class="sc-crosslisted">
+					/CRES 190L
+				</div></td><td class="sc-coursetitle">Comparative Settler Colonial Studies</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/FMST-Feminist-Studies/Upper-Division/FMST-194M">FMST 194M</a><div class="sc-crosslisted">
+					/CRES 190M
+				</div></td><td class="sc-coursetitle">Empire and Sexuality</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/FMST-Feminist-Studies/Upper-Division/FMST-194O">FMST 194O</a><div class="sc-crosslisted">
+					/CRES 190O
+				</div></td><td class="sc-coursetitle">The Politics of Gender and Human Rights</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/FMST-Feminist-Studies/Upper-Division/FMST-194Q">FMST 194Q</a><div class="sc-crosslisted">
+					/CRES 190Q
+				</div></td><td class="sc-coursetitle">Queer Diasporas</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/FMST-Feminist-Studies/Upper-Division/FMST-194U">FMST 194U</a><div class="sc-crosslisted">
+					/CRES 190U
+				</div></td><td class="sc-coursetitle">Touring War and Empire</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/FMST-Feminist-Studies/Upper-Division/FMST-194V">FMST 194V</a><div class="sc-crosslisted">
+					/CRES 190V
+				</div></td><td class="sc-coursetitle">Marxism and Feminism</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ANTH-Anthropology/100/ANTH-196G">ANTH 196G</a><div class="sc-crosslisted">
+					/CRES 190G
+				</div></td><td class="sc-coursetitle">Queer Worlds: Sexuality, Intimacy and Power in Contemporary Ethnography</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Planners
+		</h3><a id="4yrplan"></a><p><strong>Four-Year Sample Academic Plan For CRES Major (Frosh)</strong></p>
+
+<p>Students must have satisfied the English language and writing requirement (ELWR) and have completed the C1 requirement in order to enroll in <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Lower-Division/CRES-10'>CRES 10</a>. Students who place into C2 in their first fall quarter may enroll in <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Lower-Division/CRES-10'>CRES 10</a> in their first fall quarter.</p>
+
+<table>
+	<tbody>
+		<tr>
+			<td>&nbsp;</td>
+			<td><strong>Fall</strong></td>
+			<td><strong>Winter</strong></td>
+			<td><strong>Spring</strong></td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>1st (frosh)</strong></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>2nd (soph)</strong></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Lower-Division/CRES-10'>CRES 10</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Upper-Division/CRES-100'>CRES 100</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Upper-Division/CRES-101'>CRES 101</a></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>CRES elective</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>3rd (junior)</strong></td>
+			<td>CRES elective</td>
+			<td>CRES elective</td>
+			<td>CRES elective</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>CRES elective</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>4th (senior)</strong></td>
+			<td>CRES elective</td>
+			<td>CRES 190</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>Students must also complete all general education requirements except for ER, which is satisfied by <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Lower-Division/CRES-10'>CRES 10</a>.&nbsp;</p>
+
+<a id="2yrplan"></a><p><strong>Two-Year Sample Academic Plan for CRES Major (Transfer Students)</strong></p>
+
+<p>Transfer students should complete their general education (GE) requirements or IGETC before enrolling at UCSC, but this is not a requirement to complete the major within two years of transferring. The CRES major consists of 10 courses, allowing transfer students to complete about two CRES courses per quarter along with additional units to complete the required 180 units for graduation.</p>
+
+<p><strong>Sample Transfer-Students Academic Planner for CRES Major &ndash; Fall Admission</strong></p>
+
+<table>
+	<tbody>
+		<tr>
+			<td>&nbsp;</td>
+			<td><strong>Fall</strong></td>
+			<td><strong>Winter</strong></td>
+			<td><strong>Spring</strong></td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>1st (junior)</strong></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Lower-Division/CRES-10'>CRES 10</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Upper-Division/CRES-100'>CRES 100</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies/Upper-Division/CRES-101'>CRES 101</a></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>CRES elective</td>
+			<td>CRES elective</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>2nd (senior)</strong></td>
+			<td>CRES elective</td>
+			<td>CRES elective</td>
+			<td>CRES 190</td>
+		</tr>
+		<tr>
+			<td>CRES elective</td>
+			<td>CRES elective&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+<table>
+
+		</table>
+	</div>
+</div>
+							</div><!-- end main -->
+						</div><!--end of rightpanel-->
+						<div style="clear: both;"></div>
+					</div><!--end of middle-->
+					
+					<!-- Footer -->
+					<div id="footer">
+					<!--FOOTER LINKS AND IMAGES CAN GO HERE-->
+						<div class="main-footer">
+<a id="goTop"></a>
+          <div class="row" id="footer">
+              <div class="footer-left">
+                  <img alt="UCSC Seal" class="seal" height="84" src="https://static.ucsc.edu/_responsive/images/logos/uc-seal.svg" width="84">
+<div class="address home">
+<div class="location">UC Santa Cruz, 1156 High Street, Santa Cruz, Ca 95064</div>
+<div class="copyright">&copy;2020 Regents of the University of California. All Rights Reserved.</div>
+</div>
+              </div>
+<div class="footer-right">
+                  
+
+<div class="social-media">
+            
+        
+        <a href="https://www.twitter.com/ucsc"><svg aria-label="Follow us on Twitter" class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg><!-- <i aria-label="Follow us on Twitter" class="fab fa-twitter"></i> --></a>
+            
+        
+        <a href="https://www.instagram.com/ucsc"><svg aria-label="Follow us on Instagram" class="svg-inline--fa fa-instagram fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><!-- <i aria-label="Follow us on Instagram" class="fab fa-instagram"></i> --></a>
+            
+        
+        <a href="https://www.facebook.com/ucsantacruz"><svg aria-label="Follow us on Facebook" class="svg-inline--fa fa-facebook-f fa-w-9" aria-hidden="true" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512" data-fa-i2svg=""><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path></svg><!-- <i aria-label="Follow us on Facebook" class="fab fa-facebook-f"></i> --></a>
+            
+        
+        <a href="http://youtube.com/ucsantacruz"><svg aria-label="Follow us on YouTube" class="svg-inline--fa fa-youtube fa-w-18" aria-hidden="true" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg><!-- <i aria-label="Follow us on YouTube" class="fab fa-youtube"></i> --></a>
+            
+        
+        <a href="http://www.linkedin.com/school/ucsc/"><svg aria-label="Follow us on LinkedIn" class="svg-inline--fa fa-linkedin-in fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z"></path></svg><!-- <i aria-label="Follow us on LinkedIn" class="fab fa-linkedin-in"></i> --></a>
+    </div>
+
+<div class="links">
+            
+                            
+        <a href="https://www.ucsc.edu/feedback/index.html">Feedback</a> 
+    </div>
+
+              </div>
+          </div>
+          <div class="sub-footer row">
+<div class="legal">
+                <ul class="legal">
+<li><a href="https://academicaffairs.ucsc.edu/accreditation/">Accreditation</a></li>
+<li><a href="https://diversity.ucsc.edu/eeo-aa/images/non-discrimination-policy.pdf">Non-Discrimination&nbsp;Policy</a></li>
+<li><a href="land-acknowledgement/index.html">Land Acknowledgement</a></li>
+<li><a href="https://www.ucsc.edu/about/employment.html">Employment</a></li>
+<li><a href="https://its.ucsc.edu/terms/">Privacy&nbsp;Policy&nbsp;&amp;&nbsp;Terms&nbsp;of&nbsp;Use</a></li>
+<li><a href="https://titleix.ucsc.edu/index.html">Sexual Violence Prevention &amp; Response (Title IX)</a></li>
+</ul>
+                
+<p class="page-meta">
+    Last modified: September 22, 2020  <span class="check-ip">128.114.113.74</span>
+</p>
+              </div>
+          </div>   
+        </div>
+					</div><!--end of footer-->
+					
+				</div><!--end of pagwrapper2 -->
+			</div><!--end of pagewrapper1-->
+			</div><!--end of wrap-->
+		
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZF-IhmpGy1TANyacnbq7Lyk973c9ilWmqlgroX0B_F5tMTeNK0D7KOmfpAeG5gd80A2&amp;t=637460801481343508" type="text/javascript"></script>
+</form>
+		<script src="https://static.ucsc.edu/_responsive/lib/modernizr/modernizr.js" type="text/javascript"></script>
+		<script src="https://static.ucsc.edu/_responsive/lib/jquery/dist/jquery.js" type="text/javascript"></script>
+		<script async="async" src="https://static.ucsc.edu/_responsive/js/main.js?t=20180409144600" type="text/javascript"></script>
+		<script type="text/javascript" src="/scripts/firefoxAnchorFix.js"></script>
+	</body>
+</html>

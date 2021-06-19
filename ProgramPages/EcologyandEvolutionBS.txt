@@ -1,0 +1,1332 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head><title>
+	UCSC General Catalog - Ecology and Evolution B.S.
+</title><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-8e849bdf63c6884f6ef","applicationID":"1359705662","transactionName":"Y1NQZhdQC0cHU0ZfCVoZc2E1HglVH19HQhUbWlNLCkQRR0lFXF8QUURBWxFIRVsAEFFXCl1QXUALWAQUFVFcQgcUVUBHHx4WVQhEU1UUQUxBRgRfAVUUVEJXAVEYU0EVSQ==","queueTime":0,"applicationTime":366,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"1359996610",accountID:"3058884",trustKey:"3028485",xpid:"VwYCWV5bDBABV1RbAAECUFID",licenseKey:"NRJS-8e849bdf63c6884f6ef",applicationID:"1359705662"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(29),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{p?p-=1:o(c||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:s.now();i("err",[t,n])}var i=t("handle"),a=t(30),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError";if(!s.disabled){var p=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),s.xhrWrappable&&t(14),d=!0)}c.on("fn-start",function(t,e,n){d&&(p+=1)}),c.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,o(n))}),c.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){L++,T=g.hash,this[u]=y.now()}function o(){L--,g.hash!==T&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var c="-start",s="-end",f="-body",u="fn"+c,d="fn"+s,l="cb"+c,p="cb"+s,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable&&!y.disabled){var x=t(10),b=t(11),E=t(8),R=t(6),O=t(13),N=t(7),M=t(14),P=t(9),C=t("ee"),S=C.get("tracer");t(16),y.features.spa=!0;var T,L=0;C.on(u,r),b.on(l,r),P.on(l,r),C.on(d,o),b.on(p,o),P.on(p,o),C.buffer([u,d,"xhr-done","xhr-resolved"]),R.buffer([u]),O.buffer(["setTimeout"+s,"clearTimeout"+c,u]),M.buffer([u,"new-xhr","send-xhr"+c]),N.buffer([m+c,m+"-done",m+f+c,m+f+s]),E.buffer(["newURL"]),x.buffer([u]),b.buffer(["propagate",l,p,"executor-err","resolve"+c]),S.buffer([u,"no-"+u]),P.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(M,"send-xhr"+c),a(C,"xhr-resolved"),a(C,"xhr-done"),a(N,m+c),a(N,m+"-done"),a(P,"new-jsonp"),a(P,"jsonp-end"),a(P,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,L>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),c=t(12),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,v="fn"+h,w="bstTimer",g="pushState",y=t("loader");if(!y.disabled){y.features.stn=!0,t(8),"addEventListener"in window&&t(6);var x=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),o.on(v,function(t,e){var n=t[0];n instanceof x&&i("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),this.bstType])}),c.on(m,function(){this.bstStart=y.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t("wrap-function")(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var c=r.apply(this,t);return o.emit(n+"start",[t,a],c),c.then(function(t){return o.emit(n+"end",[null,t],c),t},function(t){throw o.emit(n+"end",[t],c),t})})}var o=t("ee").get("fetch"),i=t(30),a=t(29);e.exports=o;var c=window,s="fetch-",f=s+"body-",u=["arrayBuffer","blob","json","text","formData"],d=c.Request,l=c.Response,p=c.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(c,"fetch",s),o.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(s+"done",[null,e],n)}else o.emit(s+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t("wrap-function")(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){s.emit("jsonp-end",[],l),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){s.emit("jsonp-error",[],l),s.emit("jsonp-end",[],l),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=c(a),d="function"==typeof u.parent[u.key];if(d){var l={};f.inPlace(u.parent,[u.key],"cb-",l),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),s.emit("new-jsonp",[t.src],l)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(l),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function c(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var s=t("ee").get("jsonp"),f=t("wrap-function")(s);if(e.exports=s,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,l=/^(\w+)(\.|$)(.*)$/,p=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?f.inPlace(Node.prototype,p,"dom-"):(f.inPlace(HTMLElement.prototype,p,"dom-"),f.inPlace(HTMLHeadElement.prototype,p,"dom-"),f.inPlace(HTMLBodyElement.prototype,p,"dom-")),s.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t("wrap-function")(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=i.context(),n=c(t,"executor-",e,null,!1),r=new f(n);return i.context(r).getCtx=function(){return e},r}var o=t("wrap-function"),i=t("ee").get("promise"),a=t("ee").getOrSetContext,c=o(i),s=t(29),f=NREUM.o.PR;e.exports=i,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){i.emit("propagate",[null,!o],a,!1,!1),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var a=e.apply(f,arguments),c=f.resolve(a);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&i.emit("propagate",[t,!0],n,!1,!1),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),o.wrapInPlace(f.prototype,"then",function(t){return function(){var e=this,n=o.argsToArray.apply(this,arguments),r=a(e);r.promise=e,n[0]=c(n[0],"cb-",r,null,!1),n[1]=c(n[1],"cb-",r,null,!1);var s=t.apply(this,n);return r.nextPromise=s,i.emit("propagate",[e,!0],s,!1,!1),s}}),i.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this,null,!1),t[1]=c(t[1],"resolve-",this,null,!1)}),i.on("executor-err",function(t,e,n){t[1](n)}),i.on("cb-end",function(t,e,n){i.emit("propagate",[n,!0],this.nextPromise,!1,!1)}),i.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=i.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",c)}function i(t){y.push(t),h&&(b?b.then(a):v?v(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,w="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){if(!c(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||s(t)&&l())&&(w.traceContextParentHeader=o(h,m),w.traceContextStateHeader=i(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&s(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function o(t,e){return"00-"+e+"-"+t+"-01"}function i(t,e,n,r,o){var i=0,a="",c=1,s="",f="";return o+"@nr="+i+"-"+c+"-"+n+"-"+r+"-"+t+"-"+a+"-"+s+"-"+f+"-"+e}function a(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var c={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(c.d.tk=i),btoa(JSON.stringify(c))}function c(t){return f()&&s(t)}function s(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var o=h(n.allowed_origins[r]);if(t.hostname===o.hostname&&t.protocol===o.protocol&&t.port===o.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(26),h=t(17);e.exports={generateTracePayload:r,shouldGenerateTrace:c}},{}],16:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function o(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=s(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var c=t("handle"),s=t(17),f=t(15).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(22),m=t(21),v=t(18),w=window.XMLHttpRequest;a.features.xhr=!0,t(14),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){i(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<l;c++)e.addEventListener(d[c],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof w&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=s(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var o=f(this.parsedOrigin);if(o&&(o.newrelicHeader||o.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),e(i.headers,o)&&(this.dt=o),t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&e(t[0].headers,o)&&(this.dt=o)})}},{}],17:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,c=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||c),"/"===o.pathname&&(r[t]=o),o}},{}],18:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(21);e.exports=r},{}],19:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(29),c=t(30),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=o(l+e,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[f.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(p+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],20:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],21:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],22:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],23:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-a}function o(){return i}var i=(new Date).getTime(),a=i,c=t(31);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=o},{}],24:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],25:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function i(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!v){var e=Math.round(t.timeStamp),n={type:t.type};e<=l.now()?n.fid=l.now()-e:e>l.offset&&e<=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),v=!0,d("timing",["fi",e,n])}}function c(t){d("pageHide",[l.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var s,f,u,d=t("handle"),l=t("loader"),p=t(28),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(m){}f=new PerformanceObserver(o);try{f.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}u=new PerformanceObserver(i);try{u.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var v=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(t){document.addEventListener(t,a,!1)})}p(c)}},{}],26:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<i.length;c++)o=i[c],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){return a(16)}function i(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,o=window.crypto||window.msCrypto;o&&o.getRandomValues&&Uint8Array&&(n=o.getRandomValues(new Uint8Array(31)));for(var i=[],a=0;a<t;a++)i.push(e().toString(16));return i.join("")}e.exports={generateUuid:r,generateSpanId:o,generateTraceId:i}},{}],27:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,s=c.match(a);s&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(o="Safari",i=s[1])}e.exports={agent:o,version:i,match:r}},{}],28:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[o]?"hidden":"visible")}"addEventListener"in document&&i&&document.addEventListener(i,e,!1)}e.exports=r;var o,i,a;"undefined"!=typeof document.hidden?(o="hidden",i="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",i="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",i="webkitvisibilitychange",a="webkitVisibilityState")},{}],29:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],30:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],31:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?f(t,s,a):a()}function n(n,r,o,i,a){if(a!==!1&&(a=!0),!p.aborted||i){t&&a&&t(n,r,o);for(var c=e(o),s=m(n),f=s.length,u=0;u<f;u++)s[u].apply(c,r);var l=d[y[n]];return l&&l.push([x,n,r,c]),c}}function i(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return l[t]=l[t]||o(n)}function w(t,e){p.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:i,addEventListener:i,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:c,aborted:!1};return x}function i(t){return f(t,s,a)}function a(){return new r}function c(){(d.api||d.feature)&&(p.aborted=!0,d=p.backlog={})}var s="nr@context",f=t("gos"),u=t(29),d={},l={},p=e.exports=o();e.exports.getOrSetContext=i,p.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!N++){var t=O.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(E,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+O.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=p+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function o(){"complete"===m.readyState&&i()}function i(){c("mark",["domContent",a()+O.offset],null,"api")}var a=t(23),c=t("handle"),s=t(29),f=t("ee"),u=t(27),d=t(24),l=t(20),p=l.getConfiguration("ssl")===!1?"http":"https",h=window,m=h.document,v="addEventListener",w="attachEvent",g=h.XMLHttpRequest,y=g&&g.prototype,x=!d(h.location);NREUM.o={ST:setTimeout,SI:h.setImmediate,CT:clearTimeout,XHR:g,REQ:h.Request,EV:h.Event,PR:h.Promise,MO:h.MutationObserver};var b=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1209.min.js"},R=g&&y&&y[v]&&!/CriOS/.test(navigator.userAgent),O=e.exports={offset:a.getLastTimestamp(),now:a,origin:b,features:{},xhrWrappable:R,userAgent:u,disabled:x};if(!x){t(19),t(25),m[v]?(m[v]("DOMContentLoaded",i,!1),h[v]("load",r,!1)):(m[w]("onreadystatechange",o),h[w]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var N=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,s,f){function nrWrapper(){var i,a,u,l;try{a=this,i=d(arguments),u="function"==typeof r?r(i,a):r||{}}catch(p){o([p,"",[i,a,s],u],t)}c(n+"start",[i,a,s],u,f);try{return l=e.apply(a,i)}catch(h){throw c(n+"err",[i,a,h],u,f),h}finally{c(n+"end",[i,a,l],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[l]=e,i(e,nrWrapper,t),nrWrapper)}function r(t,e,r,o,i){r||(r="");var c,s,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)s=e[f],c=t[s],a(c)||(t[s]=n(c,u?s+r:r,o,s,i))}function c(n,r,i,a){if(!h||e){var c=h;h=!0;try{t.emit(n,r,i,e,a)}catch(s){o([s,n,r,i],t)}h=c}}return t||(t=u),n.inPlace=r,n.flag=l,n}function o(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function i(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(i){o([i],n)}for(var a in t)p.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[l])}function c(t,e){var n=e(t);return n[l]=t,i(t,n,u),n}function s(t,e,n){var r=t[e];t[e]=c(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(30),l="nr@original",p=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=s,e.exports.argsToArray=f},{}]},{},["loader",2,16,5,3,4]);</script><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no" /><meta http-equiv="cleartype" content="on" /><link rel="shortcut icon" href="/Institutions/University-of-California-Santa-Cruz/images/favicon.ico" /><link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /><link href="/Institutions/University-of-California-Santa-Cruz/styles/ucsc.css" rel="stylesheet" type="text/css" /><link href="/Institutions/University-of-California-Santa-Cruz/styles/UCSCCustom.css" rel="stylesheet" type="text/css" /><link href="/Institutions/University-of-California-Santa-Cruz/styles/print.css" rel="stylesheet" type="text/css" media="print" />
+	 
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
+	 
+	 <script type="text/javascript" src="/Institutions/University-of-California-Santa-Cruz/scripts/treeList.js"></script>
+	 <script type="text/javascript" src="/Institutions/University-of-California-Santa-Cruz/scripts/coursepopup.js"></script>
+	 <script type="text/javascript" src="/Institutions/University-of-California-Santa-Cruz/scripts/newscript.js"></script>
+     <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/smoothness/jquery-ui.css" rel="Stylesheet" type="text/css" /><script type='text/javascript'> 
+                                                (function ($) {
+                                                    $(document).ready(
+                                                        function () {
+                                                            var tabList = "<ul><li><a href='#degree-req-1'>Information and Policies</a></li><li><a href='#degree-req-2'>Requirements and Planners</a></li></ul>";
+                                                            $(tabList).insertBefore("#degree-req-1");
+                                                            
+                                                            const queryString = window.location.search;
+                                                            const urlParams = new URLSearchParams(queryString);
+                                                            if (urlParams.has('tab') && !isNaN(urlParams.get('tab')))
+                                                            {
+                                                                $("#degree-req").tabs();
+                                                                var url = '#degree-req-'.concat(urlParams.get('tab'));
+                                                                var element = $('a[href="'+url+'"]')[0];
+                                                                element.click();
+                                                            }
+                                                            else
+                                                            {
+                                                                $("#degree-req").tabs();
+                                                            }
+                                                            
+                                                            function scrollToAnchor(anchorName){
+                                                                var aTag = $("a[name='"+ anchorName +"']");
+                                                                $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+                                                            }
+
+                                                            if(urlParams.has('anchor'))
+                                                            {
+                                                                scrollToAnchor(urlParams.get('anchor'));
+                                                            }
+                                                        });
+                                                    })(jQuery);
+                                                </script>;
+	
+	<!-- Google Tag Manager -->
+
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5RFHNC"
+
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+	<script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+
+        })(window, document, 'script', 'dataLayer', 'GTM-5RFHNC');</script>
+
+	<!-- End Google Tag Manager -->
+	 
+
+</head>
+
+<body class="home www js" >
+	<div id="skiptocontent1"><a id="skip_link" class="skiplink" href="#middle">Skip to main content</a></div>
+		<form method="post" action="/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Ecology-and-Evolutionary-Biology/Ecology-and-Evolution-BS" id="Form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="B0V+rf7JJGs34GrErOKJWUceWlmLFPbOQoNvs7oRI1NrAQGG2DAq8rPoHYlggPUSM2bS/lRpIe36RD7LP5gC6oCodTmqc6BmpGTsA/McSGbPXIh6FHEBFZ2QYhJtheI6ghpKnqmstkBdSLgrQWiBf3C+hbRBG0rdLn18+P5+xAEYGSajXUCnEn4xwCybCUT0AUvdK+w8yMdJW0WNRSoD8zl2k7uI0RVe3651TV67An2gk1UeHe/pVk5dAtmBVIFYkq2lPjlIBpOBiSn3336ZrVBnZzPjjJVPU4sJ9HTfN/mxPn7WaY27fEiudb0bht1423kQOBJSyT9QcJeXHiNhohKukqpP4wBGCoZsYU/0Il1nuffAXsCK/bG7Mt3MQNrnKC8G8M9jd4MVXsyrGV3M/tDom6NgR24Tu/mOJr6l4dAtWuAMvHd5D5akA8C+cv2mRLYdfyyNcYQaA3pwAaEKhXGK1j1QG80bQiIj4FiwUNEqjF2FtAKTzMF3XzPq9ntvcQwysHfvUz8POllgosk2+vDtELh2K+qCct85MvrxUPdhX5P8rzU4ovVYhVZiAhyE/Vkq+IKBqnMgoCGZ+zOxoW1jRBHjB9ZdFcFpOmMspSksPKBMrhAt2UM+od2BJJCtq+X2ZrnK4UoSqKf5hHod8RQv6bykx3pfjm1mldtyK7tiAHokVR40RKsxVPvLEA73kfGMaSAIuj7/61j/Le0LYTRTRNXDcrkQl6fRLRDtBxSOYqezS5Oa2PqSi9vUD5Y7Cb+eTTrpt0Z0Lb8dRNfyRFPbKWjgF+BbUD6C1PlUGqIWeg9/rW9xTPuC3aaso4zIlO+5ajaOyWixlHV+dj5G5dQ0OUkF8aKZIzhUMpKqSmDUm9bP7Caqxc3ya8VHmPYiHjwJLNegovEgMHrfFE8OHGBbsbftwQLLYMJGUAPN7sGvxy34jc2dYtt9Xym2B+6z+NlwJDb/4+M0mcX0a+ysZbbLmTG650xw7RIxlOwt1lfV5JGNreKduJ70ZWiYIIUxGUbp3YdOm1e9icjAv6hELYlQsEDo2wI8osnpTm0HWbnLX5OdwY55KB7COdQZg+0Y/wmyf6bc6IED9FyNKcMGoTQqlhg17W+xrvmXC3su9m6PrAsR1GqW2YE+8W1yYkF/Qi13fEX3id1cgk7lG2YT0s4cscGE0/7NRN64o/68ZQ9zlsKXmbLQCrYfXF2Za8Q/PbE+JthLer4YcYTUkujm+363o64jER5CS1QZeFVZk6XqzF3dM6eDBkResaU42hZqbXmRcj811DMfwQ/XnsJBrubf46a14ul2vj1P76zqnp+ofZ0Dg7rojze7fO3yc0w0YbBMHyaeIvGZM3kMDBHk5/69waAXmQXNlYCHc4Jr6OEkgUzj11/AU1HFBTclxzbZ2NvRM+csCoAc0OR4aqJEL4TAgu0tt7oJ+G+BIga1wTQdGxwWUPQQx0Xv2u6O6Lq1r6e3/uOHT2Ao0fCOBdzsXnyDYU8ETWFn5L1Cmtd4L/fOWA0upK6ZhS5pYqTmMQPs7moPgeAUOX+BXO0LklMi/7y78u1q0qUvaHWSWSajH55/vMpgHtCH2Njj/D13VLMk0KHDgAiy2DBy9UwMXezUT2a4fSM8bpNpGh58xFhatyK3q3UE4Ld8yUmPNZzYiAO0+d6Ut3oVc/9yKHT5PQ+r2KWI1PsJFbgVDfod3OCLwxKUnRiSIbsu8chmfoq1mI7KCld9TfnDSqDmJlh1ViPk2KZf5KEicToMj37an6y6/y8EHvU5rqV+o9Ofun0rgSnuI5bT71KAluX/87XopJ/jwxR/yJY50M/HH+gGTsL9s32HHCBCeSJwRW1MYPcFCZRq3T9ovOOHvAWwqZZsYKhHpHe1TloXyt87rwlZCshkUsRltJSW7G9//aSLVIvkW+VTej4ObJO/NrvZkYoyB5fTfCA2DjDhoemaBLNfw9lN9GtDkMXQORLZbzfjj2MLuSyvTzywCtog+v5P8OcCawEIvtklNynSwgOeBGtYpr+n4F9OuwU9l0w3QJukOjzULsOYKvFxsFcZmzMZa+dm0QSTsb/zEGYE7aRWubyvc9f+A3J4ZNu45stQpo2zBLKMMAaDxzoM3B0tbBqNBG1unDDf0xKzgSHEbHcHhrVF7qxv2AOd6ibKxUJ87+yvY1jl8oVmOB/mdnw/NRt2Re7Fb/s7bn/Pvg/5cVjjYckPvXStVdZdxOf+qxHaesCSxKmrOXEiVVRcFFaNBsC5x5/wz5A/RR+xn9IrXHvB/xVlUqgg+jtTq+HTUzcVLDYFNWOauLultqjbcbv1veM18BR/3axNUeRsqFtT5VLDnOcDCjqumWi+ZlQJHO9iJ0sH2cofJvVMJPIinn08PrfA/YMy16/0hlgL//GBE+zygKZcGHNM9/LaHcGVOybK3z36300yRfvfS8c7ILVZwlsQM8P6cdklYxr/GKAI2jiKe91YlQtqU39aFpY063Ssrz9xbomn+Nlva0j4274VhoczD3odFPaT2qvvwggjgvglGsKdRhUdLehcFx5D4SlVzZcWyUA3F79T8mKQBOuo5SlmIHlR+/QN3S/wQh0JIR1l6zwYJ5OonHBrHpmLG0pgiCzFhhUcM59sgn+Ytch978HDzHjrzGvi/C6J3Wt9m250HvbokT5HhwIHTyHnL4o1gg+slqTxQdBmlEvzulh/ZVFskgFcLs2SzSSvcHylYBp7Al1YxWWhyE/eTjbAW+fhR0/+ldZl0TZWBhak3ALLU0k/DTjwSCqOlr9Z2o2RuTH78Q+BBaNeXALA8pCPWCneZ5dViny3Ql0Z0P6IkJbxOzabKir/F92bUr1lk6CqlmZeWYDB+ImmUTmhKrTRC+kjhQhM87HAp4eqjWt7FORC1ddjLZRIoyNKxMSSTGo6i47uwWNfHfmH/7Rp7FXYQ6gvShjBXlol6BX3rQcBgG+0BU+TFTpgtShd5chccWtN/4ig5GwM7bsk7mUg86TFDCthQp0toTTN+5QY+BMfHVWiPL2uAroqsKAict6xRu3iwFfLlzYtwqxRhfkFOEBB9CyBlBgQco4soKkZU26vg1Slw4Y7PXCiy4XZA0hMBxUIFK3p4f/mABj4K4/YnTJOIJzrvLgULPpWoTOaHaFcIO+NtOoogHftZP/i1dGV97xDQT2D7G4JeimIgE/ENxF1FP3CkGeoRBoU2IpahKR3zCHqp4xZ/8R9/f/9ImJ9rIaH6ubVd6XMhJYebIv3Dbi++OGHFs92CaZcvnTxw6lMRZD08A7fazXIozLonG3QzdxFMEy7b3LW9gWBCtWt9T0ANIT1k45U68zdMs9qUkIqh5uK5duQXqDLhB4O/Um8O9VhB1Wuo7Qvd1XzYbsqPLXaKJgHNz3jFQvZtTrmM0+CeZ6aF6TSHovro8iihNrWFwwdXIGKkmZhzmTcz3rDtyRuX5FeradEs0faLtJjKqPJAPq2A4APVPO0xcNH8882sBD39D8aW2qVQtXSkmUDkNLVRsnfcd7OV9O3/WTuxHxHI+NDs2lNEK0smqDtbenf8ZFbCMGZU8Q9jj7rRE1UILsYOlYdXYojfsNgys4YZsoKABJkLv5cjBuH+vZWAJFXvfjOEz2iDhWqsAJiqS0SRjrtzeI9n8Cm7DUZId9DTT2uizWb30BYdsrq75eDHRV6CpNcPkoNMGDIRKfdeRIpaVilK1QC5XPLwVY+N2fSIGDSzyvKxbnvcrJGV5lkm1SitfTXsoS0R5kLijiQu3pid1LvIme1G1FLUGQRTSWIQdBks6qeN2eDJT8Ok09TYBKuPVH6io/Gvz8ICrRxRI5WxR1Miy1LYys4aVcvk9w391HVHDuYcRZhfAd3x2sMUnUL9E8L+ENjUux9k5gSN7laRs9MZC7L7GEVwx2O/x0v3WbnfFDdidxNKIbU6ub+NtBRJJRyzMJwBKVh/BglJfuH0Dy3uX0nTU/SDwT9yhbckwi8MCs4atzILq1grpJTgr2Y6ElKnOX1De0P8W8itaJkv/Isxmaw5S0YhdpCHIYs5D/YEOQ74lWyw50ZJkvi9NTJrpwUPLJ+CWSlix/r0VMlRJiFrd/Ln5pDTv62vvOShjE0Bhr7xTy2oC5zvD161RmhG+lnevgOqLeTXnai+QGC3jI0BzgVwmMRpTmfoQcuxaG33CPTDdqBFglSK9cv9Q==" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="845114C5" />
+	<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+	<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/3PIPl9+vaKmQ11EfGu2ZSGBOXuCC8DFx7AVM0OPu2dq7hWYw5kcfDNqSpjbddx3P6XY9zy6bb2IueHNe+wxr8lRcUeVDOba3AszprNmA1Qawq+7hj0WomrugmS95wsKyiDM2nZhNWrjyUtGDqDaYpXgYeY2gNkKgP4VCdVunSLzXx4T3FquQnyyNVSqR5tv7E8iXRq8DwatAuYkVnERtG4X6oodc6U+lJhTC6+6JheAJisCchgExinxAksdS5D0ushGdxZQzp6yOSq1EgQKYA==" />
+</div>
+			<div id="wrap">
+			<div id="pagewrapper1">
+				<div id="pagewrapper2">
+					<div id="banner">
+					<!--LOGO AND HEADER LINKS CAN GO HERE-->
+					  <div class="page-top">
+      <div class="row">
+
+        <div class="page-top-left">
+          <a class="campus-secondary" href="https://www.ucsc.edu/index.html" id="logo">UC Santa Cruz</a>
+        </div>
+
+        <div class="page-top-right">
+          <ul id="topNav">
+<li><a href="https://my.ucsc.edu" title="The student portal">MyUCSC</a></li>
+<li><a href="https://www.ucsc.edu/tools/people.html" title="Campus directory">People</a></li>
+<li><a href="https://www.ucsc.edu/tools/calendars.html" title="Upcoming events, academic, and administrative calendars">Calendars</a></li>
+<li><a href="https://www.ucsc.edu/visit/maps-directions.html">Maps</a></li>
+<li><a href="https://www.ucsc.edu/tools/azindex.html" title="A to Z index of UCSC websites">A-Z Index</a></li>
+</ul>
+        </div>
+
+      </div>
+    </div>
+						 
+						    <!-- Begin Page Banner -->
+                          
+					</div><!-- end banner --> 
+					<div id="middle">			
+						<!--LEFT NAV-->
+						<div id="leftpanel">
+
+                      <div id="searchtoggle">	</div>				
+					  <div id="leftcolumn_0_Panel1" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;leftcolumn_0_btnSubmit&#39;)">
+	
+    <div class="sidebox">
+	    <div class="hdr">
+            <label for="leftcolumn_0_txtBxTerm" id="leftcolumn_0_searchTextLabel">Catalog Search</label>
+	    </div>
+
+	    <div class="sideboxbrdr">
+            <input name="leftcolumn_0$txtBxTerm" type="text" id="leftcolumn_0_txtBxTerm" />
+            <div style="text-indent: -999em;">
+            <label for="leftcolumn_0_drpSearchType" id="leftcolumn_0_filterLabel"></label>
+            </div>
+            <select name="leftcolumn_0$drpSearchType" id="leftcolumn_0_drpSearchType">
+		<option selected="selected" value="">Entire Catalog</option>
+		<option value="programs">Programs</option>
+		<option value="courses">Courses</option>
+
+	</select>
+
+            <input type="submit" name="leftcolumn_0$btnSubmit" value="Search" id="leftcolumn_0_btnSubmit" />
+	    </div>
+    </div> 
+
+</div><div class="sidebox">
+	<div class="hdr">
+		Contents
+	</div>
+</div>
+						 <div class="toc">
+							<ul id="navLocal" class="navLocal">
+	<li><a href="/en/Current/General-Catalog/Welcome-to-UC-Santa-Cruz">Welcome to UC Santa Cruz</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Introducing-UC-Santa-Cruz">Introducing UC Santa Cruz</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Programs">Academic Programs</a></li><li class="hasChildren active"><a href="/en/Current/General-Catalog/Academic-Units">Academic Units</a><ul>
+		<li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Arts-Division">Arts Division</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Humanities-Division">Humanities Division</a></li><li class="hasChildren active"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division">Physical and Biological Sciences Division</a><ul>
+			<li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Astronomy-and-Astrophysics">Astronomy and Astrophysics</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Chemistry-and-Biochemistry">Chemistry and Biochemistry</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Coastal-Science-and-Policy">Coastal Science and Policy</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Earth-and-Planetary-Sciences">Earth and Planetary Sciences</a></li><li class="hasChildren active"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Ecology-and-Evolutionary-Biology">Ecology and Evolutionary Biology</a><ul>
+				<li><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Ecology-and-Evolutionary-Biology/Biology-BA">Biology B.A.</a></li><li class=" active"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Ecology-and-Evolutionary-Biology/Ecology-and-Evolution-BS">Ecology and Evolution B.S.</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Ecology-and-Evolutionary-Biology/Marine-Biology-BS">Marine Biology B.S.</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Ecology-and-Evolutionary-Biology/Plant-Sciences-BS">Plant Sciences B.S.</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Ecology-and-Evolutionary-Biology/Ecology-and-Evolutionary-Biology-BachelorsMasters-Contiguous-Pathway">Ecology and Evolutionary Biology Bachelor's/Master's Contiguous Pathway</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Ecology-and-Evolutionary-Biology/Ecology-and-Evolutionary-Biology-MA">Ecology and Evolutionary Biology M.A.</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Ecology-and-Evolutionary-Biology/Ecology-and-Evolutionary-Biology-PhD">Ecology and Evolutionary Biology Ph.D.</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Ecology-and-Evolutionary-Biology/Ecology-and-Evolutionary-Biology-Designated-Emphasis">Ecology and Evolutionary Biology Designated Emphasis</a></li>
+			</ul></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Mathematics">Mathematics</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Microbiology-and-Environmental-Toxicology">Microbiology and Environmental Toxicology</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Molecular-Cell-and-Developmental-Biology">Molecular, Cell, and Developmental Biology</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Ocean-Sciences">Ocean Sciences</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Physics">Physics</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Science-Communication">Science Communication</a></li>
+		</ul></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Baskin-School-of-Engineering">Baskin School of Engineering</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/Social-Sciences-Division">Social Sciences Division</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Academic-Units/The-Colleges">The Colleges</a></li><li><a href="/en/Current/General-Catalog/Academic-Units/Physical-Education">Physical Education</a></li>
+	</ul></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Courses">Courses</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Undergraduate-Information">Undergraduate Information</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Graduate-Information">Graduate Information</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Resources-Residency-and-Policies">Resources, Residency, and Policies</a></li><li class="hasChildren"><a href="/en/Current/General-Catalog/Teaching-and-Administrative-Staff">Teaching and Administrative Staff</a></li><li><a href="/en/Current/General-Catalog/Academic-Calendar">Academic Calendar</a></li><li><a href="/en/Current/General-Catalog/Catalogs-Prior-to-2019-20">Catalogs Prior to 2019-20</a></li>
+</ul>
+					           <div class="sidebox">
+									<div class="sidebox">
+	<div class="hdr">
+		Catalog Links
+	</div><div class="sideboxbrdr">
+		<ul>
+			<li><a href="/en/Current/General-Catalog">Catalog Home</a></li><li><a href="/en">All Catalogs</a></li>
+		</ul>
+	</div>
+</div>
+								</div><!-- end of sidebox -->
+								<div class="sidebox">
+	<div class="hdr">
+		Share
+	</div><div class="sideboxbrdr">
+		<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_facebook">Share this page on Facebook</a>
+<a class="addthis_button_twitter">Share this page on Twitter</a>
+<a class="addthis_button_email">Email this page</a>
+<a class="addthis_button_print">Print this page</a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+<script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4db17d15194e924f"></script>
+<!-- AddThis Button END -->
+	</div>
+</div>
+							</div><!-- end of TOC -->
+						</div><!--end of leftpanel-->
+						<!-- Main content area -->
+						<div id="rightpanel">
+							<div id="sc-rightpanel-top">
+								<div id="sc-top-links">
+										<span class="print">
+											<a href="javascript:window.print()" title="Print this Page"><span class="printLabel">Print this page</span></a>
+										</span>
+									
+
+<div id="catalog-dropdown">
+    <span id="catalogdropdown_0_Label1"></span>
+
+	<div style="font-size: x-small;">
+		<div style="text-indent: -999em; line-height: 1px; color:#EFEFEF;">
+            <label for="catalogdropdown_0_DropDownList1">Select a Catalog</label>
+		</div>
+		<select name="catalogdropdown_0$DropDownList1" id="catalogdropdown_0_DropDownList1">
+	<option selected="selected" value="{99FCED38-D22F-4053-805D-64F15C2ECDB8}">2020-21 UCSC General Catalog</option>
+	<option value="{1A63CDDE-8554-4CA1-8DAC-3A8014DCE824}">2019-20 UCSC General Catalog</option>
+
+</select>
+		<input type="submit" name="catalogdropdown_0$Button1" value="Select" id="catalogdropdown_0_Button1" style="border-style:Outset;" />
+	</div>
+</div>
+<br />
+
+
+
+
+								</div><!--end of sc-top-links-->
+							</div><!--end sc-rightpanel-top-->
+							<div id="main">
+							<div id="breadcrumb">
+								<p id="breadcrumbs"><a href="/en/Current/General-Catalog">2020-21 UCSC General Catalog</a> &gt; <a href="/en/Current/General-Catalog/Academic-Units">Academic Units</a> &gt; <a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division">Physical and Biological Sciences Division</a> &gt; <a href="/en/Current/General-Catalog/Academic-Units/Physical-and-Biological-Sciences-Division/Ecology-and-Evolutionary-Biology">Ecology and Evolutionary Biology</a> &gt; Ecology and Evolution B.S.</p>
+							</div><!-- end of breadcrumb -->
+								<h1>
+	Ecology and Evolution B.S.
+</h1><div id="degree-req">
+	<div id="degree-req-1">
+		<h2>
+			Information and Policies
+		</h2><h3 class="sc-RequiredCoursesHeading1">
+			Introduction
+		</h3><p>The ecology and evolution major focuses on general topics that are not specific to taxonomic group or habitat. As such it provides students with interdisciplinary skills necessary for understanding and solving complex problems in ecology, evolution, behavior, and physiology. All of these disciplines address questions on larger spatial and temporal scales that can be applied to important environmental problems, including genetic and ecological aspects of conservation biology and biodiversity.</p>
+
+<p>Students majoring in ecology and evolution will receive a B.S. degree based on an integrated series of courses providing breadth in fundamental areas of biology and allied sciences that enhance understanding of evolutionary and ecological processes. The capstone of this curriculum is a suite of field courses providing students unique opportunities to learn and conduct research in a host of ecological systems. Students are encouraged to take field courses in their areas of specialization. Other opportunities include participation in research projects with faculty sponsors and the intensive Education Abroad Programs (UCEAP) in Costa Rica (tropical biology) and Australia (marine sciences).</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Academic Advising for the Program
+		</h3><p>Academic advising is available at the Department of Ecology and Evolutionary&nbsp;Biology (EEB) undergraduate advising office located in the Coastal Biology Building on the UC Santa Cruz Coastal Science Campus, and via email at <a href="mailto:eebadvising@ucsc.edu">eebadvising@ucsc.edu</a>.&nbsp;The <a href="https://www.eeb.ucsc.edu/academics/undergrad/index.html" target="_blank">undergraduate webpages</a> contain advice and information pertinent to students&rsquo; most frequently voiced questions. Each student should review the information posted on the website; for further assistance, contact an EEB undergraduate adviser at <a href="mailto:eebadvising@ucsc.edu">eebadvising@ucsc.edu</a>. Transfer students should also review the Transfer Information and Policy Section.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Getting Started in the Major
+		</h3><p><strong>Prerequisites</strong></p>
+
+<p>The introductory biology sequence is prerequisite to virtually all upper-division biology courses. <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/1-99/BIOL-20A'>BIOL 20A</a> (offered by the Molecular, Cell, and Developmental Biology Department) has a prerequisite of <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1A'>CHEM 1A</a>. Therefore, it is essential for students to start chemistry as soon as possible. Students who have not taken <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1A'>CHEM 1A</a> may begin the introductory sequence with <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/Lower-Division/BIOE-20C'>BIOE 20C</a>. The entire introductory biology sequence should be taken the first and second year, concurrently with or following the general chemistry sequence. We also strongly recommend completing the lower-division physics requirements early in your academic career.</p>
+
+<p>An online mathematics placement is required to enroll in a mathematics course. Students are expected to take this examination and are encouraged to work in the learning modules until they place into calculus. For more information see the <a href="https://mathcoach.sites.ucsc.edu/" target="_blank">mathematics placement website</a>.</p>
+
+<p>Advanced placement (AP) course equivalencies can be used to fulfill prerequisites.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Program Learning Outcomes
+		</h3><p>The undergraduate curriculum offered by EEB&nbsp;is designed to ensure that all students declared in any EEB-sponsored major will achieve the following seven program learning outcomes:</p>
+
+<ol>
+	<li>Students will demonstrate broad-based knowledge of the fundamentals of ecology, behavior, evolution and physiology and the relationships among these disciplines.</li>
+	<li>Students will demonstrate skills in the observation and experimental study of organisms, using both field-based and laboratory-based approaches.</li>
+	<li>Students will demonstrate skills in identifying, accessing, comprehending and synthesizing scientific information, including interpretation of the primary scientific literature. This includes understanding key questions and hypotheses, interpreting results and conclusions, and evaluating quality through critique.</li>
+	<li>Students will demonstrate the ability to conceive and execute independent scientific research, including developing their own questions and hypotheses, designing an appropriate theoretical or empirical/experimental approach, executing that approach, and analyzing and interpreting data.</li>
+	<li>Students will demonstrate an ability to understand and apply fundamental quantitative skills, including models and statistical analyses, so as to properly interpret published research and apply such skills in their own research.</li>
+	<li>Students will demonstrate the ability to communicate scientific work, such as a scientific paper, proposal, essay, or notebook, in written, oral or poster format.</li>
+	<li>Students will exhibit strong teamwork and problem solving skills. They will demonstrate the ability to make arguments from evidence and work together to find optimal solutions.</li>
+</ol>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Major Qualification Policy and Declaration Process
+		</h3><a id="mqual"></a><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Major Qualification
+		</h4><p>All courses must be taken for a letter grade. The following qualification courses, or their equivalents, must be completed with a grade of C (2.0) or better:</p>
+<table>
+
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			All of the following courses:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1A">CHEM 1A</a></td><td class="sc-coursetitle">General Chemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1B">CHEM 1B</a></td><td class="sc-coursetitle">General Chemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/1-99/BIOL-20A">BIOL 20A</a></td><td class="sc-coursetitle">Cell and Molecular Biology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/Lower-Division/BIOE-20B">BIOE 20B</a></td><td class="sc-coursetitle">Development and Physiology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/Lower-Division/BIOE-20C">BIOE 20C</a></td><td class="sc-coursetitle">Ecology and Evolution</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			And one of the following courses:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-11A">MATH 11A</a></td><td class="sc-coursetitle">Calculus with Applications</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19A">MATH 19A</a></td><td class="sc-coursetitle">Calculus for Science, Engineering, and Mathematics</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p>Students with one grade of NP, C-, D+, D, D-, or F in one of the qualification courses are eligible to declare after successfully repeating the same or an equivalent course with a grade of C (2.0) or better.</p>
+
+<p>Students with two or more grades of NP, C-, D+, D, D-, or F in the qualification courses are not eligible to declare. Mathematics courses will not be included in this calculation.</p>
+
+<p>Students with AP credit for any of the qualification course(s) are eligible to declare after successfully completing the remaining qualification courses.</p>
+
+<p>Consult with an EEB undergraduate adviser when requesting to declare the major after the campus declaration deadline.&nbsp;Transfer students should also review the Transfer Information and Policy Section.</p>
+
+<p>For information on qualifying for the environmental studies/biology combined major, please see Environmental Studies in this catalog.</p>
+
+		</div><h4 class="sc-RequiredCoursesHeading2">
+			Appeal Process
+		</h4><p>Students who are not eligible to declare the major may appeal this decision after they have successfully completed the qualification courses by submitting an appeal letter to EEB undergraduate advising. Within 15 days of receipt of the appeal, the department will notify the student and college of the decision. For more information about the appeal process, see the <a href="https://www.eeb.ucsc.edu/academics/undergrad/major-qualification/major-qualification-appeal-process.html" target="_blank">appeal process website</a>.</p><a id="decproc"></a><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			How to Declare a Major
+		</h4><p>Students may submit a petition to declare after successful completion of the qualification policy courses. Students who have reached their major declaration deadline and are enrolled in their final qualification policy course(s) may submit the petition, but will not be declared until grades have been posted. <a rel="noopener noreferrer" href="https://www.eeb.ucsc.edu/academics/undergrad/major-declaration/index.html" target="_blank">Information on major declaration can be found here</a>.&nbsp;Additional questions may be directed to <a href="mailto:eebadvising@ucsc.edu">eebadvising@ucsc.edu.</a></p><table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Transfer Information and Policy
+		</h3><a id="tasp"></a><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Transfer Admission Screening Policy
+		</h4><p>The following courses or their equivalents are required prior to transfer, by the end of the spring term for students planning to enter in the fall.</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/1-99/BIOL-20A">BIOL 20A</a></td><td class="sc-coursetitle">Cell and Molecular Biology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/Lower-Division/BIOE-20B">BIOE 20B</a></td><td class="sc-coursetitle">Development and Physiology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/Lower-Division/BIOE-20C">BIOE 20C</a></td><td class="sc-coursetitle">Ecology and Evolution</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1A">CHEM 1A</a></td><td class="sc-coursetitle">General Chemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1B">CHEM 1B</a></td><td class="sc-coursetitle">General Chemistry</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Plus, one of the following calculus courses:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-11A">MATH 11A</a></td><td class="sc-coursetitle">Calculus with Applications</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19A">MATH 19A</a></td><td class="sc-coursetitle">Calculus for Science, Engineering, and Mathematics</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p>A minimum GPA of 2.0 must be obtained in the courses listed above.</p>
+
+		</div><h5 class="sc-RequiredCoursesHeading3">
+			In addition, the following courses are recommended prior to transfer to ensure timely graduation.
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1C">CHEM 1C</a></td><td class="sc-coursetitle">General Chemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1N">CHEM 1N</a></td><td class="sc-coursetitle">General Chemistry Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6A">PHYS 6A</a></td><td class="sc-coursetitle">Introductory Physics I</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6L">PHYS 6L</a></td><td class="sc-coursetitle">Introductory Physics I Laboratory</td><td><p class="credits">1</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6B">PHYS 6B</a></td><td class="sc-coursetitle">Introductory Physics II</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6M">PHYS 6M</a></td><td class="sc-coursetitle">Introductory Physics II Laboratory</td><td><p class="credits">1</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6C">PHYS 6C</a></td><td class="sc-coursetitle">Introductory Physics III</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6N">PHYS 6N</a></td><td class="sc-coursetitle">Introductory Physics III Laboratory</td><td><p class="credits">1</p></td>
+			</tr>
+		</table><h6 class="sc-RequiredCoursesHeading4">
+			Plus one of the following calculus courses:
+		</h6><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-11B">MATH 11B</a></td><td class="sc-coursetitle">Calculus with Applications</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19B">MATH 19B</a></td><td class="sc-coursetitle">Calculus for Science, Engineering, and Mathematics</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p>Click the link for&nbsp;<a rel="noopener noreferrer" href="https://www.eeb.ucsc.edu/academics/undergrad/getting-started-transfer/index.html" rel="noopener noreferrer" target="_blank">more information on qualifying for the major as a transfer applicant </a>.&nbsp; Click the link for&nbsp;<a rel="noopener noreferrer" href="https://admissions.ucsc.edu/apply/transfer-students/" rel="noopener noreferrer" target="_blank">additional transfer preparation information</a>.</p>
+		</div><h4 class="sc-RequiredCoursesHeading2">
+			Getting Started at UCSC as a Transfer Student
+		</h4><p>Transfer students who satisfy the major screening requirements may declare the major at any time after matriculation only after their official transcripts have been posted to their MyUCSC student portal by the UCSC Office of Admissions.&nbsp;</p>
+
+<p>Beginning in late June and early July (for fall transfer students) EEB advising will review admitted students&#39; reported transfer course work and determine how it applies to their&nbsp;major&#39;s requirements.<br />
+EEB advising will contact admitted students via email. &nbsp;The email will include information on how students&#39;&nbsp;transfer coursework fulfills major requirements.&nbsp; We will suggest courses for students&#39; fall enrollment&nbsp;and invite you to make an appointment to talk with EEB Undergraduate Advising&nbsp;or direct&nbsp;questions to <a href="mailto:eebadvising@ucsc.edu">eebadvising@ucsc.edu</a>.&nbsp;Transfer students may also expect to receive regular email messages from EEB advising in June, July, and August with additional information about the major.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Letter Grade Policy
+		</h3><p>All courses used to satisfy any major requirement must be taken for a letter grade.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Course Substitution Policy
+		</h3><p>To discuss the process for a course substitution, contact an EEB undergraduate adviser.</p>
+
+<p>At least half of the upper-division courses (numbered BIOE 100&ndash;BIOE 179) required for each major must be taken in EEB at UC Santa Cruz not as transfer credits from another department or institution.</p>
+
+<p>Transfer students are advised to contact an EEB undergraduate adviser before enrolling in numerous upper-division courses at other institutions. For more information on transferring courses to UC Santa Cruz, please consult the <a href="https://pbsci.ucsc.edu/academics/undergraduate/" target="_blank">T</a><a href="https://www.eeb.ucsc.edu/academics/undergrad/transfer-of-courses/index.html" target="_blank">ransfer Coursework website</a>. Additional information for transfer students is provided above in the &ldquo;Transfer Students&rdquo; section.</p>
+
+<p>Only one upper-division course requirement may be met with a research-based independent study or graduate-level UC Santa Cruz biology course.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Double Majors and Major/Minor Combinations Policy
+		</h3><p>Students interested in pursuing multiple majors within the biological sciences may not declare any combination of Biology (B.A., B.S., or minor), Ecology and Evolution B.S., Marine Biology B.S., Plant Sciences B.S., or Environmental Studies/Biology B.A. combined major.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Study Abroad
+		</h3><p>The <a href="https://studyabroad.ucsc.edu/programs/uceap/index.html" target="_blank">UC Education Abroad Program (UCEAP)</a> offers qualified students unique opportunities to broaden their educational horizons. The EEB Department encourages interested students to participate. It is possible to satisfy major requirements abroad and graduate on time; consult with an EEB undergraduate adviser early in the planning process.</p>
+
+<p>Many programs are in English-speaking countries or use English for advanced courses. Many programs offer small classes, extensive laboratories, and/or field research experience.</p>
+
+<p>There are excellent programs in Costa Rica, Australia, New Zealand, the United Kingdom, Denmark, and Germany, among others. The Costa Rica Tropical Biology Program is of note to students interested in tropical biology and ecology. Held spring and fall quarters at the Monteverde research station, this program gives students experience with hands-on field research and offers a homestay program. The University of Queensland (Australia) offers an intensive, full-semester marine science program, which includes stays at research stations on the Great Barrier Reef and in sheltered mangrove and seagrass habitats near Brisbane.</p>
+
+<p>Students interested in study abroad need to get an early start on their introductory requirements, including chemistry, mathematics, and biology and must declare their major prior to going abroad. Visit the UCEAP office as soon as possible to begin planning and seek advice and approval for your UCEAP plan from an EEB undergraduate adviser prior to participation in UCEAP.</p>
+<table>
+
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Honors
+		</h3><p>Honors in the biological sciences majors are awarded to graduating students whose academic performance demonstrates excellence at a grade point average (GPA) of 3.5 or above. Highest honors are awarded to those students whose performance demonstrates the highest level of excellence and results in a GPA of 3.8 or above.</p>
+<table>
+
+		</table>
+	</div><div id="degree-req-2">
+		<h2>
+			Requirements and Planners
+		</h2><h3 class="sc-RequiredCoursesHeading1">
+			Course Requirements
+		</h3><table>
+
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Lower-Division Courses
+		</h4><table>
+
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Introductory Biology:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/1-99/BIOL-20A">BIOL 20A</a></td><td class="sc-coursetitle">Cell and Molecular Biology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/Lower-Division/BIOE-20B">BIOE 20B</a></td><td class="sc-coursetitle">Development and Physiology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/Lower-Division/BIOE-20C">BIOE 20C</a></td><td class="sc-coursetitle">Ecology and Evolution</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			General Chemistry:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1A">CHEM 1A</a></td><td class="sc-coursetitle">General Chemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1B">CHEM 1B</a></td><td class="sc-coursetitle">General Chemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1C">CHEM 1C</a></td><td class="sc-coursetitle">General Chemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1N">CHEM 1N</a></td><td class="sc-coursetitle">General Chemistry Laboratory</td><td><p class="credits">2</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Calculus:
+		</h5><p>Choose one of the following options:</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/Narrative-Courses/Either-these-courses"> Either these courses</a></td><td class="sc-coursetitle"></td><td><p class="credits"></p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-11A">MATH 11A</a></td><td class="sc-coursetitle">Calculus with Applications</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-11B">MATH 11B</a></td><td class="sc-coursetitle">Calculus with Applications</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/Narrative-Courses/or-these-courses"> or these courses</a></td><td class="sc-coursetitle"></td><td><p class="credits"></p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19A">MATH 19A</a></td><td class="sc-coursetitle">Calculus for Science, Engineering, and Mathematics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19B">MATH 19B</a></td><td class="sc-coursetitle">Calculus for Science, Engineering, and Mathematics</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Biostatistics:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/STAT-Statistics/Lower-Division/STAT-7">STAT 7</a></td><td class="sc-coursetitle">Statistical Methods for the Biological, Environmental, and Health Sciences</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/STAT-Statistics/Lower-Division/STAT-7L">STAT 7L</a></td><td class="sc-coursetitle">Statistical Methods for the Biological, Environmental, and Health Sciences Laboratory</td><td><p class="credits">2</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Physics:
+		</h5><p>Choose one of the following options:</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/Narrative-Courses/Either-these-courses"> Either these courses</a></td><td class="sc-coursetitle"></td><td><p class="credits"></p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-7A">PHYS 7A</a></td><td class="sc-coursetitle">Elementary Physics I</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6L">PHYS 6L</a></td><td class="sc-coursetitle">Introductory Physics I Laboratory</td><td><p class="credits">1</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-7B">PHYS 7B</a></td><td class="sc-coursetitle">Elementary Physics II</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/Narrative-Courses/or-these-courses"> or these courses</a></td><td class="sc-coursetitle"></td><td><p class="credits"></p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6A">PHYS 6A</a></td><td class="sc-coursetitle">Introductory Physics I</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6L">PHYS 6L</a></td><td class="sc-coursetitle">Introductory Physics I Laboratory</td><td><p class="credits">1</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6B">PHYS 6B</a></td><td class="sc-coursetitle">Introductory Physics II</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/Narrative-Courses/or-these-courses"> or these courses</a></td><td class="sc-coursetitle"></td><td><p class="credits"></p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6A">PHYS 6A</a></td><td class="sc-coursetitle">Introductory Physics I</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6L">PHYS 6L</a></td><td class="sc-coursetitle">Introductory Physics I Laboratory</td><td><p class="credits">1</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6C">PHYS 6C</a></td><td class="sc-coursetitle">Introductory Physics III</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-7A'>PHYS 7A</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6L'>PHYS 6L</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-7B'>PHYS 7B</a>: recommended</p>
+
+		</div><h4 class="sc-RequiredCoursesHeading2">
+			Upper-Division Courses
+		</h4><p>A total of 11 upper-division courses, including relevant electives; two must include laboratory or fieldwork. Courses appearing in more than one category can fulfill only one requirement.</p>
+<table>
+
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Three upper-division core courses:
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/100/BIOL-105">BIOL 105</a></td><td class="sc-coursetitle">Genetics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-107">BIOE 107</a></td><td class="sc-coursetitle">Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-109">BIOE 109</a></td><td class="sc-coursetitle">Evolution</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			One of the following physiology courses:
+		</h5><p>NOTE: Lecture/lab combinations count as one course.</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-131">BIOE 131</a></td><td class="sc-coursetitle">Animal Physiology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-131L">BIOE 131L</a></td><td class="sc-coursetitle">Animal Physiology Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-133">BIOE 133</a></td><td class="sc-coursetitle">Exercise Physiology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-133L">BIOE 133L</a></td><td class="sc-coursetitle">Exercise Physiology Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-134">BIOE 134</a></td><td class="sc-coursetitle">Comparative Vertebrate Anatomy</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-134L">BIOE 134L</a></td><td class="sc-coursetitle">Comparative Vertebrate Anatomy Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-135">BIOE 135</a></td><td class="sc-coursetitle">Plant Physiology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-135L">BIOE 135L</a></td><td class="sc-coursetitle">Plant Physiology Laboratory</td><td><p class="credits">2</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-131'>BIOE 131</a>/<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-131L'>BIOE 131L</a>: lab optional</p>
+
+		</div><h5 class="sc-RequiredCoursesHeading3">
+			One of the following organism courses:
+		</h5><p>NOTE: Lecture/lab combinations count as one course.</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-112">BIOE 112</a></td><td class="sc-coursetitle">Ornithology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-112L">BIOE 112L</a></td><td class="sc-coursetitle">Ornithology Field Studies</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-114">BIOE 114</a></td><td class="sc-coursetitle">Herpetology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-114L">BIOE 114L</a></td><td class="sc-coursetitle">Field Methods in Herpetological Research</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-117">BIOE 117</a></td><td class="sc-coursetitle">Systematic Botany of Flowering Plants</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-117L">BIOE 117L</a></td><td class="sc-coursetitle">Systematic Botany of Flowering Plants Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-120">BIOE 120</a></td><td class="sc-coursetitle">Marine Botany</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-120L">BIOE 120L</a></td><td class="sc-coursetitle">Marine Botany Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-122">BIOE 122</a></td><td class="sc-coursetitle">Invertebrate Zoology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-122L">BIOE 122L</a></td><td class="sc-coursetitle">Invertebrate Zoology Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-124">BIOE 124</a></td><td class="sc-coursetitle">Mammalogy</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-124L">BIOE 124L</a></td><td class="sc-coursetitle">Mammalogy Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-127">BIOE 127</a></td><td class="sc-coursetitle">Ichthyology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-127L">BIOE 127L</a></td><td class="sc-coursetitle">Ichthyology Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-129">BIOE 129</a></td><td class="sc-coursetitle">Biology of Marine Mammals</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-129L">BIOE 129L</a></td><td class="sc-coursetitle">Biology of Marine Mammals Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/METX-Microbiology-and-Environmental-Toxicology/Upper-Division/METX-119">METX 119</a></td><td class="sc-coursetitle">Microbiology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/METX-Microbiology-and-Environmental-Toxicology/Upper-Division/METX-119L">METX 119L</a></td><td class="sc-coursetitle">Microbiology Laboratory</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-129'>BIOE 129</a>/<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-129L'>BIOE 129L</a>: lab required</p>
+
+<p><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/METX-Microbiology-and-Environmental-Toxicology/Upper-Division/METX-119'>METX 119</a>/<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/METX-Microbiology-and-Environmental-Toxicology/Upper-Division/METX-119L'>METX 119L</a>: both lecture and laboratory required</p>
+
+		</div><h4 class="sc-RequiredCoursesHeading2">
+			Electives
+		</h4><table>
+
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Three topical electives chosen from the following:
+		</h5><p>NOTE: Lecture and 2-credit lab combinations count as one course.</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-108">BIOE 108</a></td><td class="sc-coursetitle">Marine Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-112">BIOE 112</a></td><td class="sc-coursetitle">Ornithology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-112L">BIOE 112L</a></td><td class="sc-coursetitle">Ornithology Field Studies</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-114">BIOE 114</a></td><td class="sc-coursetitle">Herpetology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-114L">BIOE 114L</a></td><td class="sc-coursetitle">Field Methods in Herpetological Research</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-117">BIOE 117</a></td><td class="sc-coursetitle">Systematic Botany of Flowering Plants</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-117L">BIOE 117L</a></td><td class="sc-coursetitle">Systematic Botany of Flowering Plants Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-118">BIOE 118</a></td><td class="sc-coursetitle">Plants and Society: the Biology of Food, Shelter, and Medicine</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-120">BIOE 120</a></td><td class="sc-coursetitle">Marine Botany</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-120L">BIOE 120L</a></td><td class="sc-coursetitle">Marine Botany Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-122">BIOE 122</a></td><td class="sc-coursetitle">Invertebrate Zoology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-122L">BIOE 122L</a></td><td class="sc-coursetitle">Invertebrate Zoology Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-124">BIOE 124</a></td><td class="sc-coursetitle">Mammalogy</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-124L">BIOE 124L</a></td><td class="sc-coursetitle">Mammalogy Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-125">BIOE 125</a><div class="sc-crosslisted">
+					/ENVS 125
+				</div></td><td class="sc-coursetitle">Ecosystems of California</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-127">BIOE 127</a></td><td class="sc-coursetitle">Ichthyology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-127L">BIOE 127L</a></td><td class="sc-coursetitle">Ichthyology Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-128L">BIOE 128L</a></td><td class="sc-coursetitle">Large Marine Vertebrates Field Course</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-129">BIOE 129</a></td><td class="sc-coursetitle">Biology of Marine Mammals</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-129L">BIOE 129L</a></td><td class="sc-coursetitle">Biology of Marine Mammals Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-131">BIOE 131</a></td><td class="sc-coursetitle">Animal Physiology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-131L">BIOE 131L</a></td><td class="sc-coursetitle">Animal Physiology Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-133">BIOE 133</a></td><td class="sc-coursetitle">Exercise Physiology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-133L">BIOE 133L</a></td><td class="sc-coursetitle">Exercise Physiology Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-134">BIOE 134</a></td><td class="sc-coursetitle">Comparative Vertebrate Anatomy</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-134L">BIOE 134L</a></td><td class="sc-coursetitle">Comparative Vertebrate Anatomy Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-135">BIOE 135</a></td><td class="sc-coursetitle">Plant Physiology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-135L">BIOE 135L</a></td><td class="sc-coursetitle">Plant Physiology Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-137">BIOE 137</a></td><td class="sc-coursetitle">Molecular Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-137L">BIOE 137L</a></td><td class="sc-coursetitle">Molecular Ecology Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-138">BIOE 138</a></td><td class="sc-coursetitle">Modeling Evolution and Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-139">BIOE 139</a></td><td class="sc-coursetitle">Mathematical Modeling and Data Science in Ecology and Evolution</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-140">BIOE 140</a></td><td class="sc-coursetitle">Behavioral Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-141L">BIOE 141L</a></td><td class="sc-coursetitle">Behavioral Ecology Field Course</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-145">BIOE 145</a></td><td class="sc-coursetitle">Plant Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-145L">BIOE 145L</a></td><td class="sc-coursetitle">Field Methods in Plant Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-147">BIOE 147</a></td><td class="sc-coursetitle">Community Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-149">BIOE 149</a></td><td class="sc-coursetitle">Disease Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-150">BIOE 150</a></td><td class="sc-coursetitle">Ecological Field Methods</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-150L">BIOE 150L</a></td><td class="sc-coursetitle">Ecological Field Methods Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-151A">BIOE 151A</a><div class="sc-crosslisted">
+					/ENVS 109A
+				</div></td><td class="sc-coursetitle">Ecology and Conservation in Practice Supercourse: Ecological Field Methods</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-151B">BIOE 151B</a><div class="sc-crosslisted">
+					/ENVS 109B
+				</div></td><td class="sc-coursetitle">Ecology and Conservation in Practice Supercourse: Ecological Field Methods Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-151C">BIOE 151C</a><div class="sc-crosslisted">
+					/ENVS 109C
+				</div></td><td class="sc-coursetitle">Ecology and Conservation in Practice Supercourse: Functions and Processes of Terrestrial Ecosystems</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-151D">BIOE 151D</a><div class="sc-crosslisted">
+					/ENVS 109D
+				</div></td><td class="sc-coursetitle">Ecology and Conservation in Practice Supercourse: Conservation in Practice</td><td><p class="credits">4</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-153A">BIOE 153A</a></td><td class="sc-coursetitle">Introduction to Arctic Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-153B">BIOE 153B</a></td><td class="sc-coursetitle">Arctic Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-153C">BIOE 153C</a></td><td class="sc-coursetitle">Disciplinary Communication for Biologists</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-155">BIOE 155</a></td><td class="sc-coursetitle">Freshwater Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-155L">BIOE 155L</a></td><td class="sc-coursetitle">Freshwater Ecology Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-158L">BIOE 158L</a></td><td class="sc-coursetitle">Field Methods in Marine Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-159A">BIOE 159A</a></td><td class="sc-coursetitle">Marine Ecology Field Quarter: Marine Ecology with Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-159B">BIOE 159B</a></td><td class="sc-coursetitle">Marine Ecology Field Quarter: Ichthyology with Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-159C">BIOE 159C</a></td><td class="sc-coursetitle">Marine Ecology Field Quarter: Methods in Field Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-159D">BIOE 159D</a></td><td class="sc-coursetitle">Marine Ecology Field Quarter: Methods in Field Ecology Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-159F">BIOE 159F</a></td><td class="sc-coursetitle">Marine Ecology Field Quarter: Global Change Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-161">BIOE 161</a></td><td class="sc-coursetitle">Kelp Forest Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-161L">BIOE 161L</a></td><td class="sc-coursetitle">Kelp Forest Ecology Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-163">BIOE 163</a></td><td class="sc-coursetitle">Ecology of Reefs, Mangroves, and Seagrasses</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-163L">BIOE 163L</a></td><td class="sc-coursetitle">Ecology of Reefs, Mangroves, and Seagrasses Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-165">BIOE 165</a></td><td class="sc-coursetitle">Marine Conservation Biology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-172">BIOE 172</a></td><td class="sc-coursetitle">Population Genetics</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/100/BIOL-100">BIOL 100</a></td><td class="sc-coursetitle">Biochemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/100/BIOL-101">BIOL 101</a></td><td class="sc-coursetitle">Molecular Biology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/100/BIOL-110">BIOL 110</a></td><td class="sc-coursetitle">Cell Biology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/100/BIOL-115">BIOL 115</a></td><td class="sc-coursetitle">Eukaryotic Molecular Biology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/100/BIOL-120">BIOL 120</a></td><td class="sc-coursetitle">Developmental Biology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/METX-Microbiology-and-Environmental-Toxicology/Upper-Division/METX-119">METX 119</a></td><td class="sc-coursetitle">Microbiology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/OCEA-Ocean-Sciences/Upper-Division/OCEA-118">OCEA 118</a></td><td class="sc-coursetitle">Marine Microbial Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/METX-Microbiology-and-Environmental-Toxicology/Upper-Division/METX-119L">METX 119L</a></td><td class="sc-coursetitle">Microbiology Laboratory</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-129'>BIOE 129</a>/<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-129L'>BIOE 129L</a>, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-131'>BIOE 131</a>/<a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-131L'>BIOE 131L</a>: lab optional</p>
+
+		</div><h5 class="sc-RequiredCoursesHeading3">
+			Three general electives chosen from the following:
+		</h5><p>NOTE: Lecture and 2-credit lab combinations count as one course.</p>
+
+<p>&nbsp;</p>
+<table>
+
+		</table><h6 class="sc-RequiredCoursesHeading4">
+			Biological Sciences-EEB
+		</h6><p>Any upper-division BIOE course numbered BIOE 100-BIOE 179 of 5 or more credits</p>
+<table>
+
+		</table><h6 class="sc-RequiredCoursesHeading4">
+			Biological Sciences-MCDB
+		</h6><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/100/BIOL-100">BIOL 100</a></td><td class="sc-coursetitle">Biochemistry</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/100/BIOL-101">BIOL 101</a></td><td class="sc-coursetitle">Molecular Biology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/100/BIOL-110">BIOL 110</a></td><td class="sc-coursetitle">Cell Biology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/100/BIOL-115">BIOL 115</a></td><td class="sc-coursetitle">Eukaryotic Molecular Biology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/100/BIOL-120">BIOL 120</a></td><td class="sc-coursetitle">Developmental Biology</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h6 class="sc-RequiredCoursesHeading4">
+			Earth Sciences
+		</h6><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/EART-Earth-Sciences/Upper-Division/EART-100">EART 100</a></td><td class="sc-coursetitle">Vertebrate Paleontology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/EART-Earth-Sciences/Upper-Division/EART-100L">EART 100L</a></td><td class="sc-coursetitle">Vertebrate Paleontology Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/EART-Earth-Sciences/Upper-Division/EART-101">EART 101</a></td><td class="sc-coursetitle">Invertebrate Paleobiology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/EART-Earth-Sciences/Upper-Division/EART-101L">EART 101L</a></td><td class="sc-coursetitle">Invertebrate Paleobiology Laboratory</td><td><p class="credits">1</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/EART-Earth-Sciences/Upper-Division/EART-102">EART 102</a></td><td class="sc-coursetitle">Marine Geology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/EART-Earth-Sciences/Upper-Division/EART-105">EART 105</a></td><td class="sc-coursetitle">Coastal Geology</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h6 class="sc-RequiredCoursesHeading4">
+			Economics
+		</h6><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-166A">ECON 166A</a><div class="sc-crosslisted">
+					/CSE 166A
+				</div></td><td class="sc-coursetitle">Game Theory and Applications I</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ECON-Economics/Upper-Division/ECON-166B">ECON 166B</a><div class="sc-crosslisted">
+					/CSE 166B
+				</div></td><td class="sc-coursetitle">Game Theory and Applications II</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h6 class="sc-RequiredCoursesHeading4">
+			Environmental Studies (enrollment by permission of instructor)
+		</h6><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ENVS-Environmental-Studies/Upper-Division/ENVS-104A">ENVS 104A</a></td><td class="sc-coursetitle">Introduction to Environmental Field Methods</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ENVS-Environmental-Studies/Upper-Division/ENVS-104L">ENVS 104L</a></td><td class="sc-coursetitle">Field Methods Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ENVS-Environmental-Studies/Upper-Division/ENVS-107A">ENVS 107A</a></td><td class="sc-coursetitle">Natural History Field Quarter</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ENVS-Environmental-Studies/Upper-Division/ENVS-107B">ENVS 107B</a></td><td class="sc-coursetitle">Natural History Field Quarter</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ENVS-Environmental-Studies/Upper-Division/ENVS-107C">ENVS 107C</a></td><td class="sc-coursetitle">Natural History Field Quarter</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ENVS-Environmental-Studies/Upper-Division/ENVS-108">ENVS 108</a></td><td class="sc-coursetitle">General Entomology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ENVS-Environmental-Studies/Upper-Division/ENVS-115A">ENVS 115A</a></td><td class="sc-coursetitle">Geographic Information Systems and Environmental Applications</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ENVS-Environmental-Studies/Upper-Division/ENVS-115L">ENVS 115L</a></td><td class="sc-coursetitle">Exercises in Geographic Information Systems</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ENVS-Environmental-Studies/Upper-Division/ENVS-120">ENVS 120</a></td><td class="sc-coursetitle">Conservation Biology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ENVS-Environmental-Studies/Upper-Division/ENVS-122">ENVS 122</a></td><td class="sc-coursetitle">Tropical Ecology and Conservation</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ENVS-Environmental-Studies/Upper-Division/ENVS-123">ENVS 123</a></td><td class="sc-coursetitle">Animal Ecology and Conservation</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ENVS-Environmental-Studies/Upper-Division/ENVS-129">ENVS 129</a></td><td class="sc-coursetitle">Integrated Pest Management</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ENVS-Environmental-Studies/Upper-Division/ENVS-130A">ENVS 130A</a></td><td class="sc-coursetitle">Agroecology and Sustainable Agriculture</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ENVS-Environmental-Studies/Upper-Division/ENVS-130L">ENVS 130L</a></td><td class="sc-coursetitle">Agroecology and Sustainable Agriculture Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ENVS-Environmental-Studies/Upper-Division/ENVS-130B">ENVS 130B</a></td><td class="sc-coursetitle">Justice and Sustainability in Agriculture</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ENVS-Environmental-Studies/Upper-Division/ENVS-131">ENVS 131</a></td><td class="sc-coursetitle">Insect Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ENVS-Environmental-Studies/Upper-Division/ENVS-160">ENVS 160</a></td><td class="sc-coursetitle">Restoration Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ENVS-Environmental-Studies/Upper-Division/ENVS-161A">ENVS 161A</a></td><td class="sc-coursetitle">Soils and Plant Nutrition</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ENVS-Environmental-Studies/Upper-Division/ENVS-162">ENVS 162</a></td><td class="sc-coursetitle">Plant Physiological Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ENVS-Environmental-Studies/Upper-Division/ENVS-163">ENVS 163</a></td><td class="sc-coursetitle">Plant Disease Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ENVS-Environmental-Studies/Upper-Division/ENVS-167">ENVS 167</a></td><td class="sc-coursetitle">Freshwater and Wetland Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ENVS-Environmental-Studies/Upper-Division/ENVS-168">ENVS 168</a></td><td class="sc-coursetitle">Biogeochemistry and the Global Environment</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h6 class="sc-RequiredCoursesHeading4">
+			Microbiology and Environmental Toxicology
+		</h6><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/METX-Microbiology-and-Environmental-Toxicology/Upper-Division/METX-119">METX 119</a></td><td class="sc-coursetitle">Microbiology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/METX-Microbiology-and-Environmental-Toxicology/Upper-Division/METX-119L">METX 119L</a></td><td class="sc-coursetitle">Microbiology Laboratory</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h6 class="sc-RequiredCoursesHeading4">
+			Ocean Sciences
+		</h6><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/OCEA-Ocean-Sciences/Upper-Division/OCEA-118">OCEA 118</a></td><td class="sc-coursetitle">Marine Microbial Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/OCEA-Ocean-Sciences/Upper-Division/OCEA-130">OCEA 130</a></td><td class="sc-coursetitle">Biological Oceanography</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h6 class="sc-RequiredCoursesHeading4">
+			Psychology
+		</h6><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/PSYC-Psychology/Upper-Division/PSYC-123">PSYC 123</a></td><td class="sc-coursetitle">Cognitive Neuroscience</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p>Some of these electives may have prerequisites that do not satisfy major or minor requirements.</p>
+
+		</div><h6 class="sc-RequiredCoursesHeading4">
+			One of the following may also be used as an upper-division general elective:
+		</h6><table>
+
+		</table><h6 class="sc-RequiredCoursesHeading5">
+			Biological Sciences-EEB
+		</h6><p>Any 5 credits of undergraduate research from:</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-183W">BIOE 183W</a></td><td class="sc-coursetitle">Undergraduate Research in EEB--Writing</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-183L">BIOE 183L</a></td><td class="sc-coursetitle">Undergraduate Research in EEB</td><td><p class="credits">3</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-193">BIOE 193</a></td><td class="sc-coursetitle">Independent Research in EEB</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-193F">BIOE 193F</a></td><td class="sc-coursetitle">Independent Research in EEB</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-195">BIOE 195</a></td><td class="sc-coursetitle">Senior Thesis</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p>or</p>
+
+		</div><h6 class="sc-RequiredCoursesHeading5">
+			Environmental Studies
+		</h6><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/ENVS-Environmental-Studies/Upper-Division/ENVS-183">ENVS 183</a></td><td class="sc-coursetitle">Environmental Studies Internship</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h4 class="sc-RequiredCoursesHeading2">
+			Disciplinary Communication (DC) Requirement
+		</h4><p>Students of every major must satisfy that major&#39;s upper-division disciplinary communication (DC) requirement. The DC requirement in ecology and evolution is satisfied by completing two of the following ecology and evolutionary biology courses:</p>
+
+<p>NOTE: Lecture and 2-credit lab combinations count as a single course.</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-108">BIOE 108</a></td><td class="sc-coursetitle">Marine Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-114">BIOE 114</a></td><td class="sc-coursetitle">Herpetology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-114L">BIOE 114L</a></td><td class="sc-coursetitle">Field Methods in Herpetological Research</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-117">BIOE 117</a></td><td class="sc-coursetitle">Systematic Botany of Flowering Plants</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-120">BIOE 120</a></td><td class="sc-coursetitle">Marine Botany</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-120L">BIOE 120L</a></td><td class="sc-coursetitle">Marine Botany Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-122">BIOE 122</a></td><td class="sc-coursetitle">Invertebrate Zoology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-122L">BIOE 122L</a></td><td class="sc-coursetitle">Invertebrate Zoology Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-127">BIOE 127</a></td><td class="sc-coursetitle">Ichthyology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-127L">BIOE 127L</a></td><td class="sc-coursetitle">Ichthyology Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-128L">BIOE 128L</a></td><td class="sc-coursetitle">Large Marine Vertebrates Field Course</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-129">BIOE 129</a></td><td class="sc-coursetitle">Biology of Marine Mammals</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-129L">BIOE 129L</a></td><td class="sc-coursetitle">Biology of Marine Mammals Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-137">BIOE 137</a></td><td class="sc-coursetitle">Molecular Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-141L">BIOE 141L</a></td><td class="sc-coursetitle">Behavioral Ecology Field Course</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-145">BIOE 145</a></td><td class="sc-coursetitle">Plant Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-145L">BIOE 145L</a></td><td class="sc-coursetitle">Field Methods in Plant Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-150L">BIOE 150L</a></td><td class="sc-coursetitle">Ecological Field Methods Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-151B">BIOE 151B</a><div class="sc-crosslisted">
+					/ENVS 109B
+				</div></td><td class="sc-coursetitle">Ecology and Conservation in Practice Supercourse: Ecological Field Methods Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-153C">BIOE 153C</a></td><td class="sc-coursetitle">Disciplinary Communication for Biologists</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-158L">BIOE 158L</a></td><td class="sc-coursetitle">Field Methods in Marine Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-159A">BIOE 159A</a></td><td class="sc-coursetitle">Marine Ecology Field Quarter: Marine Ecology with Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-161L">BIOE 161L</a></td><td class="sc-coursetitle">Kelp Forest Ecology Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-171">BIOE 171</a></td><td class="sc-coursetitle">Disciplinary Communication for Biologists</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-172">BIOE 172</a></td><td class="sc-coursetitle">Population Genetics</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><div class="sc-requirementsNote">
+			<p class="sc-BodyText">For 2-credit laboratory courses listed above that are taken concurrently with 5-credit lectures, both courses must be passed to receive one half of the DC requirement. <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-117'>BIOE 117</a> and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-137'>BIOE 137</a> require concurrent enrollment in 2-credit labs, <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-117L'>BIOE 117L</a> and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-137L'>BIOE 137L</a>, but these are not part of the DC requirement.
+</p>
+		</div><h4 class="sc-RequiredCoursesHeading2">
+			Comprehensive Requirement
+		</h4><p>All majors in the biological sciences require completion of a comprehensive requirement. This requirement can be satisfied in one of the following ways:</p>
+
+<ul>
+	<li>receiving a passing grade in an independent research course, or field/laboratory course listed below;</li>
+	<li>completing a senior thesis;</li>
+	<li>achieving a graduate record examination (GRE) score at or above the 50th percentile on the biology subject test or the biochemistry, cell, and molecular biology subject test. Reports of GRE scores must be submitted to the EEB undergraduate advising office before the last day of the graduating quarter;</li>
+	<li>obtaining a medical college admission test (MCAT) score at or above the 50th percentile on the biological sciences section. Reports of MCAT scores must be submitted to the EEB undergraduate advising office before the last day of the graduating quarter.</li>
+</ul>
+<table>
+
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Comprehensive courses offered by Ecology and Evolutionary Biology
+		</h5><p>NOTE: Lab courses may have associated prerequisite or corequisite lecture courses.</p>
+<table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-112L">BIOE 112L</a></td><td class="sc-coursetitle">Ornithology Field Studies</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-114L">BIOE 114L</a></td><td class="sc-coursetitle">Field Methods in Herpetological Research</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-117L">BIOE 117L</a></td><td class="sc-coursetitle">Systematic Botany of Flowering Plants Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-120L">BIOE 120L</a></td><td class="sc-coursetitle">Marine Botany Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-122L">BIOE 122L</a></td><td class="sc-coursetitle">Invertebrate Zoology Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-124L">BIOE 124L</a></td><td class="sc-coursetitle">Mammalogy Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-127L">BIOE 127L</a></td><td class="sc-coursetitle">Ichthyology Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-128L">BIOE 128L</a></td><td class="sc-coursetitle">Large Marine Vertebrates Field Course</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-129L">BIOE 129L</a></td><td class="sc-coursetitle">Biology of Marine Mammals Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-131L">BIOE 131L</a></td><td class="sc-coursetitle">Animal Physiology Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-133L">BIOE 133L</a></td><td class="sc-coursetitle">Exercise Physiology Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-134L">BIOE 134L</a></td><td class="sc-coursetitle">Comparative Vertebrate Anatomy Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-135L">BIOE 135L</a></td><td class="sc-coursetitle">Plant Physiology Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-137L">BIOE 137L</a></td><td class="sc-coursetitle">Molecular Ecology Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-141L">BIOE 141L</a></td><td class="sc-coursetitle">Behavioral Ecology Field Course</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-145L">BIOE 145L</a></td><td class="sc-coursetitle">Field Methods in Plant Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-150L">BIOE 150L</a></td><td class="sc-coursetitle">Ecological Field Methods Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-151A">BIOE 151A</a><div class="sc-crosslisted">
+					/ENVS 109A
+				</div></td><td class="sc-coursetitle">Ecology and Conservation in Practice Supercourse: Ecological Field Methods</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-151B">BIOE 151B</a><div class="sc-crosslisted">
+					/ENVS 109B
+				</div></td><td class="sc-coursetitle">Ecology and Conservation in Practice Supercourse: Ecological Field Methods Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-151C">BIOE 151C</a><div class="sc-crosslisted">
+					/ENVS 109C
+				</div></td><td class="sc-coursetitle">Ecology and Conservation in Practice Supercourse: Functions and Processes of Terrestrial Ecosystems</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-151D">BIOE 151D</a><div class="sc-crosslisted">
+					/ENVS 109D
+				</div></td><td class="sc-coursetitle">Ecology and Conservation in Practice Supercourse: Conservation in Practice</td><td><p class="credits">4</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-153A">BIOE 153A</a></td><td class="sc-coursetitle">Introduction to Arctic Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-153B">BIOE 153B</a></td><td class="sc-coursetitle">Arctic Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-153C">BIOE 153C</a></td><td class="sc-coursetitle">Disciplinary Communication for Biologists</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-155L">BIOE 155L</a></td><td class="sc-coursetitle">Freshwater Ecology Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-158L">BIOE 158L</a></td><td class="sc-coursetitle">Field Methods in Marine Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-159A">BIOE 159A</a></td><td class="sc-coursetitle">Marine Ecology Field Quarter: Marine Ecology with Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-159B">BIOE 159B</a></td><td class="sc-coursetitle">Marine Ecology Field Quarter: Ichthyology with Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-159C">BIOE 159C</a></td><td class="sc-coursetitle">Marine Ecology Field Quarter: Methods in Field Ecology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-159D">BIOE 159D</a></td><td class="sc-coursetitle">Marine Ecology Field Quarter: Methods in Field Ecology Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-161L">BIOE 161L</a></td><td class="sc-coursetitle">Kelp Forest Ecology Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-163L">BIOE 163L</a></td><td class="sc-coursetitle">Ecology of Reefs, Mangroves, and Seagrasses Laboratory</td><td><p class="credits">2</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-183W">BIOE 183W</a></td><td class="sc-coursetitle">Undergraduate Research in EEB--Writing</td><td><p class="credits">2</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Comprehensive courses offered by Molecular, Cell and Developmental Biology
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/100/BIOL-100L">BIOL 100L</a></td><td class="sc-coursetitle">Biochemistry Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/100/BIOL-105L">BIOL 105L</a></td><td class="sc-coursetitle">Eukaryotic Genetics Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/100/BIOL-109L">BIOL 109L</a></td><td class="sc-coursetitle">Yeast Molecular Genetics Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/100/BIOL-115L">BIOL 115L</a></td><td class="sc-coursetitle">Eukaryotic Molecular Biology Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/100/BIOL-120L">BIOL 120L</a></td><td class="sc-coursetitle">Development Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/100/BIOL-121L">BIOL 121L</a></td><td class="sc-coursetitle">Environmental Phage Biology Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/100/BIOL-186L">BIOL 186L</a></td><td class="sc-coursetitle">Undergraduate Research in MCD Biology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/100/BIOL-186R">BIOL 186R</a></td><td class="sc-coursetitle">Undergraduate Research in MCD Biology</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/100/BIOL-189">BIOL 189</a></td><td class="sc-coursetitle">Health Sciences Internship</td><td><p class="credits">3</p></td>
+			</tr>
+		</table><h5 class="sc-RequiredCoursesHeading3">
+			Comprehensive courses offered in other departments
+		</h5><table>
+			<tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/BIOC-Biochemistry-and-Molecular-Biology/Upper-Division/BIOC-110L">BIOC 110L</a></td><td class="sc-coursetitle">Advanced Biochemistry Laboratory</td><td><p class="credits">5</p></td>
+			</tr><tr>
+				<td class="sc-coursenumber"><a class="sc-courselink" href="/en/Current/General-Catalog/Courses/METX-Microbiology-and-Environmental-Toxicology/Upper-Division/METX-119L">METX 119L</a></td><td class="sc-coursetitle">Microbiology Laboratory</td><td><p class="credits">5</p></td>
+			</tr>
+		</table><h3 class="sc-RequiredCoursesHeading1">
+			Planners
+		</h3><a id="4yrplan"></a><p>In addition to the specific courses shown in these planners, a student must complete courses satisfying the IM,&nbsp; TA, PE, PR, CC, ER and C campus general education requirements.</p>
+
+<p><strong>Sample Frosh Planner</strong></p>
+
+<table>
+	<tbody>
+		<tr>
+			<td rowspan="3"><strong>1st (frosh)</strong></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/Lower-Division/BIOE-20C'>BIOE 20C</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-11A'>MATH 11A</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19A'>MATH 19A</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-11B'>MATH 11B</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-19B'>MATH 19B</a></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1A'>CHEM 1A</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1B'>CHEM 1B</a></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>2nd (soph)</strong></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/1-99/BIOL-20A'>BIOL 20A</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/Lower-Division/BIOE-20B'>BIOE 20B</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/STAT-Statistics/Lower-Division/STAT-7'>STAT 7</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/STAT-Statistics/Lower-Division/STAT-7L'>STAT 7L</a></td>
+		</tr>
+		<tr>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1C'>CHEM 1C</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1N'>CHEM 1N</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6A'>PHYS 6A</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6L'>PHYS 6L</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6B'>PHYS 6B</a> or 6C</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>3rd (junior)</strong></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/100/BIOL-105'>BIOL 105</a></td>
+			<td>Physiology core</td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-109'>BIOE 109</a></td>
+		</tr>
+		<tr>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-107'>BIOE 107</a></td>
+			<td>*ECEV topical elective</td>
+			<td>Organismal core</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>4th (senior)</strong></td>
+			<td>*ECEV topical elective</td>
+			<td>*ECEV topical elective</td>
+			<td>EEB general elective</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>EEB general elective</td>
+			<td>EEB general elective</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>*ECEV = Ecology and Evolution B.S.</p>
+
+<p>Electives must be chosen to satisfy the Disciplinary Communication and Comprehensive requirements.</p>
+
+<p>Additional&nbsp;<a href="https://www.eeb.ucsc.edu/academics/undergrad/majors-academic-planning/eco-evo-bs/eco-evo-bs-academic-planners/eco-evo-bs-academic-planners-frosh.html" rel="noopener noreferrer" target="_blank">Frosh sample planners</a>&nbsp;may be found on the EEB website.</p>
+
+<a id="2yrplan"></a><p><strong>Sample Transfer Planner</strong></p>
+
+<p>For students who transferred in after completing the transfer screening courses and:</p>
+
+<ul>
+	<li><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/MATH-Mathematics/Lower-Division/MATH-11B'>MATH 11B</a></li>
+	<li><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1C'>CHEM 1C</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry/0-99/CHEM-1N'>CHEM 1N</a></li>
+	<li><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6A'>PHYS 6A</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6L'>PHYS 6L</a>, and <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6B'>PHYS 6B</a> or <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/PHYS-Physics/Lower-Division/PHYS-6C'>PHYS 6C</a></li>
+</ul>
+
+<table>
+	<tbody>
+		<tr>
+			<td>&nbsp;</td>
+			<td><strong>Fall</strong></td>
+			<td><strong>Winter</strong></td>
+			<td><strong>Spring</strong></td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>3rd (junior)</strong></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental/100/BIOL-105'>BIOL 105</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-107'>BIOE 107</a></td>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary/100/BIOE-109'>BIOE 109</a></td>
+		</tr>
+		<tr>
+			<td>*ECEV topical elective</td>
+			<td>*ECEV topical elective</td>
+			<td>EEB general elective</td>
+		</tr>
+		<tr>
+			<td><a class='sc-courselink' href='/en/Current/General-Catalog/Courses/STAT-Statistics/Lower-Division/STAT-7'>STAT 7</a> &amp; <a class='sc-courselink' href='/en/Current/General-Catalog/Courses/STAT-Statistics/Lower-Division/STAT-7L'>STAT 7L</a></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td rowspan="3"><strong>4th (senior)</strong></td>
+			<td>Organismal core</td>
+			<td>*ECEV topical elective</td>
+			<td>Physiology core</td>
+		</tr>
+		<tr>
+			<td>EEB general elective</td>
+			<td>EEB general elective</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>*ECEV = Ecology and Evolution B.S.</p>
+
+<p>Electives must be chosen to satisfy the Disciplinary Communication and Comprehensive requirements.</p>
+
+<p>Additional&nbsp;<a href="https://www.eeb.ucsc.edu/academics/undergrad/majors-academic-planning/eco-evo-bs/eco-evo-bs-academic-planners/eco-evo-bs-academic-plannners-trans.html" rel="noopener noreferrer" target="_blank">Transfer student sample planners</a>&nbsp;may be found on the EEB website.</p>
+<table>
+
+		</table>
+	</div>
+</div>
+							</div><!-- end main -->
+						</div><!--end of rightpanel-->
+						<div style="clear: both;"></div>
+					</div><!--end of middle-->
+					
+					<!-- Footer -->
+					<div id="footer">
+					<!--FOOTER LINKS AND IMAGES CAN GO HERE-->
+						<div class="main-footer">
+<a id="goTop"></a>
+          <div class="row" id="footer">
+              <div class="footer-left">
+                  <img alt="UCSC Seal" class="seal" height="84" src="https://static.ucsc.edu/_responsive/images/logos/uc-seal.svg" width="84">
+<div class="address home">
+<div class="location">UC Santa Cruz, 1156 High Street, Santa Cruz, Ca 95064</div>
+<div class="copyright">&copy;2020 Regents of the University of California. All Rights Reserved.</div>
+</div>
+              </div>
+<div class="footer-right">
+                  
+
+<div class="social-media">
+            
+        
+        <a href="https://www.twitter.com/ucsc"><svg aria-label="Follow us on Twitter" class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg><!-- <i aria-label="Follow us on Twitter" class="fab fa-twitter"></i> --></a>
+            
+        
+        <a href="https://www.instagram.com/ucsc"><svg aria-label="Follow us on Instagram" class="svg-inline--fa fa-instagram fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><!-- <i aria-label="Follow us on Instagram" class="fab fa-instagram"></i> --></a>
+            
+        
+        <a href="https://www.facebook.com/ucsantacruz"><svg aria-label="Follow us on Facebook" class="svg-inline--fa fa-facebook-f fa-w-9" aria-hidden="true" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512" data-fa-i2svg=""><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path></svg><!-- <i aria-label="Follow us on Facebook" class="fab fa-facebook-f"></i> --></a>
+            
+        
+        <a href="http://youtube.com/ucsantacruz"><svg aria-label="Follow us on YouTube" class="svg-inline--fa fa-youtube fa-w-18" aria-hidden="true" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg><!-- <i aria-label="Follow us on YouTube" class="fab fa-youtube"></i> --></a>
+            
+        
+        <a href="http://www.linkedin.com/school/ucsc/"><svg aria-label="Follow us on LinkedIn" class="svg-inline--fa fa-linkedin-in fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z"></path></svg><!-- <i aria-label="Follow us on LinkedIn" class="fab fa-linkedin-in"></i> --></a>
+    </div>
+
+<div class="links">
+            
+                            
+        <a href="https://www.ucsc.edu/feedback/index.html">Feedback</a> 
+    </div>
+
+              </div>
+          </div>
+          <div class="sub-footer row">
+<div class="legal">
+                <ul class="legal">
+<li><a href="https://academicaffairs.ucsc.edu/accreditation/">Accreditation</a></li>
+<li><a href="https://diversity.ucsc.edu/eeo-aa/images/non-discrimination-policy.pdf">Non-Discrimination&nbsp;Policy</a></li>
+<li><a href="land-acknowledgement/index.html">Land Acknowledgement</a></li>
+<li><a href="https://www.ucsc.edu/about/employment.html">Employment</a></li>
+<li><a href="https://its.ucsc.edu/terms/">Privacy&nbsp;Policy&nbsp;&amp;&nbsp;Terms&nbsp;of&nbsp;Use</a></li>
+<li><a href="https://titleix.ucsc.edu/index.html">Sexual Violence Prevention &amp; Response (Title IX)</a></li>
+</ul>
+                
+<p class="page-meta">
+    Last modified: September 22, 2020  <span class="check-ip">128.114.113.74</span>
+</p>
+              </div>
+          </div>   
+        </div>
+					</div><!--end of footer-->
+					
+				</div><!--end of pagwrapper2 -->
+			</div><!--end of pagewrapper1-->
+			</div><!--end of wrap-->
+		
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZF-IhmpGy1TANyacnbq7Lyk973c9ilWmqlgroX0B_F5tMTeNK0D7KOmfpAeG5gd80A2&amp;t=637460801481343508" type="text/javascript"></script>
+</form>
+		<script src="https://static.ucsc.edu/_responsive/lib/modernizr/modernizr.js" type="text/javascript"></script>
+		<script src="https://static.ucsc.edu/_responsive/lib/jquery/dist/jquery.js" type="text/javascript"></script>
+		<script async="async" src="https://static.ucsc.edu/_responsive/js/main.js?t=20180409144600" type="text/javascript"></script>
+		<script type="text/javascript" src="/scripts/firefoxAnchorFix.js"></script>
+	</body>
+</html>
